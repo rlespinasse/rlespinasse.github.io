@@ -13,7 +13,7 @@ This blog is itself [a project based on hugo](https://github.com/rlespinasse/rle
 In terms of automation, I play with **Github Actions**
 
 * to ease the release of a repository : [release-that](https://github.com/marketplace/actions/release-that),
-* to `slug` some environment variables : [github-slug-action](https://github.com/marketplace/actions/github-slug),
+* to `slug` some environment variables : [github-slug-action](https://github.com/marketplace/actions/github-slug-action),
 * to `slug` any variable : [slugify-value](https://github.com/marketplace/actions/slugify-value),
 * to `short` some git references : [shortify-git-revision](https://github.com/rlespinasse/shortify-git-revision),
 * to expose some git commit data : [git-commit-data-action](https://github.com/marketplace/actions/git-commit-data),
