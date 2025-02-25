@@ -1,6 +1,6 @@
 +++
 title = "About me"
-date = "2024-12-11"
+date = "2025-02-25"
 +++
 
 > I'm not young enough to know everything.
@@ -48,11 +48,17 @@ And all my current and past projects are available on [https://github.com/rlespi
 | | 2022 | [Professional Cloud Architect](https://www.credly.com/badges/70ccf969-3c6b-44e5-baef-fdd9393d8820) |
 | | | [Cloud Digital Leader](https://www.credly.com/badges/ad8a49cd-f599-4694-8fbf-a3d81e1687a5)  |
 | | | [Professional Data Engineer](https://www.credly.com/badges/e7d6fa27-fef1-4531-8210-4acde2fe3ebc) `until mid-2024` |
+| PoolParty | 2025 | [Semantic Web Training](https://www.credential.net/ef74e627-0c3e-4290-b8de-33d2166b6f22#acc.gvsQa9HL) |
+| | | [Knowledge Engineering Training](https://www.credential.net/8eec845d-ed38-4888-891c-bfcda843957e#acc.LftCeZa3) |
+| | | [Semantic Integration Training](https://www.credential.net/f5c0dac2-4a15-4ec7-819d-39c042ed242e#acc.9lCct2mv) |
 
 ### Certifications list
 
 | Certifications                                                                                                                  | Since | Until |
 | ------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
+| [PoolParty Semantic Integration Training](https://www.credential.net/f5c0dac2-4a15-4ec7-819d-39c042ed242e#acc.9lCct2mv) | 2025-02-17 | _No date_       |
+| [PoolParty Knowledge Engineering Training](https://www.credential.net/8eec845d-ed38-4888-891c-bfcda843957e#acc.LftCeZa3) | 2025-01-14 | _No date_       |
+| [PoolParty Semantic Web Training](https://www.credential.net/ef74e627-0c3e-4290-b8de-33d2166b6f22#acc.gvsQa9HL) | 2025-01-03 | _No date_       |
 | [GitLab Solutions Architect Core Verified Associate](https://www.credly.com/badges/4bf0c570-7c9f-4d2f-b0a0-676e0eb8043d)        | 2022-12-18 | 2024-12-18      |
 | [GitLab Certified CI/CD Associate](https://www.credly.com/badges/2213767c-2dbe-4d4d-97c1-9f074e72f113)                          | 2022-12-11 | _No date_       |
 | [GitLab Certified DevOps Professional](https://www.credly.com/badges/584848a8-bca8-4549-b1b5-982bb5123105)                      | 2022-12-21 | _No date_       |
