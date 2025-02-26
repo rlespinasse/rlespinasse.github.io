@@ -8,6 +8,7 @@ coverImg: "cover.webp"
 tags:
 - opensource
 - github
+- sfeir.dev
 categories:
 - Technical posts
 ---
