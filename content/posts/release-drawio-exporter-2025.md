@@ -11,11 +11,13 @@ tags:
 categories:
 - Changelog posts
 ---
+
 ## [1.3.1](https://github.com/rlespinasse/drawio-export/compare/v1.3.0...v1.3.1) (2025-03-06)
 
 ### Fixed
 
-- Option `--drawio-desktop-headless` wasn't properly set as a boolean flag [#80](https://github.com/rlespinasse/drawio-exporter/pull/80)## [1.3.0](https://github.com/rlespinasse/drawio-export/compare/v1.2.0...v1.3.0) (2025-03-02)
+- Option `--drawio-desktop-headless` wasn't properly set as a boolean flag [#80](https://github.com/rlespinasse/drawio-exporter/pull/80)
+## [1.3.0](https://github.com/rlespinasse/drawio-export/compare/v1.2.0...v1.3.0) (2025-03-02)
 
 ### Added
 
