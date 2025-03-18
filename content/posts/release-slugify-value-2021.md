@@ -20,7 +20,7 @@ categories:
 
 
 
-### [1.0.1](https://github.com/rlespinasse/slugify-value/compare/v1.0.0...v1.0.1) (2021-10-13)
+## [1.0.1](https://github.com/rlespinasse/slugify-value/compare/v1.0.0...v1.0.1) (2021-10-13)
 
 
 ### Bug Fixes

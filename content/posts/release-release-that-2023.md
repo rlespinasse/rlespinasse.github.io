@@ -20,7 +20,7 @@ categories:
 
 
 
-### [1.7.1](https://github.com/rlespinasse/release-that/compare/v1.7.0...v1.7.1) (2023-06-05)
+## [1.7.1](https://github.com/rlespinasse/release-that/compare/v1.7.0...v1.7.1) (2023-06-05)
 
 
 ### Bug Fixes

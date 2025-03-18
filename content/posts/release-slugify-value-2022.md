@@ -20,7 +20,7 @@ categories:
 
 
 
-### [1.3.3](https://github.com/rlespinasse/slugify-value/compare/v1.3.2...v1.3.3) (2022-10-15)
+## [1.3.3](https://github.com/rlespinasse/slugify-value/compare/v1.3.2...v1.3.3) (2022-10-15)
 
 
 ### Bug Fixes
@@ -29,7 +29,7 @@ categories:
 
 
 
-### [1.3.2](https://github.com/rlespinasse/slugify-value/compare/v1.3.1...v1.3.2) (2022-06-16)
+## [1.3.2](https://github.com/rlespinasse/slugify-value/compare/v1.3.1...v1.3.2) (2022-06-16)
 
 
 ### Bug Fixes
@@ -38,7 +38,7 @@ categories:
 
 
 
-### [1.3.1](https://github.com/rlespinasse/slugify-value/compare/v1.3.0...v1.3.1) (2022-06-15)
+## [1.3.1](https://github.com/rlespinasse/slugify-value/compare/v1.3.0...v1.3.1) (2022-06-15)
 
 
 ### Bug Fixes
@@ -56,7 +56,7 @@ categories:
 
 
 
-### [1.2.3](https://github.com/rlespinasse/slugify-value/compare/v1.2.2...v1.2.3) (2022-04-08)
+## [1.2.3](https://github.com/rlespinasse/slugify-value/compare/v1.2.2...v1.2.3) (2022-04-08)
 
 
 ### Bug Fixes
@@ -65,7 +65,7 @@ categories:
 
 
 
-### [1.2.2](https://github.com/rlespinasse/slugify-value/compare/v1.2.1...v1.2.2) (2022-04-08)
+## [1.2.2](https://github.com/rlespinasse/slugify-value/compare/v1.2.1...v1.2.2) (2022-04-08)
 
 
 ### Bug Fixes
@@ -74,7 +74,7 @@ categories:
 
 
 
-### [1.2.1](https://github.com/rlespinasse/slugify-value/compare/v1.2.0...v1.2.1) (2022-03-22)
+## [1.2.1](https://github.com/rlespinasse/slugify-value/compare/v1.2.0...v1.2.1) (2022-03-22)
 
 
 ### Bug Fixes

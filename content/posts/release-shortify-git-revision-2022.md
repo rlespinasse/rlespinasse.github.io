@@ -20,7 +20,7 @@ categories:
 
 
 
-### [1.5.1](https://github.com/rlespinasse/shortify-git-revision/compare/v1.5.0...v1.5.1) (2022-10-15)
+## [1.5.1](https://github.com/rlespinasse/shortify-git-revision/compare/v1.5.0...v1.5.1) (2022-10-15)
 
 
 ### Bug Fixes

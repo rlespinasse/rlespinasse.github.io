@@ -34,7 +34,7 @@ categories:
 
 
 
-### [1.3.1](https://github.com/rlespinasse/release-that/compare/v1.3.0...v1.3.1) (2021-10-03)
+## [1.3.1](https://github.com/rlespinasse/release-that/compare/v1.3.0...v1.3.1) (2021-10-03)
 
 
 ### Bug Fixes
