@@ -11,11 +11,17 @@ tags:
 categories:
 - Changelog posts
 ---
-## What's Changed
-* build: move from make to just by @rlespinasse in https://github.com/rlespinasse/wints/pull/51
+## [0.8.0](https://github.com/rlespinasse/wints/compare/v0.7.0...v0.8.0) (2025-03-02)
+
+## Features
+
 * feat: move to Rust 2024 to be up-to-date by @rlespinasse in https://github.com/rlespinasse/wints/pull/52
 
+## Changes
 
-**Full Changelog**: https://github.com/rlespinasse/wints/compare/v0.7.0...v0.8.0### Fixed
+* build: move from make to just by @rlespinasse in https://github.com/rlespinasse/wints/pull/51
+## [0.7.0](https://github.com/rlespinasse/wints/compare/v0.6.0...v0.7.0) (2025-02-12)
+
+## Fixed
 
 - Update dependencies to avoid vulnerabilities
