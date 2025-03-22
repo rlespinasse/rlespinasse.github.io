@@ -1,8 +1,8 @@
 ---
 title: "2025 Changelog: All Releases and Updates for 'rlespinasse/drawio-export-action'"
-summary: Changelog of the 3 releases for 2025
+summary: Changelog of the 4 releases for 2025
 date: 2025-02-23T20:46:15Z
-lastmod: 2025-03-11T03:19:07Z
+lastmod: 2025-03-19T05:09:34Z
 showToC: false
 draft: false
 tags:
@@ -11,6 +11,15 @@ tags:
 categories:
 - Changelog posts
 ---
+## [2.29.0](https://github.com/rlespinasse/drawio-export-action/compare/v2.28.0...v2.29.0) (2025-03-19)
+
+
+### Features
+
+* bump rlespinasse/drawio-export from v4.30.0 to v4.31.0 ([#70](https://github.com/rlespinasse/drawio-export-action/issues/70)) ([ecaf2f9](https://github.com/rlespinasse/drawio-export-action/commit/ecaf2f9fda22c28d12a489aea1f131331a638571))
+
+
+
 ## [2.28.0](https://github.com/rlespinasse/drawio-export-action/compare/v2.27.0...v2.28.0) (2025-03-11)
 
 
