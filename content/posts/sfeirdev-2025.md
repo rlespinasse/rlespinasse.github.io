@@ -10,6 +10,10 @@ tags:
 categories:
 - Changelog posts
 ---
+## 2025-03-25
+
+* [Procrastination : définition](https://www.sfeir.dev/procrastination-definition/)
+
 ## 2025-02-06
 
 * [Asciidoc : Définition](https://www.sfeir.dev/asciidoc-definition/)
