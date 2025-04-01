@@ -1,8 +1,8 @@
 ---
 title: "2025 Changelog: my sfeir.dev posts"
-summary: Changelog of the 2 posts on sfeir.dev for 2025
+summary: Changelog of the 5 posts on sfeir.dev for 2025
 date: 2025-02-06T14:36:00Z
-lastmod: 2025-02-06T15:22:00Z
+lastmod: 2025-04-01T09:34:00Z
 showToC: false
 draft: false
 tags:
