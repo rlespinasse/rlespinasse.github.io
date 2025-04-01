@@ -10,6 +10,11 @@ tags:
 categories:
 - Changelog posts
 ---
+## 2025-04-21
+
+* [Rickroll : Définition](https://www.sfeir.dev/rickroll-definition/)
+* [Comment se protéger des blagues de ses collègues le 1er avril ?](https://www.sfeir.dev/tendances/comment-se-proteger-des-blagues-de-ses-collegues-le-1er-avril/)
+
 ## 2025-03-25
 
 * [Procrastination : définition](https://www.sfeir.dev/procrastination-definition/)
