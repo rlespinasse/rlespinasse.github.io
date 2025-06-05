@@ -1,8 +1,8 @@
 ---
 title: "2025 Changelog: All Releases and Updates for 'rlespinasse/drawio-exporter'"
-summary: Changelog of the 2 releases for 2025
+summary: Changelog of the 3 releases for 2025
 date: 2025-03-02T21:25:58Z
-lastmod: 2025-03-06T11:20:24Z
+lastmod: 2025-06-04T17:23:17Z
 showToC: false
 draft: false
 tags:
@@ -11,7 +11,16 @@ tags:
 categories:
 - Changelog posts
 ---
+## What's Changed
+* docs: update code of conduct by @rlespinasse in https://github.com/rlespinasse/drawio-exporter/pull/81
+* ci(linter): setup super-linter by @rlespinasse in https://github.com/rlespinasse/drawio-exporter/pull/82
+* build: bump the dependencies group with 6 updates by @dependabot in https://github.com/rlespinasse/drawio-exporter/pull/83
+* ci(linter): use super-linter/super-linter by @rlespinasse in https://github.com/rlespinasse/drawio-exporter/pull/84
+* ci: upgrade drawio-desktop version to v27.0.9 by @rlespinasse in https://github.com/rlespinasse/drawio-exporter/pull/88
+* fix: use 1-based index on page index option by @rlespinasse in https://github.com/rlespinasse/drawio-exporter/pull/87
 
+
+**Full Changelog**: https://github.com/rlespinasse/drawio-exporter/compare/v1.3.1...v1.3.2
 ## [1.3.1](https://github.com/rlespinasse/drawio-export/compare/v1.3.0...v1.3.1) (2025-03-06)
 
 ### Fixed
