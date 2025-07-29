@@ -1,8 +1,8 @@
 ---
 title: "2025 Changelog: All Releases and Updates for 'rlespinasse/textlint-rule-link-title-case'"
-summary: Changelog of the 2 releases for 2025
-date: 2025-03-17T23:13:03Z
-lastmod: 2025-03-25T09:04:26Z
+summary: Changelog of the 1 releases for 2025
+date: 
+lastmod: 
 showToC: false
 draft: false
 tags:
