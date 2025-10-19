@@ -18,7 +18,9 @@ jobs:
           hugo-version: "0.145.0"
           extended: true
 
-      - uses: taiki-e/install-action@just
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: just
 
       - run: just generate-site
         env:
