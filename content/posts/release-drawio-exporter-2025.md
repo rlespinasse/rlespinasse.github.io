@@ -11,7 +11,9 @@ tags:
 categories:
 - Changelog posts
 ---
-## Added
+## 1.4.0 - 2025-10-22
+
+### Added
 
 - Support Draw.io Desktop v22.1.16
   - --svg-theme is now supported for SVG format
@@ -20,19 +22,16 @@ categories:
   - --embed-svg-fonts is available for SVG format
 - Support '--all-pages' (or '-a') for exporting all pages into one PDF per drawio file
 
-## Fixed
+### Fixed
 
 - Make XML format export compliant with the non-support of page index
-- Prevent drawio-desktop CLI errors to be masked## What's Changed
-* docs: update code of conduct by @rlespinasse in https://github.com/rlespinasse/drawio-exporter/pull/81
-* ci(linter): setup super-linter by @rlespinasse in https://github.com/rlespinasse/drawio-exporter/pull/82
-* build: bump the dependencies group with 6 updates by @dependabot in https://github.com/rlespinasse/drawio-exporter/pull/83
-* ci(linter): use super-linter/super-linter by @rlespinasse in https://github.com/rlespinasse/drawio-exporter/pull/84
-* ci: upgrade drawio-desktop version to v27.0.9 by @rlespinasse in https://github.com/rlespinasse/drawio-exporter/pull/88
-* fix: use 1-based index on page index option by @rlespinasse in https://github.com/rlespinasse/drawio-exporter/pull/87
+- Prevent drawio-desktop CLI errors to be masked
+## 1.3.2 - 2025-06-04
 
+### Fixed
 
-**Full Changelog**: https://github.com/rlespinasse/drawio-exporter/compare/v1.3.1...v1.3.2
+- Support Draw.io Desktop v27.0.2
+  - Option `--page-index` is now using 1-based index
 ## [1.3.1](https://github.com/rlespinasse/drawio-export/compare/v1.3.0...v1.3.1) (2025-03-06)
 
 ### Fixed
