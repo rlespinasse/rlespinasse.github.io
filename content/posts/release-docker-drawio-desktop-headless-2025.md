@@ -1,8 +1,8 @@
 ---
 title: "2025 Changelog: All Releases and Updates for 'rlespinasse/docker-drawio-desktop-headless'"
-summary: Changelog of the 8 releases for 2025
+summary: Changelog of the 9 releases for 2025
 date: 2025-02-22T21:21:23Z
-lastmod: 2025-08-03T13:14:14Z
+lastmod: 2025-10-19T22:22:22Z
 showToC: false
 draft: false
 tags:
@@ -11,6 +11,15 @@ tags:
 categories:
 - Changelog posts
 ---
+## [1.48.0](https://github.com/rlespinasse/docker-drawio-desktop-headless/compare/v1.47.0...v1.48.0) (2025-10-19)
+
+
+### Features
+
+* update to drawio-desktop 28.2.5 ([#113](https://github.com/rlespinasse/docker-drawio-desktop-headless/issues/113)) ([fe2ee65](https://github.com/rlespinasse/docker-drawio-desktop-headless/commit/fe2ee65cf5b1ddc361c7d793c6f69627e64d07bc))
+
+
+
 ## [1.47.0](https://github.com/rlespinasse/docker-drawio-desktop-headless/compare/v1.46.0...v1.47.0) (2025-08-03)
 
 

@@ -1,8 +1,8 @@
 ---
 title: "2025 Changelog: All Releases and Updates for 'rlespinasse/drawio-exporter'"
-summary: Changelog of the 3 releases for 2025
+summary: Changelog of the 4 releases for 2025
 date: 2025-03-02T21:25:58Z
-lastmod: 2025-06-04T17:23:17Z
+lastmod: 2025-10-22T22:51:31Z
 showToC: false
 draft: false
 tags:
@@ -11,7 +11,19 @@ tags:
 categories:
 - Changelog posts
 ---
-## What's Changed
+## Added
+
+- Support Draw.io Desktop v22.1.16
+  - --svg-theme is now supported for SVG format
+  - --svg-links-target is available for SVG format
+- Support Draw.io Desktop v26.0.3
+  - --embed-svg-fonts is available for SVG format
+- Support '--all-pages' (or '-a') for exporting all pages into one PDF per drawio file
+
+## Fixed
+
+- Make XML format export compliant with the non-support of page index
+- Prevent drawio-desktop CLI errors to be masked## What's Changed
 * docs: update code of conduct by @rlespinasse in https://github.com/rlespinasse/drawio-exporter/pull/81
 * ci(linter): setup super-linter by @rlespinasse in https://github.com/rlespinasse/drawio-exporter/pull/82
 * build: bump the dependencies group with 6 updates by @dependabot in https://github.com/rlespinasse/drawio-exporter/pull/83
