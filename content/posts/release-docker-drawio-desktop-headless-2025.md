@@ -1,8 +1,8 @@
 ---
 title: "2025 Changelog: All Releases and Updates for 'rlespinasse/docker-drawio-desktop-headless'"
-summary: Changelog of the 9 releases for 2025
+summary: Changelog of the 10 releases for 2025
 date: 2025-02-22T21:21:23Z
-lastmod: 2025-10-19T22:22:22Z
+lastmod: 2025-10-24T20:50:52Z
 showToC: false
 draft: false
 tags:
@@ -11,6 +11,15 @@ tags:
 categories:
 - Changelog posts
 ---
+## [1.49.0](https://github.com/rlespinasse/docker-drawio-desktop-headless/compare/v1.48.0...v1.49.0) (2025-10-24)
+
+
+### Features
+
+* use debian trixie as base image ([#116](https://github.com/rlespinasse/docker-drawio-desktop-headless/issues/116)) ([e27a9f6](https://github.com/rlespinasse/docker-drawio-desktop-headless/commit/e27a9f6022c0d3623c5cadf38ecf69e613f31b5b))
+
+
+
 ## [1.48.0](https://github.com/rlespinasse/docker-drawio-desktop-headless/compare/v1.47.0...v1.48.0) (2025-10-19)
 
 

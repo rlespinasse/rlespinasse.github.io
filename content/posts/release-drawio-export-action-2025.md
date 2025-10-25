@@ -1,8 +1,8 @@
 ---
 title: "2025 Changelog: All Releases and Updates for 'rlespinasse/drawio-export-action'"
-summary: Changelog of the 11 releases for 2025
+summary: Changelog of the 12 releases for 2025
 date: 2025-02-23T20:46:15Z
-lastmod: 2025-10-23T22:24:22Z
+lastmod: 2025-10-24T14:43:02Z
 showToC: false
 draft: false
 tags:
@@ -11,6 +11,16 @@ tags:
 categories:
 - Changelog posts
 ---
+## [2.38.0](https://github.com/rlespinasse/drawio-export-action/compare/v2.37.0...v2.38.0) (2025-10-24)
+
+
+### Features
+
+* support all-pages option on pdf export ([#85](https://github.com/rlespinasse/drawio-export-action/issues/85)) ([969dc0d](https://github.com/rlespinasse/drawio-export-action/commit/969dc0d9be9a0090d9ae91577f54a0b9ed494e47))
+* support new options on svg export ([#86](https://github.com/rlespinasse/drawio-export-action/issues/86)) ([97446a4](https://github.com/rlespinasse/drawio-export-action/commit/97446a4e70fb02ea837963aeab0508ab6daae3e9))
+
+
+
 ## [2.37.0](https://github.com/rlespinasse/drawio-export-action/compare/v2.36.0...v2.37.0) (2025-10-23)
 
 
