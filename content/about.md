@@ -37,6 +37,8 @@ And all my current and past projects are available on [https://github.com/rlespi
 >
 > <iframe src="https://github.com/sponsors/rlespinasse/button" title="Sponsor rlespinasse" height="35" width="107" style="border: 0;"></iframe>
 
+[![An image of @rlespinasse's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/rlespinasse)](https://holopin.io/@rlespinasse)
+
 ## Certified in
 
 | Certified | Since | Certifications |
