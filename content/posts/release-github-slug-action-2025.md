@@ -1,8 +1,8 @@
 ---
 title: "2025 Changelog: All Releases and Updates for 'rlespinasse/github-slug-action'"
-summary: Changelog of the 3 releases for 2025
+summary: Changelog of the 4 releases for 2025
 date: 2025-03-11T03:17:15Z
-lastmod: 2025-10-19T21:38:43Z
+lastmod: 2025-11-25T23:51:29Z
 showToC: false
 draft: false
 tags:
@@ -11,6 +11,15 @@ tags:
 categories:
 - Changelog posts
 ---
+## [5.4.0](https://github.com/rlespinasse/github-slug-action/compare/v5.3.0...v5.4.0) (2025-11-25)
+
+
+### Features
+
+* bump actions/checkout from 5 to 6 ([#172](https://github.com/rlespinasse/github-slug-action/issues/172)) ([6f7a8d2](https://github.com/rlespinasse/github-slug-action/commit/6f7a8d2348e2a4aa5defafcdaafe5aef3f83bd4b))
+
+
+
 ## [5.3.0](https://github.com/rlespinasse/github-slug-action/compare/v5.2.0...v5.3.0) (2025-10-19)
 
 
