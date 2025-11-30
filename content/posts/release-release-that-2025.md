@@ -1,8 +1,8 @@
 ---
 title: "2025 Changelog: All Releases and Updates for 'rlespinasse/release-that'"
-summary: Changelog of the 2 releases for 2025
+summary: Changelog of the 3 releases for 2025
 date: 2025-07-22T07:51:07Z
-lastmod: 2025-09-08T17:23:29Z
+lastmod: 2025-11-24T09:35:23Z
 showToC: false
 draft: false
 tags:
@@ -11,6 +11,15 @@ tags:
 categories:
 - Changelog posts
 ---
+## [1.15.0](https://github.com/rlespinasse/release-that/compare/v1.14.0...v1.15.0) (2025-11-24)
+
+
+### Features
+
+* bump cycjimmy/semantic-release-action from 5 to 6 in the dependencies group ([#60](https://github.com/rlespinasse/release-that/issues/60)) ([7089243](https://github.com/rlespinasse/release-that/commit/7089243433a318f1a51636315e3a40e128825c58))
+
+
+
 ## [1.14.0](https://github.com/rlespinasse/release-that/compare/v1.13.0...v1.14.0) (2025-09-08)
 
 
