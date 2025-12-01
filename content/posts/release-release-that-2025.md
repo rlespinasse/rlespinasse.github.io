@@ -1,8 +1,8 @@
 ---
 title: "2025 Changelog: All Releases and Updates for 'rlespinasse/release-that'"
-summary: Changelog of the 3 releases for 2025
+summary: Changelog of the 4 releases for 2025
 date: 2025-07-22T07:51:07Z
-lastmod: 2025-11-24T09:35:23Z
+lastmod: 2025-11-30T22:49:26Z
 showToC: false
 draft: false
 tags:
@@ -11,6 +11,15 @@ tags:
 categories:
 - Changelog posts
 ---
+## [1.16.0](https://github.com/rlespinasse/release-that/compare/v1.15.0...v1.16.0) (2025-11-30)
+
+
+### Features
+
+* bump actions/checkout from 5 to 6 ([#61](https://github.com/rlespinasse/release-that/issues/61)) ([cb1bc2b](https://github.com/rlespinasse/release-that/commit/cb1bc2bf712d0fb87c82867852abb1b5128554fb))
+
+
+
 ## [1.15.0](https://github.com/rlespinasse/release-that/compare/v1.14.0...v1.15.0) (2025-11-24)
 
 
