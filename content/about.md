@@ -1,6 +1,6 @@
 +++
 title = "About me"
-date = "2025-02-25"
+date = "2026-02-01"
 +++
 
 > I'm not young enough to know everything.
@@ -44,38 +44,42 @@ And all my current and past projects are available on [https://github.com/rlespi
 | Certified | Since | Certifications |
 | - | - | - |
 | GitLab Certified | 2022 | [DevOps Professional](https://www.credly.com/badges/584848a8-bca8-4549-b1b5-982bb5123105) |
-| | | [Solutions Architect Core Verified Associate](https://www.credly.com/badges/4bf0c570-7c9f-4d2f-b0a0-676e0eb8043d) `until late-2024` |
 | Google Cloud Certified | 2019 | [Professional Cloud Developer](https://www.credly.com/badges/16df9b45-1899-4fa5-8fe1-45dd6646df53) |
 | | 2020 | [Professional Cloud DevOps Engineer](https://www.credly.com/badges/630d230b-7ef7-4276-8909-cd63695c4d66) |
 | | 2022 | [Professional Cloud Architect](https://www.credly.com/badges/70ccf969-3c6b-44e5-baef-fdd9393d8820) |
 | | | [Cloud Digital Leader](https://www.credly.com/badges/ad8a49cd-f599-4694-8fbf-a3d81e1687a5)  |
-| | | [Professional Data Engineer](https://www.credly.com/badges/e7d6fa27-fef1-4531-8210-4acde2fe3ebc) `until mid-2024` |
 | PoolParty | 2025 | [Semantic Web Training](https://www.credential.net/ef74e627-0c3e-4290-b8de-33d2166b6f22#acc.gvsQa9HL) |
 | | | [Knowledge Engineering Training](https://www.credential.net/8eec845d-ed38-4888-891c-bfcda843957e#acc.LftCeZa3) |
 | | | [Semantic Integration Training](https://www.credential.net/f5c0dac2-4a15-4ec7-819d-39c042ed242e#acc.9lCct2mv) |
+
+## Previously certified in
+
+| Certified | Period | Certifications |
+| - | - | - |
+| GitLab Certified | 2022-2024 | [Solutions Architect Core Verified Associate](https://www.credly.com/badges/4bf0c570-7c9f-4d2f-b0a0-676e0eb8043d) |
+| Google Cloud Certified | 2022-2024 | [Professional Data Engineer](https://www.credly.com/badges/e7d6fa27-fef1-4531-8210-4acde2fe3ebc) |
 
 ### Certifications list
 
 | Certifications                                                                                                                  | Since | Until |
 | ------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
-| [PoolParty Semantic Integration Training](https://www.credential.net/f5c0dac2-4a15-4ec7-819d-39c042ed242e#acc.9lCct2mv) | 2025-02-17 | _No date_       |
-| [PoolParty Knowledge Engineering Training](https://www.credential.net/8eec845d-ed38-4888-891c-bfcda843957e#acc.LftCeZa3) | 2025-01-14 | _No date_       |
-| [PoolParty Semantic Web Training](https://www.credential.net/ef74e627-0c3e-4290-b8de-33d2166b6f22#acc.gvsQa9HL) | 2025-01-03 | _No date_       |
 | [GitLab Solutions Architect Core Verified Associate](https://www.credly.com/badges/4bf0c570-7c9f-4d2f-b0a0-676e0eb8043d)        | 2022-12-18 | 2024-12-18      |
-| [GitLab Certified CI/CD Associate](https://www.credly.com/badges/2213767c-2dbe-4d4d-97c1-9f074e72f113)                          | 2022-12-11 | _No date_       |
-| [GitLab Certified DevOps Professional](https://www.credly.com/badges/584848a8-bca8-4549-b1b5-982bb5123105)                      | 2022-12-21 | _No date_       |
-| [GitLab Certified Git Associate](https://www.credly.com/badges/ab36f29b-e0df-4b1b-b715-cb2891dd66cb)                            | 2022-12-11 | _No date_       |
-| [GitLab Certified Project Management Associate](https://www.credly.com/badges/582b3875-f092-4ef1-8e88-4f32f144de09)             | 2022-12-11 | _No date_       |
-| [GitLab Certified Security Specialist](https://www.credly.com/badges/43e8ddb6-01dd-462e-9506-70266e86c0d4)                      | 2022-12-16 | _No date_       |
-| [Google Cloud Certified Cloud Digital Leader](https://www.credly.com/badges/ad8a49cd-f599-4694-8fbf-a3d81e1687a5)               | 2022-12-14 | 2025-12-14      |
+| [GitLab Certified CI/CD Associate](https://www.credly.com/badges/2213767c-2dbe-4d4d-97c1-9f074e72f113)                          | 2022-12-11 | _Does not expire_       |
+| [GitLab Certified DevOps Professional](https://www.credly.com/badges/584848a8-bca8-4549-b1b5-982bb5123105)                      | 2022-12-21 | _Does not expire_       |
+| [GitLab Certified Git Associate](https://www.credly.com/badges/ab36f29b-e0df-4b1b-b715-cb2891dd66cb)                            | 2022-12-11 | _Does not expire_       |
+| [GitLab Certified Project Management Associate](https://www.credly.com/badges/582b3875-f092-4ef1-8e88-4f32f144de09)             | 2022-12-11 | _Does not expire_       |
+| [GitLab Certified Security Specialist](https://www.credly.com/badges/43e8ddb6-01dd-462e-9506-70266e86c0d4)                      | 2022-12-16 | _Does not expire_       |
+| [Google Cloud Certified Cloud Digital Leader](https://www.credly.com/badges/ad8a49cd-f599-4694-8fbf-a3d81e1687a5)               | 2022-12-14 | 2028-12-14      |
 | [Google Cloud Certified Professional Cloud Architect](https://www.credly.com/badges/70ccf969-3c6b-44e5-baef-fdd9393d8820)       | 2024-11-21 | 2026-11-21      |
 | [Google Cloud Certified Professional Cloud Architect](https://www.credly.com/badges/e8fcd4a6-6881-4d6b-bcdd-e99b095ad112)       | 2022-07-31 | 2024-07-31      |
 | [Google Cloud Certified Professional Cloud Developer](https://www.credly.com/badges/16df9b45-1899-4fa5-8fe1-45dd6646df53)       | 2022-11-25 | 2026-11-25      |
 | [Google Cloud Certified Professional Cloud Developer](https://www.credly.com/badges/0836b08c-1320-4f63-be8a-7b1bf0d71a62)       | 2019-12-04 | 2021-12-04      |
 | [Google Cloud Certified Professional Cloud DevOps Engineer](https://www.credly.com/badges/630d230b-7ef7-4276-8909-cd63695c4d66) | 2022-03-01 | 2026-03-01      |
-| [Google Cloud Certified Professional Cloud DevOps Engineer](https://www.credly.com/badges/630d230b-7ef7-4276-8909-cd63695c4d66) | 2022-03-01 | 2024-03-01      |
 | [Google Cloud Certified Professional Cloud DevOps Engineer](https://www.credly.com/badges/6e44156b-0593-4a6d-a614-8d056ede31b7) | 2020-01-23 | 2022-01-23      |
 | [Google Cloud Certified Professional Data Engineer](https://www.credly.com/badges/e7d6fa27-fef1-4531-8210-4acde2fe3ebc)         | 2022-07-31 | 2024-07-31      |
+| [PoolParty Knowledge Engineering Training](https://www.credential.net/8eec845d-ed38-4888-891c-bfcda843957e#acc.LftCeZa3) | 2025-01-14 | _Does not expire_       |
+| [PoolParty Semantic Integration Training](https://www.credential.net/f5c0dac2-4a15-4ec7-819d-39c042ed242e#acc.9lCct2mv) | 2025-02-17 | _Does not expire_       |
+| [PoolParty Semantic Web Training](https://www.credential.net/ef74e627-0c3e-4290-b8de-33d2166b6f22#acc.gvsQa9HL) | 2025-01-03 | _Does not expire_       |
 
 ### Courses list
 
