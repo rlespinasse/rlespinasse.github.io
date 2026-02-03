@@ -1,8 +1,8 @@
 ---
 title: "2026 Changelog: All Releases and Updates for 'rlespinasse/docker-drawio-desktop-headless'"
-summary: Changelog of the 2 releases for 2026
+summary: Changelog of the 3 releases for 2026
 date: 2026-01-05T08:03:05Z
-lastmod: 2026-01-13T17:34:59Z
+lastmod: 2026-02-02T10:00:07Z
 showToC: false
 draft: false
 tags:
@@ -11,6 +11,15 @@ tags:
 categories:
 - Changelog posts
 ---
+## [1.53.0](https://github.com/rlespinasse/docker-drawio-desktop-headless/compare/v1.52.0...v1.53.0) (2026-02-02)
+
+
+### Features
+
+* update to drawio-desktop 29.3.6 ([#126](https://github.com/rlespinasse/docker-drawio-desktop-headless/issues/126)) ([a173d1a](https://github.com/rlespinasse/docker-drawio-desktop-headless/commit/a173d1ab619ed3ff352f9de8d787f15b6c13ad4b))
+
+
+
 ## [1.52.0](https://github.com/rlespinasse/docker-drawio-desktop-headless/compare/v1.51.0...v1.52.0) (2026-01-13)
 
 
