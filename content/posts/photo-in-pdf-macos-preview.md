@@ -18,7 +18,7 @@ Preview doesn't have a standard "Insert Image" button, but there is a hidden wor
 
 Here is exactly how to do it.
 
-### The "Paste-Into-Itself" Method
+## The "Paste-Into-Itself" Method
 
 1. **Open the image:** Double-click your photo to open it in the Preview app.
 2. **Copy the image:** Press **Command + A** (⌘A) to select the entire image, then press **Command + C** (⌘C) to copy it to your clipboard.
