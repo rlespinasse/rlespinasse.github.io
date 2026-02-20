@@ -1,5 +1,5 @@
 ---
-title: "Front matter : définition (sfeir.dev)"
+title: "Front matter : Définition (sfeir.dev)"
 date: 2024-11-21T15:23:00+02:00
 layout: "redirect"
 categories:

@@ -1,5 +1,5 @@
 ---
-title: "Canard en plastique : définition (sfeir.dev)"
+title: "Canard en plastique : Définition (sfeir.dev)"
 date: 2024-11-14T16:16:00+02:00
 layout: "redirect"
 categories:

@@ -1,5 +1,5 @@
 ---
-title: "Schema.org : définition (sfeir.dev)"
+title: "Schema.org : Définition (sfeir.dev)"
 date: 2024-11-21T15:38:00+02:00
 layout: "redirect"
 categories:
