@@ -71,5 +71,7 @@ default:
 ## Conclusion
 
 Ultimately, using `just --choose` transforms your justfile from a static list of commands into a dynamic, user-friendly CLI.
+
 By moving away from manual piping and embracing built-in flags and environment variables, you reduce maintenance overhead while significantly improving your daily terminal workflow.
+
 Whether you’re automating a complex Docker environment or just looking for a faster way to trigger local builds, making your tools interactive by default ensures that your productivity stays as high as your command-line efficiency.
