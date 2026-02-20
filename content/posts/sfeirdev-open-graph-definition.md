@@ -1,0 +1,13 @@
+---
+title: "Open Graph : définition (sfeir.dev)"
+date: 2024-11-21T14:43:00+02:00
+layout: "redirect"
+categories:
+- Technical posts
+- Sfeir.dev
+---
+
+<script>window.location.href = "https://www.sfeir.dev/open-graph-definition/";</script>
+<meta http-equiv="refresh" content="0; url=https://www.sfeir.dev/open-graph-definition/">
+
+If you are not redirected automatically, [click here](https://www.sfeir.dev/open-graph-definition/).

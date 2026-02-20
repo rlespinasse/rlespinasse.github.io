@@ -2,6 +2,9 @@
 title: "GitHub-slug-action : 5 ans d'open source pour cette GitHub Action essentielle au CI/CD (sfeir.dev)"
 date: 2024-11-06T10:25:00+02:00
 layout: "redirect"
+categories:
+- Technical posts
+- Sfeir.dev
 ---
 
 <script>window.location.href = "https://www.sfeir.dev/5-ans-de-github-slug-action-une-aventure-open-source/";</script>
