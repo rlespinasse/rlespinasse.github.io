@@ -1,6 +1,6 @@
 ---
 title: "The Simplest Way to Make Just Interactive: Use --choose"
-date: 2026-02-20T21:20:00Z
+date: 2026-02-20T21:20:00+0100
 draft: false
 summary: "Forget complex piping and xargs. Learn how to use the built-in --choose flag to turn your justfile into an interactive menu instantly."
 tags:
