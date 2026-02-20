@@ -65,8 +65,3 @@ Unlike other tools, it:
 
 Next time you're preparing thumbnails for a gallery or optimizing assets for a website, don't reach for a GUI.
 The power of the macOS CLI is right at your fingertips.
-
-
-Would you like me to help you create a **Bash alias** so you can run this command anytime with a simple keyword like `resize200`?
-
-```
