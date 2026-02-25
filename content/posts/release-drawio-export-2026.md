@@ -1,8 +1,8 @@
 ---
 title: "2026 Changelog: All Releases and Updates for 'rlespinasse/drawio-export'"
-summary: Changelog of the 3 releases for 2026
+summary: Changelog of the 4 releases for 2026
 date: 2026-01-02T23:35:16Z
-lastmod: 2026-01-14T20:40:30Z
+lastmod: 2026-02-24T17:59:47Z
 showToC: false
 draft: false
 tags:
@@ -11,6 +11,16 @@ tags:
 categories:
 - Changelog posts
 ---
+## [4.44.0](https://github.com/rlespinasse/drawio-export/compare/v4.43.0...v4.44.0) (2026-02-24)
+
+
+### Features
+
+* bump rlespinasse/drawio-desktop-headless from v1.52.0 to v1.53.0 ([#162](https://github.com/rlespinasse/drawio-export/issues/162)) ([26a82f5](https://github.com/rlespinasse/drawio-export/commit/26a82f5df60a881ab586e556883b6753a185342e))
+* bump rlespinasse/drawio-desktop-headless from v1.53.0 to v1.54.0 ([#164](https://github.com/rlespinasse/drawio-export/issues/164)) ([6a38f07](https://github.com/rlespinasse/drawio-export/commit/6a38f07dd78635ea7b86e0acde34943429c16b38))
+
+
+
 ## [4.43.0](https://github.com/rlespinasse/drawio-export/compare/v4.42.0...v4.43.0) (2026-01-14)
 
 
