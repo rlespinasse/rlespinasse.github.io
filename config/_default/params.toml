@@ -106,6 +106,9 @@ cardView = false
 # Whether to display RSS link
 showRSS = false
 
+[analytics]
+goatCounter = "rlespinasse"
+
 [[social]]
 name = "GitHub"
 icon = "github"
