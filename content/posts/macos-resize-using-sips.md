@@ -2,7 +2,7 @@
 title: "Batch Resize Images on macOS via CLI (The Native Way)"
 date: 2026-02-20T20:30:00+01:00
 draft: false
-description: "Learn how to use the native macOS sips utility to batch resize images across multiple subdirectories."
+summary: "Learn how to use the native macOS sips utility to batch resize images across multiple subdirectories."
 tags:
 - macOS
 - Terminal
@@ -17,7 +17,7 @@ While apps like Photoshop or Lightroom are powerful, they are overkill for a sim
 Forget installing heavy dependencies like ImageMagick. 
 macOS comes with a built-in "secret weapon" called **Sips** (Scriptable Image Processing System).
 
-## The Scenario
+### The Scenario
 
 You have a project structure like this:
 - `/assets/products/category-a/item1.png`
@@ -37,13 +37,13 @@ find . -name "*.png" -exec sh -c 'sips -Z 200 "$1" --out "${1%.png}_200px.png"' 
 
 To understand what's happening under the hood, let's look at the components:
 
-| Command Part | Purpose |
-| --- | --- |
-| `find .` | Searches the current directory and all subfolders. |
-| `-name "*.png"` | Filters only the files ending with your specific suffix. |
-| `sips -Z 200` | Resizes the image so the largest dimension is 200px (preserving aspect ratio). |
-| `--out ...` | Specifies the output path so we don't overwrite the original. |
-| `${1%.png}_200px.png` | A shell trick to strip the `.png` extension and append our new suffix. |
+| Command Part          | Purpose                                                                        |
+| --------------------- | ------------------------------------------------------------------------------ |
+| `find .`              | Searches the current directory and all subfolders.                             |
+| `-name "*.png"`       | Filters only the files ending with your specific suffix.                       |
+| `sips -Z 200`         | Resizes the image so the largest dimension is 200px (preserving aspect ratio). |
+| `--out ...`           | Specifies the output path so we don't overwrite the original.                  |
+| `${1%.png}_200px.png` | A shell trick to strip the `.png` extension and append our new suffix.         |
 
 ## Why Sips?
 
