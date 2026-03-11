@@ -46,29 +46,19 @@ This composability is intentional. Unix pipes are still the best glue between to
 
 ## Getting ghat on your machine
 
-### Homebrew
-
-If you are on macOS or Linux with Homebrew, this is the fastest path. I maintain a custom [Homebrew tap](https://github.com/rlespinasse/homebrew-tap) that always points to the latest release:
+The quickest route on macOS or Linux is through my custom [Homebrew tap](https://github.com/rlespinasse/homebrew-tap). A single command gets you the latest release, and `brew upgrade` keeps it current from there:
 
 ```bash
 brew install rlespinasse/tap/ghat
 ```
 
-Homebrew handles updates for you too — a simple `brew upgrade` will pull in new versions as they ship. You can browse everything the tap offers with:
+You can browse everything the tap offers with `brew search rlespinasse/tap`.
 
-```bash
-brew search rlespinasse/tap
-```
-
-### From source with Go
-
-If you already have a Go toolchain set up, installing from source is a one-liner. This is handy if you want to pin a specific version or hack on the code yourself:
+If you already have a Go toolchain, installing from source works just as well — and it is handy when you want to pin a specific version or hack on the code yourself:
 
 ```bash
 go install github.com/rlespinasse/github-actions-toolbox@latest
 ```
-
-### Pre-built binaries
 
 For environments where neither Homebrew nor Go are available — CI runners, Docker images, Windows workstations — pre-built archives are published for **Linux**, **macOS**, and **Windows** across **amd64** and **arm64**. Grab the one that matches your platform from the [releases page](https://github.com/rlespinasse/github-actions-toolbox/releases) and drop the binary somewhere on your `PATH`.
 
