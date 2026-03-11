@@ -64,23 +64,17 @@ All content is preserved — nothing gets deleted, only reorganized or expanded.
 
 ## Getting started
 
-Installing the full agent-skills collection takes a single command:
+Installing the diataxis skill takes a single command:
 
 ```bash
-npx skills add rlespinasse/agent-skills
+npx skills add https://github.com/rlespinasse/agent-skills --skill diataxis
 ```
 
 Once installed, the diataxis skill is available in your next coding session.
 You can ask the AI assistant explicitly — for example, _"review this project's documentation using the diataxis framework"_ —
 or it will activate on its own when it detects documentation-related work in the session.
 
-If you use Claude Code, you can also install it as a plugin:
-
-```bash
-claude plugin add rlespinasse/agent-skills
-```
-
-Either way, the skill becomes part of the assistant's toolbox and is ready to use immediately.
+The skill becomes part of the assistant's toolbox and is ready to use immediately.
 
 ## Why this matters for contributors
 
@@ -109,7 +103,7 @@ Explore the repository, open an issue if something does not fit your workflow,
 or contribute a skill of your own.
 
 ```bash
-npx skills add rlespinasse/agent-skills
+npx skills add https://github.com/rlespinasse/agent-skills --skill diataxis
 ```
 
 The goal is straightforward: make AI coding assistants not just code-aware, but documentation-aware.
