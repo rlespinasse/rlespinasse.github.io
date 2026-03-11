@@ -12,7 +12,14 @@ categories:
 - Technical posts
 ---
 
-Over the years I have published and maintained a handful of GitHub Actions — [github-slug-action](https://github.com/rlespinasse/github-slug-action), [drawio-export-action](https://github.com/rlespinasse/drawio-export-action), [release-that](https://github.com/rlespinasse/release-that), and a few others. Once an action gets some traction, a recurring question pops up: **how many repositories actually depend on it?** GitHub surfaces that number on each repository page, but clicking through every project one by one gets old fast when you have half a dozen actions to keep an eye on.
+Over the years I have published and maintained a handful of GitHub Actions —
+[github-slug-action](https://github.com/rlespinasse/github-slug-action),
+[drawio-export-action](https://github.com/rlespinasse/drawio-export-action),
+[release-that](https://github.com/rlespinasse/release-that), and a few others.
+Once an action gets some traction, a recurring question pops up:
+**how many repositories actually depend on it?**
+GitHub surfaces that number on each repository page,
+but clicking through every project one by one gets old fast when you have half a dozen actions to keep an eye on.
 
 That itch led me to build [**github-actions-toolbox**](https://github.com/rlespinasse/github-actions-toolbox) — a small Go CLI called **`ghat`** designed to gather the kind of information an action maintainer regularly needs, without leaving the terminal.
 
@@ -66,7 +73,11 @@ For environments where neither Homebrew nor Go are available — CI runners, Doc
 
 The [**homebrew-tap**](https://github.com/rlespinasse/homebrew-tap) repository deserves a quick mention of its own. It is a standard custom Homebrew tap — a Git repository that Homebrew clones locally so it can discover cask and formula definitions beyond the core taps.
 
-Right now it hosts the cask for `ghat`, but the structure is ready to accommodate any future CLI tools I release. The whole release pipeline leans on [goreleaser](https://goreleaser.com/): when I tag a new version of `github-actions-toolbox`, goreleaser cross-compiles the binary, packages the archives, computes checksums, and pushes an updated cask definition to the tap repository. This means the Homebrew formula is always in sync with the latest release, with zero manual intervention on my side.
+Right now it hosts the cask for `ghat`, but the structure is ready to accommodate any future command-line tools I release.
+The whole release pipeline leans on [goreleaser](https://goreleaser.com/):
+when I tag a new version of `github-actions-toolbox`, goreleaser cross-compiles the binary,
+packages the archives, computes checksums, and pushes an updated cask definition to the tap repository.
+This means the Homebrew formula is always in sync with the latest release, with zero manual intervention on my side.
 
 If you maintain your own Go-based CLI and want a frictionless distribution story, I highly recommend pairing goreleaser with a personal Homebrew tap. The setup cost is low and the convenience for your users is significant.
 
