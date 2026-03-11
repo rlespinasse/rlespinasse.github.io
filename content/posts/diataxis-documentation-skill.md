@@ -14,7 +14,7 @@ categories:
 
 Good documentation does not happen by accident.
 When the focus is on shipping features, docs tend to drift —
-a README grows a few paragraphs here, a guide appears there,
+a readme grows a few paragraphs here, a guide appears there,
 and before long nobody is quite sure where things belong.
 AI coding assistants like Claude, GitHub Copilot, or Cursor are brilliant at writing code,
 but they do not inherently know how a project's documentation should be organized.
@@ -52,7 +52,7 @@ which means the same documentation discipline is available regardless of which A
 
 The skill follows a four-step process designed to be thorough without being disruptive:
 
-1. **Discover** — The skill scans the project for existing documentation files: Markdown pages, READMEs, wiki entries, and anything else that looks like prose meant for humans.
+1. **Discover** — The skill scans the project for existing documentation files: Markdown pages, readmes, wiki entries, and anything else that looks like prose meant for humans.
 2. **Classify** — Each document is assigned to one of the four Diataxis categories. Pages that blend multiple categories are flagged so they can be split or refocused.
 3. **Propose** — Based on the classification, the skill suggests a restructured documentation layout. It identifies gaps — maybe there are plenty of how-to guides but no tutorials — and recommends new pages to fill them.
 4. **Execute** — With the contributor's explicit approval, the skill carries out the restructuring: creating, moving, or rewriting pages as needed.
@@ -82,7 +82,7 @@ Whether a contributor is a human opening a pull request or an AI assistant gener
 the diataxis skill provides the same guardrails.
 
 During a typical session, documentation changes happen alongside code changes.
-A new feature needs a how-to guide, a refactor invalidates part of the reference, a bug fix reveals a gap in the tutorials.
+A new feature needs a how-to guide, a refactor invalidates part of the reference, a bugfix reveals a gap in the tutorials.
 Without a framework, these changes are ad hoc — the contributor writes something, hopes it lands in the right place, and moves on.
 With the diataxis skill active, the assistant knows where each piece of documentation belongs and can suggest the right location and format before the change is even committed.
 
