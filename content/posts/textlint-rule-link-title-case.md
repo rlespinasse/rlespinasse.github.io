@@ -84,7 +84,7 @@ The rule works out of the box with sensible defaults, but it exposes a few optio
 }
 ```
 
-**Auto-fixing.** Run textlint with the `--fix` flag and the rule will correct every violation it finds. For a list with hundreds of links, this turns a tedious manual pass into a single command.
+**Autofixing.** Run textlint with the `--fix` flag and the rule will correct every violation it finds. For a list with hundreds of links, this turns a tedious manual pass into a single command.
 
 ## How it fits into awesome-actions
 
@@ -133,7 +133,7 @@ npx textlint --fix "**/*.md"
 
 ## What comes next
 
-The rule covers the core use case — AP Style title case on links — and the auto-fix capability makes adoption painless even on large existing documents.
+The rule covers the core use case — AP Style title case on links — and the autofix capability makes adoption painless even on large existing documents.
 Future improvements could include support for additional title case styles or smarter handling of edge cases like acronyms and hyphenated compounds.
 
 If you maintain a curated list, a documentation site, or any project where link text should look polished and consistent, give [textlint-rule-link-title-case](https://github.com/rlespinasse/textlint-rule-link-title-case) a try.
