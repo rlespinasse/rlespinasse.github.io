@@ -51,6 +51,14 @@ The fork under actions-able picks up where the original left off. It keeps the s
 
 If you maintain a GitHub Action and want it listed, or if you spot a broken link, pull requests are welcome. The list is licensed under CC0, so you can use and share it freely.
 
+## Outside-organisation repositories
+
+Not every action maintained by the team lives under the actions-able namespace.
+Some repositories — like [github-slug-action](https://github.com/rlespinasse/github-slug-action) and [drawio-export-action](https://github.com/rlespinasse/drawio-export-action) — stay under their original owner's account.
+Moving them would change the action path and break every workflow that references them.
+Rather than force that migration on users, these actions are maintained as part of the actions-able effort while keeping their existing namespace intact.
+They are listed in the [organisation readme](https://github.com/actions-able) so you can discover them alongside the rest of the collection.
+
 ## Getting involved
 
 The organisation participates in [Hacktoberfest](https://hacktoberfest.com/) each year, so October is a particularly good time to send your first contribution. But contributions are welcome year-round — whether that is a bug report, a documentation improvement, or a brand-new action idea.
