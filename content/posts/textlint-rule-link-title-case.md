@@ -2,7 +2,7 @@
 title: "Consistent Link Titles at Scale: A Textlint Rule for Title Case"
 date: 2026-03-12T10:00:00+01:00
 draft: false
-summary: "Curated lists live or die by consistency. The textlint-rule-link-title-case rule enforces AP Style title case on every link in your Markdown files, catching what human reviewers miss and auto-fixing what they would rather not fix by hand."
+summary: "The awesome-actions curated list already required AP Style title case for links — but enforcing it was manual. The textlint-rule-link-title-case rule automates that existing convention, catching what human reviewers miss and fixing what they would rather not fix by hand."
 tags:
 - opensource
 - github
@@ -13,11 +13,14 @@ categories:
 
 Curated lists are deceptively hard to maintain.
 The content itself is straightforward — a link, a short description, maybe a category header — but once dozens of contributors start opening pull requests, small inconsistencies pile up.
-One PR capitalizes every word in a link title, another lowercases prepositions that should stay capitalized, and a third uses sentence case where title case is expected.
-Multiply that by hundreds of entries and the list starts looking like it was assembled by a committee that never talked to each other.
 
-That is exactly the situation I ran into while maintaining [**awesome-actions**](https://github.com/actions-able/awesome-actions), a curated directory of GitHub Actions resources.
-The fix was not more careful reviewing — it was automation.
+The original [awesome-actions](https://github.com/sdras/awesome-actions) repository already required AP Style title case for link text.
+That convention kept things readable, but enforcing it relied entirely on human reviewers catching mistakes during pull request reviews.
+One PR capitalizes every word, another lowercases prepositions that should stay capitalized, and a third uses sentence case where title case is expected.
+Multiply that by hundreds of entries and the review burden becomes unsustainable.
+
+When I forked the project into [**awesome-actions**](https://github.com/actions-able/awesome-actions) under the actions-able organization, I wanted to keep the same convention but remove the manual effort.
+The goal was clear: automate the AP Style title case check that was already part of the contribution guidelines.
 
 ## The gap in existing tooling
 
@@ -27,7 +30,7 @@ But when I looked for a rule that checks title case on **link text** — the vis
 
 Heading title case and link title case follow the same capitalization logic, but they apply to completely different Markdown nodes.
 A heading rule will never flag `[some link text](https://example.com)` no matter how badly it is capitalized.
-I needed something purpose-built.
+The existing convention from sdras/awesome-actions was solid — it just needed a tool to enforce it automatically.
 
 ## Introducing textlint-rule-link-title-case
 
@@ -40,9 +43,9 @@ It enforces AP Style title case on three kinds of Markdown links:
 
 Both the visible link text and the optional title attribute are checked by default.
 
-## What AP Style title case looks like
+## What the rule checks
 
-The rule follows the standard AP capitalization conventions:
+The rule follows the AP Style capitalization conventions that were already expected in the original repository:
 
 - Capitalize the first and last words, always.
 - Capitalize all words of four letters or more.
@@ -98,7 +101,8 @@ Three dedicated linting tasks run in parallel, each targeting a different concer
 These same tasks run in the GitHub Actions workflow on every pull request.
 When a contributor submits a new entry with inconsistent capitalization, the CI pipeline catches it immediately and the contributor can run `just fix` locally to apply corrections before pushing again.
 
-This setup means maintainers no longer need to leave review comments about capitalization.
+This setup turns a convention that used to depend on reviewer discipline into a guarantee.
+Maintainers no longer need to leave review comments about capitalization.
 The linter handles the mechanical checks so that human reviewers can focus on whether the linked project is a good fit for the list and whether the description is accurate.
 
 ## Getting started
