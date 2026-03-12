@@ -15,7 +15,7 @@ Over the past few years I have built and maintained several GitHub Actions under
 [github-slug-action](https://github.com/rlespinasse/github-slug-action),
 [drawio-export-action](https://github.com/rlespinasse/drawio-export-action),
 and others.
-Those actions remain under my personal namespace to avoid breaking existing user workflows — changing the repository path would force every consumer to update their workflow files. They are, however, still actively maintained and listed in the organisation's README.
+Those actions remain under my personal namespace to avoid breaking existing user workflows — changing the repository path would force every consumer to update their workflow files. They are, however, still actively maintained and listed in the organisation's readme.
 
 With that in mind, [**actions-able**](https://github.com/actions-able) was created as a GitHub organisation for *new* GitHub Actions tooling and community resources that can live under a shared, organisation-level namespace from the start.
 
@@ -39,11 +39,13 @@ A typical use case is templating configuration files before deployment. Imagine 
 
 The action supports processing multiple files at once using glob patterns, and it lets you configure a working directory and output suffix when you need more control. It runs on Alpine Linux, keeping the image lightweight and fast to pull.
 
-The current release is **v1.2.0**. You can find full documentation and examples in the [repository README](https://github.com/actions-able/envsubst-action#readme).
+The current release is **v1.2.0**. You can find full documentation and examples in the [repository readme](https://github.com/actions-able/envsubst-action#readme).
 
 ## awesome-actions
 
-The second project is [**awesome-actions**](https://github.com/actions-able/awesome-actions), a maintained fork of the well-known [sdras/awesome-actions](https://github.com/sdras/awesome-actions) list. The original repository was a go-to resource for discovering GitHub Actions across every category imaginable — from CI/CD and testing to deployment and security scanning. Over time, maintenance slowed down and many entries became outdated or pointed to archived repositories.
+The second project is [**awesome-actions**](https://github.com/actions-able/awesome-actions), a maintained fork of the well-known [sdras/awesome-actions](https://github.com/sdras/awesome-actions) list.
+The original repository was a go-to resource for discovering GitHub Actions across every category imaginable — from CI/CD and testing to deployment and security scanning.
+Over time, maintenance slowed down and many entries became outdated or pointed to archived repositories.
 
 The fork under actions-able picks up where the original left off. It keeps the same comprehensive structure — official actions, community actions organised by language and purpose, deployment targets, and more — while actively reviewing and updating entries. Archived and deleted repositories are tracked transparently so you know exactly what is still alive.
 
