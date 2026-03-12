@@ -15,8 +15,9 @@ Over the past few years I have built and maintained several GitHub Actions under
 [github-slug-action](https://github.com/rlespinasse/github-slug-action),
 [drawio-export-action](https://github.com/rlespinasse/drawio-export-action),
 and others.
-As the collection grew, it became clear that some of these projects would benefit from shared ownership and a home that is not tied to a single person.
-That reasoning led to the creation of [**actions-able**](https://github.com/actions-able), a GitHub organisation dedicated to GitHub Actions tooling.
+Those actions remain under my personal namespace to avoid breaking existing user workflows — changing the repository path would force every consumer to update their workflow files. They are, however, still actively maintained and listed in the organisation's README.
+
+With that in mind, [**actions-able**](https://github.com/actions-able) was created as a GitHub organisation for *new* GitHub Actions tooling and community resources that can live under a shared, organisation-level namespace from the start.
 
 The name is a small play on words — actions that are *able*, ready to use. The organisation is maintained together with [@fhgbaguidi](https://github.com/fhgbaguidi) and is open to contributions from anyone.
 
