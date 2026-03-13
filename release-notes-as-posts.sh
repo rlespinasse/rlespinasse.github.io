@@ -48,3 +48,5 @@ release-notes-as-posts textlint-rule-link-title-case
 release-notes-as-posts wints '2024' # Before 2024, the release was not created at the same time as the tag
 release-notes-as-posts github-actions-toolbox
 release-notes-as-posts agent-skills
+release-notes-as-posts bassin-minier-unesco
+release-notes-as-posts leaflet-atlas
