@@ -1,6 +1,6 @@
 ---
 title: "Consistent Link Titles at Scale: A Textlint Rule for Title Case"
-date: 2026-03-12T10:00:00+01:00
+date: 2026-03-13T10:00:00+01:00
 draft: false
 summary: "The awesome-actions curated list already required AP Style title case for links — but enforcing it was manual. The textlint-rule-link-title-case rule automates that existing convention, catching what human reviewers miss and fixing what they would rather not fix by hand."
 tags:
