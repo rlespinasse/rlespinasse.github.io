@@ -11,15 +11,16 @@ categories:
 - Tips & Tricks
 ---
 
-If you often need to resize dozens of images tucked away in various subdirectories. 
+If you often need to resize dozens of images tucked away in various subdirectories.
 While apps like Photoshop or Lightroom are powerful, they are overkill for a simple task: **resizing all `png` files to a maximum of 200px.**
 
-Forget installing heavy dependencies like ImageMagick. 
+Forget installing heavy dependencies like ImageMagick.
 macOS comes with a built-in "secret weapon" called **Sips** (Scriptable Image Processing System).
 
 ### The Scenario
 
 You have a project structure like this:
+
 - `/assets/products/category-a/item1.png`
 - `/assets/products/category-b/item2.png`
 
@@ -47,7 +48,7 @@ To understand what's happening under the hood, let's look at the components:
 
 ## Why Sips?
 
-Sips is remarkably fast because it is optimized for the macOS file system and hardware. 
+Sips is remarkably fast because it is optimized for the macOS file system and hardware.
 Unlike other tools, it:
 
 1. **Respects Color Profiles:** It uses Apple's ColorSync technology.
@@ -57,6 +58,7 @@ Unlike other tools, it:
 3. **Smart Scaling:** Using the `-Z` flag ensures your images never look "stretched" as it maintains the original proportions.
 
 > **Pro Tip:** If you want to overwrite the original files instead of creating new ones, simply use:
+>
 > ```
 > find . -name "*.png" -exec sips -Z 200 {} \;
 > ```

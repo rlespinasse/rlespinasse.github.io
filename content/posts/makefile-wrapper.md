@@ -17,13 +17,13 @@ In makefile, you can define tasks and run them individually
 
 ```Makefile
 run-task1:
-	@echo "run task 1"
+ @echo "run task 1"
 
 run-task2:
-	@echo "run task 2"
+ @echo "run task 2"
 
 run-task3:
-	@echo "run task 3"
+ @echo "run task 3"
 ```
 
 When you want to run tasks from another tasks (e.g. `make run-all-tasks`), you can
@@ -38,9 +38,9 @@ run-all-tasks: run-task1 run-task2 run-task3
 
 ```Makefile
 run-all-tasks:
-	@$(MAKE) run-task1
-	@$(MAKE) run-task2
-	@$(MAKE) run-task3
+ @$(MAKE) run-task1
+ @$(MAKE) run-task2
+ @$(MAKE) run-task3
 ```
 
 You can also create a `wrapper` task to run all tasks with a specific naming.
@@ -52,9 +52,9 @@ You can also create a `wrapper` task to run all tasks with a specific naming.
 include makefile-with-run-tasks.mk
 
 run-all-tasks:
-	@grep -E '^[\.a-zA-Z0-9_%-]+:.*$$' $(MAKEFILE_LIST) \
-		| cut -d ":" -f2 | grep "^run-task" | sort -u \
-		| xargs $(MAKE)
+ @grep -E '^[\.a-zA-Z0-9_%-]+:.*$$' $(MAKEFILE_LIST) \
+  | cut -d ":" -f2 | grep "^run-task" | sort -u \
+  | xargs $(MAKE)
 ```
 
 So when you run it, the `run-all-tasks` task will run all `run-task` tasks.

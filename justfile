@@ -10,6 +10,16 @@ default:
 serve:
 	hugo server -D
 
+# Lint blog posts
+[group('Development mode')]
+lint:
+	npx markdownlint-cli2
+
+# Lint and fix blog posts
+[group('Development mode')]
+lint-fix:
+	npx markdownlint-cli2 --fix
+
 # Generate site for production
 [group('Production mode')]
 generate-site:
