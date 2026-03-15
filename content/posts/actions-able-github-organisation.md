@@ -9,6 +9,7 @@ tags:
 - ci/cd
 categories:
 - Technical posts
+- Open Source
 ---
 
 Over the past few years I have built and maintained several GitHub Actions under my personal account —

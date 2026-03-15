@@ -11,6 +11,8 @@ tags:
 - french
 categories:
 - Technical posts
+- Open Source
+- Geospatial
 ---
 
 Le [Bassin Minier du Nord-Pas de Calais](https://whc.unesco.org/fr/list/1360/) est l'un des plus grands sites du patrimoine mondial de l'UNESCO en France.

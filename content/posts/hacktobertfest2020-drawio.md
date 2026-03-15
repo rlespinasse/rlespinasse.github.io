@@ -10,6 +10,7 @@ tags:
 - maintainer
 categories:
 - Technical posts
+- Open Source
 ---
 
 > This post have been published first on [dev.to](https://dev.to/rlespinasse/hacktoberfest-2020-maintainer-of-drawio-cli-and-drawio-export-1018).

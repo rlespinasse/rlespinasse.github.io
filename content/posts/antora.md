@@ -13,6 +13,7 @@ tags:
 - documentation
 categories:
 - Technical posts
+- Documentation
 ---
 
 > Hi, the english version of this article can be read [on this site](/posts/antora-en/)

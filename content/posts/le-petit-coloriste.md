@@ -10,6 +10,7 @@ tags:
 - french
 categories:
 - Technical posts
+- Open Source
 ---
 
 Mes jumeaux ont 5 ans, et ils adorent colorier.

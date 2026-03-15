@@ -12,6 +12,7 @@ tags:
 - documentation
 categories:
 - Technical posts
+- Documentation
 ---
 
 > Bonjour, la version française de cet article peut être lue [sur ce site](/posts/antora/)

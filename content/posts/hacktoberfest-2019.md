@@ -4,11 +4,12 @@ date: 2019-09-30T10:42:00+02:00
 draft: false
 showToC: false
 summary: Report on my Hacktoberfest 2019 journey.
-tags: 
+tags:
 - hacktoberfest
 - opensource
 categories:
 - Technical posts
+- Open Source
 ---
 
 ![Hacktoberfest 2019](/img/posts/hacktoberfest-2019/banner.png)

@@ -10,6 +10,8 @@ tags:
 - ai
 categories:
 - Technical posts
+- Open Source
+- Documentation
 ---
 
 Good documentation does not happen by accident.

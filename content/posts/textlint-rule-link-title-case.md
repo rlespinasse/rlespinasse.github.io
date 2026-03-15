@@ -9,6 +9,7 @@ tags:
 - textlint
 categories:
 - Technical posts
+- Open Source
 ---
 
 Curated lists are deceptively hard to maintain.

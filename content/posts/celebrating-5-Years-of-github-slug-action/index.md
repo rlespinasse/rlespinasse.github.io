@@ -11,6 +11,7 @@ tags:
 - sfeir.dev
 categories:
 - Technical posts
+- Open Source
 ---
 
 I'm thrilled to announce the publication of a special article on [sfeir.dev](https://sfeir.dev) to celebrate the 5th anniversary of the github-slug-action project. This milestone marks five years of continuous development, community contributions, and countless improvements that have made **github-slug-action** an useful tool for your project.

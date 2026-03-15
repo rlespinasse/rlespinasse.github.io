@@ -11,6 +11,7 @@ tags:
 - opensource
 categories:
 - Technical posts
+- Open Source
 ---
 
 I brought a domain name `romainlespinasse.dev`, so naturally I search to build a website, a small one.

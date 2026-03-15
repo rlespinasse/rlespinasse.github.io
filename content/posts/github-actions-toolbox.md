@@ -10,6 +10,7 @@ tags:
 - homebrew
 categories:
 - Technical posts
+- Open Source
 ---
 
 Over the years I have published and maintained a handful of GitHub Actions —

@@ -10,6 +10,8 @@ tags:
 - geospatial
 categories:
 - Technical posts
+- Open Source
+- Geospatial
 ---
 
 It started with a territory, not a library.

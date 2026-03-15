@@ -9,6 +9,7 @@ tags:
 - ai
 categories:
 - Technical posts
+- Open Source
 ---
 
 AI coding assistants are remarkably good at writing code.
