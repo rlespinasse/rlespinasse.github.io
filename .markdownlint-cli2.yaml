@@ -1,0 +1,20 @@
+config:
+  # Some older posts skip heading levels (h1 -> h3)
+  MD001: false
+  # Prose uses one-sentence-per-line style
+  MD013: false
+  # Hugo frontmatter uses --- delimiters
+  MD025:
+    front_matter_title: ""
+  # Inline HTML is used in some posts (meta, script, small)
+  MD033: false
+  # Some code blocks use plain text without a language
+  MD040: false
+  # Sfeirdev redirect posts use "click here" links by design
+  MD059: false
+
+# Only lint content posts, excluding auto-generated release notes
+globs:
+  - "content/posts/**/*.md"
+ignores:
+  - "content/posts/release-*"

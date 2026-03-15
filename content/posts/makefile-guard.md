@@ -17,17 +17,17 @@ You can `guard` it
 
 ```Makefile
 task-who-need-SPECIFIC_ENVVAR: guard-SPECIFIC_ENVVAR
-	@echo ${SPECIFIC_ENVVAR}
+ @echo ${SPECIFIC_ENVVAR}
 ```
 
 You only need to add the following task
 
 ```Makefile
 guard-%:
-	@ if [ "${${*}}" = "" ]; then \
-		echo "Environment variable $* not set"; \
-		exit 1; \
-	fi
+ @ if [ "${${*}}" = "" ]; then \
+  echo "Environment variable $* not set"; \
+  exit 1; \
+ fi
 ```
 
 So when you run it, the `guard` will prevent to run the task

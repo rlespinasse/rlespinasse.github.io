@@ -12,13 +12,13 @@ categories:
 - Tips & Tricks
 ---
 
-If you’ve been maintaining a project since 2019 and have reached a milestone like **v5.x**, you might wonder if that "2019" in your `LICENSE` file makes your project look abandoned. 
+If you’ve been maintaining a project since 2019 and have reached a milestone like **v5.x**, you might wonder if that "2019" in your `LICENSE` file makes your project look abandoned.
 
 Here is a quick guide on how to handle license dates effectively without overthinking it.
 
 ## The "First Publication" Rule
 
-In an MIT or Apache license, the year (e.g., `Copyright (c) 2019`) marks the **year of first publication**. 
+In an MIT or Apache license, the year (e.g., `Copyright (c) 2019`) marks the **year of first publication**.
 It isn't an expiration date. However, as your project evolves through major versions, your code changes significantly.
 
 ### Using the Copyright Range
@@ -31,7 +31,7 @@ Instead of choosing between the start year and the current year, the professiona
 
 ## When to Update (The SemVer Strategy)
 
-If you follow **Semantic Versioning**, you don't need to touch the license for every patch. 
+If you follow **Semantic Versioning**, you don't need to touch the license for every patch.
 
 | Version Type | Update License? | Reason |
 | :--- | :--- | :--- |
