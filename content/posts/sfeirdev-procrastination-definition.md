@@ -2,6 +2,9 @@
 title: "Procrastination : Définition (sfeir.dev)"
 date: 2025-03-25T10:29:00+02:00
 layout: "redirect"
+tags:
+- french
+- humour
 categories:
 - Technical posts
 - Sfeir.dev

@@ -2,6 +2,9 @@
 title: "Comment se protéger des blagues de ses collègues le 1er avril ? (sfeir.dev)"
 date: 2025-04-01T09:33:00+01:00
 layout: "redirect"
+tags:
+- french
+- humour
 categories:
 - Technical posts
 - Sfeir.dev

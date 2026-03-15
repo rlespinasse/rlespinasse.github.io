@@ -2,6 +2,9 @@
 title: "Canard en plastique : Définition (sfeir.dev)"
 date: 2024-11-14T16:16:00+02:00
 layout: "redirect"
+tags:
+- french
+- humour
 categories:
 - Technical posts
 - Sfeir.dev

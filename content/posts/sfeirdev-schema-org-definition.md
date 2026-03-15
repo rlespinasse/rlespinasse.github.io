@@ -2,6 +2,9 @@
 title: "Schema.org : Définition (sfeir.dev)"
 date: 2024-11-21T15:38:00+02:00
 layout: "redirect"
+tags:
+- french
+- documentation
 categories:
 - Technical posts
 - Sfeir.dev

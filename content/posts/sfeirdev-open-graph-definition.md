@@ -2,6 +2,9 @@
 title: "Open Graph : Définition (sfeir.dev)"
 date: 2024-11-21T14:43:00+02:00
 layout: "redirect"
+tags:
+- french
+- documentation
 categories:
 - Technical posts
 - Sfeir.dev

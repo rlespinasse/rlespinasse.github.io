@@ -2,6 +2,9 @@
 title: "Rickroll : Définition (sfeir.dev)"
 date: 2025-04-01T09:34:00+01:00
 layout: "redirect"
+tags:
+- french
+- humour
 categories:
 - Technical posts
 - Sfeir.dev
