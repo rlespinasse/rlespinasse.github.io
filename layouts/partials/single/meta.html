@@ -1,0 +1,42 @@
+{{ $showDate := .Params.showDate | default (.Site.Params.article.showDate | default true) }}
+{{ $showModDate := .Params.showModDate | default (.Site.Params.article.showModDate | default false) }}
+{{ $showReadingTime := .Params.showReadingTime | default (.Site.Params.article.showReadingTime | default true) }}
+
+<p>
+{{/* Date Reading time and Draft label */}}
+{{ if $showDate }}
+  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+  {{ $dateHuman := .Date | time.Format "Jan 2, 2006" }}
+  <span class="meta-icon">{{ partial "icon.html" "calender" }}</span>
+  Posted on <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+  {{ $dateModMachine := .Lastmod | time.Format "2006-01-02T15:04:05-07:00" }}
+  {{ $dateModHuman := .Lastmod | time.Format "Jan 2, 2006" }}
+  {{ if and $showModDate (ne $dateModHuman $dateHuman) }}
+    <span class="meta-icon">{{ partial "icon.html" "pencil" }}</span>
+    Last edited <time datetime="{{ $dateModMachine }}">{{ $dateModHuman }}</time>
+  {{ end }}
+{{ end }}
+{{ if $showReadingTime }}
+  <span class="meta-icon">{{ partial "icon.html" "time" }}</span>
+  {{ if gt .ReadingTime 1 }}
+    {{ printf "%s mins" (.ReadingTime | markdownify) }}
+  {{ else }}
+    {{ printf "%s min" (.ReadingTime | markdownify) }}
+  {{ end }}
+{{ end}}
+{{/* Language badge */}}
+{{ $isFrench := false }}
+{{ with .Params.tags }}
+  {{ range . }}
+    {{ if eq (. | urlize) "french" }}{{ $isFrench = true }}{{ end }}
+  {{ end }}
+{{ end }}
+{{ if $isFrench }}
+  <span class="lang-badge lang-fr">FR</span>
+{{ else }}
+  <span class="lang-badge lang-en">EN</span>
+{{ end }}
+{{ if .Draft }}
+  <span class="draft-lbl"><span class="meta-icon">{{ partial "icon.html" "edit" }}</span>DRAFT</span>
+{{ end }}
+</p>
