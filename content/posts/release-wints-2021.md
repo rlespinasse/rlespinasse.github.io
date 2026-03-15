@@ -8,7 +8,6 @@ draft: false
 tags:
 - opensource
 - github
-- release
 categories:
 - Changelog posts
 ---

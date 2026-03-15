@@ -4,9 +4,9 @@ date: 2026-02-20T20:30:00+01:00
 draft: false
 summary: "Learn how to use the native macOS sips utility to batch resize images across multiple subdirectories."
 tags:
-- macOS
-- Terminal
-- Sips
+- macos
+- terminal
+- sips
 categories:
 - Tips & Tricks
 ---

@@ -6,9 +6,10 @@ showToC: false
 summary: Discover Antora as your next documentation site.
 images: 
 - /img/posts/antora/featured.jpg
-tags: 
+tags:
 - antora
 - asciidoctor
+- documentation
 categories:
 - Technical posts
 ---

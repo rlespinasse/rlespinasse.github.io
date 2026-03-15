@@ -4,11 +4,11 @@ date: 2026-03-12T10:00:00+01:00
 draft: false
 summary: "Introducing actions-able, a GitHub organisation dedicated to building and curating GitHub Actions. Meet envsubst-action for environment variable substitution and awesome-actions, a maintained curated list of GitHub Actions resources."
 tags:
-  - opensource
-  - github
-  - ci/cd
+- opensource
+- github
+- ci/cd
 categories:
-  - Technical posts
+- Technical posts
 ---
 
 Over the past few years I have built and maintained several GitHub Actions under my personal account —

@@ -4,12 +4,12 @@ date: 2020-11-01T10:42:00+02:00
 draft: false
 showToC: false
 summary: Report on the Hacktoberfest 2020 for drawio-releated projects.
-tags: 
-  - hacktoberfest
-  - opensource
-  - maintainer
+tags:
+- hacktoberfest
+- opensource
+- maintainer
 categories:
-  - Technical posts
+- Technical posts
 ---
 
 > This post have been published first on [dev.to](https://dev.to/rlespinasse/hacktoberfest-2020-maintainer-of-drawio-cli-and-drawio-export-1018).

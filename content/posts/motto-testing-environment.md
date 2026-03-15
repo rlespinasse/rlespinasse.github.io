@@ -4,11 +4,10 @@ date: 2020-09-20T10:42:00+02:00
 draft: false
 showToC: false
 summary: Some people are lucky enough enough to have a totally separate environment to run production in.
-tags: 
-  - quote
-  - motto
+tags:
+- motto
 categories:
-  - Technical posts
+- Technical posts
 ---
 
 > This post have been published first on [dev.to](https://dev.to/rlespinasse/everybody-has-a-testing-environment-7p).

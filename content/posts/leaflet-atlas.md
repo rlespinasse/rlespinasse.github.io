@@ -4,12 +4,12 @@ date: 2026-03-14T10:00:00+01:00
 draft: false
 summary: "Building interactive maps from GeoJSON files usually means writing the same Leaflet boilerplate over and over. Leaflet Atlas turns a JSON configuration and a folder of GeoJSON files into a full-featured map application — with layer filtering, smart polygon click-through, and auto-generated tile thumbnails."
 tags:
-  - opensource
-  - github
-  - leaflet
-  - geospatial
+- opensource
+- github
+- leaflet
+- geospatial
 categories:
-  - Technical posts
+- Technical posts
 ---
 
 It started with a territory, not a library.

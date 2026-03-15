@@ -5,10 +5,9 @@ draft: false
 showToC: false
 summary: Explore Makefile nice features to ease your developer life.
 tags:
-  - makefile
-  - tips
+- makefile
 categories:
-  - Technical posts
+- Tips & Tricks
 ---
 
 When you use a variable in a Makefile task and you want to make it mandatory and check it before run the effective task,

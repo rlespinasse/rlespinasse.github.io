@@ -4,11 +4,12 @@ date: 2026-03-15T11:00:00+01:00
 draft: false
 summary: "Mes jumeaux de 5 ans veulent des dessins à colorier en permanence — et il en faut toujours deux exemplaires identiques. Comme mes talents de dessin s'arrêtent au bonhomme bâton, j'ai itéré avec l'IA jusqu'à trouver le bon workflow : une Gem Gemini qui génère des pages de coloriage sur demande."
 tags:
-  - ai
-  - google-gemini
-  - opensource
+- ai
+- google-gemini
+- opensource
+- french
 categories:
-  - Technical posts
+- Technical posts
 ---
 
 Mes jumeaux ont 5 ans, et ils adorent colorier.

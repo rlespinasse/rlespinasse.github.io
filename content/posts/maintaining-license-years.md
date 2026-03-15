@@ -4,10 +4,10 @@ date: 2026-02-20T20:45:00+01:00
 draft: false
 summary: "Running a project from v1.0 to v5.x? Learn when and why you should update the copyright year in your MIT license to keep your project looking professional and legally sound."
 tags:
-- Open Source
-- Licensing
-- Maintenance
-- SemVer
+- opensource
+- licensing
+- maintenance
+- semver
 categories:
 - Tips & Tricks
 ---

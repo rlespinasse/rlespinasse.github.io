@@ -8,6 +8,7 @@ tags:
 - hugo
 - staticsite
 - github
+- opensource
 categories:
 - Technical posts
 ---

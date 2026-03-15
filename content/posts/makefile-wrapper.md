@@ -5,10 +5,9 @@ draft: false
 showToC: false
 summary: Explore Makefile nice features to ease your developer life.
 tags:
-  - makefile
-  - tips
+- makefile
 categories:
-  - Technical posts
+- Tips & Tricks
 ---
 
 In makefile, you can define tasks and run them individually

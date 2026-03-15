@@ -4,9 +4,9 @@ date: 2026-02-04T10:37:36+01:00
 draft: false
 summary: "GitHub Actions referenced by tag can be silently replaced. Pinning to full commit SHAs protects your CI/CD pipeline from supply chain attacks — and with GitHub's new organisation-level policy enforcement, it is becoming a requirement rather than a recommendation."
 tags:
-  - github
-  - ci/cd
-  - security
+- github
+- ci/cd
+- security
 categories:
   - Tips & Tricks
 ---

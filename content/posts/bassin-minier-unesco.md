@@ -4,11 +4,13 @@ date: 2026-03-15T12:00:00+01:00
 draft: false
 summary: "Le bassin minier du Nord-Pas de Calais est un site du patrimoine mondial de l'UNESCO couvrant plus de 100 000 hectares. Bassin Minier UNESCO est une carte interactive qui rassemble les données patrimoniales, les limites administratives et les informations géographiques ouvertes dans une seule application navigable."
 tags:
-  - opensource
-  - geospatial
-  - leaflet
+- opensource
+- github
+- geospatial
+- leaflet
+- french
 categories:
-  - Technical posts
+- Technical posts
 ---
 
 Le [Bassin Minier du Nord-Pas de Calais](https://whc.unesco.org/fr/list/1360/) est l'un des plus grands sites du patrimoine mondial de l'UNESCO en France.
