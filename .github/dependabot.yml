@@ -8,4 +8,11 @@ updates:
       dependencies:
         patterns:
           - '*'
-    labels: []
+  - package-ecosystem: 'gitsubmodule'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    groups:
+      dependencies:
+        patterns:
+          - '*'
