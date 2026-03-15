@@ -49,7 +49,7 @@ That changed when GitHub introduced an [organisation-level policy](https://githu
 
 When this policy is enabled, any workflow that references an action by tag — `@v4`, `@main`, or any other mutable reference — will fail with an error:
 
-```
+```text
 Error: The actions example/some-action@v1 are not allowed in your-org/your-repo
 because all actions must be pinned to a full-length commit SHA.
 ```
@@ -65,7 +65,7 @@ This is exactly what happened with [github-slug-action](https://github.com/rlesp
 The action internally references two sub-actions — `rlespinasse/slugify-value` and `rlespinasse/shortify-git-revision` — that were pinned by tag.
 Users who enabled the SHA pinning policy in their organisation started seeing failures ([#174](https://github.com/rlespinasse/github-slug-action/issues/174)):
 
-```
+```text
 Error: The actions rlespinasse/slugify-value@v1.4.0 and
 rlespinasse/shortify-git-revision@v1.6.0 are not allowed in your-org/your-repo
 because all actions must be pinned to a full-length commit SHA.
