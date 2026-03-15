@@ -25,7 +25,7 @@ When an AI assistant writes a vague commit message, it creates the same maintena
 [Conventional Commits](https://www.conventionalcommits.org/) is a lightweight convention for structuring commit messages.
 Every message follows a predictable format:
 
-```
+```text
 <type>[optional scope]: <description>
 
 [optional body]
@@ -69,7 +69,7 @@ The conventional-commit skill includes seven evaluation scenarios that test the 
 - Breaking changes that need a footer
 - Changes that affect documentation alongside code
 - Refactoring where no external behavior changes
-- Bug fixes with issue references
+- Bugfixes with issue references
 - Complex scenarios mixing multiple concerns
 
 Each scenario provides a set of staged changes and checks whether the resulting commit message follows the specification correctly.
