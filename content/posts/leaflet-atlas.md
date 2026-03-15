@@ -65,7 +65,7 @@ The layers drawer includes a searchable filter bar with keyboard shortcut suppor
 
 ### Security
 
-XSS prevention is built in from the start.
+XSS prevention is built-in from the start.
 User-provided content in popups and external URLs is sanitized before rendering — a lesson learned firsthand when reviewing BRGM data URLs in the Bassin Minier project.
 
 ## Getting started
@@ -116,7 +116,7 @@ Now I am building a second map for the [Parc naturel régional du Morvan](https:
 
 Each new map surfaces new requirements.
 The Morvan project is already revealing features that the Bassin Minier map did not need, and exposing edge cases that only appear with different data shapes.
-Those discoveries flow back into Leaflet Atlas as new features and bug fixes, which in turn benefit every map that depends on the library.
+Those discoveries flow back into Leaflet Atlas as new features and bugfixes, which in turn benefit every map that depends on the library.
 
 At the same time, the industrialization of the npm package — proper versioning, CI/CD, documentation, CDN distribution — makes each subsequent map project faster to bootstrap.
 What took days of custom code for the first map takes minutes of configuration for the next one.
