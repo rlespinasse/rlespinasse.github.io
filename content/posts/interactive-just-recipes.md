@@ -51,12 +51,11 @@ This allows you to add colors or change the layout without touching your `justfi
 export JUST_CHOOSER='fzf --header "⚡ Select Task" --height 40% --layout reverse --border'
 ```
 
-## Why this is better:
+## Why this is better
 
 1. **Zero Boilerplate:** You don't need to pollute your `justfile` with a "menu" recipe.
 2. **Clean Output:** It respects docstrings and ignores internal recipes (those starting with an underscore).
 3. **Speed:** It’s a single binary call rather than a chain of piped commands.
-
 
 ## The "One-Touch" Justfile
 
