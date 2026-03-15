@@ -51,7 +51,7 @@ The karpathy-guidelines skill is different — it is a meta-skill.
 It does not perform a specific task. It constrains *how* the assistant approaches any task.
 This means it complements task-specific skills without conflict.
 
-The skill is honest about its tradeoff: these guidelines bias toward caution over speed.
+The skill is honest about its trade-off: these guidelines bias toward caution over speed.
 For trivial tasks, you may want the assistant to just act. For anything non-trivial, the added discipline pays for itself in smaller diffs and fewer surprises.
 
 ## What I have observed in practice
@@ -97,7 +97,7 @@ The guidelines then apply for the rest of the session — during coding, reviewi
 ## A useful default
 
 If you use an AI coding assistant regularly, the karpathy-guidelines skill is a sensible default for non-trivial work.
-It addresses the most common friction points — over-engineering, unsolicited refactoring, hidden assumptions — without limiting what the assistant can do.
+It addresses the most common friction points — overengineering, unsolicited refactoring, hidden assumptions — without limiting what the assistant can do.
 
 Credit to [forrestchang](https://github.com/forrestchang) for packaging Karpathy's observations into an installable skill, and to [Andrej Karpathy](https://x.com/karpathy/status/2015883857489522876) for articulating the patterns in the first place.
 
