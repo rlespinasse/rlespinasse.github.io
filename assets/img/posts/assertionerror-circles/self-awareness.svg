@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="monospace">
+  <rect width="800" height="450" fill="#1a1a2e" rx="12"/>
+
+  <!-- Meme format: two panels side by side -->
+
+  <!-- Panel 1: "Corporate needs you to find the difference" -->
+  <g transform="translate(10,15)">
+    <rect x="0" y="0" width="380" height="420" rx="8" fill="#0f3460" stroke="#4a4a6a" stroke-width="1"/>
+
+    <!-- Panel title -->
+    <text x="190" y="35" text-anchor="middle" font-size="12" fill="#8a8aaa">Corporate needs you to find</text>
+    <text x="190" y="52" text-anchor="middle" font-size="12" fill="#8a8aaa">the difference between these two strings</text>
+
+    <!-- Two cards with "different" strings -->
+    <rect x="30" y="75" width="320" height="55" rx="8" fill="#16213e" stroke="#e94560" stroke-width="1.5"/>
+    <text x="190" y="108" text-anchor="middle" font-size="18" fill="#e0e0e0">AssertionError</text>
+
+    <rect x="30" y="150" width="320" height="55" rx="8" fill="#16213e" stroke="#e94560" stroke-width="1.5"/>
+    <text x="190" y="183" text-anchor="middle" font-size="18" fill="#e0e0e0">AssertionError</text>
+
+    <!-- Robot character (Pam equivalent) -->
+    <g transform="translate(190,310)">
+      <!-- Head -->
+      <rect x="-30" y="-55" width="60" height="55" rx="8" fill="#16213e" stroke="#e94560" stroke-width="2"/>
+      <!-- Squinting eyes trying really hard to see -->
+      <line x1="-15" y1="-35" x2="-5" y2="-30" stroke="#e94560" stroke-width="2"/>
+      <line x1="-15" y1="-25" x2="-5" y2="-30" stroke="#e94560" stroke-width="2"/>
+      <line x1="5" y1="-35" x2="15" y2="-30" stroke="#e94560" stroke-width="2"/>
+      <line x1="5" y1="-25" x2="15" y2="-30" stroke="#e94560" stroke-width="2"/>
+      <!-- Concentrated frown -->
+      <path d="M -10,-10 Q 0,-5 10,-10" stroke="#e94560" stroke-width="2" fill="none"/>
+      <!-- Sweat drop -->
+      <ellipse cx="25" cy="-40" rx="4" ry="6" fill="#4ecca3" opacity="0.6"/>
+      <!-- Antenna -->
+      <line x1="0" y1="-55" x2="0" y2="-68" stroke="#e94560" stroke-width="2"/>
+      <circle cx="0" cy="-71" r="4" fill="#e94560" opacity="0.6"/>
+      <!-- Body -->
+      <rect x="-25" y="2" width="50" height="35" rx="6" fill="#16213e" stroke="#e94560" stroke-width="1.5"/>
+      <!-- Arms holding magnifying glass -->
+      <line x1="25" y1="15" x2="55" y2="-20" stroke="#e94560" stroke-width="2"/>
+      <!-- Magnifying glass -->
+      <circle cx="62" cy="-30" r="15" fill="none" stroke="#4ecca3" stroke-width="2.5"/>
+      <line x1="52" y1="-20" x2="45" y2="-13" stroke="#4ecca3" stroke-width="2.5"/>
+    </g>
+
+    <!-- Caption -->
+    <text x="190" y="400" text-anchor="middle" font-size="11" fill="#8a8aaa" font-style="italic">*squinting intensifies*</text>
+  </g>
+
+  <!-- Panel 2: "They're the same picture" -->
+  <g transform="translate(410,15)">
+    <rect x="0" y="0" width="380" height="420" rx="8" fill="#0f3460" stroke="#4a4a6a" stroke-width="1"/>
+
+    <!-- Same robot, now smugly confident -->
+    <g transform="translate(190,150)">
+      <!-- Head -->
+      <rect x="-40" y="-50" width="80" height="70" rx="10" fill="#16213e" stroke="#e94560" stroke-width="2"/>
+      <!-- Smug eyes -->
+      <g stroke="#e94560" stroke-width="2" fill="none">
+        <line x1="-22" y1="-20" x2="-8" y2="-20"/>
+        <line x1="8" y1="-20" x2="22" y2="-20"/>
+      </g>
+      <!-- Smug smile -->
+      <path d="M -15,5 Q 0,18 15,5" stroke="#e94560" stroke-width="2.5" fill="none"/>
+      <!-- Antenna with confident glow -->
+      <line x1="0" y1="-50" x2="0" y2="-65" stroke="#e94560" stroke-width="2"/>
+      <circle cx="0" cy="-69" r="5" fill="#4ecca3"/>
+    </g>
+
+    <!-- Speech bubble -->
+    <g transform="translate(190,290)">
+      <rect x="-160" y="-40" width="320" height="80" rx="16" fill="#16213e" stroke="#4ecca3" stroke-width="1.5"/>
+      <!-- Bubble tail pointing up -->
+      <polygon points="-10,-40 10,-40 0,-55" fill="#16213e" stroke="#16213e" stroke-width="1"/>
+      <line x1="-10" y1="-40" x2="0" y2="-55" stroke="#4ecca3" stroke-width="1.5"/>
+      <line x1="10" y1="-40" x2="0" y2="-55" stroke="#4ecca3" stroke-width="1.5"/>
+
+      <text text-anchor="middle" font-size="13" fill="#e0e0e0">
+        <tspan x="0" y="-10">"this one is missing</tspan>
+        <tspan x="0" y="10">the second 'i'"</tspan>
+      </text>
+    </g>
+
+    <!-- Narrator box at bottom -->
+    <rect x="20" y="355" width="340" height="45" rx="8" fill="#16213e" stroke="#e94560" stroke-width="1" stroke-dasharray="4,3"/>
+    <text x="190" y="374" text-anchor="middle" font-size="11" fill="#8a8aaa">narrator: they are the same string.</text>
+    <text x="190" y="391" text-anchor="middle" font-size="11" fill="#8a8aaa">they have always been the same string.</text>
+  </g>
+</svg>
