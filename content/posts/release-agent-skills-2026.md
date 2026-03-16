@@ -1,8 +1,8 @@
 ---
 title: "2026 Changelog: All Releases and Updates for 'rlespinasse/agent-skills'"
-summary: Changelog of the 5 releases for 2026
+summary: Changelog of the 7 releases for 2026
 date: 2026-02-16T11:16:21Z
-lastmod: 2026-03-12T16:57:51Z
+lastmod: 2026-03-15T13:41:18Z
 showToC: false
 draft: false
 tags:
@@ -11,6 +11,16 @@ tags:
 categories:
 - Changelog posts
 ---
+## [1.5.0](https://github.com/rlespinasse/agent-skills/compare/v1.4.0...v1.5.0) (2026-03-15)
+
+### Features
+
+* add pin-github-actions skill ([481a48e](https://github.com/rlespinasse/agent-skills/commit/481a48e3a488327af7f53af12c161f2e9c1b48f2))
+## [1.4.0](https://github.com/rlespinasse/agent-skills/compare/v1.3.0...v1.4.0) (2026-03-15)
+
+### Features
+
+* add verify-readme-features skill ([#7](https://github.com/rlespinasse/agent-skills/issues/7)) ([ccf5f63](https://github.com/rlespinasse/agent-skills/commit/ccf5f63d8e185503751df678bf486aee52c9e68f))
 ## [1.3.0](https://github.com/rlespinasse/agent-skills/compare/v1.2.0...v1.3.0) (2026-03-12)
 
 ### Features
