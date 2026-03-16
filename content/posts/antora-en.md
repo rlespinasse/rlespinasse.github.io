@@ -4,8 +4,7 @@ date: 2018-09-11T10:42:00+02:00
 draft: false
 showToC: false
 summary: Discover Antora as your next documentation site.
-images: 
-- /img/posts/antora/featured.jpg
+coverImg: /img/posts/antora/featured.jpg
 tags:
 - antora
 - asciidoctor
