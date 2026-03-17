@@ -1,0 +1,26 @@
+{{- with .Params.series -}}
+{{- $seriesName := index . 0 -}}
+{{- $currentOrder := $.Params.series_order | default 0 -}}
+{{- $seriesPages := where site.RegularPages ".Params.series" "intersect" (slice $seriesName) -}}
+{{- $total := len $seriesPages -}}
+{{- if gt $total 1 -}}
+<div class="series-nav">
+  <p>
+    Part {{ $currentOrder }} of {{ $total }} in the
+    <a href="{{ "series" | absURL }}/{{ $seriesName | urlize }}/">{{ $seriesName }}</a> series
+  </p>
+  <details>
+    <summary>All posts in this series</summary>
+    <ol>
+      {{- range sort $seriesPages ".Params.series_order" -}}
+      {{- if eq .RelPermalink $.RelPermalink }}
+      <li><strong>{{ .Title }}</strong> (you are here)</li>
+      {{- else }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{- end }}
+      {{- end }}
+    </ol>
+  </details>
+</div>
+{{- end -}}
+{{- end -}}
