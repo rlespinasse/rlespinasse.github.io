@@ -3,6 +3,7 @@ title: "How to Add a Photo to an Existing Page in a PDF Using macOS Preview"
 date: 2026-02-20T19:00:00+01:00
 draft: false
 summary: "A step-by-step guide to adding photos into PDFs using the macOS Preview app with the paste-into-itself trick."
+coverImg: /img/posts/photo-in-pdf-macos-preview/featured.svg
 tags:
 - macos
 - preview
@@ -17,6 +18,8 @@ If you have ever tried to paste an image into a PDF using the macOS Preview app,
 Instead of dropping the image onto the page you are currently viewing, Preview insists on pasting the image as a completely new, blank page.
 
 Preview doesn't have a standard "Insert Image" button. However, there is a hidden workaround that lets you paste a photo as a movable, resizable object directly onto an existing PDF page.
+
+![The paste-into-itself trick step by step](/img/posts/photo-in-pdf-macos-preview/paste-trick.svg)
 
 ### The "Paste-Into-Itself" Method
 

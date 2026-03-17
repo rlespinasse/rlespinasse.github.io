@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bmBg" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#2c2416"/>
+      <stop offset="100%" stop-color="#3a2e1e"/>
+    </linearGradient>
+    <linearGradient id="terrilGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#5a4a32"/>
+      <stop offset="100%" stop-color="#8a7252"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bmBg)"/>
+
+  <!-- Subtle topographic contour lines -->
+  <g opacity="0.08" stroke="#c4a86a" fill="none" stroke-width="0.8">
+    <ellipse cx="400" cy="280" rx="350" ry="160"/>
+    <ellipse cx="400" cy="280" rx="300" ry="140"/>
+    <ellipse cx="400" cy="280" rx="250" ry="120"/>
+    <ellipse cx="400" cy="280" rx="200" ry="100"/>
+    <ellipse cx="400" cy="280" rx="150" ry="80"/>
+  </g>
+
+  <!-- Simplified Nord-Pas de Calais region outline -->
+  <path d="M180,200 Q200,170 260,160 Q320,150 380,155 Q440,150 500,160 Q560,155 600,170 Q640,185 650,210 Q660,240 640,270 Q620,300 580,320 Q540,340 480,345 Q420,350 360,340 Q300,335 250,310 Q210,290 190,260 Q175,230 180,200 Z" fill="none" stroke="#c4a86a" stroke-width="2" opacity="0.6"/>
+
+  <!-- Inner region detail line -->
+  <path d="M220,210 Q250,190 310,180 Q370,175 430,178 Q490,175 540,185 Q580,195 600,215 Q615,240 600,265 Q580,290 540,305 Q490,318 430,320 Q370,322 310,312 Q260,300 235,275 Q215,250 220,210 Z" fill="#c4a86a" fill-opacity="0.06" stroke="#c4a86a" stroke-width="1" opacity="0.3"/>
+
+  <!-- Terril (slag heap) triangle icons -->
+  <polygon points="250,260 265,230 280,260" fill="url(#terrilGrad)" opacity="0.7"/>
+  <polygon points="340,240 352,215 364,240" fill="url(#terrilGrad)" opacity="0.6"/>
+  <polygon points="430,250 442,225 454,250" fill="url(#terrilGrad)" opacity="0.7"/>
+  <polygon points="510,235 520,215 530,235" fill="url(#terrilGrad)" opacity="0.6"/>
+  <polygon points="380,290 390,270 400,290" fill="url(#terrilGrad)" opacity="0.5"/>
+  <polygon points="470,275 480,258 490,275" fill="url(#terrilGrad)" opacity="0.55"/>
+
+  <!-- Chevalement (mine headframe) icons -->
+  <!-- Headframe 1 -->
+  <g transform="translate(300,250)" opacity="0.8">
+    <line x1="0" y1="0" x2="0" y2="-30" stroke="#d4b87a" stroke-width="2"/>
+    <line x1="-8" y1="0" x2="0" y2="-30" stroke="#d4b87a" stroke-width="1.5"/>
+    <line x1="8" y1="0" x2="0" y2="-30" stroke="#d4b87a" stroke-width="1.5"/>
+    <line x1="-6" y1="-10" x2="6" y2="-10" stroke="#d4b87a" stroke-width="1"/>
+    <line x1="-4" y1="-20" x2="4" y2="-20" stroke="#d4b87a" stroke-width="1"/>
+    <circle cx="0" cy="-32" r="3" fill="none" stroke="#d4b87a" stroke-width="1.2"/>
+  </g>
+
+  <!-- Headframe 2 -->
+  <g transform="translate(490,255)" opacity="0.7">
+    <line x1="0" y1="0" x2="0" y2="-25" stroke="#d4b87a" stroke-width="2"/>
+    <line x1="-7" y1="0" x2="0" y2="-25" stroke="#d4b87a" stroke-width="1.5"/>
+    <line x1="7" y1="0" x2="0" y2="-25" stroke="#d4b87a" stroke-width="1.5"/>
+    <line x1="-5" y1="-9" x2="5" y2="-9" stroke="#d4b87a" stroke-width="1"/>
+    <line x1="-3.5" y1="-17" x2="3.5" y2="-17" stroke="#d4b87a" stroke-width="1"/>
+    <circle cx="0" cy="-27" r="2.5" fill="none" stroke="#d4b87a" stroke-width="1.2"/>
+  </g>
+
+  <!-- Headframe 3 -->
+  <g transform="translate(400,270)" opacity="0.65">
+    <line x1="0" y1="0" x2="0" y2="-22" stroke="#d4b87a" stroke-width="1.8"/>
+    <line x1="-6" y1="0" x2="0" y2="-22" stroke="#d4b87a" stroke-width="1.3"/>
+    <line x1="6" y1="0" x2="0" y2="-22" stroke="#d4b87a" stroke-width="1.3"/>
+    <line x1="-4.5" y1="-8" x2="4.5" y2="-8" stroke="#d4b87a" stroke-width="0.8"/>
+    <circle cx="0" cy="-24" r="2.2" fill="none" stroke="#d4b87a" stroke-width="1"/>
+  </g>
+
+  <!-- Heritage marker dots -->
+  <circle cx="275" cy="205" r="3" fill="#e8a838" opacity="0.6"/>
+  <circle cx="350" cy="195" r="2.5" fill="#e8a838" opacity="0.5"/>
+  <circle cx="440" cy="200" r="3" fill="#e8a838" opacity="0.6"/>
+  <circle cx="520" cy="210" r="2.5" fill="#e8a838" opacity="0.5"/>
+  <circle cx="560" cy="250" r="2" fill="#e8a838" opacity="0.4"/>
+  <circle cx="230" cy="250" r="2" fill="#e8a838" opacity="0.4"/>
+
+  <!-- Department labels -->
+  <text x="310" y="310" font-family="'Inter', sans-serif" font-size="10" fill="#8a7a5a" text-anchor="middle" letter-spacing="3" opacity="0.5">PAS-DE-CALAIS</text>
+  <text x="480" y="310" font-family="'Inter', sans-serif" font-size="10" fill="#8a7a5a" text-anchor="middle" letter-spacing="3" opacity="0.5">NORD</text>
+
+  <!-- UNESCO-inspired element -->
+  <g transform="translate(400, 410)">
+    <rect x="-60" y="-15" width="120" height="30" rx="4" fill="none" stroke="#c4a86a" stroke-width="1" opacity="0.5"/>
+    <text x="0" y="5" font-family="'Inter', sans-serif" font-size="11" fill="#c4a86a" text-anchor="middle" letter-spacing="1" opacity="0.7">UNESCO 2012</text>
+  </g>
+
+  <!-- Small diamond heritage symbol -->
+  <g transform="translate(400, 440)" opacity="0.3">
+    <polygon points="0,-8 8,0 0,8 -8,0" fill="none" stroke="#c4a86a" stroke-width="1"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="75" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="32" font-weight="700" fill="#f0e0c0" text-anchor="middle" letter-spacing="1">Bassin Minier UNESCO</text>
+  <text x="400" y="105" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14" fill="#a08a60" text-anchor="middle" letter-spacing="2">PATRIMOINE MONDIAL DU NORD-PAS DE CALAIS</text>
+
+  <!-- Decorative bottom line -->
+  <line x1="200" y1="470" x2="600" y2="470" stroke="#5a4a32" stroke-width="1"/>
+  <line x1="350" y1="470" x2="450" y2="470" stroke="#c4a86a" stroke-width="2"/>
+</svg>

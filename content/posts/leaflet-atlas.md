@@ -3,6 +3,7 @@ title: "Leaflet Atlas: A Config-Driven Framework for Interactive GeoJSON Maps"
 date: 2026-03-14T10:00:00+01:00
 draft: false
 summary: "Building interactive maps from GeoJSON files usually means writing the same Leaflet boilerplate over and over. Leaflet Atlas turns a JSON configuration and a folder of GeoJSON files into a full-featured map application — with layer filtering, smart polygon click-through, and auto-generated tile thumbnails."
+coverImg: /img/posts/leaflet-atlas/featured.svg
 tags:
 - opensource
 - github
@@ -112,6 +113,8 @@ Dependabot monitors dependencies weekly, and contributor guidelines are in place
 ## A virtuous cycle: library and maps feeding each other
 
 The interesting part of this approach is the feedback loop between Leaflet Atlas and the maps that use it.
+
+![Leaflet Atlas architecture and virtuous cycle](/img/posts/leaflet-atlas/architecture.svg)
 
 The [Bassin Minier UNESCO](https://github.com/rlespinasse/bassin-minier-unesco) map was where the library was born — its needs shaped the initial feature set.
 Now I am building a second map for the [Parc naturel régional du Morvan](https://github.com/rlespinasse/morvan), an entirely different territory in Burgundy with its own layers: forests, lakes, hiking trails, administrative boundaries, demographic data.

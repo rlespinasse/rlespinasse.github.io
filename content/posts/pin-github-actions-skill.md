@@ -3,6 +3,7 @@ title: "Pin GitHub Actions Skill: Automating SHA Pinning with AI Assistants"
 date: 2026-03-15T13:00:00+01:00
 draft: false
 summary: "Migrating GitHub Actions from tags to commit SHAs is tedious: look up releases, resolve SHAs, dereference annotated tags, update every workflow file. The pin-github-actions skill for agent-skills automates the entire process — including major version detection and Dependabot configuration."
+coverImg: /img/posts/pin-github-actions-skill/featured.svg
 tags:
 - opensource
 - github

@@ -3,6 +3,7 @@ title: "Bassin Minier UNESCO : une carte interactive du patrimoine avec des donn
 date: 2026-03-15T12:00:00+01:00
 draft: false
 summary: "Le bassin minier du Nord-Pas de Calais est un site du patrimoine mondial de l'UNESCO couvrant plus de 100 000 hectares. Bassin Minier UNESCO est une carte interactive qui rassemble les données patrimoniales, les limites administratives et les informations géographiques ouvertes dans une seule application navigable."
+coverImg: /img/posts/bassin-minier-unesco/featured.svg
 tags:
 - opensource
 - github
@@ -49,6 +50,8 @@ Le panneau est redimensionnable, ce qui permet d'ajuster l'espace d'écran parta
 Les raccourcis clavier permettent d'activer ou désactiver les couches et de naviguer sans utiliser la souris — utile quand on explore un jeu de données avec de nombreuses limites qui se superposent.
 
 ## Intégration des données
+
+![Pipeline de données du projet](/img/posts/bassin-minier-unesco/data-pipeline.svg)
 
 Les données géographiques proviennent de sources ouvertes, principalement [data.gouv.fr](https://www.data.gouv.fr/) et [geo.api.gouv.fr](https://geo.api.gouv.fr/).
 Des scripts Python récupèrent les shapefiles et les flux WFS, puis les convertissent au format GeoJSON attendu par Leaflet Atlas.

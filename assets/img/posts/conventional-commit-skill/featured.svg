@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="'SF Mono', 'Fira Code', monospace">
+  <rect width="800" height="500" fill="#0d1117" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" font-size="18" fill="#e2e8f0" font-family="sans-serif" font-weight="bold">Conventional Commits</text>
+  <text x="400" y="72" text-anchor="middle" font-size="12" fill="#484f58" font-family="sans-serif">Structured commit messages for humans and machines</text>
+
+  <!-- Commit message box -->
+  <rect x="80" y="100" width="640" height="70" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- The commit message -->
+  <text x="120" y="143" font-size="22">
+    <tspan fill="#3fb950" font-weight="bold">feat</tspan><tspan fill="#8b949e">(</tspan><tspan fill="#58a6ff">auth</tspan><tspan fill="#8b949e">)</tspan><tspan fill="#8b949e">: </tspan><tspan fill="#c9d1d9">add OAuth2 login flow</tspan>
+  </text>
+
+  <!-- Annotation lines and labels -->
+
+  <!-- Type annotation (green) — points from "feat" down to label -->
+  <g>
+    <line x1="146" y1="172" x2="146" y2="230" stroke="#3fb950" stroke-width="2.5"/>
+    <circle cx="146" cy="172" r="3" fill="#3fb950"/>
+    <rect x="70" y="230" width="150" height="65" rx="10" fill="#1a2e1a" stroke="#3fb950" stroke-width="1.5"/>
+    <text x="145" y="255" text-anchor="middle" font-size="14" fill="#3fb950" font-weight="bold" font-family="sans-serif">Type</text>
+    <text x="145" y="275" text-anchor="middle" font-size="11" fill="#86efac" font-family="sans-serif">feat, fix, refactor</text>
+    <text x="145" y="290" text-anchor="middle" font-size="11" fill="#86efac" font-family="sans-serif">docs, ci, test...</text>
+  </g>
+
+  <!-- Scope annotation (blue) — points from "auth" down to label -->
+  <g>
+    <line x1="213" y1="172" x2="213" y2="230" stroke="#58a6ff" stroke-width="2.5"/>
+    <circle cx="213" cy="172" r="3" fill="#58a6ff"/>
+    <line x1="213" y1="295" x2="213" y2="320" stroke="#58a6ff" stroke-width="2.5"/>
+    <rect x="143" y="320" width="140" height="65" rx="10" fill="#1a2340" stroke="#58a6ff" stroke-width="1.5"/>
+    <text x="213" y="345" text-anchor="middle" font-size="14" fill="#58a6ff" font-weight="bold" font-family="sans-serif">Scope</text>
+    <text x="213" y="365" text-anchor="middle" font-size="11" fill="#93c5fd" font-family="sans-serif">Optional context</text>
+    <text x="213" y="380" text-anchor="middle" font-size="11" fill="#93c5fd" font-family="sans-serif">e.g. auth, api, ui</text>
+  </g>
+
+  <!-- Description annotation (gray) — points from description text down to label -->
+  <g>
+    <line x1="450" y1="172" x2="450" y2="230" stroke="#c9d1d9" stroke-width="2.5"/>
+    <circle cx="450" cy="172" r="3" fill="#c9d1d9"/>
+    <rect x="340" y="230" width="220" height="65" rx="10" fill="#1a1a2e" stroke="#8b949e" stroke-width="1.5"/>
+    <text x="450" y="255" text-anchor="middle" font-size="14" fill="#c9d1d9" font-weight="bold" font-family="sans-serif">Description</text>
+    <text x="450" y="275" text-anchor="middle" font-size="11" fill="#8b949e" font-family="sans-serif">Concise summary of the</text>
+    <text x="450" y="290" text-anchor="middle" font-size="11" fill="#8b949e" font-family="sans-serif">change in imperative mood</text>
+  </g>
+
+  <!-- Format template -->
+  <rect x="130" y="420" width="540" height="40" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="400" y="446" text-anchor="middle" font-size="13" fill="#484f58">&lt;type&gt;[optional scope]: &lt;description&gt;</text>
+
+  <!-- AI Skill badge (top-right corner) -->
+  <g transform="translate(755, 40)">
+    <path d="M0,-16 L3.5,-5.5 L16,0 L3.5,5.5 L0,16 L-3.5,5.5 L-16,0 L-3.5,-5.5 Z" fill="#fbbf24" opacity="0.8"/>
+    <circle r="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+    <text y="28" text-anchor="middle" font-size="8" fill="#f59e0b" font-weight="bold">AI Skill</text>
+  </g>
+</svg>

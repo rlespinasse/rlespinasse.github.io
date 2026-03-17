@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif">
+  <rect width="800" height="400" fill="#f5f5f7" rx="8"/>
+
+  <!-- Step 1: Open Image -->
+  <g transform="translate(30, 40)">
+    <rect width="210" height="290" rx="10" fill="#fff" stroke="#d1d1d6" stroke-width="1.5"/>
+    <!-- Mini title bar -->
+    <rect width="210" height="28" rx="10" fill="#e8e8ed"/>
+    <rect y="20" width="210" height="8" fill="#e8e8ed"/>
+    <circle cx="15" cy="14" r="4" fill="#ff5f57"/>
+    <circle cx="28" cy="14" r="4" fill="#febc2e"/>
+    <circle cx="41" cy="14" r="4" fill="#28c840"/>
+
+    <!-- Image content -->
+    <rect x="20" y="45" width="170" height="120" rx="4" fill="#87CEEB"/>
+    <rect x="20" y="125" width="170" height="40" fill="#4CAF50"/>
+    <circle cx="150" cy="80" r="18" fill="#FFD700"/>
+    <polygon points="60,125 90,85 120,125" fill="#2E7D32"/>
+
+    <!-- Step label -->
+    <circle cx="105" cy="195" r="16" fill="#007aff"/>
+    <text x="105" y="200" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">1</text>
+    <text x="105" y="230" text-anchor="middle" font-size="13" font-weight="600" fill="#333">Open Image</text>
+    <text x="105" y="248" text-anchor="middle" font-size="11" fill="#666">&#8984;A then &#8984;C</text>
+    <text x="105" y="265" text-anchor="middle" font-size="11" fill="#666">to copy</text>
+  </g>
+
+  <!-- Arrow 1&#x2192;2 -->
+  <g transform="translate(252, 170)">
+    <line x1="0" y1="0" x2="35" y2="0" stroke="#007aff" stroke-width="2.5"/>
+    <polygon points="35,-6 47,0 35,6" fill="#007aff"/>
+  </g>
+
+  <!-- Step 2: Paste Into Itself -->
+  <g transform="translate(295, 40)">
+    <rect width="210" height="290" rx="10" fill="#fff" stroke="#d1d1d6" stroke-width="1.5"/>
+    <rect width="210" height="28" rx="10" fill="#e8e8ed"/>
+    <rect y="20" width="210" height="8" fill="#e8e8ed"/>
+    <circle cx="15" cy="14" r="4" fill="#ff5f57"/>
+    <circle cx="28" cy="14" r="4" fill="#febc2e"/>
+    <circle cx="41" cy="14" r="4" fill="#28c840"/>
+
+    <!-- Image with selection handles -->
+    <rect x="20" y="45" width="170" height="120" rx="4" fill="#87CEEB"/>
+    <rect x="20" y="125" width="170" height="40" fill="#4CAF50"/>
+    <circle cx="150" cy="80" r="18" fill="#FFD700"/>
+    <polygon points="60,125 90,85 120,125" fill="#2E7D32"/>
+
+    <!-- Blue selection dots overlay -->
+    <rect x="18" y="43" width="174" height="124" fill="none" stroke="#007aff" stroke-width="2"/>
+    <circle cx="18" cy="43" r="5" fill="#007aff"/>
+    <circle cx="192" cy="43" r="5" fill="#007aff"/>
+    <circle cx="18" cy="167" r="5" fill="#007aff"/>
+    <circle cx="192" cy="167" r="5" fill="#007aff"/>
+
+    <circle cx="105" cy="195" r="16" fill="#007aff"/>
+    <text x="105" y="200" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">2</text>
+    <text x="105" y="230" text-anchor="middle" font-size="13" font-weight="600" fill="#333">Paste &#8984;V</text>
+    <text x="105" y="248" text-anchor="middle" font-size="11" fill="#666">Creates object layer</text>
+    <text x="105" y="265" text-anchor="middle" font-size="11" fill="#666">then &#8984;C again</text>
+  </g>
+
+  <!-- Arrow 2&#x2192;3 -->
+  <g transform="translate(517, 170)">
+    <line x1="0" y1="0" x2="35" y2="0" stroke="#007aff" stroke-width="2.5"/>
+    <polygon points="35,-6 47,0 35,6" fill="#007aff"/>
+  </g>
+
+  <!-- Step 3: Paste Into PDF -->
+  <g transform="translate(560, 40)">
+    <rect width="210" height="290" rx="10" fill="#fff" stroke="#d1d1d6" stroke-width="1.5"/>
+    <rect width="210" height="28" rx="10" fill="#e8e8ed"/>
+    <rect y="20" width="210" height="8" fill="#e8e8ed"/>
+    <circle cx="15" cy="14" r="4" fill="#ff5f57"/>
+    <circle cx="28" cy="14" r="4" fill="#febc2e"/>
+    <circle cx="41" cy="14" r="4" fill="#28c840"/>
+
+    <!-- PDF content -->
+    <g fill="#d1d1d6">
+      <rect x="25" y="45" width="160" height="6" rx="2"/>
+      <rect x="25" y="57" width="140" height="6" rx="2"/>
+      <rect x="25" y="69" width="155" height="6" rx="2"/>
+    </g>
+
+    <!-- Photo placed on PDF -->
+    <g transform="translate(40, 88)">
+      <rect width="130" height="75" rx="3" fill="#87CEEB"/>
+      <rect y="45" width="130" height="30" fill="#4CAF50"/>
+      <circle cx="100" cy="25" r="12" fill="#FFD700"/>
+      <polygon points="30,45 50,25 70,45" fill="#2E7D32"/>
+      <rect x="-2" y="-2" width="134" height="79" fill="none" stroke="#007aff" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="4" fill="#007aff"/>
+      <circle cx="130" cy="0" r="4" fill="#007aff"/>
+      <circle cx="0" cy="75" r="4" fill="#007aff"/>
+      <circle cx="130" cy="75" r="4" fill="#007aff"/>
+    </g>
+
+    <!-- Checkmark -->
+    <circle cx="175" cy="180" r="14" fill="#28c840"/>
+    <path d="M167,180 L173,186 L183,174" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <circle cx="105" cy="195" r="16" fill="#28c840"/>
+    <text x="105" y="200" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">3</text>
+    <text x="105" y="230" text-anchor="middle" font-size="13" font-weight="600" fill="#333">Paste in PDF</text>
+    <text x="105" y="248" text-anchor="middle" font-size="11" fill="#666">&#8984;V on the page</text>
+    <text x="105" y="265" text-anchor="middle" font-size="11" fill="#666">Image on page!</text>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="375" text-anchor="middle" font-size="15" font-weight="600" fill="#333">The "Paste-Into-Itself" Method</text>
+</svg>

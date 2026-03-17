@@ -3,6 +3,7 @@ title: "Open Source Maintenance: Do I Need to Update My License Year?"
 date: 2026-02-20T20:45:00+01:00
 draft: false
 summary: "Running a project from v1.0 to v5.x? Learn when and why you should update the copyright year in your MIT license to keep your project looking professional and legally sound."
+coverImg: /img/posts/maintaining-license-years/featured.svg
 tags:
 - opensource
 - licensing

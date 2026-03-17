@@ -3,6 +3,7 @@ title: "Karpathy Guidelines: Keeping AI Assistants from Overthinking Your Code"
 date: 2026-03-15T18:00:00+01:00
 draft: false
 summary: "LLM coding assistants are fast, but they tend to over-engineer, refactor things nobody asked for, and hide assumptions. The karpathy-guidelines skill — based on Andrej Karpathy's observations — installs four behavioral guardrails that make sessions noticeably more disciplined."
+coverImg: /img/posts/karpathy-guidelines-skill/featured.svg
 tags:
 - ai
 - opensource

@@ -3,6 +3,7 @@ title: "Conventional Commits Skill: Teaching AI Assistants to Write Better Commi
 date: 2026-03-12T17:57:51+01:00
 draft: false
 summary: "AI coding assistants write code well but often produce vague commit messages. The conventional-commit skill for agent-skills brings the Conventional Commits specification into your coding sessions, guiding assistants through structured, meaningful commit messages."
+coverImg: /img/posts/conventional-commit-skill/featured.svg
 tags:
 - opensource
 - github

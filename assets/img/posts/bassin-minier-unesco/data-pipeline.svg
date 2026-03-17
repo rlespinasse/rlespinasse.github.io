@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="pipeBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2c2416"/>
+      <stop offset="100%" stop-color="#3a2e1e"/>
+    </linearGradient>
+    <marker id="pipeArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#c4a86a"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#pipeBg)"/>
+
+  <!-- Title -->
+  <text x="400" y="35" font-family="'Inter', sans-serif" font-size="15" fill="#a08a60" text-anchor="middle" letter-spacing="2">PIPELINE DE DONNÉES</text>
+
+  <!-- Stage 1: Data Sources -->
+  <g transform="translate(0, 0)">
+    <!-- data.gouv.fr -->
+    <rect x="30" y="80" width="130" height="50" rx="6" fill="#3a2e1e" stroke="#8a7252" stroke-width="1.2"/>
+    <g transform="translate(55, 98)">
+      <circle cx="0" cy="0" r="8" fill="none" stroke="#c4a86a" stroke-width="1.2"/>
+      <ellipse cx="0" cy="-3" rx="8" ry="3" fill="none" stroke="#c4a86a" stroke-width="0.8"/>
+      <ellipse cx="0" cy="3" rx="8" ry="3" fill="none" stroke="#c4a86a" stroke-width="0.8"/>
+    </g>
+    <text x="108" y="108" font-family="'Inter', sans-serif" font-size="10" fill="#d4b87a" text-anchor="middle">data.gouv.fr</text>
+
+    <!-- geo.api.gouv.fr -->
+    <rect x="30" y="145" width="130" height="50" rx="6" fill="#3a2e1e" stroke="#8a7252" stroke-width="1.2"/>
+    <g transform="translate(55, 163)">
+      <circle cx="0" cy="0" r="8" fill="none" stroke="#c4a86a" stroke-width="1.2"/>
+      <ellipse cx="0" cy="-3" rx="8" ry="3" fill="none" stroke="#c4a86a" stroke-width="0.8"/>
+      <ellipse cx="0" cy="3" rx="8" ry="3" fill="none" stroke="#c4a86a" stroke-width="0.8"/>
+    </g>
+    <text x="108" y="175" font-family="'Inter', sans-serif" font-size="10" fill="#d4b87a" text-anchor="middle">geo.api.gouv.fr</text>
+
+    <!-- BRGM -->
+    <rect x="30" y="210" width="130" height="50" rx="6" fill="#3a2e1e" stroke="#8a7252" stroke-width="1.2"/>
+    <g transform="translate(55, 228)">
+      <circle cx="0" cy="0" r="8" fill="none" stroke="#c4a86a" stroke-width="1.2"/>
+      <ellipse cx="0" cy="-3" rx="8" ry="3" fill="none" stroke="#c4a86a" stroke-width="0.8"/>
+      <ellipse cx="0" cy="3" rx="8" ry="3" fill="none" stroke="#c4a86a" stroke-width="0.8"/>
+    </g>
+    <text x="108" y="240" font-family="'Inter', sans-serif" font-size="11" fill="#d4b87a" text-anchor="middle">BRGM</text>
+
+    <!-- Label -->
+    <text x="95" y="285" font-family="'Inter', sans-serif" font-size="10" fill="#8a7252" text-anchor="middle" letter-spacing="1">SOURCES</text>
+  </g>
+
+  <!-- Arrows from sources to Python -->
+  <line x1="160" y1="105" x2="230" y2="155" stroke="#c4a86a" stroke-width="1.2" marker-end="url(#pipeArrow)"/>
+  <line x1="160" y1="170" x2="230" y2="170" stroke="#c4a86a" stroke-width="1.2" marker-end="url(#pipeArrow)"/>
+  <line x1="160" y1="235" x2="230" y2="185" stroke="#c4a86a" stroke-width="1.2" marker-end="url(#pipeArrow)"/>
+
+  <!-- Stage 2: Python Scripts -->
+  <rect x="240" y="130" width="130" height="80" rx="6" fill="#2a3020" stroke="#6a8a4a" stroke-width="1.5"/>
+  <!-- Python icon -->
+  <g transform="translate(275, 160)">
+    <path d="M-8,-5 Q-8,-10 -3,-10 L3,-10 Q8,-10 8,-5 L8,0 L-8,0 Z" fill="#4a8ade" opacity="0.7"/>
+    <path d="M-8,0 L8,0 L8,5 Q8,10 3,10 L-3,10 Q-8,10 -8,5 Z" fill="#e8c838" opacity="0.7"/>
+    <circle cx="-3" cy="-5" r="1.5" fill="#fff" opacity="0.8"/>
+    <circle cx="3" cy="5" r="1.5" fill="#fff" opacity="0.8"/>
+  </g>
+  <text x="305" y="155" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#8aba6a" text-anchor="middle">Scripts</text>
+  <text x="305" y="172" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#8aba6a" text-anchor="middle">Python</text>
+  <text x="305" y="195" font-family="'Inter', sans-serif" font-size="9" fill="#6a8a4a" text-anchor="middle">conversion + fusion</text>
+  <text x="305" y="285" font-family="'Inter', sans-serif" font-size="10" fill="#8a7252" text-anchor="middle" letter-spacing="1">TRAITEMENT</text>
+
+  <!-- Arrow Python to GeoJSON -->
+  <line x1="370" y1="170" x2="420" y2="170" stroke="#c4a86a" stroke-width="1.5" marker-end="url(#pipeArrow)"/>
+
+  <!-- Stage 3: GeoJSON Files -->
+  <rect x="430" y="130" width="120" height="80" rx="6" fill="#2a2030" stroke="#9a6ade" stroke-width="1.5"/>
+  <!-- JSON brackets icon -->
+  <text x="490" y="160" font-family="'SF Mono', monospace" font-size="22" fill="#ba8ade" text-anchor="middle" opacity="0.8">{  }</text>
+  <text x="490" y="185" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#ba8ade" text-anchor="middle">GeoJSON</text>
+  <text x="490" y="200" font-family="'Inter', sans-serif" font-size="9" fill="#8a6aaa" text-anchor="middle">17+ couches</text>
+  <text x="490" y="285" font-family="'Inter', sans-serif" font-size="10" fill="#8a7252" text-anchor="middle" letter-spacing="1">DONNÉES</text>
+
+  <!-- Arrow GeoJSON to Leaflet Atlas -->
+  <line x1="550" y1="170" x2="600" y2="170" stroke="#c4a86a" stroke-width="1.5" marker-end="url(#pipeArrow)"/>
+
+  <!-- Stage 4: Leaflet Atlas -->
+  <rect x="610" y="120" width="130" height="55" rx="6" fill="#0a2a1a" stroke="#3dba6e" stroke-width="1.5"/>
+  <text x="675" y="145" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#3dba6e" text-anchor="middle">Leaflet Atlas</text>
+  <text x="675" y="163" font-family="'SF Mono', monospace" font-size="9" fill="#4a7a5e" text-anchor="middle">npm package</text>
+
+  <!-- Arrow Leaflet Atlas to Interactive Map -->
+  <line x1="675" y1="175" x2="675" y2="210" stroke="#c4a86a" stroke-width="1.5" marker-end="url(#pipeArrow)"/>
+
+  <!-- Stage 5: Interactive Map -->
+  <rect x="610" y="220" width="130" height="55" rx="6" fill="#3a2e1e" stroke="#e8a838" stroke-width="1.5"/>
+  <!-- Map icon -->
+  <g transform="translate(640, 248)">
+    <rect x="-8" y="-8" width="16" height="16" rx="2" fill="none" stroke="#e8a838" stroke-width="1"/>
+    <line x1="-3" y1="-8" x2="-3" y2="8" stroke="#e8a838" stroke-width="0.6"/>
+    <line x1="3" y1="-8" x2="3" y2="8" stroke="#e8a838" stroke-width="0.6"/>
+    <circle cx="-3" cy="-2" r="1.5" fill="#e8a838" opacity="0.6"/>
+  </g>
+  <text x="695" y="248" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#e8a838" text-anchor="middle">Carte</text>
+  <text x="695" y="263" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#e8a838" text-anchor="middle">interactive</text>
+  <text x="675" y="305" font-family="'Inter', sans-serif" font-size="10" fill="#8a7252" text-anchor="middle" letter-spacing="1">RÉSULTAT</text>
+
+  <!-- Flow line at bottom -->
+  <line x1="50" y1="340" x2="750" y2="340" stroke="#5a4a32" stroke-width="1"/>
+  <g opacity="0.4">
+    <circle cx="95" cy="340" r="3" fill="#c4a86a"/>
+    <circle cx="305" cy="340" r="3" fill="#6a8a4a"/>
+    <circle cx="490" cy="340" r="3" fill="#9a6ade"/>
+    <circle cx="675" cy="340" r="3" fill="#e8a838"/>
+  </g>
+
+  <!-- Bottom labels -->
+  <text x="400" y="375" font-family="'Inter', sans-serif" font-size="11" fill="#6a5a3a" text-anchor="middle">données ouvertes → traitement → geojson → framework → carte</text>
+</svg>

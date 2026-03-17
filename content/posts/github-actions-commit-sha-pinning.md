@@ -3,6 +3,7 @@ title: "Pinning GitHub Actions to Commit SHAs: A Practical Security Step"
 date: 2026-02-04T10:37:36+01:00
 draft: false
 summary: "GitHub Actions referenced by tag can be silently replaced. Pinning to full commit SHAs protects your CI/CD pipeline from supply chain attacks — and with GitHub's new organisation-level policy enforcement, it is becoming a requirement rather than a recommendation."
+coverImg: /img/posts/github-actions-commit-sha-pinning/featured.svg
 tags:
 - github
 - ci/cd
@@ -20,6 +21,8 @@ This means a compromised action repository, a rogue maintainer, or even an hones
 Your pipeline would still show `@v4` in the logs, but the underlying code could be completely different from what you reviewed.
 
 This is a supply chain attack vector, and it has been exploited in the wild.
+
+![Tag vs SHA pinning comparison](/img/posts/github-actions-commit-sha-pinning/pinning-flow.svg)
 
 ## What SHA pinning looks like
 

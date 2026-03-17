@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="'SF Mono', 'Fira Code', monospace">
+  <rect width="800" height="400" fill="#0d1117" rx="8"/>
+
+  <!-- Left panel: Mutable tag -->
+  <g transform="translate(40, 40)">
+    <rect width="320" height="300" rx="10" fill="#161b22" stroke="#f85149" stroke-width="2"/>
+    <text x="160" y="35" text-anchor="middle" font-size="14" fill="#f85149" font-weight="bold">⚠ MUTABLE</text>
+
+    <!-- Code block -->
+    <rect x="20" y="55" width="280" height="50" rx="6" fill="#0d1117"/>
+    <text x="30" y="78" font-size="12" fill="#8b949e">- uses:</text>
+    <text x="30" y="95" font-size="12" fill="#c9d1d9">  actions/checkout<tspan fill="#f85149">@v4</tspan></text>
+
+    <!-- Warning icon -->
+    <g transform="translate(130, 140)">
+      <polygon points="30,0 60,52 0,52" fill="none" stroke="#d29922" stroke-width="3"/>
+      <text x="30" y="42" text-anchor="middle" font-size="24" fill="#d29922">!</text>
+    </g>
+
+    <!-- Explanation -->
+    <text x="160" y="225" text-anchor="middle" font-size="12" fill="#8b949e">Tag can be moved</text>
+    <text x="160" y="245" text-anchor="middle" font-size="12" fill="#8b949e">to different commit</text>
+    <text x="160" y="275" text-anchor="middle" font-size="13" fill="#f85149">Supply chain risk</text>
+  </g>
+
+  <!-- Arrow -->
+  <g transform="translate(370, 170)">
+    <line x1="0" y1="0" x2="50" y2="0" stroke="#58a6ff" stroke-width="3"/>
+    <polygon points="50,-8 66,0 50,8" fill="#58a6ff"/>
+    <text x="33" y="-12" text-anchor="middle" font-size="12" fill="#58a6ff" font-weight="bold">PIN</text>
+  </g>
+
+  <!-- Right panel: Immutable SHA -->
+  <g transform="translate(440, 40)">
+    <rect width="320" height="300" rx="10" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
+    <text x="160" y="35" text-anchor="middle" font-size="14" fill="#3fb950" font-weight="bold">🔒 IMMUTABLE</text>
+
+    <!-- Code block -->
+    <rect x="20" y="55" width="280" height="65" rx="6" fill="#0d1117"/>
+    <text x="30" y="78" font-size="12" fill="#8b949e">- uses:</text>
+    <text x="30" y="95" font-size="11" fill="#c9d1d9">  actions/checkout</text>
+    <text x="30" y="110" font-size="10" fill="#3fb950">    @11bd719...683</text>
+
+    <!-- Lock icon -->
+    <g transform="translate(135, 145)">
+      <rect x="5" y="18" width="40" height="30" rx="5" fill="none" stroke="#3fb950" stroke-width="3"/>
+      <path d="M12,18 V10 A13,13 0 0,1 38,10 V18" fill="none" stroke="#3fb950" stroke-width="3"/>
+      <circle cx="25" cy="33" r="4" fill="#3fb950"/>
+    </g>
+
+    <!-- Explanation -->
+    <text x="160" y="225" text-anchor="middle" font-size="12" fill="#8b949e">SHA is immutable</text>
+    <text x="160" y="245" text-anchor="middle" font-size="12" fill="#8b949e">Guaranteed same code</text>
+    <text x="160" y="275" text-anchor="middle" font-size="13" fill="#3fb950">Secure by design</text>
+  </g>
+
+  <!-- Bottom label -->
+  <text x="400" y="375" text-anchor="middle" font-size="11" fill="#484f58">Dependabot handles SHA updates automatically</text>
+</svg>

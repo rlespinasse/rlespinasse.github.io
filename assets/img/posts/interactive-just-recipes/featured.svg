@@ -1,0 +1,88 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', monospace">
+  <defs>
+    <linearGradient id="termBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e1e2e"/>
+      <stop offset="100%" stop-color="#181825"/>
+    </linearGradient>
+    <linearGradient id="highlightBg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#89b4fa" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#89b4fa" stop-opacity="0.08"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="#11111b" rx="12"/>
+
+  <!-- Terminal window -->
+  <rect x="40" y="30" width="720" height="440" rx="10" fill="url(#termBg)" stroke="#313244" stroke-width="1.5"/>
+
+  <!-- Title bar -->
+  <rect x="40" y="30" width="720" height="38" rx="10" fill="#313244"/>
+  <rect x="40" y="58" width="720" height="10" fill="#313244"/>
+
+  <!-- Window dots -->
+  <circle cx="68" cy="49" r="7" fill="#f38ba8"/>
+  <circle cx="92" cy="49" r="7" fill="#f9e2af"/>
+  <circle cx="116" cy="49" r="7" fill="#a6e3a1"/>
+
+  <!-- Title bar text -->
+  <text x="400" y="54" text-anchor="middle" fill="#cdd6f4" font-size="13" font-weight="500">zsh - justfile interactive</text>
+
+  <!-- Prompt line -->
+  <text x="70" y="100" fill="#a6e3a1" font-size="15" font-weight="bold">$</text>
+  <text x="90" y="100" fill="#cdd6f4" font-size="15">just --choose</text>
+  <rect x="205" y="87" width="9" height="18" fill="#f5c2e7" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0;0.7" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Separator line -->
+  <line x1="60" y1="118" x2="740" y2="118" stroke="#45475a" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- fzf header -->
+  <text x="70" y="145" fill="#89b4fa" font-size="13" filter="url(#glow)">  5/5 recipes</text>
+  <text x="745" y="145" fill="#585b70" font-size="12" text-anchor="end">ESC: quit | ENTER: select</text>
+
+  <!-- fzf input line -->
+  <text x="70" y="172" fill="#f9e2af" font-size="14" font-weight="bold">&gt;</text>
+  <text x="88" y="172" fill="#cdd6f4" font-size="14">_</text>
+
+  <!-- Separator -->
+  <line x1="60" y1="185" x2="740" y2="185" stroke="#45475a" stroke-width="0.5"/>
+
+  <!-- Recipe list item 1 (not selected) -->
+  <text x="88" y="215" fill="#6c7086" font-size="15">build</text>
+  <text x="250" y="215" fill="#45475a" font-size="12">-- Compile the project</text>
+
+  <!-- Recipe list item 2 (not selected) -->
+  <text x="88" y="250" fill="#6c7086" font-size="15">clean</text>
+  <text x="250" y="250" fill="#45475a" font-size="12">-- Remove build artifacts</text>
+
+  <!-- Recipe list item 3 - HIGHLIGHTED -->
+  <rect x="60" y="262" width="680" height="32" rx="4" fill="url(#highlightBg)"/>
+  <rect x="60" y="262" width="3" height="32" rx="1" fill="#89b4fa"/>
+  <text x="75" y="283" fill="#89b4fa" font-size="15" font-weight="bold">▸</text>
+  <text x="88" y="283" fill="#cdd6f4" font-size="15" font-weight="bold">deploy</text>
+  <text x="250" y="283" fill="#a6adc8" font-size="12">-- Deploy to production</text>
+
+  <!-- Recipe list item 4 (not selected) -->
+  <text x="88" y="318" fill="#6c7086" font-size="15">docker-build</text>
+  <text x="250" y="318" fill="#45475a" font-size="12">-- Build Docker containers</text>
+
+  <!-- Recipe list item 5 (not selected) -->
+  <text x="88" y="353" fill="#6c7086" font-size="15">test-all</text>
+  <text x="250" y="353" fill="#45475a" font-size="12">-- Run the full test suite</text>
+
+  <!-- Bottom status bar -->
+  <rect x="40" y="430" width="720" height="40" rx="0" fill="#181825"/>
+  <rect x="40" y="460" width="720" height="10" rx="0" fill="#181825"/>
+  <rect x="40" y="458" width="720" height="12" rx="10" fill="#181825"/>
+
+  <text x="70" y="455" fill="#45475a" font-size="11">justfile</text>
+  <text x="360" y="455" fill="#585b70" font-size="11">↑/↓: navigate</text>
+  <text x="520" y="455" fill="#585b70" font-size="11">enter: run</text>
+  <text x="640" y="455" fill="#585b70" font-size="11">esc: cancel</text>
+</svg>

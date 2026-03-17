@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="-apple-system, 'Helvetica Neue', sans-serif">
+  <rect width="800" height="500" fill="#0d1117" rx="12"/>
+
+  <!-- Connection lines -->
+  <g stroke="#30363d" stroke-width="2">
+    <!-- Solid lines to org repos -->
+    <line x1="400" y1="250" x2="200" y2="130" stroke="#58a6ff" stroke-width="2.5"/>
+    <line x1="400" y1="250" x2="600" y2="130" stroke="#58a6ff" stroke-width="2.5"/>
+    <!-- Dotted lines to external repos -->
+    <line x1="400" y1="250" x2="150" y2="380" stroke-dasharray="8,5" stroke="#8b949e"/>
+    <line x1="400" y1="250" x2="400" y2="400" stroke-dasharray="8,5" stroke="#8b949e"/>
+    <line x1="400" y1="250" x2="650" y2="380" stroke-dasharray="8,5" stroke="#8b949e"/>
+  </g>
+
+  <!-- Central org badge -->
+  <g transform="translate(400, 250)">
+    <circle r="55" fill="#161b22" stroke="#58a6ff" stroke-width="3"/>
+    <text y="-8" text-anchor="middle" font-size="13" fill="#58a6ff" font-weight="bold">actions</text>
+    <text y="10" text-anchor="middle" font-size="13" fill="#58a6ff" font-weight="bold">-able</text>
+    <text y="30" text-anchor="middle" font-size="10" fill="#8b949e">GitHub Org</text>
+  </g>
+
+  <!-- Org repos (solid connections) -->
+  <!-- envsubst-action -->
+  <g transform="translate(200, 130)">
+    <rect x="-90" y="-30" width="180" height="60" rx="10" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
+    <text y="-5" text-anchor="middle" font-size="12" fill="#c9d1d9" font-weight="bold">envsubst-action</text>
+    <text y="13" text-anchor="middle" font-size="10" fill="#3fb950">v1.2.0</text>
+  </g>
+
+  <!-- awesome-actions -->
+  <g transform="translate(600, 130)">
+    <rect x="-90" y="-30" width="180" height="60" rx="10" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
+    <text y="-5" text-anchor="middle" font-size="12" fill="#c9d1d9" font-weight="bold">awesome-actions</text>
+    <text y="13" text-anchor="middle" font-size="10" fill="#f0e68c">⭐ curated list</text>
+  </g>
+
+  <!-- External repos (dotted connections) -->
+  <!-- github-slug-action -->
+  <g transform="translate(150, 380)">
+    <rect x="-100" y="-25" width="200" height="50" rx="8" fill="#161b22" stroke="#8b949e" stroke-width="1.5" stroke-dasharray="6,3"/>
+    <text y="-3" text-anchor="middle" font-size="11" fill="#8b949e">rlespinasse/</text>
+    <text y="14" text-anchor="middle" font-size="11" fill="#c9d1d9" font-weight="bold">github-slug-action</text>
+  </g>
+
+  <!-- drawio-export-action -->
+  <g transform="translate(400, 400)">
+    <rect x="-105" y="-25" width="210" height="50" rx="8" fill="#161b22" stroke="#8b949e" stroke-width="1.5" stroke-dasharray="6,3"/>
+    <text y="-3" text-anchor="middle" font-size="11" fill="#8b949e">rlespinasse/</text>
+    <text y="14" text-anchor="middle" font-size="11" fill="#c9d1d9" font-weight="bold">drawio-export-action</text>
+  </g>
+
+  <!-- release-that -->
+  <g transform="translate(650, 380)">
+    <rect x="-80" y="-25" width="160" height="50" rx="8" fill="#161b22" stroke="#8b949e" stroke-width="1.5" stroke-dasharray="6,3"/>
+    <text y="-3" text-anchor="middle" font-size="11" fill="#8b949e">rlespinasse/</text>
+    <text y="14" text-anchor="middle" font-size="11" fill="#c9d1d9" font-weight="bold">release-that</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(30, 30)">
+    <line x1="0" y1="8" x2="25" y2="8" stroke="#58a6ff" stroke-width="2.5"/>
+    <text x="32" y="12" font-size="11" fill="#8b949e">Organisation repos</text>
+    <line x1="0" y1="30" x2="25" y2="30" stroke="#8b949e" stroke-width="1.5" stroke-dasharray="6,3"/>
+    <text x="32" y="34" font-size="11" fill="#8b949e">Maintained externally</text>
+  </g>
+</svg>

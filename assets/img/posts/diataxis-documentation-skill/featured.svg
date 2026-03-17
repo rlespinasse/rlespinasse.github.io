@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="-apple-system, 'Helvetica Neue', sans-serif">
+  <rect width="800" height="500" fill="#0f172a" rx="12"/>
+
+  <!-- Grid lines -->
+  <line x1="400" y1="60" x2="400" y2="420" stroke="#334155" stroke-width="2"/>
+  <line x1="80" y1="240" x2="720" y2="240" stroke="#334155" stroke-width="2"/>
+
+  <!-- Axis labels -->
+  <text x="400" y="45" text-anchor="middle" font-size="12" fill="#64748b">Practical</text>
+  <text x="400" y="445" text-anchor="middle" font-size="12" fill="#64748b">Theoretical</text>
+  <text x="55" y="244" text-anchor="middle" font-size="12" fill="#64748b" transform="rotate(-90, 55, 244)">Learning</text>
+  <text x="745" y="244" text-anchor="middle" font-size="12" fill="#64748b" transform="rotate(90, 745, 244)">Working</text>
+
+  <!-- Tutorials (top-left) -->
+  <g transform="translate(100, 75)">
+    <rect width="270" height="150" rx="12" fill="#1e3a5f" opacity="0.8"/>
+    <rect width="270" height="150" rx="12" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+    <!-- Graduation cap icon -->
+    <g transform="translate(110, 20)">
+      <path d="M0,15 L25,-2 L50,15 L25,30 Z" fill="#3b82f6"/>
+      <line x1="25" y1="30" x2="25" y2="45" stroke="#3b82f6" stroke-width="2"/>
+      <path d="M10,22 L10,38 Q25,50 40,38 L40,22" fill="none" stroke="#3b82f6" stroke-width="2"/>
+    </g>
+    <text x="135" y="95" text-anchor="middle" font-size="18" fill="#93c5fd" font-weight="bold">Tutorials</text>
+    <text x="135" y="115" text-anchor="middle" font-size="11" fill="#64748b">Learning-oriented</text>
+    <text x="135" y="132" text-anchor="middle" font-size="11" fill="#64748b">Step-by-step guides</text>
+  </g>
+
+  <!-- How-to (top-right) -->
+  <g transform="translate(430, 75)">
+    <rect width="270" height="150" rx="12" fill="#1a3a2a" opacity="0.8"/>
+    <rect width="270" height="150" rx="12" fill="none" stroke="#22c55e" stroke-width="1.5"/>
+    <!-- Wrench icon -->
+    <g transform="translate(110, 18)">
+      <path d="M10,40 L30,20 L25,15 L35,5 Q45,0 45,10 L35,20 L30,15 L10,35 Z" fill="#22c55e" stroke="#22c55e" stroke-width="1"/>
+    </g>
+    <text x="135" y="95" text-anchor="middle" font-size="18" fill="#86efac" font-weight="bold">How-to</text>
+    <text x="135" y="115" text-anchor="middle" font-size="11" fill="#64748b">Task-oriented</text>
+    <text x="135" y="132" text-anchor="middle" font-size="11" fill="#64748b">Problem-solving</text>
+  </g>
+
+  <!-- Explanation (bottom-left) -->
+  <g transform="translate(100, 255)">
+    <rect width="270" height="150" rx="12" fill="#3a2a1a" opacity="0.8"/>
+    <rect width="270" height="150" rx="12" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+    <!-- Lightbulb icon -->
+    <g transform="translate(118, 18)">
+      <circle cx="15" cy="15" r="14" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+      <line x1="15" y1="29" x2="15" y2="38" stroke="#f59e0b" stroke-width="2.5"/>
+      <line x1="9" y1="35" x2="21" y2="35" stroke="#f59e0b" stroke-width="2"/>
+      <line x1="10" y1="39" x2="20" y2="39" stroke="#f59e0b" stroke-width="2"/>
+      <line x1="15" y1="5" x2="15" y2="12" stroke="#f59e0b" stroke-width="2"/>
+    </g>
+    <text x="135" y="95" text-anchor="middle" font-size="18" fill="#fcd34d" font-weight="bold">Explanation</text>
+    <text x="135" y="115" text-anchor="middle" font-size="11" fill="#64748b">Understanding-oriented</text>
+    <text x="135" y="132" text-anchor="middle" font-size="11" fill="#64748b">Context &amp; background</text>
+  </g>
+
+  <!-- Reference (bottom-right) -->
+  <g transform="translate(430, 255)">
+    <rect width="270" height="150" rx="12" fill="#2a1a3a" opacity="0.8"/>
+    <rect width="270" height="150" rx="12" fill="none" stroke="#a855f7" stroke-width="1.5"/>
+    <!-- Book icon -->
+    <g transform="translate(118, 18)">
+      <rect x="0" y="5" width="30" height="38" rx="3" fill="none" stroke="#a855f7" stroke-width="2.5"/>
+      <line x1="15" y1="5" x2="15" y2="43" stroke="#a855f7" stroke-width="1.5"/>
+      <line x1="5" y1="15" x2="12" y2="15" stroke="#a855f7" stroke-width="1.5"/>
+      <line x1="5" y1="22" x2="12" y2="22" stroke="#a855f7" stroke-width="1.5"/>
+      <line x1="18" y1="15" x2="25" y2="15" stroke="#a855f7" stroke-width="1.5"/>
+      <line x1="18" y1="22" x2="25" y2="22" stroke="#a855f7" stroke-width="1.5"/>
+    </g>
+    <text x="135" y="95" text-anchor="middle" font-size="18" fill="#c084fc" font-weight="bold">Reference</text>
+    <text x="135" y="115" text-anchor="middle" font-size="11" fill="#64748b">Information-oriented</text>
+    <text x="135" y="132" text-anchor="middle" font-size="11" fill="#64748b">Technical descriptions</text>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="478" text-anchor="middle" font-size="16" fill="#e2e8f0" font-weight="bold">Diataxis Documentation Framework</text>
+
+  <!-- AI Skill badge (top-right corner) -->
+  <g transform="translate(755, 40)">
+    <path d="M0,-16 L3.5,-5.5 L16,0 L3.5,5.5 L0,16 L-3.5,5.5 L-16,0 L-3.5,-5.5 Z" fill="#fbbf24" opacity="0.8"/>
+    <circle r="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+    <text y="28" text-anchor="middle" font-size="8" fill="#f59e0b" font-weight="bold">AI Skill</text>
+  </g>
+</svg>

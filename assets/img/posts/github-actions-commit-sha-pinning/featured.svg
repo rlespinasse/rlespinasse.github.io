@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1f6feb"/>
+      <stop offset="100%" stop-color="#0d419d"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0d1117"/>
+  <rect width="800" height="500" fill="url(#bgPattern)" opacity="0.05"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.06" stroke="#58a6ff" stroke-width="0.5">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+  </g>
+
+  <!-- Shield icon -->
+  <g transform="translate(400, 195)">
+    <path d="M0-90 L55-70 L55-10 C55 40 0 80 0 80 C0 80 -55 40 -55-10 L-55-70 Z"
+          fill="url(#shieldGrad)" stroke="#58a6ff" stroke-width="2" filter="url(#glow)"/>
+    <!-- Lock inside shield -->
+    <rect x="-18" y="-20" width="36" height="28" rx="4" fill="#0d1117" stroke="#c9d1d9" stroke-width="2"/>
+    <path d="M-10-20 L-10-32 C-10-45 10-45 10-32 L10-20" fill="none" stroke="#c9d1d9" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="0" cy="-4" r="4" fill="#58a6ff"/>
+    <line x1="0" y1="0" x2="0" y2="8" stroke="#58a6ff" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Left side: Tag crossed out -->
+  <g transform="translate(145, 200)">
+    <!-- Tag background -->
+    <rect x="-75" y="-22" width="150" height="44" rx="8" fill="#21262d" stroke="#f85149" stroke-width="1.5"/>
+    <text x="0" y="6" text-anchor="middle" fill="#f85149" font-family="'SF Mono', 'Fira Code', monospace" font-size="18" font-weight="600">@v4</text>
+    <!-- Strike-through -->
+    <line x1="-60" y1="0" x2="60" y2="0" stroke="#f85149" stroke-width="2.5"/>
+    <!-- X mark -->
+    <g transform="translate(95, 0)">
+      <circle r="16" fill="#f8514920" stroke="#f85149" stroke-width="1.5"/>
+      <line x1="-6" y1="-6" x2="6" y2="6" stroke="#f85149" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="6" y1="-6" x2="-6" y2="6" stroke="#f85149" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <text x="0" y="50" text-anchor="middle" fill="#8b949e" font-family="'Segoe UI', Arial, sans-serif" font-size="12">MUTABLE TAG</text>
+  </g>
+
+  <!-- Right side: SHA with checkmark -->
+  <g transform="translate(655, 200)">
+    <!-- SHA background -->
+    <rect x="-105" y="-22" width="210" height="44" rx="8" fill="#21262d" stroke="#3fb950" stroke-width="1.5"/>
+    <text x="-10" y="6" text-anchor="middle" fill="#3fb950" font-family="'SF Mono', 'Fira Code', monospace" font-size="14" font-weight="600">@11bd719...</text>
+    <!-- Checkmark -->
+    <g transform="translate(125, 0)">
+      <circle r="16" fill="#3fb95020" stroke="#3fb950" stroke-width="1.5"/>
+      <polyline points="-6,0 -2,5 7,-5" fill="none" stroke="#3fb950" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text x="0" y="50" text-anchor="middle" fill="#8b949e" font-family="'Segoe UI', Arial, sans-serif" font-size="12">IMMUTABLE SHA</text>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="60" text-anchor="middle" fill="#f0f6fc" font-family="'Segoe UI', Arial, sans-serif" font-size="38" font-weight="700" letter-spacing="1">SHA Pinning</text>
+  <text x="400" y="95" text-anchor="middle" fill="#8b949e" font-family="'Segoe UI', Arial, sans-serif" font-size="16">Securing GitHub Actions References</text>
+
+  <!-- Arrows from tag/sha to shield -->
+  <g opacity="0.4">
+    <line x1="255" y1="200" x2="330" y2="200" stroke="#f85149" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <line x1="535" y1="200" x2="470" y2="200" stroke="#3fb950" stroke-width="1.5" stroke-dasharray="4,3"/>
+  </g>
+
+  <!-- Bottom code example -->
+  <g transform="translate(400, 400)">
+    <rect x="-340" y="-30" width="680" height="60" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="-320" y="-5" fill="#8b949e" font-family="'SF Mono', 'Fira Code', monospace" font-size="11">uses:</text>
+    <text x="-275" y="-5" fill="#79c0ff" font-family="'SF Mono', 'Fira Code', monospace" font-size="11">actions/checkout</text>
+    <text x="-145" y="-5" fill="#3fb950" font-family="'SF Mono', 'Fira Code', monospace" font-size="11">@11bd71901bbe5b1630ceea73d27597364c9af683</text>
+    <text x="-320" y="18" fill="#6e7681" font-family="'SF Mono', 'Fira Code', monospace" font-size="11"># v4.2.2 — pinned to full commit SHA</text>
+  </g>
+</svg>

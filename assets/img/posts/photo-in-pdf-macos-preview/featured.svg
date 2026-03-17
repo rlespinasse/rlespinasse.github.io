@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif">
+  <rect width="800" height="500" fill="#f0f0f5" rx="12"/>
+
+  <!-- macOS Preview window -->
+  <g transform="translate(80, 30)">
+    <!-- Window shadow -->
+    <rect x="5" y="5" width="630" height="430" rx="10" fill="rgba(0,0,0,0.15)"/>
+
+    <!-- Window frame -->
+    <rect width="630" height="430" rx="10" fill="#ffffff" stroke="#d1d1d6" stroke-width="1"/>
+
+    <!-- Title bar -->
+    <rect width="630" height="38" rx="10" fill="#e8e8ed"/>
+    <rect y="28" width="630" height="10" fill="#e8e8ed"/>
+
+    <!-- Traffic lights -->
+    <circle cx="20" cy="19" r="6" fill="#ff5f57"/>
+    <circle cx="40" cy="19" r="6" fill="#febc2e"/>
+    <circle cx="60" cy="19" r="6" fill="#28c840"/>
+
+    <!-- Title -->
+    <text x="315" y="24" text-anchor="middle" font-size="13" fill="#4a4a4a" font-weight="500">Preview — Document.pdf</text>
+
+    <!-- Sidebar -->
+    <rect x="0" y="38" width="120" height="392" fill="#f5f5f7"/>
+    <rect x="120" y="38" width="1" height="392" fill="#d1d1d6"/>
+
+    <!-- Sidebar thumbnails -->
+    <g transform="translate(15, 55)">
+      <rect width="90" height="70" rx="3" fill="#fff" stroke="#d1d1d6" stroke-width="1"/>
+      <rect x="10" y="10" width="70" height="6" rx="2" fill="#e0e0e0"/>
+      <rect x="10" y="22" width="60" height="6" rx="2" fill="#e0e0e0"/>
+      <rect x="10" y="34" width="70" height="6" rx="2" fill="#e0e0e0"/>
+      <rect x="10" y="46" width="50" height="6" rx="2" fill="#e0e0e0"/>
+      <text x="45" y="68" text-anchor="middle" font-size="9" fill="#8e8e93">Page 1</text>
+    </g>
+    <g transform="translate(15, 145)">
+      <rect width="90" height="70" rx="3" fill="#fff" stroke="#007aff" stroke-width="2"/>
+      <rect x="10" y="10" width="70" height="6" rx="2" fill="#e0e0e0"/>
+      <rect x="10" y="22" width="55" height="6" rx="2" fill="#e0e0e0"/>
+      <rect x="10" y="34" width="65" height="6" rx="2" fill="#e0e0e0"/>
+      <rect x="30" y="42" width="30" height="22" rx="2" fill="#c8e6ff"/>
+      <text x="45" y="68" text-anchor="middle" font-size="9" fill="#007aff" font-weight="600">Page 2</text>
+    </g>
+
+    <!-- Main PDF area -->
+    <rect x="135" y="50" width="480" height="360" fill="#ffffff"/>
+
+    <!-- PDF content lines -->
+    <g fill="#d1d1d6">
+      <rect x="165" y="70" width="300" height="8" rx="3"/>
+      <rect x="165" y="88" width="350" height="8" rx="3"/>
+      <rect x="165" y="106" width="280" height="8" rx="3"/>
+      <rect x="165" y="130" width="320" height="8" rx="3"/>
+      <rect x="165" y="148" width="290" height="8" rx="3"/>
+      <rect x="165" y="166" width="340" height="8" rx="3"/>
+    </g>
+
+    <!-- Photo being placed (with selection handles) -->
+    <g transform="translate(280, 200)">
+      <!-- Photo -->
+      <rect width="200" height="140" rx="4" fill="#87CEEB"/>
+      <!-- Simple landscape in photo -->
+      <rect y="80" width="200" height="60" rx="0" fill="#4CAF50"/>
+      <circle cx="160" cy="40" r="25" fill="#FFD700"/>
+      <polygon points="50,80 90,30 130,80" fill="#2E7D32"/>
+      <polygon points="110,80 140,45 170,80" fill="#388E3C"/>
+
+      <!-- Selection handles (blue dots) -->
+      <rect x="-3" y="-3" width="206" height="146" fill="none" stroke="#007aff" stroke-width="2" stroke-dasharray="6,3"/>
+      <circle cx="0" cy="0" r="5" fill="#007aff"/>
+      <circle cx="200" cy="0" r="5" fill="#007aff"/>
+      <circle cx="0" cy="140" r="5" fill="#007aff"/>
+      <circle cx="200" cy="140" r="5" fill="#007aff"/>
+      <circle cx="100" cy="0" r="4" fill="#007aff"/>
+      <circle cx="100" cy="140" r="4" fill="#007aff"/>
+      <circle cx="0" cy="70" r="4" fill="#007aff"/>
+      <circle cx="200" cy="70" r="4" fill="#007aff"/>
+    </g>
+
+    <!-- Cursor -->
+    <g transform="translate(470, 310)">
+      <path d="M0,0 L0,22 L6,17 L12,28 L16,26 L10,15 L18,14 Z" fill="#333" stroke="#fff" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

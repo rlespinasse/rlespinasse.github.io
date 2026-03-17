@@ -3,6 +3,7 @@ title: "Le Petit Coloriste : quand un papa qui ne sait pas dessiner découvre le
 date: 2026-03-15T11:00:00+01:00
 draft: false
 summary: "Mes jumeaux de 5 ans veulent des dessins à colorier en permanence — et il en faut toujours deux exemplaires identiques. Comme mes talents de dessin s'arrêtent au bonhomme bâton, j'ai itéré avec l'IA jusqu'à trouver le bon workflow : une Gem Gemini qui génère des pages de coloriage sur demande."
+coverImg: /img/posts/le-petit-coloriste/featured.svg
 tags:
 - ai
 - google-gemini
@@ -24,6 +25,8 @@ C'était fastidieux, et les résultats étaient incohérents d'un essai à l'aut
 ## De prompts ad-hoc à une Gem structurée
 
 Le bon workflow ne s'est pas construit en un jour — il s'est affiné par phases, sur plusieurs mois, jusqu'à s'accélérer récemment avec la Gem et le site vitrine.
+
+![Évolution du workflow de génération](/img/posts/le-petit-coloriste/workflow-evolution.svg)
 
 **Générer directement avec Imagen.** Le modèle de génération d'images de Google (intégré à Gemini) produit de bons résultats, mais le prompt doit être très détaillé à chaque fois. Oublier une contrainte — le fond blanc, le style trait — et le résultat est inutilisable.
 

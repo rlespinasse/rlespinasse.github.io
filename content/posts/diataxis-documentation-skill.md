@@ -3,6 +3,7 @@ title: "Diataxis Meets AI: A Documentation Skill for Coding Sessions"
 date: 2026-03-11T14:00:00+01:00
 draft: false
 summary: "Documentation drifts when teams focus on shipping code. The diataxis skill for agent-skills brings the Diataxis framework into your AI coding sessions, helping both human and AI contributors maintain well-structured documentation."
+coverImg: /img/posts/diataxis-documentation-skill/featured.svg
 tags:
 - opensource
 - github
@@ -53,6 +54,8 @@ which means the same documentation discipline is available regardless of which A
 ## How the diataxis skill works
 
 The skill follows a four-step process designed to be thorough without being disruptive:
+
+![The four-step diataxis skill workflow](/img/posts/diataxis-documentation-skill/workflow.svg)
 
 1. **Discover** — The skill scans the project for existing documentation files: Markdown pages, readmes, wiki entries, and anything else that looks like prose meant for humans.
 2. **Classify** — Each document is assigned to one of the four Diataxis categories. Pages that blend multiple categories are flagged so they can be split or refocused.

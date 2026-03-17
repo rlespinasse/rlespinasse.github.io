@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="-apple-system, 'Helvetica Neue', sans-serif">
+  <rect width="800" height="500" fill="#0f172a" rx="12"/>
+
+  <!-- Title at top -->
+  <text x="400" y="42" text-anchor="middle" font-size="18" fill="#e2e8f0" font-weight="bold">Karpathy Guidelines</text>
+  <text x="400" y="62" text-anchor="middle" font-size="12" fill="#64748b">Behavioral guardrails for AI coding assistants</text>
+
+  <!-- Code editor silhouette in background -->
+  <g opacity="0.12">
+    <rect x="50" y="80" width="700" height="390" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <rect x="50" y="80" width="700" height="28" rx="8" fill="#1e293b"/>
+    <circle cx="72" cy="94" r="4" fill="#475569"/>
+    <circle cx="88" cy="94" r="4" fill="#475569"/>
+    <circle cx="104" cy="94" r="4" fill="#475569"/>
+    <g fill="#475569">
+      <rect x="80" y="125" width="200" height="5" rx="2"/>
+      <rect x="80" y="140" width="280" height="5" rx="2"/>
+      <rect x="100" y="155" width="180" height="5" rx="2"/>
+      <rect x="100" y="170" width="240" height="5" rx="2"/>
+      <rect x="80" y="185" width="160" height="5" rx="2"/>
+      <rect x="80" y="210" width="300" height="5" rx="2"/>
+      <rect x="100" y="225" width="220" height="5" rx="2"/>
+      <rect x="80" y="250" width="260" height="5" rx="2"/>
+      <rect x="100" y="265" width="190" height="5" rx="2"/>
+      <rect x="100" y="280" width="250" height="5" rx="2"/>
+      <rect x="80" y="305" width="180" height="5" rx="2"/>
+      <rect x="80" y="320" width="290" height="5" rx="2"/>
+      <rect x="100" y="335" width="210" height="5" rx="2"/>
+      <rect x="80" y="360" width="270" height="5" rx="2"/>
+      <rect x="100" y="375" width="160" height="5" rx="2"/>
+      <rect x="80" y="400" width="300" height="5" rx="2"/>
+      <rect x="100" y="415" width="230" height="5" rx="2"/>
+      <rect x="80" y="440" width="190" height="5" rx="2"/>
+    </g>
+  </g>
+
+  <!-- Four Pillars -->
+
+  <!-- Pillar 1: Think -->
+  <g transform="translate(130, 95)">
+    <rect x="-55" y="0" width="110" height="380" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2" opacity="0.9"/>
+    <!-- Brain icon -->
+    <g transform="translate(-15, 25)">
+      <circle cx="15" cy="15" r="14" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+      <path d="M8,15 Q8,8 15,8 Q22,8 22,15" fill="none" stroke="#3b82f6" stroke-width="2"/>
+      <line x1="15" y1="8" x2="15" y2="29" stroke="#3b82f6" stroke-width="1.5"/>
+    </g>
+    <text x="0" y="85" text-anchor="middle" font-size="18" fill="#93c5fd" font-weight="bold">Think</text>
+    <line x1="-35" y1="95" x2="35" y2="95" stroke="#3b82f6" stroke-width="0.5" opacity="0.4"/>
+    <text x="0" y="120" text-anchor="middle" font-size="10" fill="#94a3b8">Surface</text>
+    <text x="0" y="135" text-anchor="middle" font-size="10" fill="#94a3b8">assumptions</text>
+    <text x="0" y="160" text-anchor="middle" font-size="10" fill="#94a3b8">Ask before</text>
+    <text x="0" y="175" text-anchor="middle" font-size="10" fill="#94a3b8">acting</text>
+    <line x1="-35" y1="195" x2="35" y2="195" stroke="#3b82f6" stroke-width="0.5" opacity="0.3"/>
+    <text x="0" y="220" text-anchor="middle" font-size="9" fill="#64748b" font-style="italic">"If multiple</text>
+    <text x="0" y="234" text-anchor="middle" font-size="9" fill="#64748b" font-style="italic">interpretations</text>
+    <text x="0" y="248" text-anchor="middle" font-size="9" fill="#64748b" font-style="italic">exist, present</text>
+    <text x="0" y="262" text-anchor="middle" font-size="9" fill="#64748b" font-style="italic">them"</text>
+    <!-- Prevents section -->
+    <line x1="-35" y1="282" x2="35" y2="282" stroke="#3b82f6" stroke-width="0.5" opacity="0.3"/>
+    <text x="0" y="302" text-anchor="middle" font-size="9" fill="#f85149" font-weight="600">✗ Prevents</text>
+    <text x="0" y="322" text-anchor="middle" font-size="9" fill="#4e5460">Hidden</text>
+    <text x="0" y="336" text-anchor="middle" font-size="9" fill="#4e5460">assumptions</text>
+    <text x="0" y="356" text-anchor="middle" font-size="9" fill="#4e5460">Silent wrong</text>
+    <text x="0" y="370" text-anchor="middle" font-size="9" fill="#4e5460">path choices</text>
+  </g>
+
+  <!-- Pillar 2: Simplify -->
+  <g transform="translate(310, 95)">
+    <rect x="-55" y="0" width="110" height="380" rx="8" fill="#1e293b" stroke="#22c55e" stroke-width="2" opacity="0.9"/>
+    <!-- Minimize icon -->
+    <g transform="translate(-12, 25)">
+      <rect x="0" y="0" width="24" height="24" rx="4" fill="none" stroke="#22c55e" stroke-width="2.5"/>
+      <line x1="6" y1="12" x2="18" y2="12" stroke="#22c55e" stroke-width="2.5"/>
+    </g>
+    <text x="0" y="85" text-anchor="middle" font-size="18" fill="#86efac" font-weight="bold">Simplify</text>
+    <line x1="-35" y1="95" x2="35" y2="95" stroke="#22c55e" stroke-width="0.5" opacity="0.4"/>
+    <text x="0" y="120" text-anchor="middle" font-size="10" fill="#94a3b8">No extras</text>
+    <text x="0" y="135" text-anchor="middle" font-size="10" fill="#94a3b8">beyond ask</text>
+    <text x="0" y="160" text-anchor="middle" font-size="10" fill="#94a3b8">No abstractions</text>
+    <text x="0" y="175" text-anchor="middle" font-size="10" fill="#94a3b8">for single use</text>
+    <line x1="-35" y1="195" x2="35" y2="195" stroke="#22c55e" stroke-width="0.5" opacity="0.3"/>
+    <text x="0" y="220" text-anchor="middle" font-size="9" fill="#64748b" font-style="italic">"If 200 lines</text>
+    <text x="0" y="234" text-anchor="middle" font-size="9" fill="#64748b" font-style="italic">and it could</text>
+    <text x="0" y="248" text-anchor="middle" font-size="9" fill="#64748b" font-style="italic">be 50,</text>
+    <text x="0" y="262" text-anchor="middle" font-size="9" fill="#64748b" font-style="italic">rewrite it"</text>
+    <!-- Prevents section -->
+    <line x1="-35" y1="282" x2="35" y2="282" stroke="#22c55e" stroke-width="0.5" opacity="0.3"/>
+    <text x="0" y="302" text-anchor="middle" font-size="9" fill="#f85149" font-weight="600">✗ Prevents</text>
+    <text x="0" y="322" text-anchor="middle" font-size="9" fill="#4e5460">Over-</text>
+    <text x="0" y="336" text-anchor="middle" font-size="9" fill="#4e5460">engineering</text>
+    <text x="0" y="356" text-anchor="middle" font-size="9" fill="#4e5460">Premature</text>
+    <text x="0" y="370" text-anchor="middle" font-size="9" fill="#4e5460">abstractions</text>
+  </g>
+
+  <!-- Pillar 3: Surgical -->
+  <g transform="translate(490, 95)">
+    <rect x="-55" y="0" width="110" height="380" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="2" opacity="0.9"/>
+    <!-- Target icon -->
+    <g transform="translate(-12, 25)">
+      <circle cx="12" cy="12" r="11" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+      <circle cx="12" cy="12" r="4" fill="#f59e0b"/>
+    </g>
+    <text x="0" y="85" text-anchor="middle" font-size="18" fill="#fcd34d" font-weight="bold">Surgical</text>
+    <line x1="-35" y1="95" x2="35" y2="95" stroke="#f59e0b" stroke-width="0.5" opacity="0.4"/>
+    <text x="0" y="120" text-anchor="middle" font-size="10" fill="#94a3b8">Touch only</text>
+    <text x="0" y="135" text-anchor="middle" font-size="10" fill="#94a3b8">what's needed</text>
+    <text x="0" y="160" text-anchor="middle" font-size="10" fill="#94a3b8">Match existing</text>
+    <text x="0" y="175" text-anchor="middle" font-size="10" fill="#94a3b8">style</text>
+    <line x1="-35" y1="195" x2="35" y2="195" stroke="#f59e0b" stroke-width="0.5" opacity="0.3"/>
+    <text x="0" y="220" text-anchor="middle" font-size="9" fill="#64748b" font-style="italic">"Do not improve</text>
+    <text x="0" y="234" text-anchor="middle" font-size="9" fill="#64748b" font-style="italic">adjacent code,</text>
+    <text x="0" y="248" text-anchor="middle" font-size="9" fill="#64748b" font-style="italic">comments, or</text>
+    <text x="0" y="262" text-anchor="middle" font-size="9" fill="#64748b" font-style="italic">formatting"</text>
+    <!-- Prevents section -->
+    <line x1="-35" y1="282" x2="35" y2="282" stroke="#f59e0b" stroke-width="0.5" opacity="0.3"/>
+    <text x="0" y="302" text-anchor="middle" font-size="9" fill="#f85149" font-weight="600">✗ Prevents</text>
+    <text x="0" y="322" text-anchor="middle" font-size="9" fill="#4e5460">Unsolicited</text>
+    <text x="0" y="336" text-anchor="middle" font-size="9" fill="#4e5460">refactoring</text>
+    <text x="0" y="356" text-anchor="middle" font-size="9" fill="#4e5460">Bloated</text>
+    <text x="0" y="370" text-anchor="middle" font-size="9" fill="#4e5460">diffs</text>
+  </g>
+
+  <!-- Pillar 4: Goal -->
+  <g transform="translate(670, 95)">
+    <rect x="-55" y="0" width="110" height="380" rx="8" fill="#1e293b" stroke="#a855f7" stroke-width="2" opacity="0.9"/>
+    <!-- Flag icon -->
+    <g transform="translate(-10, 25)">
+      <line x1="2" y1="0" x2="2" y2="30" stroke="#a855f7" stroke-width="2.5"/>
+      <path d="M2,0 L22,8 L2,16 Z" fill="#a855f7"/>
+    </g>
+    <text x="0" y="85" text-anchor="middle" font-size="18" fill="#c084fc" font-weight="bold">Goal</text>
+    <line x1="-35" y1="95" x2="35" y2="95" stroke="#a855f7" stroke-width="0.5" opacity="0.4"/>
+    <text x="0" y="120" text-anchor="middle" font-size="10" fill="#94a3b8">Verifiable</text>
+    <text x="0" y="135" text-anchor="middle" font-size="10" fill="#94a3b8">outcomes</text>
+    <text x="0" y="160" text-anchor="middle" font-size="10" fill="#94a3b8">Test-driven</text>
+    <text x="0" y="175" text-anchor="middle" font-size="10" fill="#94a3b8">execution</text>
+    <line x1="-35" y1="195" x2="35" y2="195" stroke="#a855f7" stroke-width="0.5" opacity="0.3"/>
+    <text x="0" y="220" text-anchor="middle" font-size="9" fill="#64748b" font-style="italic">"Write a test</text>
+    <text x="0" y="234" text-anchor="middle" font-size="9" fill="#64748b" font-style="italic">that reproduces</text>
+    <text x="0" y="248" text-anchor="middle" font-size="9" fill="#64748b" font-style="italic">it, then make</text>
+    <text x="0" y="262" text-anchor="middle" font-size="9" fill="#64748b" font-style="italic">it pass"</text>
+    <!-- Prevents section -->
+    <line x1="-35" y1="282" x2="35" y2="282" stroke="#a855f7" stroke-width="0.5" opacity="0.3"/>
+    <text x="0" y="302" text-anchor="middle" font-size="9" fill="#f85149" font-weight="600">✗ Prevents</text>
+    <text x="0" y="322" text-anchor="middle" font-size="9" fill="#4e5460">Vague "fix</text>
+    <text x="0" y="336" text-anchor="middle" font-size="9" fill="#4e5460">the bug"</text>
+    <text x="0" y="356" text-anchor="middle" font-size="9" fill="#4e5460">Unverifiable</text>
+    <text x="0" y="370" text-anchor="middle" font-size="9" fill="#4e5460">changes</text>
+  </g>
+
+  <!-- AI Skill badge (top-right corner) -->
+  <g transform="translate(755, 40)">
+    <path d="M0,-16 L3.5,-5.5 L16,0 L3.5,5.5 L0,16 L-3.5,5.5 L-16,0 L-3.5,-5.5 Z" fill="#fbbf24" opacity="0.8"/>
+    <circle r="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+    <text y="28" text-anchor="middle" font-size="8" fill="#f59e0b" font-weight="bold">AI Skill</text>
+  </g>
+</svg>
