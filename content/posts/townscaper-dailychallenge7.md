@@ -8,6 +8,8 @@ tags:
 - townscaper
 categories:
 - Gaming posts
+series: ["Townscaper Daily Challenge"]
+series_order: 7
 ---
 
 From the dock to the garden, go door to door.

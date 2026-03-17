@@ -8,6 +8,8 @@ tags:
 - townscaper
 categories:
 - Gaming posts
+series: ["Townscaper Daily Challenge"]
+series_order: 2
 ---
 
 A `Garden` bring colors in your life.

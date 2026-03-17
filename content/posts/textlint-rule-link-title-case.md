@@ -2,7 +2,7 @@
 title: "Consistent Link Titles at Scale: A Textlint Rule for Title Case"
 date: 2026-03-13T10:00:00+01:00
 draft: false
-summary: "The awesome-actions curated list already required AP Style title case for links — but enforcing it was manual. The textlint-rule-link-title-case rule automates that existing convention, catching what human reviewers miss and fixing what they would rather not fix by hand."
+summary: "textlint-rule-link-title-case automates AP Style title case enforcement on Markdown links, replacing manual reviews with reliable CI checks."
 coverImg: /img/posts/textlint-rule-link-title-case/featured.svg
 tags:
 - opensource
@@ -11,6 +11,8 @@ tags:
 categories:
 - Technical posts
 - Open Source
+series: ["GitHub Actions Ecosystem"]
+series_order: 4
 ---
 
 Curated lists are deceptively hard to maintain.
@@ -21,7 +23,7 @@ That convention kept things readable, but enforcing it relied entirely on human 
 One PR capitalizes every word, another lowercases prepositions that should stay capitalized, and a third uses sentence case where title case is expected.
 Multiply that by hundreds of entries and the review burden becomes unsustainable.
 
-When I forked the project into [**awesome-actions**](https://github.com/actions-able/awesome-actions) under the actions-able organization, I wanted to keep the same convention but remove the manual effort.
+When I forked the project into [**awesome-actions**](https://github.com/actions-able/awesome-actions) under the [actions-able organization](/posts/actions-able-github-organisation/), I wanted to keep the same convention but remove the manual effort.
 The goal was clear: automate the AP Style title case check that was already part of the contribution guidelines.
 
 ## The gap in existing tooling

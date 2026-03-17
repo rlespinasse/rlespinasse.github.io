@@ -8,6 +8,8 @@ tags:
 - townscaper
 categories:
 - Gaming posts
+series: ["Townscaper Daily Challenge"]
+series_order: 5
 ---
 
 From his sea `eyrie`, the Lighthouse keeper watch over passing ships.

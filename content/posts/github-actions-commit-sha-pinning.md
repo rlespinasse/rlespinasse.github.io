@@ -2,7 +2,7 @@
 title: "Pinning GitHub Actions to Commit SHAs: A Practical Security Step"
 date: 2026-02-04T10:37:36+01:00
 draft: false
-summary: "GitHub Actions referenced by tag can be silently replaced. Pinning to full commit SHAs protects your CI/CD pipeline from supply chain attacks — and with GitHub's new organisation-level policy enforcement, it is becoming a requirement rather than a recommendation."
+summary: "Pin GitHub Actions to commit SHAs to prevent supply chain attacks. Learn how GitHub's organisation-level policy makes SHA pinning mandatory."
 coverImg: /img/posts/github-actions-commit-sha-pinning/featured.svg
 tags:
 - github
@@ -10,6 +10,8 @@ tags:
 - security
 categories:
   - Tips & Tricks
+series: ["GitHub Actions Ecosystem"]
+series_order: 1
 ---
 
 ## The problem with tags
@@ -126,12 +128,12 @@ Dependabot will detect your SHA-pinned actions and propose updates with the new 
 If you maintain a GitHub Action that references other actions internally, you should pin those references to full commit SHAs.
 Your users may have adopted — or may be required to adopt — the organisation-level policy, and tag-based sub-action references will block them.
 
-This is a small change on your side that unblocks an entire security posture for your downstream consumers.
+This is a small change on your side that unblocks an entire security posture for your downstream consumers. Tools like [ghat](/posts/github-actions-toolbox/) can help you track which repositories depend on your actions, and the [actions-able](/posts/actions-able-github-organisation/) organisation provides a home for shared GitHub Actions tooling and resources.
 
 ## Summary
 
 SHA pinning is moving from a best practice to an enforced policy.
 GitHub's immutable release support means organisations can now mandate it across all repositories, and the policy checks the full dependency tree — including sub-actions that individual users cannot control.
 
-If you consume third-party actions, pin them to SHAs and let Dependabot handle updates.
+If you consume third-party actions, pin them to SHAs and let Dependabot handle updates. You can also use the [pin-github-actions-skill](/posts/pin-github-actions-skill/) to streamline the pinning process.
 If you maintain actions, pin your sub-actions too — your users will thank you for it.

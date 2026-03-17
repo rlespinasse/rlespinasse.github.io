@@ -8,6 +8,8 @@ tags:
 - townscaper
 categories:
 - Gaming posts
+series: ["Townscaper Explorations"]
+series_order: 6
 ---
 
 Same concept, Same buildings, a lot of islands.

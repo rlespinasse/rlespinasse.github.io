@@ -8,6 +8,8 @@ tags:
 - townscaper
 categories:
 - Gaming posts
+series: ["Townscaper Daily Challenge"]
+series_order: 1
 ---
 
 Two islands, one `Bridge`, A lot of Stairs.

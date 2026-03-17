@@ -2,7 +2,7 @@
 title: "Leaflet Atlas: A Config-Driven Framework for Interactive GeoJSON Maps"
 date: 2026-03-14T10:00:00+01:00
 draft: false
-summary: "Building interactive maps from GeoJSON files usually means writing the same Leaflet boilerplate over and over. Leaflet Atlas turns a JSON configuration and a folder of GeoJSON files into a full-featured map application — with layer filtering, smart polygon click-through, and auto-generated tile thumbnails."
+summary: "Leaflet Atlas turns a JSON config and GeoJSON files into a full-featured interactive map — with layer filtering, polygon click-through, and tile thumbnails."
 coverImg: /img/posts/leaflet-atlas/featured.svg
 tags:
 - opensource
@@ -13,11 +13,13 @@ categories:
 - Technical posts
 - Open Source
 - Geospatial
+series: ["Geospatial Open Data"]
+series_order: 1
 ---
 
 It started with a territory, not a library.
 
-I wanted to explore the open data available around the [Bassin Minier du Nord-Pas de Calais](https://github.com/rlespinasse/bassin-minier-unesco), a UNESCO World Heritage site near where I live.
+I wanted to explore the open data available around the [Bassin Minier du Nord-Pas de Calais](https://github.com/rlespinasse/bassin-minier-unesco) ([see the Bassin Minier UNESCO post](/posts/bassin-minier-unesco/)), a UNESCO World Heritage site near where I live.
 The idea was simple: build an interactive map to discover the local heritage — mining sites, administrative boundaries, geological data — and learn about the territory through its open datasets.
 
 As the map grew, something predictable happened.

@@ -8,6 +8,8 @@ tags:
 - townscaper
 categories:
 - Gaming posts
+series: ["Townscaper Explorations"]
+series_order: 10
 ---
 
 Welcome to the `Tetris island` ... and yes, the island float, we are aware of it.

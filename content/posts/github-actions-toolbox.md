@@ -2,7 +2,7 @@
 title: "GitHub Actions Toolbox: A CLI Companion for Your Workflows"
 date: 2026-03-11T10:00:00+01:00
 draft: false
-summary: "Introducing ghat, a Go-based CLI toolbox that brings useful GitHub Actions utilities to your terminal. Learn how to install it via Homebrew and use it to query repository dependents."
+summary: "ghat is a Go CLI toolbox for GitHub Actions maintainers. Install via Homebrew and query repository dependents from your terminal."
 coverImg: /img/posts/github-actions-toolbox/featured.svg
 tags:
 - opensource
@@ -12,12 +12,14 @@ tags:
 categories:
 - Technical posts
 - Open Source
+series: ["GitHub Actions Ecosystem"]
+series_order: 2
 ---
 
 Over the years I have published and maintained a handful of GitHub Actions —
 [github-slug-action](https://github.com/rlespinasse/github-slug-action),
 [drawio-export-action](https://github.com/rlespinasse/drawio-export-action),
-[release-that](https://github.com/rlespinasse/release-that), and a few others.
+[release-that](https://github.com/rlespinasse/release-that), and a few others — many of which are now part of the [actions-able organisation](/posts/actions-able-github-organisation/).
 Once an action gets some traction, a recurring question pops up:
 **how many repositories actually depend on it?**
 GitHub surfaces that number on each repository page,

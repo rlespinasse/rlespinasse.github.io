@@ -10,6 +10,8 @@ tags:
 - sips
 categories:
 - Tips & Tricks
+series: ["macOS Tips"]
+series_order: 2
 ---
 
 If you often need to resize dozens of images tucked away in various subdirectories.

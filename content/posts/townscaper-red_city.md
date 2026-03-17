@@ -8,6 +8,8 @@ tags:
 - townscaper
 categories:
 - Gaming posts
+series: ["Townscaper Explorations"]
+series_order: 8
 ---
 
 `Red city`, the island with a `little` secret.

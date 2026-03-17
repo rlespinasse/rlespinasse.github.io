@@ -2,7 +2,7 @@
 title: "Open Source Maintenance: Do I Need to Update My License Year?"
 date: 2026-02-20T20:45:00+01:00
 draft: false
-summary: "Running a project from v1.0 to v5.x? Learn when and why you should update the copyright year in your MIT license to keep your project looking professional and legally sound."
+summary: "When and why to update the copyright year in your MIT license as your project evolves from v1.0 to v5.x."
 coverImg: /img/posts/maintaining-license-years/featured.svg
 tags:
 - opensource
@@ -45,6 +45,7 @@ If you follow **Semantic Versioning**, you don't need to touch the license for e
 If you find manual updates tedious, you can use a GitHub Action to check your license at the start of every year.
 
 [`FantasticFiasco/action-update-license-year`](https://github.com/FantasticFiasco/action-update-license-year) GitHub Action will handle it for you.
+When pinning actions by commit SHA for security, see the [SHA pinning post](/posts/github-actions-commit-sha-pinning/).
 
 ```yaml
 name: Update copyright year(s) in license file

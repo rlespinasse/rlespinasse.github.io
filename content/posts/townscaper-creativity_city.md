@@ -8,6 +8,8 @@ tags:
 - townscaper
 categories:
 - Gaming posts
+series: ["Townscaper Explorations"]
+series_order: 2
 ---
 
 A empty city to deploy your creativity.

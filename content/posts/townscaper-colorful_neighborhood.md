@@ -8,6 +8,8 @@ tags:
 - townscaper
 categories:
 - Gaming posts
+series: ["Townscaper Explorations"]
+series_order: 5
 ---
 
 Multiple `neighborhood`, just `colorful` in theirs own ways.

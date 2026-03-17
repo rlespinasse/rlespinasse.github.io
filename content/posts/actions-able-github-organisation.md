@@ -2,7 +2,7 @@
 title: "actions-able: A GitHub Organisation for GitHub Actions Tooling"
 date: 2026-03-12T10:00:00+01:00
 draft: false
-summary: "Introducing actions-able, a GitHub organisation dedicated to building and curating GitHub Actions. Meet envsubst-action for environment variable substitution and awesome-actions, a maintained curated list of GitHub Actions resources."
+summary: "actions-able is a GitHub organisation for GitHub Actions tooling, hosting envsubst-action and the maintained awesome-actions curated list."
 coverImg: /img/posts/actions-able-github-organisation/featured.svg
 tags:
 - opensource
@@ -11,12 +11,14 @@ tags:
 categories:
 - Technical posts
 - Open Source
+series: ["GitHub Actions Ecosystem"]
+series_order: 3
 ---
 
 Over the past few years I have built and maintained several GitHub Actions under my personal account —
 [github-slug-action](https://github.com/rlespinasse/github-slug-action),
 [drawio-export-action](https://github.com/rlespinasse/drawio-export-action),
-and others.
+and others — alongside CLI tools like [ghat](/posts/github-actions-toolbox/).
 Those actions remain under my personal namespace to avoid breaking existing user workflows — changing the repository path would force every consumer to update their workflow files. They are, however, still actively maintained and listed in the organisation's readme.
 
 With that in mind, [**actions-able**](https://github.com/actions-able) was created as a GitHub organisation for *new* GitHub Actions tooling and community resources that can live under a shared, organisation-level namespace from the start.
@@ -49,7 +51,7 @@ The second project is [**awesome-actions**](https://github.com/actions-able/awes
 The original repository was a go-to resource for discovering GitHub Actions across every category imaginable — from CI/CD and testing to deployment and security scanning.
 Over time, maintenance slowed down and many entries became outdated or pointed to archived repositories.
 
-The fork under actions-able picks up where the original left off. It keeps the same comprehensive structure — official actions, community actions organised by language and purpose, deployment targets, and more — while actively reviewing and updating entries. Archived and deleted repositories are tracked transparently so you know exactly what is still alive.
+The fork under actions-able picks up where the original left off, with automated quality checks including [textlint-rule-link-title-case](/posts/textlint-rule-link-title-case/) for consistent link capitalization. It keeps the same comprehensive structure — official actions, community actions organised by language and purpose, deployment targets, and more — while actively reviewing and updating entries. Archived and deleted repositories are tracked transparently so you know exactly what is still alive.
 
 If you maintain a GitHub Action and want it listed, or if you spot a broken link, pull requests are welcome. The list is licensed under CC0, so you can use and share it freely.
 

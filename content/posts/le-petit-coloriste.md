@@ -2,7 +2,7 @@
 title: "Le Petit Coloriste : quand un papa qui ne sait pas dessiner découvre les Gems Gemini"
 date: 2026-03-15T11:00:00+01:00
 draft: false
-summary: "Mes jumeaux de 5 ans veulent des dessins à colorier en permanence — et il en faut toujours deux exemplaires identiques. Comme mes talents de dessin s'arrêtent au bonhomme bâton, j'ai itéré avec l'IA jusqu'à trouver le bon workflow : une Gem Gemini qui génère des pages de coloriage sur demande."
+summary: "Une Gem Gemini qui génère des pages de coloriage sur demande pour mes jumeaux de 5 ans — toujours deux exemplaires identiques."
 coverImg: /img/posts/le-petit-coloriste/featured.svg
 tags:
 - ai

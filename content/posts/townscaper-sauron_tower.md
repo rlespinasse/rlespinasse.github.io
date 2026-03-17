@@ -8,6 +8,8 @@ tags:
 - townscaper
 categories:
 - Gaming posts
+series: ["Townscaper Explorations"]
+series_order: 9
 ---
 
 See some `Minas Tirith` on [twitter](https://twitter.com/search?q=minas%20tirith%20townscaper&src=typed_query), so here the `Sauron` tower `Barad-dûr` to match them.

@@ -2,7 +2,7 @@
 title: "Diataxis Meets AI: A Documentation Skill for Coding Sessions"
 date: 2026-03-11T14:00:00+01:00
 draft: false
-summary: "Documentation drifts when teams focus on shipping code. The diataxis skill for agent-skills brings the Diataxis framework into your AI coding sessions, helping both human and AI contributors maintain well-structured documentation."
+summary: "The diataxis skill for agent-skills brings the Diataxis documentation framework into AI coding sessions, keeping docs well-structured."
 coverImg: /img/posts/diataxis-documentation-skill/featured.svg
 tags:
 - opensource
@@ -13,6 +13,8 @@ categories:
 - Technical posts
 - Open Source
 - Documentation
+series: ["AI Skills"]
+series_order: 1
 ---
 
 Good documentation does not happen by accident.
@@ -46,6 +48,7 @@ Keeping the four types separate lets every reader find exactly what they need, w
 [Agent-skills](https://github.com/rlespinasse/agent-skills) is a collection of installable skills for AI coding assistants,
 built on the [agentskills.io](https://agentskills.io) specification.
 Once installed, skills activate contextually and give the AI assistant specialized guidance for specific tasks.
+If you are interested in documentation tooling beyond AI skills, you might also enjoy [how Antora handles multi-repo documentation](/posts/antora-en/).
 
 The **diataxis** skill teaches the assistant to apply the Diataxis framework whenever it touches project documentation.
 It works with Claude Code, GitHub Copilot, Cursor, and any tool that supports the agentskills.io spec —

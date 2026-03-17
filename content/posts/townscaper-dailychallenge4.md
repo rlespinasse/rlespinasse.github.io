@@ -8,6 +8,8 @@ tags:
 - townscaper
 categories:
 - Gaming posts
+series: ["Townscaper Daily Challenge"]
+series_order: 4
 ---
 
 A `canal` can have many forms

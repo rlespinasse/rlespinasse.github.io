@@ -8,6 +8,8 @@ tags:
 - townscaper
 categories:
 - Gaming posts
+series: ["Townscaper Daily Challenge"]
+series_order: 3
 ---
 
 Sometimes, being a good neighbour is a difficult task.

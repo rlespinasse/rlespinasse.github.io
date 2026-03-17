@@ -8,6 +8,8 @@ tags:
 - townscaper
 categories:
 - Gaming posts
+series: ["Townscaper Explorations"]
+series_order: 11
 ---
 
 When you're separated from your people, you always find a way to get through it.

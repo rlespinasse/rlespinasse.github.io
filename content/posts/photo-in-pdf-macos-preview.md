@@ -11,6 +11,8 @@ tags:
 - apple
 categories:
 - Tips & Tricks
+series: ["macOS Tips"]
+series_order: 1
 ---
 
 If you have ever tried to paste an image into a PDF using the macOS Preview app, you probably ran into a highly frustrating issue.
