@@ -27,6 +27,12 @@ url = "/tags/"
 weight = 30
 
 [[main]]
+name = "series"
+title = "Series"
+url = "/series/"
+weight = 40
+
+[[main]]
 name = "about"
 title = "About"
 url = "/about/"

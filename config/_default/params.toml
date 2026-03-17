@@ -75,14 +75,14 @@ openToC = false
 # Check https://mnjm.github.io/kayal/docs/advanced-customization/#comments
 showComments = false
 # Whether to display breadcrumbs
-showBreadcrumbs = false
+showBreadcrumbs = true
 
 # List template settings
 [list]
 # Whether to group articles by year.
 groupByYear = true
 # Whether to display breadcrumbs
-showBreadcrumbs = false
+showBreadcrumbs = true
 # Whether to display pages as a card
 cardView = false
 # Whether to display RSS link
@@ -100,7 +100,7 @@ cardView = true
 # Whether to group articles by year.
 groupByYear = true
 # Whether to display breadcrumbs
-showBreadcrumbs = false
+showBreadcrumbs = true
 # Whether to display pages as a card
 cardView = false
 # Whether to display RSS link

@@ -20,6 +20,11 @@ enableEmoji = true
 # Enable creation of robots.txt for search engine crawling.
 enableRobotsTXT = true
 
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
+
 # Length of default summaries.
 summaryLength = 0
 
@@ -43,3 +48,23 @@ buildFuture = true
 # [services]
 #   [services.googleAnalytics]
 #     ID = 'G-MEASUREMENT_ID'
+
+[related]
+  threshold = 0
+  toLower = false
+
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+
+  [[related.indices]]
+    name = "categories"
+    weight = 100
+
+  [[related.indices]]
+    name = "series"
+    weight = 50
+
+  [[related.indices]]
+    name = "date"
+    weight = 10
