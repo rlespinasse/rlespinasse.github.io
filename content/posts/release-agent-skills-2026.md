@@ -1,8 +1,8 @@
 ---
 title: "2026 Changelog: All Releases and Updates for 'rlespinasse/agent-skills'"
-summary: Changelog of the 7 releases for 2026
+summary: Changelog of the 9 releases for 2026
 date: 2026-02-16T11:16:21Z
-lastmod: 2026-03-15T13:41:18Z
+lastmod: 2026-03-16T23:03:14Z
 showToC: false
 draft: false
 tags:
@@ -11,6 +11,16 @@ tags:
 categories:
 - Changelog posts
 ---
+## [1.7.0](https://github.com/rlespinasse/agent-skills/compare/v1.6.0...v1.7.0) (2026-03-16)
+
+### Features
+
+* add verify-pr-logs skill for diagnosing CI failures on PRs ([#8](https://github.com/rlespinasse/agent-skills/issues/8)) ([5789245](https://github.com/rlespinasse/agent-skills/commit/578924548e978d837d23f57ce3145440ef714a2f))
+## [1.6.0](https://github.com/rlespinasse/agent-skills/compare/v1.5.0...v1.6.0) (2026-03-16)
+
+### Features
+
+* **validate:** add spec references and compatibility validation ([#9](https://github.com/rlespinasse/agent-skills/issues/9)) ([019de1e](https://github.com/rlespinasse/agent-skills/commit/019de1ed5d163c608ce26ff18de9a5b77ec6b60d))
 ## [1.5.0](https://github.com/rlespinasse/agent-skills/compare/v1.4.0...v1.5.0) (2026-03-15)
 
 ### Features
