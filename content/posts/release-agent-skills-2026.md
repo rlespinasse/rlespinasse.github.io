@@ -1,8 +1,8 @@
 ---
 title: "2026 Changelog: All Releases and Updates for 'rlespinasse/agent-skills'"
-summary: Changelog of the 9 releases for 2026
+summary: Changelog of the 10 releases for 2026
 date: 2026-02-16T11:16:21Z
-lastmod: 2026-03-16T23:03:14Z
+lastmod: 2026-03-18T08:40:07Z
 showToC: false
 draft: false
 tags:
@@ -11,6 +11,11 @@ tags:
 categories:
 - Changelog posts
 ---
+## [1.8.0](https://github.com/rlespinasse/agent-skills/compare/v1.7.0...v1.8.0) (2026-03-18)
+
+### Features
+
+* add local-branches-status skill ([#10](https://github.com/rlespinasse/agent-skills/issues/10)) ([662383f](https://github.com/rlespinasse/agent-skills/commit/662383f46821e9fcff1c9c5db490e901836ffcdd))
 ## [1.7.0](https://github.com/rlespinasse/agent-skills/compare/v1.6.0...v1.7.0) (2026-03-16)
 
 ### Features
