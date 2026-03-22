@@ -1,8 +1,8 @@
 ---
 title: "2026 Changelog: All Releases and Updates for 'rlespinasse/agent-skills'"
-summary: Changelog of the 10 releases for 2026
+summary: Changelog of the 12 releases for 2026
 date: 2026-02-16T11:16:21Z
-lastmod: 2026-03-18T08:40:07Z
+lastmod: 2026-03-21T17:45:21Z
 showToC: false
 draft: false
 tags:
@@ -11,6 +11,18 @@ tags:
 categories:
 - Changelog posts
 ---
+## [1.9.0](https://github.com/rlespinasse/agent-skills/compare/v1.8.1...v1.9.0) (2026-03-21)
+
+### Features
+
+* add french-language skill ([#12](https://github.com/rlespinasse/agent-skills/issues/12)) ([5fdccc7](https://github.com/rlespinasse/agent-skills/commit/5fdccc70e17d80af0055cf2f78e86b0dc4050f3c))
+* **diataxis:** improve skill with references and expanded evals ([#15](https://github.com/rlespinasse/agent-skills/issues/15)) ([c739eb7](https://github.com/rlespinasse/agent-skills/commit/c739eb7492e8ce1133bd20887644171c0ab8d429))
+## [1.8.1](https://github.com/rlespinasse/agent-skills/compare/v1.8.0...v1.8.1) (2026-03-21)
+
+### Bug Fixes
+
+* **pin-github-actions:** add prompt injection mitigations ([#13](https://github.com/rlespinasse/agent-skills/issues/13)) ([cad3090](https://github.com/rlespinasse/agent-skills/commit/cad309016984bbe7298efd5dca000d49cc5fb4cd))
+* **verify-pr-logs:** add prompt injection mitigations ([#14](https://github.com/rlespinasse/agent-skills/issues/14)) ([3fdbfc0](https://github.com/rlespinasse/agent-skills/commit/3fdbfc0f97ea3e909604c6461d796ed1fdec74fc))
 ## [1.8.0](https://github.com/rlespinasse/agent-skills/compare/v1.7.0...v1.8.0) (2026-03-18)
 
 ### Features
