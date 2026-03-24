@@ -1,8 +1,8 @@
 ---
 title: "2026 Changelog: All Releases and Updates for 'rlespinasse/docker-drawio-desktop-headless'"
-summary: Changelog of the 5 releases for 2026
+summary: Changelog of the 6 releases for 2026
 date: 2026-01-05T08:03:05Z
-lastmod: 2026-03-09T00:55:23Z
+lastmod: 2026-03-23T23:51:46Z
 showToC: false
 draft: false
 tags:
@@ -11,6 +11,15 @@ tags:
 categories:
 - Changelog posts
 ---
+## [1.56.0](https://github.com/rlespinasse/docker-drawio-desktop-headless/compare/v1.55.0...v1.56.0) (2026-03-23)
+
+
+### Features
+
+* add font variant support with full and minimal image tags ([#134](https://github.com/rlespinasse/docker-drawio-desktop-headless/issues/134)) ([b9947c6](https://github.com/rlespinasse/docker-drawio-desktop-headless/commit/b9947c6d0078a1c3897b818c5a749df7fe9f4ac7))
+
+
+
 ## [1.55.0](https://github.com/rlespinasse/docker-drawio-desktop-headless/compare/v1.54.0...v1.55.0) (2026-03-09)
 
 

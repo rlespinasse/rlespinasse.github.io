@@ -1,8 +1,8 @@
 ---
 title: "2026 Changelog: All Releases and Updates for 'rlespinasse/agent-skills'"
-summary: Changelog of the 13 releases for 2026
+summary: Changelog of the 14 releases for 2026
 date: 2026-02-16T11:16:21Z
-lastmod: 2026-03-22T09:51:12Z
+lastmod: 2026-03-23T19:10:46Z
 showToC: false
 draft: false
 tags:
@@ -11,6 +11,19 @@ tags:
 categories:
 - Changelog posts
 ---
+## [1.11.0](https://github.com/rlespinasse/agent-skills/compare/v1.10.0...v1.11.0) (2026-03-23)
+
+### Features
+
+* **conventional-commit:** add scope-inherent type guidance ([#21](https://github.com/rlespinasse/agent-skills/issues/21)) ([1097427](https://github.com/rlespinasse/agent-skills/commit/1097427498580dfcdbbcb706356e041ea1490f1f))
+
+### Documentation
+
+* add security policy ([#17](https://github.com/rlespinasse/agent-skills/issues/17)) ([1aa1bbf](https://github.com/rlespinasse/agent-skills/commit/1aa1bbf1eb8319e8d7cd5f2c04a0cefdf5211642))
+
+### Continuous Integration
+
+* replace pre-commit hook with autofix workflow on PRs ([#20](https://github.com/rlespinasse/agent-skills/issues/20)) ([95f3cfc](https://github.com/rlespinasse/agent-skills/commit/95f3cfcc85eaebd3f46a26f36d9a4a051de3293f))
 ## [1.10.0](https://github.com/rlespinasse/agent-skills/compare/v1.9.0...v1.10.0) (2026-03-22)
 
 ### Features
