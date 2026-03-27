@@ -1,8 +1,8 @@
 ---
 title: "2026 Changelog: All Releases and Updates for 'rlespinasse/agent-skills'"
-summary: Changelog of the 14 releases for 2026
+summary: Changelog of the 15 releases for 2026
 date: 2026-02-16T11:16:21Z
-lastmod: 2026-03-23T19:10:46Z
+lastmod: 2026-03-26T22:31:42Z
 showToC: false
 draft: false
 tags:
@@ -11,6 +11,11 @@ tags:
 categories:
 - Changelog posts
 ---
+## [1.11.1](https://github.com/rlespinasse/agent-skills/compare/v1.11.0...v1.11.1) (2026-03-26)
+
+### Build System
+
+* **deps:** bump the dependencies group with 2 updates ([#19](https://github.com/rlespinasse/agent-skills/issues/19)) ([e7ca963](https://github.com/rlespinasse/agent-skills/commit/e7ca9631f15e1b77cf67175bf3f38843c99a8ac5))
 ## [1.11.0](https://github.com/rlespinasse/agent-skills/compare/v1.10.0...v1.11.0) (2026-03-23)
 
 ### Features
