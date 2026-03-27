@@ -25,7 +25,7 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
 
-      - uses: taiki-e/install-action@a57ddfbcd928cf9406a78dcc300dacc5d367a547 # v2.68.31
+      - uses: taiki-e/install-action@704f92c11daa75bff5b4e01fcb083350c16c47b9 # v2.69.13
         with:
           tool: just
 
