@@ -3,7 +3,7 @@ title: "Pinning GitHub Actions to Commit SHAs: A Practical Security Step"
 date: 2026-02-04T10:37:36+01:00
 draft: false
 summary: "Pin GitHub Actions to commit SHAs to prevent supply chain attacks. Learn how GitHub's organisation-level policy makes SHA pinning mandatory."
-coverImg: /img/posts/github-actions-commit-sha-pinning/featured.svg
+featureimage: /img/posts/github-actions-commit-sha-pinning/featured.svg
 tags:
 - github
 - ci/cd

@@ -3,7 +3,7 @@ title: "Karpathy Guidelines: Keeping AI Assistants from Overthinking Your Code"
 date: 2026-03-15T18:00:00+01:00
 draft: false
 summary: "The karpathy-guidelines skill installs four behavioral guardrails to stop AI assistants from over-engineering and making hidden assumptions."
-coverImg: /img/posts/karpathy-guidelines-skill/featured.svg
+featureimage: /img/posts/karpathy-guidelines-skill/featured.svg
 tags:
 - ai
 - opensource

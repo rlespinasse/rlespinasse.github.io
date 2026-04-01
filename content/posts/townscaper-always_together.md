@@ -2,7 +2,8 @@
 title: "Townscaper: Bridging Divides - A Tale of Unbreakable Connections"
 date: 2020-07-13T12:42:00+02:00
 draft: false
-showToC: false
+featureimage: /img/townscaper/always_together/separate_by_walls.jpg
+showTableOfContents: false
 summary: When you're separated from your people, you always find a way to get through it.
 tags:
 - townscaper
@@ -14,14 +15,13 @@ series_order: 11
 
 When you're separated from your people, you always find a way to get through it.
 
-{{< load-photoswipe >}}
 
 {{< gallery >}}
-  {{< figure src="/img/townscaper/always_together/separate_by_walls.jpg" caption="Separate by walls">}}
-  {{< figure src="/img/townscaper/always_together/cant_see_your_people.jpg" caption="Can't see your people">}}
-  {{< figure src="/img/townscaper/always_together/unable_to_communicate.jpg" caption="Unable to communicate">}}
-  {{< figure src="/img/townscaper/always_together/you_find_a_way.jpg" caption="You find a way">}}
-  {{< figure src="/img/townscaper/always_together/always_together.jpg" caption="Always together">}}
+  <img src="/img/townscaper/always_together/separate_by_walls.jpg" class="grid-w33" alt="Separate by walls" />
+  <img src="/img/townscaper/always_together/cant_see_your_people.jpg" class="grid-w33" alt="Can't see your people" />
+  <img src="/img/townscaper/always_together/unable_to_communicate.jpg" class="grid-w33" alt="Unable to communicate" />
+  <img src="/img/townscaper/always_together/you_find_a_way.jpg" class="grid-w33" alt="You find a way" />
+  <img src="/img/townscaper/always_together/always_together.jpg" class="grid-w33" alt="Always together" />
 {{< /gallery >}}
 
 Explore it yourself in Townscaper

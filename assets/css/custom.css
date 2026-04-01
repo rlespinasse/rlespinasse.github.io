@@ -1,10 +1,16 @@
+/* Hero image — remove crop constraint from big heroStyle */
+.single_hero_round {
+  max-height: unset;
+  object-fit: unset;
+}
+
 /* Language badges */
 .lang-badge {
   display: inline-block;
   font-size: 0.7em;
   font-weight: 600;
   padding: 2px 6px;
-  border-radius: var(--radius);
+  border-radius: 0.25rem;
   vertical-align: middle;
   line-height: 1;
 }
@@ -16,7 +22,7 @@
 
 .lang-badge.lang-en {
   background-color: rgba(128, 128, 128, 0.15);
-  color: var(--secondary-text-color);
+  color: var(--color-neutral-500);
 }
 
 .dark .lang-badge.lang-fr {
@@ -27,4 +33,45 @@
 .dark .lang-badge.lang-en {
   background-color: rgba(128, 128, 128, 0.25);
   color: rgba(200, 200, 200, 0.8);
+}
+
+/* Certification status badges */
+.cert-badge {
+  display: inline-block;
+  font-size: 0.75em;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 0.25rem;
+  vertical-align: middle;
+  line-height: 1.4;
+}
+
+.cert-badge.cert-active {
+  background-color: rgba(34, 197, 94, 0.15);
+  color: rgb(22, 163, 74);
+}
+
+.cert-badge.cert-expired {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: rgb(220, 38, 38);
+}
+
+.cert-badge.cert-no-expiry {
+  background-color: rgba(59, 130, 246, 0.15);
+  color: rgb(37, 99, 235);
+}
+
+.dark .cert-badge.cert-active {
+  background-color: rgba(34, 197, 94, 0.25);
+  color: rgb(74, 222, 128);
+}
+
+.dark .cert-badge.cert-expired {
+  background-color: rgba(239, 68, 68, 0.25);
+  color: rgb(252, 129, 129);
+}
+
+.dark .cert-badge.cert-no-expiry {
+  background-color: rgba(59, 130, 246, 0.25);
+  color: rgb(96, 165, 250);
 }

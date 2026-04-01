@@ -2,7 +2,8 @@
 title: "Hugo: Crafting Your Digital Identity"
 date: 2019-10-27T10:42:00+02:00
 draft: false
-showToC: false
+featureimage: /img/posts/gohugo/featured.svg
+showTableOfContents: false
 summary: Post about how I build this blog ... like any developer must-do.
 tags:
 - hugo

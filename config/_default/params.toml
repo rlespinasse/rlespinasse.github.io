@@ -1,130 +1,76 @@
 # -- Theme Options --
-# These options control how the theme functions and allow you to customize the display of your website.
-# Refer to the theme docs for more details about each of these parameters.
-# https://mnjm.github.io/kayal/docs/configuration/#theme-parameters
+# https://blowfish.page/docs/configuration/#theme-parameters
 
-# [Optional] Path to the site logo image relative to assets/ folder. Displayed before the Site Title in the header. Minimum size: 64x64px.
-# logo = "/imgs/logo.png"
-# Site description.
-description = "Technical Posts, Opensource Releases, and sometimes Games-related stuff"
-# [Optional] Copyright owner name.
-copyright = "Romain Lespinasse"
-# Whether to optimize images per view port.
-optimizeImg = true
-# Whether to enable copy button in code blocks.
-enableCodeCopy = true
-# Show the icon that switches between dark and light themes when clicked.
-showThemeSwitcher = true
-# Default theme to start from. If "auto", it detects the previous preference/system theme.
-defaultTheme = "auto"  # Valid Options: light, dark, auto
-# When enabled, highlight the current menu item in the menu bar.
-highlightCurrentMenu = true
-# The sections to display in the recent articles list. If not provided, the section with the most articles is used.
-mainSections = ["posts"]
-# Whether to remove Hugo and theme attribution in the footer.
-removeAttribution = true
-# Whether to show anchor links in headings. Can be overridden by Page-specific `showHeadingAnchors` in its front matter.
-showHeadingAnchors = true
-# Whether to enable search. Needs JSON output for this to work.
+colorScheme = "blowfish"
+defaultAppearance = "dark"
+autoSwitchAppearance = true
+
 enableSearch = true
+enableCodeCopy = true
 
-# Site search engine verification tags.
-# [verification]
-# google = ""
-# bing = ""
-# pinterest = ""
-# yandex = ""
+mainSections = ["posts"]
 
-# Homepage settings
+disableImageOptimization = false
+
+highlightCurrentMenuArea = true
+smartTOC = true
+
+[header]
+  layout = "fixed"
+
+[footer]
+  showMenu = true
+  showCopyright = true
+  showThemeAttribution = false
+  showAppearanceSwitcher = true
+  showScrollToTop = true
+
 [homepage]
-# Whether to show recent items on the homepage.
-showRecent = true
-# Heading label for recent items.
-showRecentLabel = "Recent"
-# Number of recent items to show.
-showRecentItems = 4
-# Whether to display a "Show more" link at the end of recent section that directs to `showMoreDest`.
-showMore = true
-showMoreDest = "/posts"
-[homepage.profile]
-# [Optional] Displayed at the top of your homepage.
-# headline = "👋 Welcome to my site"
-# [Optional] Path to the profile image relative to assets/ folder. Minimum size: 200x200px.
-image = "img/rlespinasse.jpg"
-# Image position.
-where = "top"  # Options: right, left, top
+  layout = "profile"
+  showRecent = true
+  showRecentItems = 4
+  showMoreLink = true
+  showMoreLinkDest = "posts"
+  cardView = false
 
-# Article settings
 [article]
-# Whether to display article dates.
-showDate = true
-# Whether to display modified dates of articles.
-showModDate = true
-# Whether to display reading time of articles.
-showReadingTime = true
-# Whether to display tags mentioned in the front matter.
-showTags = true
-# Whether to display next/previous article links in the article footer.
-showPagination = true
-# Whether to reverse the direction of next/previous article links.
-invertPagination = true
-# Whether to display the table of contents on articles.
-showToC = true
-# Whether to open the Table of Contents when the page is loaded.
-openToC = false
-# Check https://mnjm.github.io/kayal/docs/advanced-customization/#comments
-showComments = false
-# Whether to display breadcrumbs
-showBreadcrumbs = true
+  showDate = true
+  showDateUpdated = true
+  showAuthor = false
+  showHero = true
+  heroStyle = "big"
+  showBreadcrumbs = false
+  showDraftLabel = true
+  showHeadingAnchors = true
+  showPagination = true
+  invertPagination = true
+  showReadingTime = true
+  showTableOfContents = true
+  showRelatedContent = true
+  relatedContentLimit = 3
+  showTaxonomies = true
+  showWordCount = false
+  showZenMode = false
 
-# List template settings
 [list]
-# Whether to group articles by year.
-groupByYear = true
-# Whether to display breadcrumbs
-showBreadcrumbs = true
-# Whether to display pages as a card
-cardView = false
-# Whether to display RSS link
-showRSS = false
+  showBreadcrumbs = false
+  showSummary = true
+  showTableOfContents = false
+  showCards = false
+  groupByYear = true
+  cardView = false
 
-# Taxonomy settings
 [taxonomy]
-# Whether to show counts of each taxonomy term.
-showCount = true
-# Whether to display taxonomies as a grid of cards.
-cardView = true
+  showTermCount = true
+  showBreadcrumbs = false
+  showTableOfContents = false
+  cardView = true
 
-# Term settings
 [term]
-# Whether to group articles by year.
-groupByYear = true
-# Whether to display breadcrumbs
-showBreadcrumbs = true
-# Whether to display pages as a card
-cardView = false
-# Whether to display RSS link
-showRSS = false
+  showBreadcrumbs = false
+  showTableOfContents = false
+  groupByYear = true
+  cardView = false
 
 [analytics]
-goatCounter = "rlespinasse"
-
-[[social]]
-name = "GitHub"
-icon = "github"
-url = "https://github.com/rlespinasse"
-
-[[social]]
-name = "GitLab"
-icon = "gitlab"
-url = "https://gitlab.com/rlespinasse"
-
-[[social]]
-name = "LinkedIn"
-icon = "linkedin"
-url = "https://www.linkedin.com/in/romain-lespinasse"
- 
-[[social]]
-name = "Bluesky"
-icon = "bluesky"
-url = "https://bsky.app/profile/rlespinasse.bsky.social"
+  goatCounter = "rlespinasse"

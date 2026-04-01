@@ -2,7 +2,8 @@
 title: "Townscaper: Island Metropolis - Urban Oasis Emerges from the Sea"
 date: 2020-07-05T10:42:00+02:00
 draft: false
-showToC: false
+featureimage: /img/townscaper/city_at_sea/city_at_sea_1.jpg
+showTableOfContents: false
 summary: A `city at sea`.
 tags:
 - townscaper
@@ -14,17 +15,16 @@ series_order: 7
 
 A `city at sea`.
 
-{{< load-photoswipe >}}
 
 {{< gallery >}}
-  {{< figure src="/img/townscaper/city_at_sea/city_at_sea_1.jpg" caption="Aerial view">}}
-  {{< figure src="/img/townscaper/city_at_sea/city_at_sea_2.jpg" caption="Far away">}}
-  {{< figure src="/img/townscaper/city_at_sea/city_at_sea_3.jpg" caption="Lighthouse">}}
-  {{< figure src="/img/townscaper/city_at_sea/city_at_sea_4.jpg" caption="Aerial view 2">}}
-  {{< figure src="/img/townscaper/city_at_sea/city_at_sea_5.jpg" caption="Uppertown">}}
-  {{< figure src="/img/townscaper/city_at_sea/city_at_sea_6.jpg" caption="Fort">}}
-  {{< figure src="/img/townscaper/city_at_sea/city_at_sea_7.jpg" caption="Downtown">}}
-  {{< figure src="/img/townscaper/city_at_sea/city_at_sea_8.jpg" caption="Gate keeper">}}
+  <img src="/img/townscaper/city_at_sea/city_at_sea_1.jpg" class="grid-w33" alt="Aerial view" />
+  <img src="/img/townscaper/city_at_sea/city_at_sea_2.jpg" class="grid-w33" alt="Far away" />
+  <img src="/img/townscaper/city_at_sea/city_at_sea_3.jpg" class="grid-w33" alt="Lighthouse" />
+  <img src="/img/townscaper/city_at_sea/city_at_sea_4.jpg" class="grid-w33" alt="Aerial view 2" />
+  <img src="/img/townscaper/city_at_sea/city_at_sea_5.jpg" class="grid-w33" alt="Uppertown" />
+  <img src="/img/townscaper/city_at_sea/city_at_sea_6.jpg" class="grid-w33" alt="Fort" />
+  <img src="/img/townscaper/city_at_sea/city_at_sea_7.jpg" class="grid-w33" alt="Downtown" />
+  <img src="/img/townscaper/city_at_sea/city_at_sea_8.jpg" class="grid-w33" alt="Gate keeper" />
 {{< /gallery >}}
 
 Explore it yourself in Townscaper

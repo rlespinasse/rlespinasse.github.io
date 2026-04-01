@@ -2,7 +2,8 @@
 title: "Actions Hackathon: Leveraging Commit Info for Enhanced Release and Deployment Workflows"
 date: 2020-08-16T11:42:00+02:00
 draft: false
-showToC: false
+featureimage: /img/posts/actions-hackathon/featured.svg
+showTableOfContents: false
 summary: Submission of git-commit-data-action project to the dev.to Actions Hackathon.
 tags: 
 - hackathon

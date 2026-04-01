@@ -2,7 +2,8 @@
 title: "Makefile: Ensuring Essential Variables with Validation Checks"
 date: 2019-07-14T10:00:00+02:00
 draft: false
-showToC: false
+featureimage: /img/posts/makefile/featured.svg
+showTableOfContents: false
 summary: Explore Makefile nice features to ease your developer life.
 tags:
 - makefile

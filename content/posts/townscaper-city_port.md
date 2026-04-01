@@ -2,7 +2,8 @@
 title: "Townscaper: Harbor City - Where Land and Sea Embrace"
 date: 2020-07-02T10:42:00+02:00
 draft: false
-showToC: false
+featureimage: /img/townscaper/city_port/city_port_1.jpg
+showTableOfContents: false
 summary: City with a big port.
 tags:
 - townscaper
@@ -14,27 +15,26 @@ series_order: 3
 
 `City` with a big `port`.
 
-{{< load-photoswipe >}}
 
 {{< gallery >}}
-  {{< figure src="/img/townscaper/city_port/city_port_1.jpg" caption="Aerial view">}}
-  {{< figure src="/img/townscaper/city_port/city_port_2.jpg" caption="Far away">}}
-  {{< figure src="/img/townscaper/city_port/city_port_3.jpg" caption="From space">}}
-  {{< figure src="/img/townscaper/city_port/city_port_4.jpg" caption="Aerial view 2">}}
-  {{< figure src="/img/townscaper/city_port/city_port_5.jpg" caption="Aerial view 3">}}
-  {{< figure src="/img/townscaper/city_port/city_port_6.jpg" caption="Aerial view 4">}}
-  {{< figure src="/img/townscaper/city_port/city_port_7.jpg" caption="Aerial view 5">}}
-  {{< figure src="/img/townscaper/city_port/city_port_8.jpg" caption="Neighborhood view">}}
-  {{< figure src="/img/townscaper/city_port/city_port_9.jpg" caption="From the canal">}}
-  {{< figure src="/img/townscaper/city_port/city_port_10.jpg" caption="Walk the roads">}}
-  {{< figure src="/img/townscaper/city_port/city_port_11.jpg" caption="Inside the city">}}
-  {{< figure src="/img/townscaper/city_port/city_port_12.jpg" caption="Lighthouse">}}
-  {{< figure src="/img/townscaper/city_port/city_port_13.jpg" caption="Docks">}}
-  {{< figure src="/img/townscaper/city_port/city_port_14.jpg" caption="Canal entry">}}
-  {{< figure src="/img/townscaper/city_port/city_port_15.jpg" caption="Fishermans">}}
-  {{< figure src="/img/townscaper/city_port/city_port_16.jpg" caption="Cult building">}}
-  {{< figure src="/img/townscaper/city_port/city_port_17.jpg" caption="City hall">}}
-  {{< figure src="/img/townscaper/city_port/city_port_18.jpg" caption="Storage units">}}
+  <img src="/img/townscaper/city_port/city_port_1.jpg" class="grid-w33" alt="Aerial view" />
+  <img src="/img/townscaper/city_port/city_port_2.jpg" class="grid-w33" alt="Far away" />
+  <img src="/img/townscaper/city_port/city_port_3.jpg" class="grid-w33" alt="From space" />
+  <img src="/img/townscaper/city_port/city_port_4.jpg" class="grid-w33" alt="Aerial view 2" />
+  <img src="/img/townscaper/city_port/city_port_5.jpg" class="grid-w33" alt="Aerial view 3" />
+  <img src="/img/townscaper/city_port/city_port_6.jpg" class="grid-w33" alt="Aerial view 4" />
+  <img src="/img/townscaper/city_port/city_port_7.jpg" class="grid-w33" alt="Aerial view 5" />
+  <img src="/img/townscaper/city_port/city_port_8.jpg" class="grid-w33" alt="Neighborhood view" />
+  <img src="/img/townscaper/city_port/city_port_9.jpg" class="grid-w33" alt="From the canal" />
+  <img src="/img/townscaper/city_port/city_port_10.jpg" class="grid-w33" alt="Walk the roads" />
+  <img src="/img/townscaper/city_port/city_port_11.jpg" class="grid-w33" alt="Inside the city" />
+  <img src="/img/townscaper/city_port/city_port_12.jpg" class="grid-w33" alt="Lighthouse" />
+  <img src="/img/townscaper/city_port/city_port_13.jpg" class="grid-w33" alt="Docks" />
+  <img src="/img/townscaper/city_port/city_port_14.jpg" class="grid-w33" alt="Canal entry" />
+  <img src="/img/townscaper/city_port/city_port_15.jpg" class="grid-w33" alt="Fishermans" />
+  <img src="/img/townscaper/city_port/city_port_16.jpg" class="grid-w33" alt="Cult building" />
+  <img src="/img/townscaper/city_port/city_port_17.jpg" class="grid-w33" alt="City hall" />
+  <img src="/img/townscaper/city_port/city_port_18.jpg" class="grid-w33" alt="Storage units" />
 {{< /gallery >}}
 
 Explore it yourself in Townscaper

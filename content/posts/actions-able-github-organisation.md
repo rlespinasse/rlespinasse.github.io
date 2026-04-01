@@ -3,7 +3,7 @@ title: "actions-able: A GitHub Organisation for GitHub Actions Tooling"
 date: 2026-03-12T10:00:00+01:00
 draft: false
 summary: "actions-able is a GitHub organisation for GitHub Actions tooling, hosting envsubst-action and the maintained awesome-actions curated list."
-coverImg: /img/posts/actions-able-github-organisation/featured.svg
+featureimage: /img/posts/actions-able-github-organisation/featured.svg
 tags:
 - opensource
 - github

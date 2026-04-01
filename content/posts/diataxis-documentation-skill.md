@@ -3,7 +3,7 @@ title: "Diataxis Meets AI: A Documentation Skill for Coding Sessions"
 date: 2026-03-11T14:00:00+01:00
 draft: false
 summary: "The diataxis skill for agent-skills brings the Diataxis documentation framework into AI coding sessions, keeping docs well-structured."
-coverImg: /img/posts/diataxis-documentation-skill/featured.svg
+featureimage: /img/posts/diataxis-documentation-skill/featured.svg
 tags:
 - opensource
 - github

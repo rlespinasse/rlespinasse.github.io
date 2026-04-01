@@ -1,4 +1,4 @@
-[submodule "themes/kayal"]
-path = themes/kayal
-url = https://github.com/mnjm/kayal.git
-branch = main
+[submodule "themes/blowfish"]
+	path = themes/blowfish
+	url = https://github.com/nunocoracao/blowfish.git
+	branch = main

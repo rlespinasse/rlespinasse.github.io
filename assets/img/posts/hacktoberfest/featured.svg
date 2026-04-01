@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="'SF Mono', 'Fira Code', monospace">
+  <defs>
+    <filter id="orangeglow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="subtleglow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0d1117"/>
+
+  <!-- Subtle orange ambient glow top-left -->
+  <circle cx="80" cy="80" r="160" fill="#f97316" opacity="0.04"/>
+  <!-- Subtle green ambient glow bottom-right -->
+  <circle cx="720" cy="420" r="140" fill="#3fb950" opacity="0.05"/>
+
+  <!-- ===== TITLE AREA ===== -->
+  <text x="400" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="30" font-weight="700" fill="#f97316" filter="url(#orangeglow)" letter-spacing="-0.5">Hacktoberfest</text>
+  <text x="400" y="76" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="14" fill="#8b949e" letter-spacing="2">Open Source Month</text>
+  <line x1="320" y1="88" x2="480" y2="88" stroke="#f97316" stroke-width="1" opacity="0.35"/>
+
+  <!-- ===== PR CARDS (fanned stack, left area) ===== -->
+
+  <!-- Card 4 (bottom of stack, most offset) -->
+  <rect x="68" y="124" width="430" height="72" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.2" opacity="0.5"/>
+
+  <!-- Card 3 -->
+  <rect x="62" y="116" width="430" height="72" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.2" opacity="0.7"/>
+
+  <!-- Card 2 -->
+  <rect x="56" y="108" width="430" height="72" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.2" opacity="0.85"/>
+
+  <!-- Card 1 (top, fully visible) -->
+  <rect x="50" y="100" width="430" height="72" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <!-- PR title -->
+  <text x="70" y="122" font-size="13" font-weight="600" fill="#e6edf3">feat: add slug support for branch names</text>
+  <!-- Repo name -->
+  <text x="70" y="142" font-size="11" fill="#8b949e">rlespinasse/github-slug-action</text>
+  <!-- Merged badge -->
+  <rect x="70" y="150" width="60" height="16" rx="8" fill="#1a4428"/>
+  <text x="100" y="162" text-anchor="middle" font-size="10" fill="#3fb950">Merged</text>
+  <!-- PR number -->
+  <text x="148" y="162" font-size="11" fill="#484f58">#42</text>
+  <!-- Merge icon dot -->
+  <circle cx="62" cy="122" r="4" fill="#8957e5"/>
+
+  <!-- Card 5 (second visible, slightly below) -->
+  <rect x="50" y="185" width="430" height="72" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="70" y="207" font-size="13" font-weight="600" fill="#e6edf3">fix: export options not applied correctly</text>
+  <text x="70" y="227" font-size="11" fill="#8b949e">rlespinasse/drawio-export-action</text>
+  <rect x="70" y="235" width="60" height="16" rx="8" fill="#1a4428"/>
+  <text x="100" y="247" text-anchor="middle" font-size="10" fill="#3fb950">Merged</text>
+  <text x="148" y="247" font-size="11" fill="#484f58">#17</text>
+  <circle cx="62" cy="207" r="4" fill="#8957e5"/>
+
+  <!-- Card 6 (third) -->
+  <rect x="50" y="270" width="430" height="72" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="70" y="292" font-size="13" font-weight="600" fill="#e6edf3">docs: update README with usage examples</text>
+  <text x="70" y="312" font-size="11" fill="#8b949e">rlespinasse/github-slug-action</text>
+  <rect x="70" y="320" width="60" height="16" rx="8" fill="#1a4428"/>
+  <text x="100" y="332" text-anchor="middle" font-size="10" fill="#3fb950">Merged</text>
+  <text x="148" y="332" font-size="11" fill="#484f58">#38</text>
+  <circle cx="62" cy="292" r="4" fill="#8957e5"/>
+
+  <!-- Card 7 (fourth) -->
+  <rect x="50" y="355" width="430" height="72" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="70" y="377" font-size="13" font-weight="600" fill="#e6edf3">chore: bump dependencies to latest versions</text>
+  <text x="70" y="397" font-size="11" fill="#8b949e">rlespinasse/wints</text>
+  <rect x="70" y="405" width="60" height="16" rx="8" fill="#1a4428"/>
+  <text x="100" y="417" text-anchor="middle" font-size="10" fill="#3fb950">Merged</text>
+  <text x="148" y="417" font-size="11" fill="#484f58">#8</text>
+  <circle cx="62" cy="377" r="4" fill="#8957e5"/>
+
+  <!-- ===== COUNTER BADGE (right side) ===== -->
+  <rect x="530" y="128" width="220" height="160" rx="12" fill="#161b22" stroke="#f97316" stroke-width="1.5"/>
+
+  <!-- Counter header -->
+  <text x="640" y="164" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="13" fill="#8b949e" letter-spacing="1">PULL REQUESTS</text>
+
+  <!-- Big number -->
+  <text x="640" y="230" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="64" font-weight="700" fill="#f97316" filter="url(#subtleglow)">4/4</text>
+
+  <!-- completed label -->
+  <text x="640" y="260" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="14" font-weight="600" fill="#3fb950" letter-spacing="1">completed</text>
+
+  <!-- Divider -->
+  <line x1="556" y1="276" x2="724" y2="276" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Challenge label -->
+  <text x="640" y="294" text-anchor="middle" font-size="11" fill="#484f58">Hacktoberfest Challenge</text>
+
+  <!-- ===== ACTIVITY DOTS (contribution graph hint) ===== -->
+  <rect x="530" y="310" width="220" height="90" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="640" y="329" text-anchor="middle" font-size="10" fill="#484f58">Contribution Activity</text>
+
+  <!-- Mini contribution grid -->
+  <!-- Row 1 -->
+  <rect x="548" y="338" width="10" height="10" rx="2" fill="#0e4429"/>
+  <rect x="562" y="338" width="10" height="10" rx="2" fill="#0e4429"/>
+  <rect x="576" y="338" width="10" height="10" rx="2" fill="#26a641"/>
+  <rect x="590" y="338" width="10" height="10" rx="2" fill="#0e4429"/>
+  <rect x="604" y="338" width="10" height="10" rx="2" fill="#39d353"/>
+  <rect x="618" y="338" width="10" height="10" rx="2" fill="#0e4429"/>
+  <rect x="632" y="338" width="10" height="10" rx="2" fill="#26a641"/>
+  <rect x="646" y="338" width="10" height="10" rx="2" fill="#39d353"/>
+  <rect x="660" y="338" width="10" height="10" rx="2" fill="#0e4429"/>
+  <rect x="674" y="338" width="10" height="10" rx="2" fill="#26a641"/>
+  <rect x="688" y="338" width="10" height="10" rx="2" fill="#0e4429"/>
+  <rect x="702" y="338" width="10" height="10" rx="2" fill="#39d353"/>
+  <rect x="716" y="338" width="10" height="10" rx="2" fill="#26a641"/>
+  <!-- Row 2 -->
+  <rect x="548" y="352" width="10" height="10" rx="2" fill="#26a641"/>
+  <rect x="562" y="352" width="10" height="10" rx="2" fill="#0e4429"/>
+  <rect x="576" y="352" width="10" height="10" rx="2" fill="#0e4429"/>
+  <rect x="590" y="352" width="10" height="10" rx="2" fill="#39d353"/>
+  <rect x="604" y="352" width="10" height="10" rx="2" fill="#26a641"/>
+  <rect x="618" y="352" width="10" height="10" rx="2" fill="#39d353"/>
+  <rect x="632" y="352" width="10" height="10" rx="2" fill="#0e4429"/>
+  <rect x="646" y="352" width="10" height="10" rx="2" fill="#26a641"/>
+  <rect x="660" y="352" width="10" height="10" rx="2" fill="#39d353"/>
+  <rect x="674" y="352" width="10" height="10" rx="2" fill="#0e4429"/>
+  <rect x="688" y="352" width="10" height="10" rx="2" fill="#0e4429"/>
+  <rect x="702" y="352" width="10" height="10" rx="2" fill="#26a641"/>
+  <rect x="716" y="352" width="10" height="10" rx="2" fill="#0e4429"/>
+  <!-- Row 3 -->
+  <rect x="548" y="366" width="10" height="10" rx="2" fill="#0e4429"/>
+  <rect x="562" y="366" width="10" height="10" rx="2" fill="#39d353"/>
+  <rect x="576" y="366" width="10" height="10" rx="2" fill="#26a641"/>
+  <rect x="590" y="366" width="10" height="10" rx="2" fill="#0e4429"/>
+  <rect x="604" y="366" width="10" height="10" rx="2" fill="#0e4429"/>
+  <rect x="618" y="366" width="10" height="10" rx="2" fill="#26a641"/>
+  <rect x="632" y="366" width="10" height="10" rx="2" fill="#39d353"/>
+  <rect x="646" y="366" width="10" height="10" rx="2" fill="#26a641"/>
+  <rect x="660" y="366" width="10" height="10" rx="2" fill="#0e4429"/>
+  <rect x="674" y="366" width="10" height="10" rx="2" fill="#39d353"/>
+  <rect x="688" y="366" width="10" height="10" rx="2" fill="#26a641"/>
+  <rect x="702" y="366" width="10" height="10" rx="2" fill="#0e4429"/>
+  <rect x="716" y="366" width="10" height="10" rx="2" fill="#26a641"/>
+  <!-- Row 4 (october highlighted in orange tones) -->
+  <rect x="548" y="380" width="10" height="10" rx="2" fill="#7c2d0a"/>
+  <rect x="562" y="380" width="10" height="10" rx="2" fill="#9a3412"/>
+  <rect x="576" y="380" width="10" height="10" rx="2" fill="#c2410c"/>
+  <rect x="590" y="380" width="10" height="10" rx="2" fill="#ea580c"/>
+  <rect x="604" y="380" width="10" height="10" rx="2" fill="#f97316"/>
+  <rect x="618" y="380" width="10" height="10" rx="2" fill="#f97316"/>
+  <rect x="632" y="380" width="10" height="10" rx="2" fill="#ea580c"/>
+  <rect x="646" y="380" width="10" height="10" rx="2" fill="#f97316"/>
+  <rect x="660" y="380" width="10" height="10" rx="2" fill="#c2410c"/>
+  <rect x="674" y="380" width="10" height="10" rx="2" fill="#9a3412"/>
+  <rect x="688" y="380" width="10" height="10" rx="2" fill="#7c2d0a"/>
+  <rect x="702" y="380" width="10" height="10" rx="2" fill="#9a3412"/>
+  <rect x="716" y="380" width="10" height="10" rx="2" fill="#c2410c"/>
+
+  <!-- October label under grid -->
+  <text x="632" y="408" text-anchor="middle" font-size="9" fill="#f97316" opacity="0.7">October</text>
+
+  <!-- ===== BOTTOM FOOTER ===== -->
+  <text x="400" y="468" text-anchor="middle" font-size="12" fill="#484f58">Hacktoberfest 2019 · 2020</text>
+  <line x1="340" y1="476" x2="460" y2="476" stroke="#30363d" stroke-width="1" opacity="0.5"/>
+  <text x="400" y="492" text-anchor="middle" font-size="10" fill="#30363d">rlespinasse.github.io</text>
+</svg>

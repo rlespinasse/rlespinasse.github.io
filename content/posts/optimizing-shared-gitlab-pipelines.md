@@ -2,6 +2,7 @@
 title: "Optimizing Shared GitLab Pipelines: Flexibility and Maintainability"
 date: 2024-10-06T00:00:00+02:00
 draft: false
+featureimage: /img/posts/optimizing-shared-gitlab-pipelines/featured.svg
 toc: true
 summary: Optimizing shared GitLab pipelines enhances flexibility and maintainability. Users can easily customize pipeline behavior by implementing variables as configuration points without compromising the original intent. While temporary workarounds exist, contributing to open-source projects to improve shared pipeline structures is highly recommended, especially during events like Hacktoberfest.
 tags:

@@ -2,7 +2,8 @@
 title: "Hacktoberfest 2019: Dive into the Open Source month"
 date: 2019-09-30T10:42:00+02:00
 draft: false
-showToC: false
+featureimage: /img/posts/hacktoberfest/featured.svg
+showTableOfContents: false
 summary: Report on my Hacktoberfest 2019 journey.
 tags:
 - hacktoberfest

@@ -2,7 +2,8 @@
 title: "Townscaper: Crafting Identical Islands"
 date: 2020-07-04T10:42:00+02:00
 draft: false
-showToC: false
+featureimage: /img/townscaper/same_same_islands/same_same_islands_1.jpg
+showTableOfContents: false
 summary: Same concept, Same buildings, a lot of islands.
 tags:
 - townscaper
@@ -14,12 +15,11 @@ series_order: 6
 
 Same concept, Same buildings, a lot of islands.
 
-{{< load-photoswipe >}}
 
 {{< gallery >}}
-  {{< figure src="/img/townscaper/same_same_islands/same_same_islands_1.jpg" caption="Aerial view">}}
-  {{< figure src="/img/townscaper/same_same_islands/same_same_islands_2.jpg" caption="From space">}}
-  {{< figure src="/img/townscaper/same_same_islands/same_same_islands_3.jpg" caption="Far away">}}
+  <img src="/img/townscaper/same_same_islands/same_same_islands_1.jpg" class="grid-w33" alt="Aerial view" />
+  <img src="/img/townscaper/same_same_islands/same_same_islands_2.jpg" class="grid-w33" alt="From space" />
+  <img src="/img/townscaper/same_same_islands/same_same_islands_3.jpg" class="grid-w33" alt="Far away" />
 {{< /gallery >}}
 
 Explore it yourself in Townscaper

@@ -2,7 +2,8 @@
 title: "Townscaper: Crafting Community - Daily Challenge Day 3"
 date: 2020-07-12T10:42:00+02:00
 draft: false
-showToC: false
+featureimage: /img/townscaper/dailychallenges/neighbours/aerial.jpg
+showTableOfContents: false
 summary: Participation on a daily challenge about Townscaper. Day 3 - world Neighbours.
 tags:
 - townscaper
@@ -17,11 +18,10 @@ If you're too close, your neighbours and you can disappear in an instant.
 
 Welcome to the `Tetris neighborhood`.
 
-{{< load-photoswipe >}}
 
 {{< gallery >}}
-  {{< figure src="/img/townscaper/dailychallenges/neighbours/aerial.jpg" caption="Meet the neighboors ... or not">}}
-  {{< figure src="/img/townscaper/dailychallenges/neighbours/space.jpg" caption="From space">}}
+  <img src="/img/townscaper/dailychallenges/neighbours/aerial.jpg" class="grid-w33" alt="Meet the neighboors ... or not" />
+  <img src="/img/townscaper/dailychallenges/neighbours/space.jpg" class="grid-w33" alt="From space" />
 {{< /gallery >}}
 
 Explore it yourself in Townscaper

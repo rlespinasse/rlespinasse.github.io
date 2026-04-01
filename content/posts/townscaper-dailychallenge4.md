@@ -2,7 +2,8 @@
 title: "Townscaper: Flowing Waterways - Daily Challenge Day 4"
 date: 2020-07-13T15:42:00+02:00
 draft: false
-showToC: false
+featureimage: /img/townscaper/dailychallenges/canal/canals.jpg
+showTableOfContents: false
 summary: Participation on a daily challenge about Townscaper. Day 4 - world Canal.
 tags:
 - townscaper
@@ -19,14 +20,13 @@ A `canal` can have many forms
 - The aerial one,
 - The hidden one.
 
-{{< load-photoswipe >}}
 
 {{< gallery >}}
-  {{< figure src="/img/townscaper/dailychallenges/canal/canals.jpg" caption="Canals overview">}}
-  {{< figure src="/img/townscaper/dailychallenges/canal/obvious_one.jpg" caption="Obvious canal">}}
-  {{< figure src="/img/townscaper/dailychallenges/canal/little_one.jpg" caption="Little canal">}}
-  {{< figure src="/img/townscaper/dailychallenges/canal/aerial_one.jpg" caption="Aerial canal">}}
-  {{< figure src="/img/townscaper/dailychallenges/canal/hidden_one.jpg" caption="Hidden canal">}}
+  <img src="/img/townscaper/dailychallenges/canal/canals.jpg" class="grid-w33" alt="Canals overview" />
+  <img src="/img/townscaper/dailychallenges/canal/obvious_one.jpg" class="grid-w33" alt="Obvious canal" />
+  <img src="/img/townscaper/dailychallenges/canal/little_one.jpg" class="grid-w33" alt="Little canal" />
+  <img src="/img/townscaper/dailychallenges/canal/aerial_one.jpg" class="grid-w33" alt="Aerial canal" />
+  <img src="/img/townscaper/dailychallenges/canal/hidden_one.jpg" class="grid-w33" alt="Hidden canal" />
 {{< /gallery >}}
 
 Explore it yourself in Townscaper

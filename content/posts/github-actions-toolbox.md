@@ -3,7 +3,7 @@ title: "GitHub Actions Toolbox: A CLI Companion for Your Workflows"
 date: 2026-03-11T10:00:00+01:00
 draft: false
 summary: "ghat is a Go CLI toolbox for GitHub Actions maintainers. Install via Homebrew and query repository dependents from your terminal."
-coverImg: /img/posts/github-actions-toolbox/featured.svg
+featureimage: /img/posts/github-actions-toolbox/featured.svg
 tags:
 - opensource
 - github

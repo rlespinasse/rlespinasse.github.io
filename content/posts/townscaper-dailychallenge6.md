@@ -2,7 +2,8 @@
 title: "Townscaper: Impregnable Citadels - Daily Challenge Day 6"
 date: 2020-07-15T22:42:00+02:00
 draft: false
-showToC: false
+featureimage: /img/townscaper/dailychallenges/fortress/far.jpg
+showTableOfContents: false
 summary: Participation on a daily challenge about Townscaper. Day 6 - world Fortress.
 tags:
 - townscaper
@@ -16,14 +17,13 @@ Big blue, the `fortress` of the sea.
 
 The lighthouse is for the decorum, obviously.
 
-{{< load-photoswipe >}}
 
 {{< gallery >}}
-  {{< figure src="/img/townscaper/dailychallenges/fortress/far.jpg" caption="Far away">}}
-  {{< figure src="/img/townscaper/dailychallenges/fortress/big_blue.jpg" caption="Meet Big Blue">}}
-  {{< figure src="/img/townscaper/dailychallenges/fortress/port.jpg" caption="Port access">}}
-  {{< figure src="/img/townscaper/dailychallenges/fortress/high_ground.jpg" caption="High ground">}}
-  {{< figure src="/img/townscaper/dailychallenges/fortress/aerial.jpg" caption="Aerial view">}}
+  <img src="/img/townscaper/dailychallenges/fortress/far.jpg" class="grid-w33" alt="Far away" />
+  <img src="/img/townscaper/dailychallenges/fortress/big_blue.jpg" class="grid-w33" alt="Meet Big Blue" />
+  <img src="/img/townscaper/dailychallenges/fortress/port.jpg" class="grid-w33" alt="Port access" />
+  <img src="/img/townscaper/dailychallenges/fortress/high_ground.jpg" class="grid-w33" alt="High ground" />
+  <img src="/img/townscaper/dailychallenges/fortress/aerial.jpg" class="grid-w33" alt="Aerial view" />
 {{< /gallery >}}
 
 Explore it yourself in Townscaper

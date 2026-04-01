@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0d1117"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.05" stroke="#58a6ff" stroke-width="0.5">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+  </g>
+
+  <!-- ===== TOP SECTION: Pipeline DAG ===== -->
+
+  <!-- Stage: build -->
+  <rect x="52" y="42" width="100" height="38" rx="7" fill="#0d2a4a" stroke="#3b82f6" stroke-width="2"/>
+  <text x="102" y="66" text-anchor="middle" fill="#60a5fa" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" font-weight="700">build</text>
+
+  <!-- Arrow build → test -->
+  <line x1="153" y1="61" x2="193" y2="61" stroke="#30363d" stroke-width="1.5"/>
+  <polygon points="193,61 186,57 186,65" fill="#30363d"/>
+
+  <!-- Stage: test -->
+  <rect x="194" y="42" width="100" height="38" rx="7" fill="#0a2e1a" stroke="#22c55e" stroke-width="2"/>
+  <text x="244" y="66" text-anchor="middle" fill="#4ade80" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" font-weight="700">test</text>
+
+  <!-- Arrow test → lint -->
+  <line x1="295" y1="61" x2="335" y2="61" stroke="#30363d" stroke-width="1.5"/>
+  <polygon points="335,61 328,57 328,65" fill="#30363d"/>
+
+  <!-- Stage: lint -->
+  <rect x="336" y="42" width="100" height="38" rx="7" fill="#2d2500" stroke="#eab308" stroke-width="2"/>
+  <text x="386" y="66" text-anchor="middle" fill="#fbbf24" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" font-weight="700">lint</text>
+
+  <!-- Arrow lint → deploy -->
+  <line x1="437" y1="61" x2="477" y2="61" stroke="#30363d" stroke-width="1.5"/>
+  <polygon points="477,61 470,57 470,65" fill="#30363d"/>
+
+  <!-- Stage: deploy -->
+  <rect x="478" y="42" width="100" height="38" rx="7" fill="#2d1200" stroke="#f97316" stroke-width="2"/>
+  <text x="528" y="66" text-anchor="middle" fill="#fb923c" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" font-weight="700">deploy</text>
+
+  <!-- Pipeline label -->
+  <text x="648" y="56" fill="#6e7681" font-family="'Segoe UI', Arial, sans-serif" font-size="11">Pipeline DAG</text>
+  <text x="648" y="72" fill="#3d444d" font-family="'Segoe UI', Arial, sans-serif" font-size="10">GitLab CI · dark mode</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="100" x2="760" y2="100" stroke="#21262d" stroke-width="1"/>
+
+  <!-- ===== MIDDLE SECTION: YAML code cards ===== -->
+
+  <!-- LEFT CARD: shared-ci-template.yml -->
+  <rect x="40" y="115" width="330" height="230" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Card header bar -->
+  <rect x="40" y="115" width="330" height="30" rx="8" fill="#21262d"/>
+  <rect x="40" y="133" width="330" height="12" fill="#21262d"/>
+  <!-- Window dots -->
+  <circle cx="58" cy="130" r="5" fill="#f85149" opacity="0.8"/>
+  <circle cx="74" cy="130" r="5" fill="#f0883e" opacity="0.8"/>
+  <circle cx="90" cy="130" r="5" fill="#3fb950" opacity="0.8"/>
+  <!-- Filename -->
+  <text x="205" y="134" text-anchor="middle" fill="#8b949e" font-family="'SF Mono', 'Fira Code', monospace" font-size="11">shared-ci-template.yml</text>
+
+  <!-- YAML content: shared template -->
+  <!-- Line 1: .deploy: -->
+  <text x="62" y="170" fill="#79c0ff" font-family="'SF Mono', 'Fira Code', monospace" font-size="12" font-weight="600">.deploy:</text>
+  <!-- Line 2: script: -->
+  <text x="78" y="190" fill="#79c0ff" font-family="'SF Mono', 'Fira Code', monospace" font-size="12">script:</text>
+  <!-- Line 3: - deploy.sh $ENV -->
+  <text x="94" y="210" fill="#8b949e" font-family="'SF Mono', 'Fira Code', monospace" font-size="12">-</text>
+  <text x="106" y="210" fill="#a5d6ff" font-family="'SF Mono', 'Fira Code', monospace" font-size="12">deploy.sh</text>
+  <text x="188" y="210" fill="#86efac" font-family="'SF Mono', 'Fira Code', monospace" font-size="12">$ENV</text>
+  <!-- Line 4: variables: -->
+  <text x="78" y="232" fill="#79c0ff" font-family="'SF Mono', 'Fira Code', monospace" font-size="12">variables:</text>
+  <!-- Line 5: ENV: staging -->
+  <text x="94" y="252" fill="#a5d6ff" font-family="'SF Mono', 'Fira Code', monospace" font-size="12">ENV:</text>
+  <text x="128" y="252" fill="#86efac" font-family="'SF Mono', 'Fira Code', monospace" font-size="12">staging</text>
+
+  <!-- Default badge -->
+  <rect x="62" y="264" width="80" height="18" rx="4" fill="#0d2a4a" stroke="#3b82f6" stroke-width="1"/>
+  <text x="102" y="276" text-anchor="middle" fill="#60a5fa" font-family="'Segoe UI', Arial, sans-serif" font-size="10">default: staging</text>
+
+  <!-- Card label below -->
+  <text x="205" y="325" text-anchor="middle" fill="#6e7681" font-family="'Segoe UI', Arial, sans-serif" font-size="11">Shared template — reusable base</text>
+
+  <!-- RIGHT CARD: project/.gitlab-ci.yml -->
+  <rect x="430" y="115" width="330" height="230" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Card header bar -->
+  <rect x="430" y="115" width="330" height="30" rx="8" fill="#21262d"/>
+  <rect x="430" y="133" width="330" height="12" fill="#21262d"/>
+  <!-- Window dots -->
+  <circle cx="448" cy="130" r="5" fill="#f85149" opacity="0.8"/>
+  <circle cx="464" cy="130" r="5" fill="#f0883e" opacity="0.8"/>
+  <circle cx="480" cy="130" r="5" fill="#3fb950" opacity="0.8"/>
+  <!-- Filename -->
+  <text x="595" y="134" text-anchor="middle" fill="#8b949e" font-family="'SF Mono', 'Fira Code', monospace" font-size="11">project/.gitlab-ci.yml</text>
+
+  <!-- YAML content: project override -->
+  <!-- Line 1: deploy-prod: -->
+  <text x="452" y="170" fill="#79c0ff" font-family="'SF Mono', 'Fira Code', monospace" font-size="12" font-weight="600">deploy-prod:</text>
+  <!-- Line 2: extends: .deploy -->
+  <text x="468" y="190" fill="#79c0ff" font-family="'SF Mono', 'Fira Code', monospace" font-size="12">extends:</text>
+  <text x="548" y="190" fill="#a5d6ff" font-family="'SF Mono', 'Fira Code', monospace" font-size="12">.deploy</text>
+  <!-- Line 3: variables: -->
+  <text x="468" y="212" fill="#79c0ff" font-family="'SF Mono', 'Fira Code', monospace" font-size="12">variables:</text>
+  <!-- Line 4: ENV: production -->
+  <text x="484" y="232" fill="#a5d6ff" font-family="'SF Mono', 'Fira Code', monospace" font-size="12">ENV:</text>
+  <text x="518" y="232" fill="#86efac" font-family="'SF Mono', 'Fira Code', monospace" font-size="12">production</text>
+
+  <!-- Override badge -->
+  <rect x="452" y="248" width="98" height="18" rx="4" fill="#2d1200" stroke="#f97316" stroke-width="1"/>
+  <text x="501" y="260" text-anchor="middle" fill="#fb923c" font-family="'Segoe UI', Arial, sans-serif" font-size="10">override: production</text>
+
+  <!-- Card label below -->
+  <text x="595" y="325" text-anchor="middle" fill="#6e7681" font-family="'Segoe UI', Arial, sans-serif" font-size="11">Project config — variable override</text>
+
+  <!-- CENTER ARROW: extends -->
+  <g>
+    <!-- Arrow body -->
+    <line x1="378" y1="225" x2="422" y2="225" stroke="#f97316" stroke-width="2" stroke-dasharray="5,3"/>
+    <!-- Arrowhead -->
+    <polygon points="422,225 414,220 414,230" fill="#f97316"/>
+    <!-- "extends" label -->
+    <rect x="376" y="235" width="52" height="16" rx="4" fill="#161b22"/>
+    <text x="402" y="247" text-anchor="middle" fill="#f97316" font-family="'SF Mono', 'Fira Code', monospace" font-size="10" font-weight="600">extends</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="40" y1="362" x2="760" y2="362" stroke="#21262d" stroke-width="1"/>
+
+  <!-- ===== BOTTOM STRIP ===== -->
+
+  <!-- GitLab-colored title -->
+  <text x="400" y="400" text-anchor="middle" fill="#f97316" font-family="'Segoe UI', Arial, sans-serif" font-size="26" font-weight="700" filter="url(#glow)">GitLab Pipelines</text>
+  <text x="400" y="428" text-anchor="middle" fill="#6e7681" font-family="'Segoe UI', Arial, sans-serif" font-size="14">Shared Templates · Variable Overrides · Flexibility &amp; Maintainability</text>
+
+  <!-- Decorative accent line -->
+  <line x1="300" y1="444" x2="500" y2="444" stroke="#f97316" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Small key/value annotation -->
+  <text x="400" y="470" text-anchor="middle" fill="#3d444d" font-family="'SF Mono', 'Fira Code', monospace" font-size="11">inherit defaults · override per project · single source of truth</text>
+</svg>

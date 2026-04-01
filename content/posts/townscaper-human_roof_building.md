@@ -2,7 +2,8 @@
 title: "Townscaper: Crafting a Human-Shaped Roof"
 date: 2020-06-30T10:42:00+02:00
 draft: false
-showToC: false
+featureimage: /img/townscaper/human_roof_building/human_roof_building_1.jpg
+showTableOfContents: false
 summary: A building with a root in form of a little human.
 tags:
 - townscaper
@@ -14,15 +15,14 @@ series_order: 1
 
 A building with a root in form of a little human.
 
-{{< load-photoswipe >}}
 
 {{< gallery >}}
-  {{< figure src="/img/townscaper/human_roof_building/human_roof_building_1.jpg" caption="Aerial view">}}
-  {{< figure src="/img/townscaper/human_roof_building/human_roof_building_2.jpg" caption="Back side">}}
-  {{< figure src="/img/townscaper/human_roof_building/human_roof_building_3.jpg" caption="Left side">}}
-  {{< figure src="/img/townscaper/human_roof_building/human_roof_building_4.jpg" caption="Front side">}}
-  {{< figure src="/img/townscaper/human_roof_building/human_roof_building_5.jpg" caption="Right side">}}
-  {{< figure src="/img/townscaper/human_roof_building/human_roof_building_6.jpg" caption="From inside">}}
+  <img src="/img/townscaper/human_roof_building/human_roof_building_1.jpg" class="grid-w33" alt="Aerial view" />
+  <img src="/img/townscaper/human_roof_building/human_roof_building_2.jpg" class="grid-w33" alt="Back side" />
+  <img src="/img/townscaper/human_roof_building/human_roof_building_3.jpg" class="grid-w33" alt="Left side" />
+  <img src="/img/townscaper/human_roof_building/human_roof_building_4.jpg" class="grid-w33" alt="Front side" />
+  <img src="/img/townscaper/human_roof_building/human_roof_building_5.jpg" class="grid-w33" alt="Right side" />
+  <img src="/img/townscaper/human_roof_building/human_roof_building_6.jpg" class="grid-w33" alt="From inside" />
 {{< /gallery >}}
 
 Explore it yourself in Townscaper

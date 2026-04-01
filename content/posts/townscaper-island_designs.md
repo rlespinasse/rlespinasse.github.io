@@ -2,7 +2,8 @@
 title: "Townscaper: Exploring Diverse Island Designs - A Journey Through Architectural Creativity"
 date: 2020-07-03T10:42:00+02:00
 draft: false
-showToC: false
+featureimage: /img/townscaper/island_designs/island_designs_1.jpg
+showTableOfContents: false
 summary: Embark on a creative journey through Townscaper's unique island designs, exploring various architectural styles and layouts.
 tags:
 - townscaper
@@ -14,13 +15,12 @@ series_order: 4
 
 Explore island designs.
 
-{{< load-photoswipe >}}
 
 {{< gallery >}}
-  {{< figure src="/img/townscaper/island_designs/island_designs_1.jpg" caption="Aerial view">}}
-  {{< figure src="/img/townscaper/island_designs/island_designs_2.jpg" caption="Laundry day">}}
-  {{< figure src="/img/townscaper/island_designs/island_designs_3.jpg" caption="Garden at sea">}}
-  {{< figure src="/img/townscaper/island_designs/island_designs_4.jpg" caption="Aerial view 2">}}
+  <img src="/img/townscaper/island_designs/island_designs_1.jpg" class="grid-w33" alt="Aerial view" />
+  <img src="/img/townscaper/island_designs/island_designs_2.jpg" class="grid-w33" alt="Laundry day" />
+  <img src="/img/townscaper/island_designs/island_designs_3.jpg" class="grid-w33" alt="Garden at sea" />
+  <img src="/img/townscaper/island_designs/island_designs_4.jpg" class="grid-w33" alt="Aerial view 2" />
 {{< /gallery >}}
 
 Explore it yourself in Townscaper

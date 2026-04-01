@@ -2,6 +2,8 @@
 title: "Rickroll : Définition (sfeir.dev)"
 date: 2025-04-01T09:34:00+01:00
 layout: "redirect"
+featureimage: /img/posts/sfeirdev-rickroll-definition/featured.webp
+summary: "Vous entendez \"Rickroll\" dans toutes les conversations sans réellement comprendre de quoi il s'agit ? Pas de panique, notre Késaco est là pour vous aider !"
 tags:
 - french
 - humour

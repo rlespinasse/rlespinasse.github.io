@@ -2,7 +2,8 @@
 title: "Townscaper: Unveiling the Crimson City - An Island with a Hidden Secret"
 date: 2020-07-06T10:42:00+02:00
 draft: false
-showToC: false
+featureimage: /img/townscaper/red_city/city_far.jpg
+showTableOfContents: false
 summary: Red city, the island with a little secret.
 tags:
 - townscaper
@@ -14,21 +15,20 @@ series_order: 8
 
 `Red city`, the island with a `little` secret.
 
-{{< load-photoswipe >}}
 
 {{< gallery >}}
-  {{< figure src="/img/townscaper/red_city/city_far.jpg" caption="Far away">}}
-  {{< figure src="/img/townscaper/red_city/city_side1.jpg" caption="From the side">}}
-  {{< figure src="/img/townscaper/red_city/city_side2.jpg" caption="From the side">}}
-  {{< figure src="/img/townscaper/red_city/aerial1.jpg" caption="Aerial view">}}
-  {{< figure src="/img/townscaper/red_city/aerial2.jpg" caption="Aerial view">}}
-  {{< figure src="/img/townscaper/red_city/top.jpg" caption="Red manson control the city">}}
-  {{< figure src="/img/townscaper/red_city/red_top_building.jpg" caption="Red manson control the city">}}
-  {{< figure src="/img/townscaper/red_city/city_district1.jpg" caption="Controlled District">}}
-  {{< figure src="/img/townscaper/red_city/city_district2.jpg" caption="Controlled District">}}
-  {{< figure src="/img/townscaper/red_city/city_district3.jpg" caption="Controlled District">}}
-  {{< figure src="/img/townscaper/red_city/city_district4.jpg" caption="Controlled District">}}
-  {{< figure src="/img/townscaper/red_city/city_district5.jpg" caption="Controlled District">}}s
+  <img src="/img/townscaper/red_city/city_far.jpg" class="grid-w33" alt="Far away" />
+  <img src="/img/townscaper/red_city/city_side1.jpg" class="grid-w33" alt="From the side" />
+  <img src="/img/townscaper/red_city/city_side2.jpg" class="grid-w33" alt="From the side" />
+  <img src="/img/townscaper/red_city/aerial1.jpg" class="grid-w33" alt="Aerial view" />
+  <img src="/img/townscaper/red_city/aerial2.jpg" class="grid-w33" alt="Aerial view" />
+  <img src="/img/townscaper/red_city/top.jpg" class="grid-w33" alt="Red manson control the city" />
+  <img src="/img/townscaper/red_city/red_top_building.jpg" class="grid-w33" alt="Red manson control the city" />
+  <img src="/img/townscaper/red_city/city_district1.jpg" class="grid-w33" alt="Controlled District" />
+  <img src="/img/townscaper/red_city/city_district2.jpg" class="grid-w33" alt="Controlled District" />
+  <img src="/img/townscaper/red_city/city_district3.jpg" class="grid-w33" alt="Controlled District" />
+  <img src="/img/townscaper/red_city/city_district4.jpg" class="grid-w33" alt="Controlled District" />
+  <img src="/img/townscaper/red_city/city_district5.jpg" class="grid-w33" alt="Controlled District" />s
 {{< /gallery >}}
 
 Explore it yourself in Townscaper
@@ -40,19 +40,19 @@ JSiAfgBZozOd52j7fG3-Mu-Zc-w4_ny9PV3Xc-884d6R8g94nG7TdfO8_u4HIvv4_p3vB-y4vK-55B-O
 The secret district is deeply hidden
 
 {{< gallery >}}
-  {{< figure src="/img/townscaper/red_city/secret_access1.jpg" caption="Access to the red secret">}}
-  {{< figure src="/img/townscaper/red_city/secret_entrance.jpg" caption="Here the secret entrance">}}
-  {{< figure src="/img/townscaper/red_city/secret_entrance2.jpg" caption="Here the secret entrance">}}
-  {{< figure src="/img/townscaper/red_city/secret_tunnel.jpg" caption="A little tunnel before the secret district">}}
-  {{< figure src="/img/townscaper/red_city/secret_tunnel2.jpg" caption="A little tunnel before the secret district">}}
-  {{< figure src="/img/townscaper/red_city/secret_place1.jpg" caption="Exploring the secret district">}}
-  {{< figure src="/img/townscaper/red_city/secret_place2.jpg" caption="Exploring the secret district">}}
-  {{< figure src="/img/townscaper/red_city/secret_place3.jpg" caption="Exploring the secret district">}}
-  {{< figure src="/img/townscaper/red_city/secret_place4.jpg" caption="Exploring the secret district">}}
-  {{< figure src="/img/townscaper/red_city/secret_place5.jpg" caption="Exploring the secret district">}}
-  {{< figure src="/img/townscaper/red_city/secret_place6.jpg" caption="Exploring the secret district">}}
-  {{< figure src="/img/townscaper/red_city/secret_place7.jpg" caption="Exploring the secret district">}}
-  {{< figure src="/img/townscaper/red_city/secret_place8.jpg" caption="Exploring the secret district">}}
-  {{< figure src="/img/townscaper/red_city/secret_garden1.jpg" caption="Even the secret district have a secret garden">}}
-  {{< figure src="/img/townscaper/red_city/secret_garden2.jpg" caption="Even the secret district have a secret garden">}}
+  <img src="/img/townscaper/red_city/secret_access1.jpg" class="grid-w33" alt="Access to the red secret" />
+  <img src="/img/townscaper/red_city/secret_entrance.jpg" class="grid-w33" alt="Here the secret entrance" />
+  <img src="/img/townscaper/red_city/secret_entrance2.jpg" class="grid-w33" alt="Here the secret entrance" />
+  <img src="/img/townscaper/red_city/secret_tunnel.jpg" class="grid-w33" alt="A little tunnel before the secret district" />
+  <img src="/img/townscaper/red_city/secret_tunnel2.jpg" class="grid-w33" alt="A little tunnel before the secret district" />
+  <img src="/img/townscaper/red_city/secret_place1.jpg" class="grid-w33" alt="Exploring the secret district" />
+  <img src="/img/townscaper/red_city/secret_place2.jpg" class="grid-w33" alt="Exploring the secret district" />
+  <img src="/img/townscaper/red_city/secret_place3.jpg" class="grid-w33" alt="Exploring the secret district" />
+  <img src="/img/townscaper/red_city/secret_place4.jpg" class="grid-w33" alt="Exploring the secret district" />
+  <img src="/img/townscaper/red_city/secret_place5.jpg" class="grid-w33" alt="Exploring the secret district" />
+  <img src="/img/townscaper/red_city/secret_place6.jpg" class="grid-w33" alt="Exploring the secret district" />
+  <img src="/img/townscaper/red_city/secret_place7.jpg" class="grid-w33" alt="Exploring the secret district" />
+  <img src="/img/townscaper/red_city/secret_place8.jpg" class="grid-w33" alt="Exploring the secret district" />
+  <img src="/img/townscaper/red_city/secret_garden1.jpg" class="grid-w33" alt="Even the secret district have a secret garden" />
+  <img src="/img/townscaper/red_city/secret_garden2.jpg" class="grid-w33" alt="Even the secret district have a secret garden" />
 {{< /gallery >}}

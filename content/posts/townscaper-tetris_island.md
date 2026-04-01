@@ -2,7 +2,8 @@
 title: "Townscaper: Building a Tetris-Inspired Island Paradise"
 date: 2020-07-12T18:42:00+02:00
 draft: false
-showToC: false
+featureimage: /img/townscaper/tetris_island/far.jpg
+showTableOfContents: false
 summary: Welcome to the Tetris island ... and yes, the island float, we are aware of it.
 tags:
 - townscaper
@@ -14,23 +15,22 @@ series_order: 10
 
 Welcome to the `Tetris island` ... and yes, the island float, we are aware of it.
 
-{{< load-photoswipe >}}
 
 {{< gallery >}}
-  {{< figure src="/img/townscaper/tetris_island/far.jpg" caption="Far away">}}
-  {{< figure src="/img/townscaper/tetris_island/aerial1.jpg" caption="Aerial view">}}
-  {{< figure src="/img/townscaper/tetris_island/game1.jpg" caption="Game 1">}}
-  {{< figure src="/img/townscaper/tetris_island/game2.jpg" caption="Game 2">}}
-  {{< figure src="/img/townscaper/tetris_island/game3.jpg" caption="Game 3">}}
-  {{< figure src="/img/townscaper/tetris_island/game4.jpg" caption="Game 4">}}
-  {{< figure src="/img/townscaper/tetris_island/game5.jpg" caption="Game 5">}}
-  {{< figure src="/img/townscaper/tetris_island/game6.jpg" caption="Game 6">}}
-  {{< figure src="/img/townscaper/tetris_island/innergarden_aerial1.jpg" caption="Aerial access to the inner garden">}}
-  {{< figure src="/img/townscaper/tetris_island/innergarden_aerial1.jpg" caption="Aerial access to the inner garden">}}
-  {{< figure src="/img/townscaper/tetris_island/innergarden1.jpg" caption="Inner garden homes 1">}}
-  {{< figure src="/img/townscaper/tetris_island/innergarden2.jpg" caption="Inner garden homes 2">}}
-  {{< figure src="/img/townscaper/tetris_island/innergarden3.jpg" caption="Inner garden homes 3">}}
-  {{< figure src="/img/townscaper/tetris_island/innergarden4.jpg" caption="Inner garden homes 4">}}
+  <img src="/img/townscaper/tetris_island/far.jpg" class="grid-w33" alt="Far away" />
+  <img src="/img/townscaper/tetris_island/aerial1.jpg" class="grid-w33" alt="Aerial view" />
+  <img src="/img/townscaper/tetris_island/game1.jpg" class="grid-w33" alt="Game 1" />
+  <img src="/img/townscaper/tetris_island/game2.jpg" class="grid-w33" alt="Game 2" />
+  <img src="/img/townscaper/tetris_island/game3.jpg" class="grid-w33" alt="Game 3" />
+  <img src="/img/townscaper/tetris_island/game4.jpg" class="grid-w33" alt="Game 4" />
+  <img src="/img/townscaper/tetris_island/game5.jpg" class="grid-w33" alt="Game 5" />
+  <img src="/img/townscaper/tetris_island/game6.jpg" class="grid-w33" alt="Game 6" />
+  <img src="/img/townscaper/tetris_island/innergarden_aerial1.jpg" class="grid-w33" alt="Aerial access to the inner garden" />
+  <img src="/img/townscaper/tetris_island/innergarden_aerial1.jpg" class="grid-w33" alt="Aerial access to the inner garden" />
+  <img src="/img/townscaper/tetris_island/innergarden1.jpg" class="grid-w33" alt="Inner garden homes 1" />
+  <img src="/img/townscaper/tetris_island/innergarden2.jpg" class="grid-w33" alt="Inner garden homes 2" />
+  <img src="/img/townscaper/tetris_island/innergarden3.jpg" class="grid-w33" alt="Inner garden homes 3" />
+  <img src="/img/townscaper/tetris_island/innergarden4.jpg" class="grid-w33" alt="Inner garden homes 4" />
 {{< /gallery >}}
 
 Explore it yourself in Townscaper

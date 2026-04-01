@@ -2,7 +2,8 @@
 title: "Townscaper: Unraveling Mazes - Daily Challenge Day 7"
 date: 2020-07-16T21:42:00+02:00
 draft: false
-showToC: false
+featureimage: /img/townscaper/dailychallenges/labyrinth/labyrinth.jpg
+showTableOfContents: false
 summary: Participation on a daily challenge about Townscaper. Day 7 - world Labyrinth.
 tags:
 - townscaper
@@ -19,9 +20,8 @@ It's depends of the colors of the houses.
 
 Such a colorful `labyrinth`! Can you find the right path?
 
-{{< load-photoswipe >}}
 
-{{< figure src="/img/townscaper/dailychallenges/labyrinth/labyrinth.jpg" caption="Labyrinth">}}
+<img src="/img/townscaper/dailychallenges/labyrinth/labyrinth.jpg" class="grid-w33" alt="Labyrinth" />
 
 Explore it yourself in Townscaper
 

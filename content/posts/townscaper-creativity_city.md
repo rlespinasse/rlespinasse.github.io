@@ -2,7 +2,8 @@
 title: "Townscaper: Canvas City - Unleash Your Urban Imagination"
 date: 2020-07-02T09:42:00+02:00
 draft: false
-showToC: false
+featureimage: /img/townscaper/creativity_city/creativity_city_1.jpg
+showTableOfContents: false
 summary: A empty city to deploy your creativity.
 tags:
 - townscaper
@@ -16,10 +17,9 @@ A empty city to deploy your creativity.
 
 This map serve as base for the [City port](/posts/townscaper-city_port/).
 
-{{< load-photoswipe >}}
 
 {{< gallery >}}
-  {{< figure src="/img/townscaper/creativity_city/creativity_city_1.jpg" caption="Aerial view">}}  
+  <img src="/img/townscaper/creativity_city/creativity_city_1.jpg" class="grid-w33" alt="Aerial view" />  
 {{< /gallery >}}
 
 Explore it yourself in Townscaper

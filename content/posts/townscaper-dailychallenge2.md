@@ -2,7 +2,8 @@
 title: "Townscaper: Cultivating Beauty - Daily Challenge Day 2"
 date: 2020-07-11T10:42:00+02:00
 draft: false
-showToC: false
+featureimage: /img/townscaper/dailychallenges/garden/island.jpg
+showTableOfContents: false
 summary: Participation on a daily challenge about Townscaper. Day 2 - world Garden.
 tags:
 - townscaper
@@ -14,13 +15,12 @@ series_order: 2
 
 A `Garden` bring colors in your life.
 
-{{< load-photoswipe >}}
 
 {{< gallery >}}
-  {{< figure src="/img/townscaper/dailychallenges/garden/island.jpg" caption="Island">}}
-  {{< figure src="/img/townscaper/dailychallenges/garden/garden.jpg" caption="Garden district">}}
-  {{< figure src="/img/townscaper/dailychallenges/garden/large.jpg" caption="Colors across the city ... or not">}}
-  {{< figure src="/img/townscaper/dailychallenges/garden/space.jpg" caption="From space">}}
+  <img src="/img/townscaper/dailychallenges/garden/island.jpg" class="grid-w33" alt="Island" />
+  <img src="/img/townscaper/dailychallenges/garden/garden.jpg" class="grid-w33" alt="Garden district" />
+  <img src="/img/townscaper/dailychallenges/garden/large.jpg" class="grid-w33" alt="Colors across the city ... or not" />
+  <img src="/img/townscaper/dailychallenges/garden/space.jpg" class="grid-w33" alt="From space" />
 {{< /gallery >}}
 
 Explore it yourself in Townscaper

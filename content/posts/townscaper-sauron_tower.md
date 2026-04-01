@@ -2,7 +2,8 @@
 title: "Townscaper: Crafting the Ominous Sauron Tower"
 date: 2020-07-10T10:42:00+02:00
 draft: false
-showToC: false
+featureimage: /img/townscaper/sauron_tower/sauron.jpg
+showTableOfContents: false
 summary: Do it look like Barad-dûr to you?
 tags:
 - townscaper
@@ -14,10 +15,9 @@ series_order: 9
 
 See some `Minas Tirith` on [twitter](https://twitter.com/search?q=minas%20tirith%20townscaper&src=typed_query), so here the `Sauron` tower `Barad-dûr` to match them.
 
-{{< load-photoswipe >}}
 
 {{< gallery >}}
-  {{< figure src="/img/townscaper/sauron_tower/sauron.jpg" caption="Sauron Tower">}}
+  <img src="/img/townscaper/sauron_tower/sauron.jpg" class="grid-w33" alt="Sauron Tower" />
 {{< /gallery >}}
 
 Explore it yourself in Townscaper

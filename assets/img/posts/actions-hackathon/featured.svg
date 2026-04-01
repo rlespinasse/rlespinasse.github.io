@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="'SF Mono', 'Fira Code', monospace">
+  <defs>
+    <filter id="amberglow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="cardglow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0d1117"/>
+
+  <!-- Subtle amber ambient glow top-center -->
+  <circle cx="400" cy="60" r="200" fill="#f59e0b" opacity="0.04"/>
+  <!-- Subtle blue ambient glow left -->
+  <circle cx="120" cy="280" r="160" fill="#79c0ff" opacity="0.03"/>
+
+  <!-- ===== TITLE AREA ===== -->
+  <!-- Title with flanking icons -->
+  <text x="400" y="50" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="700" fill="#f59e0b" filter="url(#amberglow)" letter-spacing="-0.5">&#x26A1; Actions Hackathon &#x1F3C6;</text>
+  <text x="400" y="72" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="13" fill="#8b949e" letter-spacing="2">dev.to · GitHub Actions</text>
+  <line x1="310" y1="83" x2="490" y2="83" stroke="#f59e0b" stroke-width="1" opacity="0.3"/>
+
+  <!-- ===== LEFT: YAML WORKFLOW CARD ===== -->
+  <!-- Window chrome -->
+  <rect x="30" y="100" width="360" height="370" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <rect x="30" y="100" width="360" height="34" rx="10" fill="#21262d"/>
+  <rect x="30" y="122" width="360" height="12" fill="#21262d"/>
+  <circle cx="52" cy="117" r="5.5" fill="#ff5f57"/>
+  <circle cx="70" cy="117" r="5.5" fill="#febc2e"/>
+  <circle cx="88" cy="117" r="5.5" fill="#28c840"/>
+  <text x="210" y="121" text-anchor="middle" font-size="11" fill="#8b949e">.github/workflows/ci.yml</text>
+
+  <!-- YAML content -->
+  <!-- name: CI Pipeline -->
+  <text x="52" y="158" font-size="12" fill="#79c0ff">name</text>
+  <text x="89" y="158" font-size="12" fill="#c9d1d9">:</text>
+  <text x="98" y="158" font-size="12" fill="#a5d6ff">CI Pipeline</text>
+
+  <!-- blank line -->
+
+  <!-- on: [push] -->
+  <text x="52" y="184" font-size="12" fill="#79c0ff">on</text>
+  <text x="68" y="184" font-size="12" fill="#c9d1d9">:</text>
+  <text x="78" y="184" font-size="12" fill="#c9d1d9">[</text>
+  <text x="85" y="184" font-size="12" fill="#a5d6ff">push</text>
+  <text x="113" y="184" font-size="12" fill="#c9d1d9">]</text>
+
+  <!-- blank line -->
+
+  <!-- jobs: -->
+  <text x="52" y="210" font-size="12" fill="#79c0ff">jobs</text>
+  <text x="80" y="210" font-size="12" fill="#c9d1d9">:</text>
+
+  <!--   build: -->
+  <text x="68" y="232" font-size="12" fill="#79c0ff">build</text>
+  <text x="98" y="232" font-size="12" fill="#c9d1d9">:</text>
+
+  <!--     runs-on -->
+  <text x="84" y="252" font-size="12" fill="#79c0ff">runs-on</text>
+  <text x="137" y="252" font-size="12" fill="#c9d1d9">:</text>
+  <text x="147" y="252" font-size="12" fill="#a5d6ff">ubuntu-latest</text>
+
+  <!--     steps: -->
+  <text x="84" y="272" font-size="12" fill="#79c0ff">steps</text>
+  <text x="114" y="272" font-size="12" fill="#c9d1d9">:</text>
+
+  <!--       - uses: actions/checkout@v4 -->
+  <text x="100" y="292" font-size="12" fill="#c9d1d9">-</text>
+  <text x="112" y="292" font-size="12" fill="#79c0ff">uses</text>
+  <text x="138" y="292" font-size="12" fill="#c9d1d9">:</text>
+  <text x="148" y="292" font-size="12" fill="#86efac">actions/checkout@v4</text>
+
+  <!--       - uses: github-slug-action@v4 -->
+  <text x="100" y="316" font-size="12" fill="#c9d1d9">-</text>
+  <text x="112" y="316" font-size="12" fill="#79c0ff">uses</text>
+  <text x="138" y="316" font-size="12" fill="#c9d1d9">:</text>
+  <text x="148" y="316" font-size="10" fill="#f59e0b">rlespinasse/github-slug-action@v4</text>
+
+  <!--       - uses: git-commit-data-action@v1 -->
+  <text x="100" y="340" font-size="12" fill="#c9d1d9">-</text>
+  <text x="112" y="340" font-size="12" fill="#79c0ff">uses</text>
+  <text x="138" y="340" font-size="12" fill="#c9d1d9">:</text>
+  <text x="148" y="340" font-size="10" fill="#f59e0b">rlespinasse/git-commit-data-action@v1</text>
+
+  <!--       - uses: drawio-export-action@v2 -->
+  <text x="100" y="364" font-size="12" fill="#c9d1d9">-</text>
+  <text x="112" y="364" font-size="12" fill="#79c0ff">uses</text>
+  <text x="138" y="364" font-size="12" fill="#c9d1d9">:</text>
+  <text x="148" y="364" font-size="10" fill="#f59e0b">rlespinasse/drawio-export-action@v2</text>
+
+  <!-- comment line -->
+  <text x="52" y="392" font-size="11" fill="#8b949e"># 3 actions entered · hackathon</text>
+
+  <!-- blinking cursor -->
+  <rect x="52" y="406" width="8" height="13" rx="1" fill="#79c0ff" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0;0.7" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Run badge bottom-right of card -->
+  <rect x="270" y="428" width="100" height="20" rx="10" fill="#1a3a1a"/>
+  <circle cx="284" cy="438" r="4" fill="#3fb950"/>
+  <text x="300" y="442" font-size="10" fill="#3fb950">passing</text>
+
+  <!-- ===== RIGHT: THREE ACTION CARDS ===== -->
+
+  <!-- Action Card 1: github-slug-action -->
+  <rect x="420" y="100" width="350" height="98" rx="10" fill="#161b22" stroke="#f59e0b" stroke-width="1.5" filter="url(#cardglow)"/>
+  <!-- Top accent bar -->
+  <rect x="420" y="100" width="350" height="4" rx="10" fill="#f59e0b"/>
+  <rect x="420" y="102" width="350" height="2" fill="#f59e0b"/>
+  <!-- Action icon area -->
+  <rect x="436" y="116" width="32" height="32" rx="6" fill="#21262d"/>
+  <text x="452" y="137" text-anchor="middle" font-size="18">&#x26A1;</text>
+  <!-- Name -->
+  <text x="480" y="130" font-size="13" font-weight="700" fill="#e6edf3">github-slug-action</text>
+  <!-- Description -->
+  <text x="480" y="148" font-size="11" fill="#8b949e">Expose slug env variables from GitHub</text>
+  <text x="480" y="162" font-size="11" fill="#8b949e">context data to your workflow</text>
+  <!-- Hackathon badge (rect centered x=436..564 → cx=500) -->
+  <rect x="436" y="172" width="128" height="18" rx="9" fill="#451a03"/>
+  <text x="500" y="184" text-anchor="middle" font-size="10" fill="#f59e0b" font-weight="600">&#x1F3C6; Actions Hackathon</text>
+  <!-- Stars hint -->
+  <text x="590" y="184" text-anchor="middle" font-size="10" fill="#484f58">&#x2605; 2.8k</text>
+
+  <!-- Action Card 2: git-commit-data-action -->
+  <rect x="420" y="215" width="350" height="98" rx="10" fill="#161b22" stroke="#f59e0b" stroke-width="1.5" filter="url(#cardglow)"/>
+  <rect x="420" y="215" width="350" height="4" rx="10" fill="#d97706"/>
+  <rect x="420" y="217" width="350" height="2" fill="#d97706"/>
+  <rect x="436" y="231" width="32" height="32" rx="6" fill="#21262d"/>
+  <text x="452" y="252" text-anchor="middle" font-size="18">&#x1F4E6;</text>
+  <text x="480" y="245" font-size="13" font-weight="700" fill="#e6edf3">git-commit-data-action</text>
+  <text x="480" y="263" font-size="11" fill="#8b949e">Expose git commit data as env variables</text>
+  <text x="480" y="277" font-size="11" fill="#8b949e">to your workflow steps</text>
+  <rect x="436" y="287" width="128" height="18" rx="9" fill="#451a03"/>
+  <text x="500" y="299" text-anchor="middle" font-size="10" fill="#f59e0b" font-weight="600">&#x1F3C6; Actions Hackathon</text>
+  <text x="590" y="299" text-anchor="middle" font-size="10" fill="#484f58">&#x2605; 148</text>
+
+  <!-- Action Card 3: drawio-export-action -->
+  <rect x="420" y="330" width="350" height="98" rx="10" fill="#161b22" stroke="#f59e0b" stroke-width="1.5" filter="url(#cardglow)"/>
+  <rect x="420" y="330" width="350" height="4" rx="10" fill="#b45309"/>
+  <rect x="420" y="332" width="350" height="2" fill="#b45309"/>
+  <rect x="436" y="346" width="32" height="32" rx="6" fill="#21262d"/>
+  <text x="452" y="367" text-anchor="middle" font-size="18">&#x1F4CA;</text>
+  <text x="480" y="360" font-size="13" font-weight="700" fill="#e6edf3">drawio-export-action</text>
+  <text x="480" y="378" font-size="11" fill="#8b949e">Export draw.io diagrams to SVG, PNG</text>
+  <text x="480" y="392" font-size="11" fill="#8b949e">or PDF from your workflow</text>
+  <rect x="436" y="402" width="128" height="18" rx="9" fill="#451a03"/>
+  <text x="500" y="414" text-anchor="middle" font-size="10" fill="#f59e0b" font-weight="600">&#x1F3C6; Actions Hackathon</text>
+  <text x="590" y="414" text-anchor="middle" font-size="10" fill="#484f58">&#x2605; 319</text>
+
+  <!-- ===== BOTTOM FOOTER ===== -->
+  <text x="400" y="468" text-anchor="middle" font-size="12" fill="#484f58">GitHub Actions Hackathon · dev.to · 2020</text>
+  <line x1="320" y1="476" x2="480" y2="476" stroke="#30363d" stroke-width="1" opacity="0.5"/>
+  <text x="400" y="492" text-anchor="middle" font-size="10" fill="#30363d">rlespinasse.github.io</text>
+</svg>

@@ -3,7 +3,7 @@ title: "Consistent Link Titles at Scale: A Textlint Rule for Title Case"
 date: 2026-03-13T10:00:00+01:00
 draft: false
 summary: "textlint-rule-link-title-case automates AP Style title case enforcement on Markdown links, replacing manual reviews with reliable CI checks."
-coverImg: /img/posts/textlint-rule-link-title-case/featured.svg
+featureimage: /img/posts/textlint-rule-link-title-case/featured.svg
 tags:
 - opensource
 - github

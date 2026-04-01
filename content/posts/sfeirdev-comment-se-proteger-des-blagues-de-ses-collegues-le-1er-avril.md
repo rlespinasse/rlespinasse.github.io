@@ -2,6 +2,8 @@
 title: "Comment se protéger des blagues de ses collègues le 1er avril ? (sfeir.dev)"
 date: 2025-04-01T09:33:00+01:00
 layout: "redirect"
+featureimage: /img/posts/sfeirdev-comment-se-proteger-des-blagues-de-ses-collegues-le-1er-avril/featured.webp
+summary: "Le 1er avril rime avec farces et blagues. Pour échapper aux pièges de vos collègues, voici quelques astuces infaillibles. Toutefois, certaines blagues, telles que le fameux Rickroll, sont incontournables. Découvrez comment aborder cette journée avec humour et prudence."
 tags:
 - french
 - humour

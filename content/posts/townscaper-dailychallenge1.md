@@ -2,7 +2,8 @@
 title: "Townscaper: Bridging Worlds - Daily Challenge Day 1"
 date: 2020-07-10T10:42:00+02:00
 draft: false
-showToC: false
+featureimage: /img/townscaper/dailychallenges/bridge/far.jpg
+showTableOfContents: false
 summary: Participation on a daily challenge about Townscaper. Day 1 - world Bridge.
 tags:
 - townscaper
@@ -14,14 +15,13 @@ series_order: 1
 
 Two islands, one `Bridge`, A lot of Stairs.
 
-{{< load-photoswipe >}}
 
 {{< gallery >}}
-  {{< figure src="/img/townscaper/dailychallenges/bridge/far.jpg" caption="Far away">}}
-  {{< figure src="/img/townscaper/dailychallenges/bridge/bridge.jpg" caption="The Bridge">}}
-  {{< figure src="/img/townscaper/dailychallenges/bridge/space.jpg" caption="From space">}}
-  {{< figure src="/img/townscaper/dailychallenges/bridge/limestone.jpg" caption="Limestone district">}}
-  {{< figure src="/img/townscaper/dailychallenges/bridge/brick.jpg" caption="Brick district">}}
+  <img src="/img/townscaper/dailychallenges/bridge/far.jpg" class="grid-w33" alt="Far away" />
+  <img src="/img/townscaper/dailychallenges/bridge/bridge.jpg" class="grid-w33" alt="The Bridge" />
+  <img src="/img/townscaper/dailychallenges/bridge/space.jpg" class="grid-w33" alt="From space" />
+  <img src="/img/townscaper/dailychallenges/bridge/limestone.jpg" class="grid-w33" alt="Limestone district" />
+  <img src="/img/townscaper/dailychallenges/bridge/brick.jpg" class="grid-w33" alt="Brick district" />
 {{< /gallery >}}
 
 Explore it yourself in Townscaper

@@ -2,7 +2,8 @@
 title: "Townscaper: Soaring Heights - Daily Challenge Day 5"
 date: 2020-07-14T13:42:00+02:00
 draft: false
-showToC: false
+featureimage: /img/townscaper/dailychallenges/eyrie/sea_eyrie.jpg
+showTableOfContents: false
 summary: Participation on a daily challenge about Townscaper. Day 5 - world Eyrie.
 tags:
 - townscaper
@@ -14,12 +15,11 @@ series_order: 5
 
 From his sea `eyrie`, the Lighthouse keeper watch over passing ships.
 
-{{< load-photoswipe >}}
 
 {{< gallery >}}
-  {{< figure src="/img/townscaper/dailychallenges/eyrie/sea_eyrie.jpg" caption="Sea eyrie">}}
-  {{< figure src="/img/townscaper/dailychallenges/eyrie/lighthouse.jpg" caption="Lighthouse">}}
-  {{< figure src="/img/townscaper/dailychallenges/eyrie/eagle_nest.jpg" caption="Eagle nest">}}
+  <img src="/img/townscaper/dailychallenges/eyrie/sea_eyrie.jpg" class="grid-w33" alt="Sea eyrie" />
+  <img src="/img/townscaper/dailychallenges/eyrie/lighthouse.jpg" class="grid-w33" alt="Lighthouse" />
+  <img src="/img/townscaper/dailychallenges/eyrie/eagle_nest.jpg" class="grid-w33" alt="Eagle nest" />
 {{< /gallery >}}
 
 Explore it yourself in Townscaper

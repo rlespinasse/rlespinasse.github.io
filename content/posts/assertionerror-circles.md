@@ -3,7 +3,7 @@ title: "AssertionError Circles: Watching an AI Doubt Its Own Spelling"
 date: 2026-03-16T18:00:00+01:00
 draft: false
 summary: "My AI coding assistant spiraled trying to verify whether 'AssertionError' was a typo. It wasn't. A clean illustration of LLM verification loops."
-coverImg: /img/posts/assertionerror-circles/featured.svg
+featureimage: /img/posts/assertionerror-circles/featured.svg
 tags:
 - ai
 - github

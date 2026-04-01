@@ -2,6 +2,8 @@
 title: "Procrastination : Définition (sfeir.dev)"
 date: 2025-03-25T10:29:00+02:00
 layout: "redirect"
+featureimage: /img/posts/sfeirdev-procrastination-definition/featured.png
+summary: "Vous entendez \"procrastination\" dans toutes les conversations sans réellement comprendre de quoi il s'agit ? Pas de panique, notre Késaco est là pour vous éclairer !"
 tags:
 - french
 - humour

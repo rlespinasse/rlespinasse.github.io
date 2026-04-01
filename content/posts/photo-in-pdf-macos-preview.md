@@ -3,7 +3,7 @@ title: "How to Add a Photo to an Existing Page in a PDF Using macOS Preview"
 date: 2026-02-20T19:00:00+01:00
 draft: false
 summary: "A step-by-step guide to adding photos into PDFs using the macOS Preview app with the paste-into-itself trick."
-coverImg: /img/posts/photo-in-pdf-macos-preview/featured.svg
+featureimage: /img/posts/photo-in-pdf-macos-preview/featured.svg
 tags:
 - macos
 - preview

@@ -2,6 +2,8 @@
 title: "Schema.org : Définition (sfeir.dev)"
 date: 2024-11-21T15:38:00+02:00
 layout: "redirect"
+featureimage: /img/posts/sfeirdev-schema-org-definition/featured.webp
+summary: "Vous entendez \"Schema.org\" dans toutes les conversations sans réellement comprendre de quoi il s'agit ? Pas de panique, notre Késaco est là pour vous aider !"
 tags:
 - french
 - documentation

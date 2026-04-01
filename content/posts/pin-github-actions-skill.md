@@ -3,7 +3,7 @@ title: "Pin GitHub Actions Skill: Automating SHA Pinning with AI Assistants"
 date: 2026-03-15T13:00:00+01:00
 draft: false
 summary: "The pin-github-actions skill automates SHA pinning of GitHub Actions, handling API lookups, tag dereferencing, and Dependabot setup."
-coverImg: /img/posts/pin-github-actions-skill/featured.svg
+featureimage: /img/posts/pin-github-actions-skill/featured.svg
 tags:
 - opensource
 - github

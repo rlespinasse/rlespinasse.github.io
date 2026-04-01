@@ -3,7 +3,7 @@ title: "Leaflet Atlas: A Config-Driven Framework for Interactive GeoJSON Maps"
 date: 2026-03-14T10:00:00+01:00
 draft: false
 summary: "Leaflet Atlas turns a JSON config and GeoJSON files into a full-featured interactive map — with layer filtering, polygon click-through, and tile thumbnails."
-coverImg: /img/posts/leaflet-atlas/featured.svg
+featureimage: /img/posts/leaflet-atlas/featured.svg
 tags:
 - opensource
 - github

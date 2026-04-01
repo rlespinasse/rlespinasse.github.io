@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <filter id="blueglow">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="redglow">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="leftOnly">
+      <rect x="0" y="0" width="360" height="500"/>
+    </clipPath>
+    <clipPath id="rightOnly">
+      <rect x="440" y="0" width="360" height="500"/>
+    </clipPath>
+    <clipPath id="intersection">
+      <circle cx="490" cy="232" r="120"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg)"/>
+
+  <!-- Ambient glows -->
+  <circle cx="310" cy="232" r="130" fill="#3b82f6" opacity="0.04"/>
+  <circle cx="490" cy="232" r="130" fill="#ef4444" opacity="0.04"/>
+
+  <!-- Title -->
+  <text x="400" y="46" text-anchor="middle" font-size="26" font-weight="700" fill="#f1f5f9" letter-spacing="0.5">The Motto</text>
+  <line x1="310" y1="58" x2="490" y2="58" stroke="#475569" stroke-width="1" opacity="0.5"/>
+
+  <!-- Venn: Left circle (Testing) -->
+  <circle cx="310" cy="232" r="120" fill="#3b82f6" fill-opacity="0.08" stroke="#3b82f6" stroke-width="2.5" filter="url(#blueglow)"/>
+
+  <!-- Venn: Right circle (Production) -->
+  <circle cx="490" cy="232" r="120" fill="#ef4444" fill-opacity="0.08" stroke="#ef4444" stroke-width="2.5" filter="url(#redglow)"/>
+
+  <!-- Intersection fill (subtle) -->
+  <circle cx="310" cy="232" r="120" fill="#8b5cf6" fill-opacity="0.07" clip-path="url(#intersection)"/>
+
+  <!-- Circle labels -->
+  <text x="220" y="175" text-anchor="middle" fill="#3b82f6" font-size="15" font-weight="700">Testing</text>
+  <text x="220" y="193" text-anchor="middle" fill="#3b82f6" font-size="11" opacity="0.7">Environment</text>
+
+  <text x="580" y="175" text-anchor="middle" fill="#ef4444" font-size="15" font-weight="700">Production</text>
+  <text x="580" y="193" text-anchor="middle" fill="#ef4444" font-size="11" opacity="0.7">Environment</text>
+
+  <!-- Left-only content (tiny) -->
+  <text x="220" y="236" text-anchor="middle" fill="#64748b" font-size="10" font-style="italic">localhost</text>
+
+  <!-- Right-only content (tiny) -->
+  <text x="580" y="230" text-anchor="middle" fill="#64748b" font-size="10" font-style="italic">real</text>
+  <text x="580" y="244" text-anchor="middle" fill="#64748b" font-size="10" font-style="italic">users 😬</text>
+
+  <!-- Intersection content — the BIG area -->
+  <!-- Server icon -->
+  <g transform="translate(400, 215)">
+    <rect x="-35" y="-36" width="70" height="18" rx="3" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <rect x="-35" y="-14" width="70" height="18" rx="3" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <rect x="-35" y="8"  width="70" height="18" rx="3" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="22" cy="-27" r="3" fill="#3b82f6"/>
+    <circle cx="22" cy="-5"  r="3" fill="#f59e0b"/>
+    <circle cx="22" cy="17"  r="3" fill="#ef4444"/>
+  </g>
+
+  <!-- Intersection label -->
+  <text x="400" y="272" text-anchor="middle" fill="#a855f7" font-size="10" font-weight="600" font-family="'SF Mono','Fira Code',monospace">your app · your infra · your bugs</text>
+
+  <!-- Intersection badge -->
+  <rect x="332" y="282" width="136" height="20" rx="10" fill="#2d1a4a" stroke="#a855f7" stroke-width="1"/>
+  <text x="400" y="297" text-anchor="middle" fill="#c084fc" font-size="10" font-weight="700" font-family="'SF Mono','Fira Code',monospace">≈ everything</text>
+
+  <!-- Bottom quote -->
+  <text x="400" y="408" text-anchor="middle" fill="#475569" font-size="12" font-style="italic">"Everyone has a testing environment.</text>
+  <text x="400" y="428" text-anchor="middle" fill="#475569" font-size="12" font-style="italic">Some people are lucky enough to have a separate production."</text>
+  <line x1="240" y1="444" x2="560" y2="444" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Subtitle badge -->
+  <rect x="330" y="456" width="140" height="22" rx="5" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
+  <text x="400" y="472" text-anchor="middle" fill="#f59e0b" font-size="11" font-weight="600" font-family="'SF Mono','Fira Code',monospace">Testing = Production</text>
+</svg>

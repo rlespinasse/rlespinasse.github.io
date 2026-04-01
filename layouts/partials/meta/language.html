@@ -1,0 +1,11 @@
+{{ $isFrench := false }}
+{{ with .Params.tags }}
+  {{ range . }}
+    {{ if eq (. | urlize) "french" }}{{ $isFrench = true }}{{ end }}
+  {{ end }}
+{{ end }}
+{{ if $isFrench }}
+  <span class="lang-badge lang-fr">FR</span>
+{{ else }}
+  <span class="lang-badge lang-en">EN</span>
+{{ end }}

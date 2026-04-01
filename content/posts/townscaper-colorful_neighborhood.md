@@ -2,7 +2,8 @@
 title: "Townscaper: Vibrant Neighborhoods - A Kaleidoscope of Urban Design"
 date: 2020-07-04T08:42:00+02:00
 draft: false
-showToC: false
+featureimage: /img/townscaper/colorful_neighborhood/colorful_neighborhood_1.jpg
+showTableOfContents: false
 summary: Multiple neighborhoods, just colorful in theirs own ways.
 tags:
 - townscaper
@@ -14,19 +15,18 @@ series_order: 5
 
 Multiple `neighborhood`, just `colorful` in theirs own ways.
 
-{{< load-photoswipe >}}
 
 {{< gallery >}}
-  {{< figure src="/img/townscaper/colorful_neighborhood/colorful_neighborhood_1.jpg" caption="Aerial view">}}
-  {{< figure src="/img/townscaper/colorful_neighborhood/colorful_neighborhood_2.jpg" caption="Aerial view 2">}}
-  {{< figure src="/img/townscaper/colorful_neighborhood/colorful_neighborhood_3.jpg" caption="Aerial view 3">}}
-  {{< figure src="/img/townscaper/colorful_neighborhood/colorful_neighborhood_4.jpg" caption="Aerial view 4">}}
-  {{< figure src="/img/townscaper/colorful_neighborhood/colorful_neighborhood_5.jpg" caption="Aerial view 5">}}
-  {{< figure src="/img/townscaper/colorful_neighborhood/colorful_neighborhood_6.jpg" caption="Aerial view 6">}}
-  {{< figure src="/img/townscaper/colorful_neighborhood/colorful_neighborhood_7.jpg" caption="Gardens bird view">}}
-  {{< figure src="/img/townscaper/colorful_neighborhood/colorful_neighborhood_8.jpg" caption="Some birds">}}
-  {{< figure src="/img/townscaper/colorful_neighborhood/colorful_neighborhood_9.jpg" caption="Birds everywhere">}}
-  {{< figure src="/img/townscaper/colorful_neighborhood/colorful_neighborhood_10.jpg" caption="Walk the roads">}}
+  <img src="/img/townscaper/colorful_neighborhood/colorful_neighborhood_1.jpg" class="grid-w33" alt="Aerial view" />
+  <img src="/img/townscaper/colorful_neighborhood/colorful_neighborhood_2.jpg" class="grid-w33" alt="Aerial view 2" />
+  <img src="/img/townscaper/colorful_neighborhood/colorful_neighborhood_3.jpg" class="grid-w33" alt="Aerial view 3" />
+  <img src="/img/townscaper/colorful_neighborhood/colorful_neighborhood_4.jpg" class="grid-w33" alt="Aerial view 4" />
+  <img src="/img/townscaper/colorful_neighborhood/colorful_neighborhood_5.jpg" class="grid-w33" alt="Aerial view 5" />
+  <img src="/img/townscaper/colorful_neighborhood/colorful_neighborhood_6.jpg" class="grid-w33" alt="Aerial view 6" />
+  <img src="/img/townscaper/colorful_neighborhood/colorful_neighborhood_7.jpg" class="grid-w33" alt="Gardens bird view" />
+  <img src="/img/townscaper/colorful_neighborhood/colorful_neighborhood_8.jpg" class="grid-w33" alt="Some birds" />
+  <img src="/img/townscaper/colorful_neighborhood/colorful_neighborhood_9.jpg" class="grid-w33" alt="Birds everywhere" />
+  <img src="/img/townscaper/colorful_neighborhood/colorful_neighborhood_10.jpg" class="grid-w33" alt="Walk the roads" />
 {{< /gallery >}}
 
 Explore it yourself in Townscaper

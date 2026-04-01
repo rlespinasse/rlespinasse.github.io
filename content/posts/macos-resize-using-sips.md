@@ -3,7 +3,7 @@ title: "Batch Resize Images on macOS via CLI (The Native Way)"
 date: 2026-02-20T20:30:00+01:00
 draft: false
 summary: "Learn how to use the native macOS sips utility to batch resize images across multiple subdirectories."
-coverImg: /img/posts/macos-resize-using-sips/featured.svg
+featureimage: /img/posts/macos-resize-using-sips/featured.svg
 tags:
 - macos
 - terminal

@@ -3,7 +3,7 @@ title: "Bassin Minier UNESCO : une carte interactive du patrimoine avec des donn
 date: 2026-03-15T12:00:00+01:00
 draft: false
 summary: "Carte interactive du bassin minier UNESCO du Nord-Pas de Calais : données patrimoniales, limites administratives et informations géographiques ouvertes."
-coverImg: /img/posts/bassin-minier-unesco/featured.svg
+featureimage: /img/posts/bassin-minier-unesco/featured.svg
 tags:
 - opensource
 - github

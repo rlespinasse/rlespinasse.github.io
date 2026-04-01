@@ -3,7 +3,7 @@ title: "Le Petit Coloriste : quand un papa qui ne sait pas dessiner découvre le
 date: 2026-03-15T11:00:00+01:00
 draft: false
 summary: "Une Gem Gemini qui génère des pages de coloriage sur demande pour mes jumeaux de 5 ans — toujours deux exemplaires identiques."
-coverImg: /img/posts/le-petit-coloriste/featured.svg
+featureimage: /img/posts/le-petit-coloriste/featured.svg
 tags:
 - ai
 - google-gemini
