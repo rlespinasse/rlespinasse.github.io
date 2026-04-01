@@ -7,12 +7,12 @@ title = "Romain Lespinasse"
   displayName = "English"
   isoCode = "en"
   dateFormat = "Jan 2, 2006"
-  description = "Technical Posts, Opensource Releases, and sometimes Games-related stuff"
+  description = "Code, open source, and games."
 
 [params.author]
   name = "Romain Lespinasse"
   image = "img/rlespinasse.jpg"
-  headline = "Technical Posts, Opensource Releases, and sometimes Games-related stuff"
+  headline = "Code, open source, and games."
   links = [
     { github = "https://github.com/rlespinasse" },
     { gitlab = "https://gitlab.com/rlespinasse" },
