@@ -4,17 +4,19 @@ weight = 1
 title = "Romain Lespinasse"
 
 [params]
-  displayName = "English"
-  isoCode = "en"
-  dateFormat = "Jan 2, 2006"
-  description = "Code, open source, and games."
+displayName = "English"
+isoCode = "en"
+dateFormat = "Jan 2, 2006"
+description = "Code, open source, and ... Townscaper."
 
 [params.author]
-  name = "Romain Lespinasse"
-  image = "img/rlespinasse.jpg"
-  headline = "Code, open source, and games."
-  links = [
-    { github = "https://github.com/rlespinasse" },
-    { gitlab = "https://gitlab.com/rlespinasse" },
-    { linkedin = "https://www.linkedin.com/in/romain-lespinasse" },
-  ]
+name = "Romain Lespinasse"
+image = "img/rlespinasse.jpg"
+headline = "Code, open source, and ... Townscaper."
+links = [
+  { github = "https://github.com/rlespinasse" },
+  { gitlab = "https://gitlab.com/rlespinasse" },
+  { linkedin = "https://www.linkedin.com/in/romain-lespinasse" },
+  { dev = "https://dev.to/rlespinasse" },
+  { rss = "/index.xml" },
+]
