@@ -15,7 +15,6 @@ series_order: 1
 
 A building with a root in form of a little human.
 
-
 {{< gallery >}}
   <img src="/img/townscaper/human_roof_building/human_roof_building_1.jpg" class="grid-w33" alt="Aerial view" />
   <img src="/img/townscaper/human_roof_building/human_roof_building_2.jpg" class="grid-w33" alt="Back side" />

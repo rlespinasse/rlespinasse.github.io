@@ -17,7 +17,6 @@ A empty city to deploy your creativity.
 
 This map serve as base for the [City port](/posts/townscaper-city_port/).
 
-
 {{< gallery >}}
   <img src="/img/townscaper/creativity_city/creativity_city_1.jpg" class="grid-w33" alt="Aerial view" />  
 {{< /gallery >}}

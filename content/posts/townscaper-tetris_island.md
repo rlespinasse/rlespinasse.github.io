@@ -15,7 +15,6 @@ series_order: 10
 
 Welcome to the `Tetris island` ... and yes, the island float, we are aware of it.
 
-
 {{< gallery >}}
   <img src="/img/townscaper/tetris_island/far.jpg" class="grid-w33" alt="Far away" />
   <img src="/img/townscaper/tetris_island/aerial1.jpg" class="grid-w33" alt="Aerial view" />

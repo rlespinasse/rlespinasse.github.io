@@ -15,7 +15,6 @@ series_order: 2
 
 A `Garden` bring colors in your life.
 
-
 {{< gallery >}}
   <img src="/img/townscaper/dailychallenges/garden/island.jpg" class="grid-w33" alt="Island" />
   <img src="/img/townscaper/dailychallenges/garden/garden.jpg" class="grid-w33" alt="Garden district" />

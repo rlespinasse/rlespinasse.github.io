@@ -18,7 +18,6 @@ If you're too close, your neighbours and you can disappear in an instant.
 
 Welcome to the `Tetris neighborhood`.
 
-
 {{< gallery >}}
   <img src="/img/townscaper/dailychallenges/neighbours/aerial.jpg" class="grid-w33" alt="Meet the neighboors ... or not" />
   <img src="/img/townscaper/dailychallenges/neighbours/space.jpg" class="grid-w33" alt="From space" />

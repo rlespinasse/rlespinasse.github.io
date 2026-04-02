@@ -15,7 +15,6 @@ series_order: 7
 
 A `city at sea`.
 
-
 {{< gallery >}}
   <img src="/img/townscaper/city_at_sea/city_at_sea_1.jpg" class="grid-w33" alt="Aerial view" />
   <img src="/img/townscaper/city_at_sea/city_at_sea_2.jpg" class="grid-w33" alt="Far away" />

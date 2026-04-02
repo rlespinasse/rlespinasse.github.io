@@ -15,7 +15,6 @@ series_order: 11
 
 When you're separated from your people, you always find a way to get through it.
 
-
 {{< gallery >}}
   <img src="/img/townscaper/always_together/separate_by_walls.jpg" class="grid-w33" alt="Separate by walls" />
   <img src="/img/townscaper/always_together/cant_see_your_people.jpg" class="grid-w33" alt="Can't see your people" />

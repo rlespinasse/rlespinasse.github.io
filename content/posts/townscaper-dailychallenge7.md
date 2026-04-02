@@ -20,7 +20,6 @@ It's depends of the colors of the houses.
 
 Such a colorful `labyrinth`! Can you find the right path?
 
-
 <img src="/img/townscaper/dailychallenges/labyrinth/labyrinth.jpg" class="grid-w33" alt="Labyrinth" />
 
 Explore it yourself in Townscaper

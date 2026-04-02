@@ -15,7 +15,6 @@ series_order: 6
 
 Same concept, Same buildings, a lot of islands.
 
-
 {{< gallery >}}
   <img src="/img/townscaper/same_same_islands/same_same_islands_1.jpg" class="grid-w33" alt="Aerial view" />
   <img src="/img/townscaper/same_same_islands/same_same_islands_2.jpg" class="grid-w33" alt="From space" />

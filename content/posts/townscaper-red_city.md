@@ -15,7 +15,6 @@ series_order: 8
 
 `Red city`, the island with a `little` secret.
 
-
 {{< gallery >}}
   <img src="/img/townscaper/red_city/city_far.jpg" class="grid-w33" alt="Far away" />
   <img src="/img/townscaper/red_city/city_side1.jpg" class="grid-w33" alt="From the side" />

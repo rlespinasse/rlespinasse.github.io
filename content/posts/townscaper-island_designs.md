@@ -15,7 +15,6 @@ series_order: 4
 
 Explore island designs.
 
-
 {{< gallery >}}
   <img src="/img/townscaper/island_designs/island_designs_1.jpg" class="grid-w33" alt="Aerial view" />
   <img src="/img/townscaper/island_designs/island_designs_2.jpg" class="grid-w33" alt="Laundry day" />

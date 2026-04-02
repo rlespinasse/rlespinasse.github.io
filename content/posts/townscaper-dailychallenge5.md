@@ -15,7 +15,6 @@ series_order: 5
 
 From his sea `eyrie`, the Lighthouse keeper watch over passing ships.
 
-
 {{< gallery >}}
   <img src="/img/townscaper/dailychallenges/eyrie/sea_eyrie.jpg" class="grid-w33" alt="Sea eyrie" />
   <img src="/img/townscaper/dailychallenges/eyrie/lighthouse.jpg" class="grid-w33" alt="Lighthouse" />

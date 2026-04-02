@@ -17,7 +17,6 @@ Big blue, the `fortress` of the sea.
 
 The lighthouse is for the decorum, obviously.
 
-
 {{< gallery >}}
   <img src="/img/townscaper/dailychallenges/fortress/far.jpg" class="grid-w33" alt="Far away" />
   <img src="/img/townscaper/dailychallenges/fortress/big_blue.jpg" class="grid-w33" alt="Meet Big Blue" />

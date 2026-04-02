@@ -20,7 +20,6 @@ A `canal` can have many forms
 - The aerial one,
 - The hidden one.
 
-
 {{< gallery >}}
   <img src="/img/townscaper/dailychallenges/canal/canals.jpg" class="grid-w33" alt="Canals overview" />
   <img src="/img/townscaper/dailychallenges/canal/obvious_one.jpg" class="grid-w33" alt="Obvious canal" />

@@ -15,7 +15,6 @@ series_order: 5
 
 Multiple `neighborhood`, just `colorful` in theirs own ways.
 
-
 {{< gallery >}}
   <img src="/img/townscaper/colorful_neighborhood/colorful_neighborhood_1.jpg" class="grid-w33" alt="Aerial view" />
   <img src="/img/townscaper/colorful_neighborhood/colorful_neighborhood_2.jpg" class="grid-w33" alt="Aerial view 2" />

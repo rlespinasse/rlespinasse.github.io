@@ -15,7 +15,6 @@ series_order: 3
 
 `City` with a big `port`.
 
-
 {{< gallery >}}
   <img src="/img/townscaper/city_port/city_port_1.jpg" class="grid-w33" alt="Aerial view" />
   <img src="/img/townscaper/city_port/city_port_2.jpg" class="grid-w33" alt="Far away" />

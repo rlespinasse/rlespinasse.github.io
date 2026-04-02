@@ -15,7 +15,6 @@ series_order: 1
 
 Two islands, one `Bridge`, A lot of Stairs.
 
-
 {{< gallery >}}
   <img src="/img/townscaper/dailychallenges/bridge/far.jpg" class="grid-w33" alt="Far away" />
   <img src="/img/townscaper/dailychallenges/bridge/bridge.jpg" class="grid-w33" alt="The Bridge" />

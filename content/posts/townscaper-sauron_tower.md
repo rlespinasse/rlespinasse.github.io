@@ -15,7 +15,6 @@ series_order: 9
 
 See some `Minas Tirith` on [twitter](https://twitter.com/search?q=minas%20tirith%20townscaper&src=typed_query), so here the `Sauron` tower `Barad-dûr` to match them.
 
-
 {{< gallery >}}
   <img src="/img/townscaper/sauron_tower/sauron.jpg" class="grid-w33" alt="Sauron Tower" />
 {{< /gallery >}}
