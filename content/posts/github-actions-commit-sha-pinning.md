@@ -14,15 +14,13 @@ series: ["GitHub Actions Ecosystem"]
 series_order: 1
 ---
 
-## The problem with tags
+## How a user issue opened my eyes
 
-When you reference a GitHub Action by tag, like `actions/checkout@v4`, you are trusting that the tag will always point to the same code.
-But Git tags are mutable — they can be deleted and recreated pointing to a different commit.
+I maintain [github-slug-action](https://github.com/rlespinasse/github-slug-action), and one morning I woke up to [issue #174](https://github.com/rlespinasse/github-slug-action/issues/174) — users were suddenly blocked because their organisation had enabled GitHub's new policy requiring all actions to be pinned to a full-length commit SHA.
 
-This means a compromised action repository, a rogue maintainer, or even an honest mistake could silently change the code your workflows execute.
-Your pipeline would still show `@v4` in the logs, but the underlying code could be completely different from what you reviewed.
+I already knew that pinning actions to commit SHAs was the right thing to do. Git tags are mutable — they can be deleted, moved, or recreated pointing to an entirely different commit. A compromised repository, a rogue maintainer, or even an honest mistake could silently swap the code your workflows execute, while the logs still show `@v4` as if nothing changed. But when you maintain several open source projects on your own, free time goes to the bugs users are hitting right now — not to preventive security work that can always wait until next week.
 
-This is a supply chain attack vector, and it has been exploited in the wild.
+That issue, combined with a bit more breathing room in my schedule, gave me the space to finally act on it.
 
 ![Tag vs SHA pinning comparison](/img/posts/github-actions-commit-sha-pinning/pinning-flow.svg)
 
@@ -128,7 +126,7 @@ Dependabot will detect your SHA-pinned actions and propose updates with the new 
 If you maintain a GitHub Action that references other actions internally, you should pin those references to full commit SHAs.
 Your users may have adopted — or may be required to adopt — the organisation-level policy, and tag-based sub-action references will block them.
 
-This is a small change on your side that unblocks an entire security posture for your downstream consumers. Tools like [ghat](/posts/github-actions-toolbox/) can help you track which repositories depend on your actions, and the [actions-able](/posts/actions-able-github-organisation/) organisation provides a home for shared GitHub Actions tooling and resources.
+This is a small change on your side that unblocks an entire security posture for your downstream consumers.
 
 ## Summary
 
