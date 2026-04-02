@@ -21,12 +21,11 @@ Good documentation does not happen by accident.
 When the focus is on shipping features, docs tend to drift —
 a readme grows a few paragraphs here, a guide appears there,
 and before long nobody is quite sure where things belong.
-AI coding assistants like Claude, GitHub Copilot, or Cursor are brilliant at writing code,
-but they do not inherently know how a project's documentation should be organized.
-Without a shared framework, every contributor — human or AI — adds pages in whatever spot feels right at the moment.
+
+I have been applying the [Diataxis](https://diataxis.fr/) methodology and [documentation-as-code](/posts/sfeirdev-documentation-as-code-definition/) for a while now, and it works — when I do it myself. But doing it manually is error-prone, and for other contributors — human or AI — the methodology does not resonate the same way. Without a shared framework baked into the tooling, every contributor adds pages in whatever spot feels right at the moment.
 
 That is why I built the **diataxis** skill inside [agent-skills](https://github.com/rlespinasse/agent-skills):
-a way to bring a proven documentation methodology directly into a coding session.
+a way to bring a proven documentation methodology directly into a coding session, so the structure is enforced regardless of who writes the docs.
 
 ## What is Diataxis?
 
