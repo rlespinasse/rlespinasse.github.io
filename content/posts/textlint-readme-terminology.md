@@ -1,6 +1,6 @@
 ---
 title: "Fixing Textlint's README Terminology Rule"
-date: 2026-04-03T01:30:00+02:00
+date: 2026-04-03T00:30:00+02:00
 draft: false
 summary: "The default textlint terminology rule lowercases README to readme. Here is how to override it while keeping the rest of the built-in terms."
 featureimage: /img/posts/textlint-readme-terminology/featured.svg
