@@ -10,7 +10,7 @@ summaryLength = 0
 enableEmoji = true
 
 buildDrafts = true
-buildFuture = true
+buildFuture = false
 
 [pagination]
   pagerSize = 15

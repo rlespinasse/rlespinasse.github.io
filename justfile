@@ -8,7 +8,7 @@ default:
 # Serve the site on local
 [group('Development mode')]
 serve:
-	hugo server -D
+	hugo server -D --buildFuture
 
 # Lint blog posts
 [group('Development mode')]
