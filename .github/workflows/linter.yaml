@@ -33,5 +33,4 @@ jobs:
           VALIDATE_JSCPD: false
           VALIDATE_MARKDOWN_PRETTIER: false
           VALIDATE_YAML_PRETTIER: false
-          REMOVE_LINTER_COMMENTS: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
