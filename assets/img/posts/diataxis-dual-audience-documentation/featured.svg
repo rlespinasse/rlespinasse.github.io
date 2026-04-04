@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="-apple-system, 'Helvetica Neue', sans-serif">
+  <rect width="800" height="500" fill="#0f172a" rx="12"/>
+
+  <!-- Two audience icons at top -->
+  <!-- Human icon -->
+  <g transform="translate(260, 60)">
+    <circle cx="20" cy="14" r="12" fill="none" stroke="#22c55e" stroke-width="2.5"/>
+    <path d="M0,50 Q0,30 20,30 Q40,30 40,50" fill="none" stroke="#22c55e" stroke-width="2.5"/>
+    <text x="20" y="72" text-anchor="middle" font-size="14" fill="#86efac" font-weight="bold">Human</text>
+  </g>
+
+  <!-- AI icon -->
+  <g transform="translate(500, 60)">
+    <rect x="2" y="4" width="36" height="28" rx="6" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+    <circle cx="14" cy="18" r="4" fill="#3b82f6"/>
+    <circle cx="26" cy="18" r="4" fill="#3b82f6"/>
+    <line x1="10" y1="26" x2="30" y2="26" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="20" y="55" text-anchor="middle" font-size="14" fill="#93c5fd" font-weight="bold">AI Agent</text>
+  </g>
+
+  <!-- Connection lines from both to "Both" zone -->
+  <line x1="280" y1="135" x2="400" y2="170" stroke="#475569" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="520" y1="135" x2="400" y2="170" stroke="#475569" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+  <!-- 91% Both zone - large central card -->
+  <g transform="translate(100, 175)">
+    <rect width="600" height="180" rx="14" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+
+    <!-- 91% badge -->
+    <g transform="translate(250, 15)">
+      <rect width="100" height="40" rx="20" fill="#f59e0b" opacity="0.15"/>
+      <rect width="100" height="40" rx="20" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="50" y="28" text-anchor="middle" font-size="22" fill="#fcd34d" font-weight="bold">91%</text>
+    </g>
+
+    <text x="300" y="82" text-anchor="middle" font-size="16" fill="#e2e8f0" font-weight="bold">Serves Both Audiences</text>
+
+    <!-- Category pills -->
+    <g transform="translate(30, 100)">
+      <rect width="120" height="32" rx="8" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
+      <text x="60" y="21" text-anchor="middle" font-size="11" fill="#93c5fd">Reference</text>
+    </g>
+    <g transform="translate(165, 100)">
+      <rect width="120" height="32" rx="8" fill="#1a3a2a" stroke="#22c55e" stroke-width="1"/>
+      <text x="60" y="21" text-anchor="middle" font-size="11" fill="#86efac">How-to</text>
+    </g>
+    <g transform="translate(300, 100)">
+      <rect width="120" height="32" rx="8" fill="#3a2a1a" stroke="#f59e0b" stroke-width="1"/>
+      <text x="60" y="21" text-anchor="middle" font-size="11" fill="#fcd34d">Explanation</text>
+    </g>
+    <g transform="translate(435, 100)">
+      <rect width="130" height="32" rx="8" fill="#1e293b" stroke="#94a3b8" stroke-width="1"/>
+      <text x="65" y="21" text-anchor="middle" font-size="11" fill="#94a3b8">Opportunities</text>
+    </g>
+
+    <text x="300" y="160" text-anchor="middle" font-size="11" fill="#64748b">46 files &#xB7; 6,806 lines</text>
+  </g>
+
+  <!-- Human-only zone -->
+  <g transform="translate(100, 380)">
+    <rect width="280" height="70" rx="10" fill="#1e293b" stroke="#22c55e" stroke-width="1.5" opacity="0.6"/>
+    <text x="140" y="28" text-anchor="middle" font-size="13" fill="#86efac" font-weight="bold">9% Human Only</text>
+    <text x="140" y="48" text-anchor="middle" font-size="11" fill="#64748b">Tutorials (French) &#xB7; Contributing</text>
+    <text x="140" y="62" text-anchor="middle" font-size="10" fill="#475569">4 files &#xB7; 689 lines</text>
+  </g>
+
+  <!-- AI-only zone -->
+  <g transform="translate(420, 380)">
+    <rect width="280" height="70" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" opacity="0.6"/>
+    <text x="140" y="28" text-anchor="middle" font-size="13" fill="#93c5fd" font-weight="bold">0% AI Only</text>
+    <text x="140" y="48" text-anchor="middle" font-size="11" fill="#64748b">No docs/ content is AI-exclusive</text>
+    <text x="140" y="62" text-anchor="middle" font-size="10" fill="#475569">0 files</text>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="478" text-anchor="middle" font-size="16" fill="#e2e8f0" font-weight="bold">Diataxis: Documentation for Both Audiences</text>
+</svg>

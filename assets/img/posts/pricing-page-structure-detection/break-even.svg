@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="-apple-system, 'Helvetica Neue', sans-serif">
+  <rect width="800" height="420" fill="#0f172a" rx="8"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-size="15" fill="#e2e8f0" font-weight="600">Cumulative Cost by Number of Cache Reads</text>
+  <text x="400" y="55" text-anchor="middle" font-size="11" fill="#64748b">Expressed as multiples of base input price for the cached block</text>
+
+  <!-- Chart area -->
+  <g transform="translate(80, 75)">
+    <!-- Y axis -->
+    <line x1="0" y1="0" x2="0" y2="280" stroke="#334155" stroke-width="1.5"/>
+    <!-- X axis -->
+    <line x1="0" y1="280" x2="640" y2="280" stroke="#334155" stroke-width="1.5"/>
+
+    <!-- Y axis labels -->
+    <text x="-10" y="284" text-anchor="end" font-size="10" fill="#64748b">0x</text>
+    <text x="-10" y="228" text-anchor="end" font-size="10" fill="#64748b">2x</text>
+    <text x="-10" y="172" text-anchor="end" font-size="10" fill="#64748b">4x</text>
+    <text x="-10" y="116" text-anchor="end" font-size="10" fill="#64748b">6x</text>
+    <text x="-10" y="60" text-anchor="end" font-size="10" fill="#64748b">8x</text>
+    <text x="-10" y="4" text-anchor="end" font-size="10" fill="#64748b">10x</text>
+
+    <!-- Y gridlines -->
+    <line x1="0" y1="224" x2="640" y2="224" stroke="#1e293b" stroke-width="1"/>
+    <line x1="0" y1="168" x2="640" y2="168" stroke="#1e293b" stroke-width="1"/>
+    <line x1="0" y1="112" x2="640" y2="112" stroke="#1e293b" stroke-width="1"/>
+    <line x1="0" y1="56" x2="640" y2="56" stroke="#1e293b" stroke-width="1"/>
+    <line x1="0" y1="0" x2="640" y2="0" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- X axis labels (reads) -->
+    <text x="0" y="300" text-anchor="middle" font-size="10" fill="#64748b">0</text>
+    <text x="80" y="300" text-anchor="middle" font-size="10" fill="#64748b">1</text>
+    <text x="160" y="300" text-anchor="middle" font-size="10" fill="#64748b">2</text>
+    <text x="240" y="300" text-anchor="middle" font-size="10" fill="#64748b">3</text>
+    <text x="320" y="300" text-anchor="middle" font-size="10" fill="#64748b">4</text>
+    <text x="400" y="300" text-anchor="middle" font-size="10" fill="#64748b">5</text>
+    <text x="480" y="300" text-anchor="middle" font-size="10" fill="#64748b">6</text>
+    <text x="560" y="300" text-anchor="middle" font-size="10" fill="#64748b">7</text>
+    <text x="640" y="300" text-anchor="middle" font-size="10" fill="#64748b">8</text>
+    <text x="320" y="325" text-anchor="middle" font-size="11" fill="#94a3b8">Cache reads within window</text>
+
+    <!-- No caching line (red) - slope: 1x per read, starts at 1x -->
+    <!-- 0: 1x=252, 1: 2x=224, 2: 3x=196, 3: 4x=168, 4: 5x=140, 5: 6x=112, 6: 7x=84, 7: 8x=56, 8: 9x=28 -->
+    <polyline
+      points="0,252 80,224 160,196 240,168 320,140 400,112 480,84 560,56 640,28"
+      fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- 5-minute line (blue) - write=1.25x, then +0.1x per read -->
+    <!-- 0: 1.25x=244.5, 1: 1.35x=241.7, 2: 1.45x=239.4, 3: 1.55x=236.6, 4: 1.65x=233.8, 5: 1.75x=231, 6: 1.85x=228.2, 7: 1.95x=225.4, 8: 2.05x=222.6 -->
+    <polyline
+      points="0,245 80,242 160,239 240,236 320,234 400,231 480,228 560,225 640,223"
+      fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- 1-hour line (amber) - write=2x, then +0.1x per read -->
+    <!-- 0: 2x=224, 1: 2.1x=220.8, 2: 2.2x=218.4, 3: 2.3x=215.6, 4: 2.4x=212.8, 5: 2.5x=210, 6: 2.6x=207.2, 7: 2.7x=204.4, 8: 2.8x=201.6 -->
+    <polyline
+      points="0,224 80,221 160,218 240,216 320,213 400,210 480,207 560,204 640,202"
+      fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Break-even markers -->
+    <!-- 5m break-even at 1 read -->
+    <circle cx="80" cy="242" r="5" fill="#3b82f6" stroke="#0f172a" stroke-width="2"/>
+    <!-- 1h break-even at 2 reads -->
+    <circle cx="160" cy="218" r="5" fill="#f59e0b" stroke="#0f172a" stroke-width="2"/>
+
+    <!-- Break-even annotations -->
+    <g transform="translate(90, 255)">
+      <rect x="-2" y="-10" width="70" height="16" rx="3" fill="#0f172a" opacity="0.8"/>
+      <text x="0" y="2" font-size="9" fill="#93c5fd">5m break-even</text>
+    </g>
+    <g transform="translate(170, 228)">
+      <rect x="-2" y="-10" width="70" height="16" rx="3" fill="#0f172a" opacity="0.8"/>
+      <text x="0" y="2" font-size="9" fill="#fcd34d">1h break-even</text>
+    </g>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(220, 385)">
+    <line x1="0" y1="0" x2="20" y2="0" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="26" y="4" font-size="11" fill="#94a3b8">No caching</text>
+
+    <g transform="translate(130, 0)">
+      <line x1="0" y1="0" x2="20" y2="0" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+      <text x="26" y="4" font-size="11" fill="#94a3b8">5-min cache</text>
+    </g>
+
+    <g transform="translate(270, 0)">
+      <line x1="0" y1="0" x2="20" y2="0" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+      <text x="26" y="4" font-size="11" fill="#94a3b8">1-hour cache</text>
+    </g>
+  </g>
+</svg>

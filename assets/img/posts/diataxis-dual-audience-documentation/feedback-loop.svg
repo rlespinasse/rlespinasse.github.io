@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="-apple-system, 'Helvetica Neue', sans-serif">
+  <rect width="800" height="400" fill="#0f172a" rx="8"/>
+
+  <!-- Circular loop with 4 steps -->
+
+  <!-- Step 1: AI writes docs (top) -->
+  <g transform="translate(300, 40)">
+    <rect width="200" height="80" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+    <text x="100" y="32" text-anchor="middle" font-size="15" fill="#93c5fd" font-weight="bold">AI writes docs</text>
+    <text x="100" y="52" text-anchor="middle" font-size="10" fill="#64748b">/diataxis &#xB7; /redteam-analysis</text>
+    <text x="100" y="66" text-anchor="middle" font-size="10" fill="#64748b">/verify-readme-features</text>
+  </g>
+
+  <!-- Arrow: top &#x2192; right -->
+  <g transform="translate(520, 100)">
+    <path d="M0,0 Q80,0 80,80" fill="none" stroke="#475569" stroke-width="2"/>
+    <polygon points="75,78 85,78 80,88" fill="#475569"/>
+  </g>
+
+  <!-- Step 2: AI reads docs (right) -->
+  <g transform="translate(530, 160)">
+    <rect width="200" height="80" rx="12" fill="#1e293b" stroke="#22c55e" stroke-width="2"/>
+    <text x="100" y="32" text-anchor="middle" font-size="15" fill="#86efac" font-weight="bold">AI reads docs</text>
+    <text x="100" y="52" text-anchor="middle" font-size="10" fill="#64748b">References, how-tos, explanations</text>
+    <text x="100" y="66" text-anchor="middle" font-size="10" fill="#64748b">for code change context</text>
+  </g>
+
+  <!-- Arrow: right &#x2192; bottom -->
+  <g transform="translate(530, 240)">
+    <path d="M80,0 Q80,80 0,80" fill="none" stroke="#475569" stroke-width="2"/>
+    <polygon points="-5,75 -5,85 5,80" fill="#475569" transform="translate(0,0)"/>
+  </g>
+
+  <!-- Step 3: Better code changes (bottom) -->
+  <g transform="translate(300, 280)">
+    <rect width="200" height="80" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="100" y="32" text-anchor="middle" font-size="15" fill="#fcd34d" font-weight="bold">Better code</text>
+    <text x="100" y="52" text-anchor="middle" font-size="10" fill="#64748b">Changes aligned with</text>
+    <text x="100" y="66" text-anchor="middle" font-size="10" fill="#64748b">documented design intent</text>
+  </g>
+
+  <!-- Arrow: bottom &#x2192; left -->
+  <g transform="translate(200, 240)">
+    <path d="M80,80 Q0,80 0,0" fill="none" stroke="#475569" stroke-width="2"/>
+    <polygon points="-5,2 5,2 0,-8" fill="#475569"/>
+  </g>
+
+  <!-- Step 4: Docs stay current (left) -->
+  <g transform="translate(70, 160)">
+    <rect width="200" height="80" rx="12" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+    <text x="100" y="32" text-anchor="middle" font-size="15" fill="#c084fc" font-weight="bold">Docs stay current</text>
+    <text x="100" y="52" text-anchor="middle" font-size="10" fill="#64748b">Code and docs update</text>
+    <text x="100" y="66" text-anchor="middle" font-size="10" fill="#64748b">together, not separately</text>
+  </g>
+
+  <!-- Arrow: left &#x2192; top -->
+  <g transform="translate(200, 100)">
+    <path d="M0,80 Q0,0 80,0" fill="none" stroke="#475569" stroke-width="2"/>
+    <polygon points="78,-5 78,5 88,0" fill="#475569"/>
+  </g>
+
+  <!-- Center label -->
+  <text x="400" y="205" text-anchor="middle" font-size="13" fill="#e2e8f0" font-weight="600">The Feedback Loop</text>
+
+  <!-- Title -->
+  <text x="400" y="385" text-anchor="middle" font-size="12" fill="#64748b">Diataxis structure enables the loop &#x2014; flat markdown does not</text>
+</svg>
