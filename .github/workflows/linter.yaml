@@ -16,6 +16,12 @@ jobs:
       statuses: write
 
     steps:
+      - name: Block drafts branch PRs
+        if: github.head_ref == 'drafts'
+        run: |
+          echo "::error::The drafts branch should not be merged directly into main. Use 'just prepare-post <slug>' instead."
+          exit 1
+
       - name: Checkout Code
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
