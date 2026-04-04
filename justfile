@@ -27,6 +27,76 @@ generate-site:
 	cp CNAME public/
 	touch public/.nojekyll
 
+# List all draft posts on the drafts branch
+[group('Drafts')]
+drafts:
+	#!/usr/bin/env bash
+	set -euo pipefail
+	current_branch="$(git branch --show-current)"
+	if [ "$current_branch" != "drafts" ]; then
+		echo "Listing draft posts from the drafts branch (you are on $current_branch):"
+		files="$(git diff main..drafts --name-only -- content/posts/ 2>/dev/null || true)"
+	else
+		echo "Draft posts on current branch:"
+		files="$(git diff main --name-only -- content/posts/)"
+	fi
+	if [ -z "$files" ]; then
+		echo "  No draft posts found."
+	else
+		echo "$files" | sed 's|content/posts/||;s|\.md$||' | while read -r slug; do
+			echo "  - $slug"
+		done
+	fi
+
+# Prepare a post for publication: creates a post/<slug> branch from main with the post's files
+[group('Drafts')]
+prepare-post slug:
+	#!/usr/bin/env bash
+	set -euo pipefail
+	SLUG='{{ slug }}'
+
+	# Verify we have the post on drafts
+	if ! git cat-file -e "drafts:content/posts/${SLUG}.md" 2>/dev/null; then
+		echo "Error: content/posts/${SLUG}.md not found on drafts branch"
+		exit 1
+	fi
+
+	# Check branch doesn't already exist
+	if git show-ref --verify --quiet "refs/heads/post/${SLUG}"; then
+		echo "Error: branch post/${SLUG} already exists"
+		exit 1
+	fi
+
+	# Create branch from main
+	git checkout -b "post/${SLUG}" main
+
+	# Bring post file
+	git checkout drafts -- "content/posts/${SLUG}.md"
+
+	# Bring images if they exist
+	if git ls-tree -d "drafts:assets/img/posts/${SLUG}" &>/dev/null; then
+		git checkout drafts -- "assets/img/posts/${SLUG}/"
+	fi
+
+	echo ""
+	echo "Branch post/${SLUG} created."
+	echo "Next steps:"
+	echo "  1. Set draft: false and the publication date in the frontmatter"
+	echo "  2. Commit, push, and open a PR to main"
+
+# Rebase drafts branch onto main (run after merging a post PR)
+[group('Drafts')]
+sync-drafts:
+	#!/usr/bin/env bash
+	set -euo pipefail
+	current_branch="$(git branch --show-current)"
+	git checkout drafts
+	git rebase main
+	echo "drafts branch rebased onto main."
+	if [ "$current_branch" != "drafts" ]; then
+		git checkout "$current_branch"
+	fi
+
 # Initialize a sfeir.dev redirect post from its URL
 [group('Content')]
 add-sfeirdev url:
