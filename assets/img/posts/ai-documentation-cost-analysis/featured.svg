@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="-apple-system, 'Helvetica Neue', sans-serif">
+  <rect width="800" height="500" fill="#0f172a" rx="12"/>
+
+  <!-- Token cost bar chart -->
+  <text x="40" y="250" text-anchor="middle" font-size="11" fill="#64748b" transform="rotate(-90, 40, 250)">API-equivalent cost</text>
+
+  <!-- Bars - All sessions -->
+  <g transform="translate(120, 80)">
+    <rect x="0" y="290" width="60" height="10" rx="3" fill="#334155" opacity="0.6"/>
+    <text x="30" y="310" text-anchor="middle" font-size="9" fill="#64748b">Input</text>
+
+    <rect x="90" y="260" width="60" height="40" rx="3" fill="#334155" opacity="0.6"/>
+    <text x="120" y="310" text-anchor="middle" font-size="9" fill="#64748b">Output</text>
+
+    <rect x="180" y="130" width="60" height="170" rx="3" fill="#334155" opacity="0.6"/>
+    <text x="210" y="310" text-anchor="middle" font-size="9" fill="#64748b">Cache W</text>
+
+    <rect x="270" y="10" width="60" height="290" rx="3" fill="#334155" opacity="0.6"/>
+    <text x="300" y="310" text-anchor="middle" font-size="9" fill="#64748b">Cache R</text>
+  </g>
+
+  <!-- Bars - Docs sessions (proportional, ~20%) -->
+  <g transform="translate(120, 80)">
+    <rect x="0" y="298" width="60" height="2" rx="1" fill="#3b82f6"/>
+    <rect x="90" y="293" width="60" height="7" rx="3" fill="#3b82f6"/>
+    <rect x="180" y="263" width="60" height="37" rx="3" fill="#3b82f6"/>
+    <rect x="270" y="245" width="60" height="55" rx="3" fill="#3b82f6"/>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(500, 100)">
+    <rect width="16" height="16" rx="3" fill="#334155" opacity="0.6"/>
+    <text x="24" y="13" font-size="12" fill="#94a3b8">All sessions</text>
+    <rect y="28" width="16" height="16" rx="3" fill="#3b82f6"/>
+    <text x="24" y="41" font-size="12" fill="#93c5fd">Docs (proportional, 20%)</text>
+  </g>
+
+  <!-- Key metrics cards -->
+  <g transform="translate(490, 170)">
+    <rect width="260" height="70" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="130" y="28" text-anchor="middle" font-size="28" fill="#93c5fd" font-weight="bold">$2.36</text>
+    <text x="130" y="52" text-anchor="middle" font-size="12" fill="#64748b">per documentation file</text>
+  </g>
+
+  <g transform="translate(490, 260)">
+    <rect width="260" height="70" rx="10" fill="#1e293b" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="130" y="28" text-anchor="middle" font-size="28" fill="#86efac" font-weight="bold">$0.016</text>
+    <text x="130" y="52" text-anchor="middle" font-size="12" fill="#64748b">per line of documentation</text>
+  </g>
+
+  <g transform="translate(490, 350)">
+    <rect width="260" height="70" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="130" y="28" text-anchor="middle" font-size="28" fill="#fcd34d" font-weight="bold">$116</text>
+    <text x="130" y="52" text-anchor="middle" font-size="12" fill="#64748b">API-equivalent for 49 docs files</text>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="468" text-anchor="middle" font-size="16" fill="#e2e8f0" font-weight="bold">AI Documentation Cost Analysis</text>
+  <text x="400" y="488" text-anchor="middle" font-size="11" fill="#64748b">Claude Code Max 5x (Opus 4.6) &#x2014; proportional attribution</text>
+</svg>
