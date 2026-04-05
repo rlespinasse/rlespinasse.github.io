@@ -16,11 +16,11 @@ series: ["AI Skills"]
 series_order: 8
 ---
 
-A CI failure on a pull request triggers a predictable loop: open GitHub, find the failed check, click through to the logs, scroll past setup and dependency installation, find the actual error, copy it, switch back to the editor, figure out the fix, push, wait, repeat.
+CI fails. You open a browser.
 
-The context switching is the expensive part. Not the fix itself — most CI failures are lint errors, test failures, or type mismatches that take minutes to resolve. But the time spent navigating between GitHub's UI and your editor adds up, especially when multiple checks fail or the logs are long.
+That is the problem. Not the failure itself — most CI failures are lint errors, test failures, or type mismatches that take minutes to fix. The problem is the loop: open GitHub, find the failed check, click through to logs, scroll past 2,000 lines of setup boilerplate, find the actual error, copy it, switch back to the editor, fix, push, wait, repeat. The context switching costs more than the fix.
 
-The [**verify-pr-logs**](https://github.com/rlespinasse/agent-skills) skill keeps the entire diagnosis-and-fix loop in the terminal. It uses the `gh` CLI to fetch logs, triage failures, identify root causes, and guide the assistant to implement fixes — without opening a browser.
+The [**verify-pr-logs**](https://github.com/rlespinasse/agent-skills) skill keeps that entire loop in the terminal. It uses the `gh` CLI to fetch logs, triage failures, identify root causes, and guide the assistant to implement fixes — without opening a browser.
 
 ## The seven-step process
 
