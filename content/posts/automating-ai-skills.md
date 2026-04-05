@@ -1,7 +1,8 @@
 ---
 title: "Automating AI Skills: From Manual Invocation to Always-On Guardrails"
-date: 2026-03-19T19:00:00+01:00
-draft: false
+date: 2026-04-13T10:00:00+02:00
+draft: true
+featureimage: /img/posts/automating-ai-skills/featured.svg
 summary: "How to classify your installed skills as proactive or reactive, and use Claude Code hooks and CLAUDE.md to enforce the right ones automatically."
 tags:
 - ai

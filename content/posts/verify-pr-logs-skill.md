@@ -1,7 +1,8 @@
 ---
 title: "Verify PR Logs Skill: Diagnosing CI Failures Without Leaving Your Terminal"
-date: 2026-03-19T16:00:00+01:00
-draft: false
+date: 2026-04-10T10:00:00+02:00
+draft: true
+featureimage: /img/posts/verify-pr-logs-skill/featured.svg
 summary: "The verify-pr-logs skill fetches GitHub Actions logs, triages failure types, diagnoses root causes, and guides fixes — all through the gh CLI."
 tags:
 - ai

@@ -1,6 +1,6 @@
 ---
 title: "What Does AI-Maintained Documentation Actually Cost?"
-date: 2026-04-04T14:00:00+02:00
+date: 2026-04-17T10:00:00+02:00
 draft: true
 summary: "We measured every token spent maintaining documentation in a real project. 49 files, $2.36 per document at API rates."
 featureimage: /img/posts/ai-documentation-cost-analysis/featured.svg

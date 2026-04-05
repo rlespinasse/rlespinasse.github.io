@@ -1,3 +1,16 @@
+---
+title: "Practical Guide to LLM-Assisted UAT Log Monitoring"
+date: 2026-04-24T10:00:00+02:00
+draft: true
+summary: "A 5-step method for monitoring Cloud Run UAT sessions with an LLM coding assistant — fetch logs, classify incidents by severity, read the code, fix the bug, and track everything in a single conversation."
+tags:
+- ai
+- cloud-run
+- monitoring
+categories:
+- Technical posts
+---
+
 # Practical Guide to LLM-Assisted UAT (User Acceptance Testing) Log Monitoring
 
 You're running UAT on a Cloud Run service. Real users are testing. You have no Datadog, no PagerDuty, no custom dashboards — just `gcloud logs` and a terminal. Logs are noisy: container startup messages, health checks, IAP authentication noise, transient retries, all mixed in with the actual errors that matter.

@@ -1,7 +1,7 @@
 ---
 title: "Anthropic Now Has Two Cache Write Tiers: Choosing Between 5-Minute and 1-Hour"
-date: 2026-04-04T22:00:00+02:00
-draft: false
+date: 2026-04-22T10:00:00+02:00
+draft: true
 summary: "Anthropic split prompt cache writes into a 5-minute tier and a 1-hour tier. The right choice depends on how often you reuse the same cached context — and getting it wrong can cost you more than skipping caching entirely."
 featureimage: /img/posts/pricing-page-structure-detection/featured.svg
 tags:
@@ -10,8 +10,6 @@ tags:
 - claude
 categories:
 - Technical posts
-series: ["AI Skills"]
-series_order: 6
 ---
 
 Prompt caching on the Anthropic API used to have a single write price. You paid a 1.25x premium on input tokens to store them in the cache, then read them back at 0.1x. One price, one duration, one decision: cache or do not cache.
