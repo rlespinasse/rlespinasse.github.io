@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="-apple-system, 'Helvetica Neue', sans-serif">
+  <rect width="800" height="500" fill="#0d1117" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" font-size="28" fill="#e2e8f0" font-weight="700">local-branches-status</text>
+  <text x="400" y="77" text-anchor="middle" font-size="13" fill="#8b949e">One table, every branch, all six dimensions</text>
+
+  <!-- Table header -->
+  <g transform="translate(30, 105)">
+    <rect width="740" height="32" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="12" y="22" font-size="10" fill="#58a6ff" font-weight="bold">Branch</text>
+    <text x="130" y="22" font-size="10" fill="#58a6ff" font-weight="bold">Remote</text>
+    <text x="270" y="22" font-size="10" fill="#58a6ff" font-weight="bold">Main diff</text>
+    <text x="370" y="22" font-size="10" fill="#58a6ff" font-weight="bold">Worktree</text>
+    <text x="500" y="22" font-size="10" fill="#58a6ff" font-weight="bold">Activity</text>
+    <text x="610" y="22" font-size="10" fill="#58a6ff" font-weight="bold">Description</text>
+  </g>
+
+  <!-- Row 1: main (active, green) -->
+  <g transform="translate(30, 145)">
+    <rect width="740" height="40" rx="4" fill="#1a2e1a" stroke="#3fb950" stroke-width="1" opacity="0.8"/>
+    <text x="12" y="26" font-size="10" fill="#3fb950" font-weight="bold">main *</text>
+    <text x="130" y="26" font-size="9" fill="#86efac">synced</text>
+    <text x="270" y="26" font-size="9" fill="#8b949e">&#x2014;</text>
+    <text x="370" y="26" font-size="9" fill="#8b949e">&#x2026;/agent-skills</text>
+    <text x="500" y="26" font-size="9" fill="#86efac">2 hours ago</text>
+    <text x="610" y="26" font-size="9" fill="#c9d1d9">Current branch</text>
+  </g>
+
+  <!-- Row 2: feature branch (active, blue) -->
+  <g transform="translate(30, 193)">
+    <rect width="740" height="40" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="12" y="26" font-size="10" fill="#58a6ff" font-weight="bold">feature/auth</text>
+    <text x="130" y="26" font-size="9" fill="#93c5fd">origin/feat/auth</text>
+    <text x="270" y="26" font-size="9" fill="#fcd34d">+3, -1</text>
+    <text x="370" y="26" font-size="9" fill="#8b949e">&#x2026;/wt/auth</text>
+    <text x="500" y="26" font-size="9" fill="#c9d1d9">2 days ago</text>
+    <text x="610" y="26" font-size="9" fill="#c9d1d9">OAuth2 login flow</text>
+  </g>
+
+  <!-- Row 3: unpushed branch (amber warning) -->
+  <g transform="translate(30, 241)">
+    <rect width="740" height="40" rx="4" fill="#1a1a0e" stroke="#f59e0b" stroke-width="1" opacity="0.8"/>
+    <text x="12" y="26" font-size="10" fill="#fcd34d" font-weight="bold">fix/query-perf</text>
+    <text x="130" y="26" font-size="9" fill="#f59e0b">no upstream</text>
+    <text x="270" y="26" font-size="9" fill="#fcd34d">+5, -0</text>
+    <text x="370" y="26" font-size="9" fill="#484f58">no worktree</text>
+    <text x="500" y="26" font-size="9" fill="#c9d1d9">1 day ago</text>
+    <text x="610" y="26" font-size="9" fill="#c9d1d9">Query optimisation</text>
+  </g>
+
+  <!-- Row 4: stale branch (red, deletable) -->
+  <g transform="translate(30, 289)">
+    <rect width="740" height="40" rx="4" fill="#1a1015" stroke="#f85149" stroke-width="1" opacity="0.8"/>
+    <text x="12" y="26" font-size="10" fill="#f85149" font-weight="bold">old/legacy-api</text>
+    <text x="130" y="26" font-size="9" fill="#f85149">no upstream</text>
+    <text x="270" y="26" font-size="9" fill="#f85149">+0, -18</text>
+    <text x="370" y="26" font-size="9" fill="#484f58">no worktree</text>
+    <text x="500" y="26" font-size="9" fill="#f85149">3 months ago</text>
+    <text x="610" y="26" font-size="9" fill="#8b949e">Fully merged</text>
+  </g>
+
+  <!-- Actionable notes -->
+  <g transform="translate(50, 360)">
+    <rect width="210" height="65" rx="8" fill="#161b22" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="105" y="25" text-anchor="middle" font-size="11" fill="#fcd34d" font-weight="bold">Unpushed</text>
+    <text x="105" y="43" text-anchor="middle" font-size="9" fill="#64748b">fix/query-perf has</text>
+    <text x="105" y="56" text-anchor="middle" font-size="9" fill="#64748b">5 commits, no remote</text>
+
+    <g transform="translate(230, 0)">
+      <rect width="210" height="65" rx="8" fill="#161b22" stroke="#f85149" stroke-width="1.5"/>
+      <text x="105" y="25" text-anchor="middle" font-size="11" fill="#f85149" font-weight="bold">Stale &#x2014; delete?</text>
+      <text x="105" y="43" text-anchor="middle" font-size="9" fill="#64748b">old/legacy-api: 18 behind,</text>
+      <text x="105" y="56" text-anchor="middle" font-size="9" fill="#64748b">no activity in 3 months</text>
+    </g>
+
+    <g transform="translate(460, 0)">
+      <rect width="210" height="65" rx="8" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/>
+      <text x="105" y="25" text-anchor="middle" font-size="11" fill="#93c5fd" font-weight="bold">Needs rebase</text>
+      <text x="105" y="43" text-anchor="middle" font-size="9" fill="#64748b">feature/auth is 1 commit</text>
+      <text x="105" y="56" text-anchor="middle" font-size="9" fill="#64748b">behind main</text>
+    </g>
+  </g>
+
+  <!-- Bottom tagline -->
+  <text x="400" y="465" text-anchor="middle" font-size="12" fill="#484f58">Batch collection &#x2014; single shell loop &#x2014; actionable overview</text>
+
+  <!-- AI Skill badge -->
+  <g transform="translate(755, 40)">
+    <path d="M0,-16 L3.5,-5.5 L16,0 L3.5,5.5 L0,16 L-3.5,5.5 L-16,0 L-3.5,-5.5 Z" fill="#fbbf24" opacity="0.8"/>
+    <circle r="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+    <text y="28" text-anchor="middle" font-size="8" fill="#f59e0b" font-weight="bold">AI Skill</text>
+  </g>
+</svg>

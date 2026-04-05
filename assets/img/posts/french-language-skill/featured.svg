@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="-apple-system, 'Helvetica Neue', sans-serif">
+  <rect width="800" height="500" fill="#0d1117" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" font-size="28" fill="#e2e8f0" font-weight="700">french-language</text>
+  <text x="400" y="77" text-anchor="middle" font-size="13" fill="#8b949e">Les accents fran&#xe7;ais sur tous les formats de fichiers</text>
+
+  <!-- Before/After panels -->
+  <!-- Before panel -->
+  <g transform="translate(40, 105)">
+    <rect width="340" height="250" rx="8" fill="#161b22" stroke="#f85149" stroke-width="1.5"/>
+    <text x="170" y="28" text-anchor="middle" font-size="12" fill="#f85149" font-weight="bold">Avant</text>
+
+    <!-- SVG file -->
+    <g transform="translate(15, 45)">
+      <rect width="310" height="34" rx="5" fill="#1a1015" stroke="#30363d" stroke-width="1"/>
+      <text x="8" y="22" font-size="9" fill="#64748b" font-family="'SF Mono', monospace">SVG</text>
+      <text x="50" y="22" font-size="11" fill="#f85149" font-family="'SF Mono', monospace">qualite &#x2022; deploiement &#x2022; cloture</text>
+    </g>
+
+    <!-- Mermaid file -->
+    <g transform="translate(15, 88)">
+      <rect width="310" height="34" rx="5" fill="#1a1015" stroke="#30363d" stroke-width="1"/>
+      <text x="8" y="22" font-size="9" fill="#64748b" font-family="'SF Mono', monospace">MMD</text>
+      <text x="50" y="22" font-size="11" fill="#f85149" font-family="'SF Mono', monospace">A[Securite] --> B[Controle]</text>
+    </g>
+
+    <!-- Markdown file -->
+    <g transform="translate(15, 131)">
+      <rect width="310" height="34" rx="5" fill="#1a1015" stroke="#30363d" stroke-width="1"/>
+      <text x="8" y="22" font-size="9" fill="#64748b" font-family="'SF Mono', monospace">MD</text>
+      <text x="50" y="22" font-size="11" fill="#f85149" font-family="'SF Mono', monospace">## Responsabilites de l'equipe</text>
+    </g>
+
+    <!-- CSV file -->
+    <g transform="translate(15, 174)">
+      <rect width="310" height="34" rx="5" fill="#1a1015" stroke="#30363d" stroke-width="1"/>
+      <text x="8" y="22" font-size="9" fill="#64748b" font-family="'SF Mono', monospace">CSV</text>
+      <text x="50" y="22" font-size="11" fill="#f85149" font-family="'SF Mono', monospace">Developpeur,Retrospective,Cree</text>
+    </g>
+
+    <!-- Error count -->
+    <text x="170" y="238" text-anchor="middle" font-size="11" fill="#f85149" font-weight="bold">14 accents manquants</text>
+  </g>
+
+  <!-- Arrow -->
+  <g transform="translate(390, 225)">
+    <line x1="0" y1="0" x2="28" y2="0" stroke="#58a6ff" stroke-width="2.5"/>
+    <polygon points="28,-5 38,0 28,5" fill="#58a6ff"/>
+  </g>
+
+  <!-- After panel -->
+  <g transform="translate(420, 105)">
+    <rect width="340" height="250" rx="8" fill="#161b22" stroke="#3fb950" stroke-width="1.5"/>
+    <text x="170" y="28" text-anchor="middle" font-size="12" fill="#3fb950" font-weight="bold">Apr&#xe8;s</text>
+
+    <!-- SVG file -->
+    <g transform="translate(15, 45)">
+      <rect width="310" height="34" rx="5" fill="#0d1a0d" stroke="#30363d" stroke-width="1"/>
+      <text x="8" y="22" font-size="9" fill="#64748b" font-family="'SF Mono', monospace">SVG</text>
+      <text x="50" y="22" font-size="11" fill="#3fb950" font-family="'SF Mono', monospace">qualit&#xe9; &#x2022; d&#xe9;ploiement &#x2022; cl&#xf4;ture</text>
+    </g>
+
+    <!-- Mermaid file -->
+    <g transform="translate(15, 88)">
+      <rect width="310" height="34" rx="5" fill="#0d1a0d" stroke="#30363d" stroke-width="1"/>
+      <text x="8" y="22" font-size="9" fill="#64748b" font-family="'SF Mono', monospace">MMD</text>
+      <text x="50" y="22" font-size="11" fill="#3fb950" font-family="'SF Mono', monospace">A[S&#xe9;curit&#xe9;] --> B[Contr&#xf4;le]</text>
+    </g>
+
+    <!-- Markdown file -->
+    <g transform="translate(15, 131)">
+      <rect width="310" height="34" rx="5" fill="#0d1a0d" stroke="#30363d" stroke-width="1"/>
+      <text x="8" y="22" font-size="9" fill="#64748b" font-family="'SF Mono', monospace">MD</text>
+      <text x="50" y="22" font-size="11" fill="#3fb950" font-family="'SF Mono', monospace">## Responsabilit&#xe9;s de l'&#xe9;quipe</text>
+    </g>
+
+    <!-- CSV file -->
+    <g transform="translate(15, 174)">
+      <rect width="310" height="34" rx="5" fill="#0d1a0d" stroke="#30363d" stroke-width="1"/>
+      <text x="8" y="22" font-size="9" fill="#64748b" font-family="'SF Mono', monospace">CSV</text>
+      <text x="50" y="22" font-size="11" fill="#3fb950" font-family="'SF Mono', monospace">D&#xe9;veloppeur,R&#xe9;trospective,Cr&#xe9;&#xe9;</text>
+    </g>
+
+    <!-- Success count -->
+    <text x="170" y="238" text-anchor="middle" font-size="11" fill="#3fb950" font-weight="bold">0 accent manquant</text>
+  </g>
+
+  <!-- Bottom: accent reference -->
+  <g transform="translate(80, 385)">
+    <rect width="640" height="75" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="320" y="24" text-anchor="middle" font-size="11" fill="#8b949e" font-weight="bold">Caract&#xe8;res surveill&#xe9;s</text>
+    <!-- Accent characters on explicit positions -->
+    <text y="58" font-size="22" fill="#58a6ff" font-weight="bold">
+      <tspan x="40">&#xe9;</tspan>
+      <tspan x="110">&#xe8;</tspan>
+      <tspan x="180">&#xea;</tspan>
+      <tspan x="250">&#xe0;</tspan>
+      <tspan x="320">&#xf4;</tspan>
+      <tspan x="390">&#xe2;</tspan>
+      <tspan x="460">&#xe7;</tspan>
+      <tspan x="530">&#xee;</tspan>
+      <tspan x="600">&#xf9;</tspan>
+    </text>
+    <!-- Labels below each character -->
+    <text y="70" font-size="8" fill="#64748b" text-anchor="middle">
+      <tspan x="44">aigu</tspan>
+      <tspan x="114">grave</tspan>
+      <tspan x="184">circ.</tspan>
+      <tspan x="254">grave</tspan>
+      <tspan x="324">circ.</tspan>
+      <tspan x="394">circ.</tspan>
+      <tspan x="464">c&#xe9;d.</tspan>
+      <tspan x="534">circ.</tspan>
+      <tspan x="604">grave</tspan>
+    </text>
+  </g>
+
+  <!-- AI Skill badge -->
+  <g transform="translate(755, 40)">
+    <path d="M0,-16 L3.5,-5.5 L16,0 L3.5,5.5 L0,16 L-3.5,5.5 L-16,0 L-3.5,-5.5 Z" fill="#fbbf24" opacity="0.8"/>
+    <circle r="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+    <text y="28" text-anchor="middle" font-size="8" fill="#f59e0b" font-weight="bold">AI Skill</text>
+  </g>
+</svg>
