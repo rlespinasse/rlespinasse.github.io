@@ -1,7 +1,7 @@
 ---
 title: "Morvan : assembler des données géospatiales pour un parc naturel régional"
-date: 2026-03-14T13:00:00+01:00
-draft: false
+date: 2026-04-15T10:00:00+02:00
+draft: true
 summary: "Le Parc naturel régional du Morvan s'étend sur des forêts, des lacs et des villages à travers la Bourgogne. Construire une carte interactive pour ce territoire signifie assembler des données géographiques provenant de nombreuses sources dans une structure de couches cohérente — et automatiser le pipeline pour qu'il reste maintenable."
 tags:
   - opensource

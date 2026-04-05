@@ -1,9 +1,9 @@
 ---
 title: "Local Branches Status Skill: A Branch Overview That Actually Helps You Act"
-date: 2026-03-17T12:00:00+01:00
-draft: false
+date: 2026-04-06T10:00:00+02:00
+draft: true
 summary: "The local-branches-status skill gives AI assistants a structured process for reporting every local branch with sync state, main diff, worktree path, last activity, and a content description."
-coverImg: /img/posts/local-branches-status-skill/featured.svg
+featureimage: /img/posts/local-branches-status-skill/featured.svg
 tags:
 - opensource
 - github
@@ -13,7 +13,7 @@ categories:
 - Technical posts
 - Open Source
 series: ["AI Skills"]
-series_order: 5
+series_order: 6
 ---
 
 Returning to a project after a few days away means answering a set of questions that should be simple but rarely are.

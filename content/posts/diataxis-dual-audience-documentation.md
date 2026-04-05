@@ -1,6 +1,6 @@
 ---
 title: "Diataxis Was Designed for Humans — It Works Even Better for AI"
-date: 2026-04-04T15:00:00+02:00
+date: 2026-04-20T10:00:00+02:00
 draft: true
 summary: "91% of our Diataxis-structured documentation serves both human readers and AI coding assistants. That was not the plan — it is a property of the framework."
 featureimage: /img/posts/diataxis-dual-audience-documentation/featured.svg

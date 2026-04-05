@@ -1,7 +1,8 @@
 ---
 title: "Skill french-language : les accents français sur tous les formats de fichiers"
-date: 2026-03-19T18:00:00+01:00
-draft: false
+date: 2026-04-08T10:00:00+02:00
+draft: true
+featureimage: /img/posts/french-language-skill/featured.svg
 summary: "Le skill french-language impose les accents, la grammaire et la typographie française sur tous les fichiers générés — markdown, SVG, Mermaid, PlantUML, CSV, JSON, et plus."
 tags:
 - ai
@@ -11,7 +12,7 @@ categories:
 - Technical posts
 - Open Source
 series: ["AI Skills"]
-series_order: 6
+series_order: 7
 ---
 
 Les assistants IA écrivent le français sans accents.
