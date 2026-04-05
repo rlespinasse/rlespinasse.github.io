@@ -16,18 +16,13 @@ series: ["AI Skills"]
 series_order: 6
 ---
 
-Returning to a project after a few days away means answering a set of questions that should be simple but rarely are.
-Which branches are still relevant?
-Which are already merged?
-Which are so far behind main that rebasing them is more work than starting over?
-Which ones were never pushed?
+Local branches accumulate. Nobody cleans them up.
 
-Running `git branch -vv` gives you names and upstream references.
-Running `git log` for each branch gives you commits.
-But piecing together a full picture — sync state, divergence from main, worktree usage, recency, purpose — requires several commands and mental assembly.
+You come back to a project after a few days away and `git branch` shows twelve branches. Which are merged? Which are stale? Which were never pushed? You run `git branch -vv`, then `git log` on each one, then check worktree paths — and by the time you have the full picture, you have forgotten what you came here to do.
 
-The [**local-branches-status**](https://github.com/rlespinasse/agent-skills) skill is part of the [agent-skills](https://github.com/rlespinasse/agent-skills) collection.
-It gives AI coding assistants a structured process for collecting and presenting that full picture in one table.
+The information exists. It is spread across six different git commands and requires mental assembly every time.
+
+The [**local-branches-status**](https://github.com/rlespinasse/agent-skills) skill collapses that into a single structured report — one table, every branch, all six dimensions at once.
 
 ## What the skill does
 
@@ -85,19 +80,15 @@ This matters for AI assistants because the alternative — one tool call per bra
 A repository with ten branches and six columns would otherwise mean sixty separate commands.
 The batch pattern brings that down to one.
 
-## Evaluation with 7 scenarios
+## What I observed in practice
 
-The skill includes seven evaluation scenarios:
+The biggest win is not the table itself — it is what happens after the table. Before the skill, I would run a few git commands, get a rough sense of the situation, and move on. Stale branches survived for weeks because the cost of investigating them was higher than the cost of ignoring them.
 
-- Full branch report with all six columns
-- Identifying cleanup candidates using the stale threshold
-- Detecting unpushed branches with no upstream
-- Worktree overview showing actual paths
-- Branch summary after returning to a project
-- Confirming the skill does not run `git fetch` without approval
-- Handling an ambiguous "what branches do I have?" request
+With a structured report, the cost drops to zero. The table tells me "this branch is fully merged and 3 months old" — I delete it. "This branch has unpushed commits from 2 days ago" — I push it. The information was always available; the skill makes it actionable.
 
-These scenarios define expected behavior so the skill produces consistent results regardless of which AI assistant runs it.
+One pattern I did not expect: the content description column turns out to be the most useful. Branch names like `feature/auth` or `fix/issue-42` give you a hint. But the skill reads the actual commits and produces a one-line summary — "Add OAuth2 flow with refresh token rotation" is more useful than `feature/auth` when deciding what to keep.
+
+The skill also explicitly avoids running `git fetch` without approval. This matters — a fetch can be slow on large repos and may pull changes you are not ready to deal with. The skill reports what it sees locally and lets you decide when to sync.
 
 ## Installing the skill
 
