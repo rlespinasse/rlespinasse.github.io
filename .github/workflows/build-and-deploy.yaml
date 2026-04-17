@@ -29,7 +29,7 @@ jobs:
           hugo-version: '0.155.3'
           extended: true
 
-      - uses: taiki-e/install-action@97a5807a604e12de3a13b52d868ebecaeeea757c # v2.75.4
+      - uses: taiki-e/install-action@a2352fc6ce487f030a3aa709482d57823eadfb37 # v2.75.16
         with:
           tool: just
 
@@ -40,7 +40,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         shell: bash
 
-      - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4.0.0
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: ./public
 
