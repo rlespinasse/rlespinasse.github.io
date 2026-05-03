@@ -131,7 +131,7 @@ add-sfeirdev url:
 	OG_TITLE="$(extract_og 'og:title')"
 	OG_DESC="$(extract_og 'og:description')"
 	PUB_DATE="$(extract_og 'article:published_time')"
-	[ -z "$PUB_DATE" ] && PUB_DATE="$(date +"%Y-%m-%dT00:00:00+02:00")"
+	[ -z "$PUB_DATE" ] && PUB_DATE="$(date +"%Y-%m-%dT00:00:00")"
 
 	if [ -z "$OG_IMAGE" ]; then
 		echo "Could not find og:image on ${URL}"

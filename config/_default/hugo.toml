@@ -11,6 +11,7 @@ enableEmoji = true
 
 buildDrafts = true
 buildFuture = false
+timeZone = "Europe/Paris"
 
 [pagination]
   pagerSize = 15
