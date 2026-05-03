@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="mBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1a0d"/>
+      <stop offset="100%" stop-color="#162614"/>
+    </linearGradient>
+    <linearGradient id="waterGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a5a8a"/>
+      <stop offset="100%" stop-color="#1a3a6a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#mBg)"/>
+
+  <!-- Coordinate grid (GIS feel) -->
+  <g opacity="0.05" stroke="#7aba7a" fill="none" stroke-width="0.6">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="100" y1="0" x2="100" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="300" y1="0" x2="300" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="500" y1="0" x2="500" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+    <line x1="700" y1="0" x2="700" y2="500"/>
+  </g>
+
+  <!-- Topographic contour lines -->
+  <g opacity="0.08" stroke="#5a9850" fill="none" stroke-width="0.8">
+    <ellipse cx="390" cy="268" rx="310" ry="155"/>
+    <ellipse cx="390" cy="268" rx="262" ry="134"/>
+    <ellipse cx="390" cy="268" rx="214" ry="113"/>
+    <ellipse cx="390" cy="268" rx="166" ry="92"/>
+    <ellipse cx="390" cy="268" rx="118" ry="70"/>
+    <ellipse cx="390" cy="268" rx="72" ry="48"/>
+  </g>
+
+  <!-- ── COUCHE : nature-environnement (vert) ── -->
+  <!-- Park boundary fill -->
+  <path d="M155,195 Q185,148 260,138 Q335,130 400,135 Q468,130 538,143 Q608,156 638,192 Q666,228 655,268 Q642,310 596,336 Q546,362 476,370 Q406,377 336,366 Q266,354 222,318 Q182,286 165,248 Q152,220 155,195 Z"
+    fill="#7aba7a" fill-opacity="0.08" stroke="#7aba7a" stroke-width="1.8" opacity="0.55"/>
+
+  <!-- Forest silhouette (bottom) — vert nature -->
+  <g opacity="0.52">
+    <polygon points="30,400 44,372 58,400"  fill="#4a8a4a"/>
+    <polygon points="52,406 64,380 76,406"  fill="#5a9a5a"/>
+    <polygon points="74,399 86,374 98,399"  fill="#4a8a4a"/>
+    <polygon points="96,404 108,378 120,404" fill="#5a9a5a"/>
+    <polygon points="118,398 132,370 146,398" fill="#4a8a4a"/>
+    <polygon points="140,403 152,378 164,403" fill="#5a9a5a"/>
+    <polygon points="610,402 622,376 634,402" fill="#4a8a4a"/>
+    <polygon points="630,397 644,370 658,397" fill="#5a9a5a"/>
+    <polygon points="652,403 664,378 676,403" fill="#4a8a4a"/>
+    <polygon points="672,398 686,373 700,398" fill="#5a9a5a"/>
+    <polygon points="694,404 706,379 718,404" fill="#4a8a4a"/>
+    <polygon points="714,399 728,373 742,399" fill="#5a9a5a"/>
+    <polygon points="736,403 748,378 760,403" fill="#4a8a4a"/>
+  </g>
+
+  <!-- ── COUCHE : hydrographie (bleu) ── -->
+  <!-- Lakes -->
+  <ellipse cx="308" cy="232" rx="30" ry="14" fill="url(#waterGrad)" opacity="0.80"/>
+  <ellipse cx="408" cy="292" rx="24" ry="10" fill="url(#waterGrad)" opacity="0.75"/>
+  <ellipse cx="358" cy="268" rx="13" ry="6"  fill="url(#waterGrad)" opacity="0.70"/>
+  <ellipse cx="462" cy="246" rx="15" ry="7"  fill="url(#waterGrad)" opacity="0.65"/>
+  <!-- Rivers -->
+  <path d="M268,148 Q283,182 308,210 Q318,224 308,240" fill="none" stroke="#3a7aba" stroke-width="1.4" opacity="0.55"/>
+  <path d="M418,292 Q444,302 472,308 Q510,312 542,302"  fill="none" stroke="#3a7aba" stroke-width="1.2" opacity="0.48"/>
+  <path d="M358,274 Q368,285 385,292"                   fill="none" stroke="#3a7aba" stroke-width="1.0" opacity="0.45"/>
+
+  <!-- ── COUCHE : paysages (violet) ── -->
+  <!-- Landscape zone (dashed inner boundary) -->
+  <path d="M210,220 Q240,188 310,178 Q380,170 430,175 Q490,170 540,185 Q585,200 598,228 Q612,258 598,285 Q578,312 536,328 Q488,344 430,348 Q368,352 310,338 Q258,325 230,298 Q205,272 210,220 Z"
+    fill="none" stroke="#ba6ade" stroke-width="1.2" stroke-dasharray="5,4" opacity="0.40"/>
+
+  <!-- ── COUCHE : tourisme-économie (orange-rouge) ── -->
+  <!-- Grande traversée (north-south trail) -->
+  <path d="M390,148 Q396,178 388,208 Q382,234 390,258 Q398,280 386,310 Q378,335 382,362"
+    fill="none" stroke="#de7a3a" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.50"/>
+  <!-- East-west itinerary -->
+  <path d="M222,270 Q258,256 298,260 Q340,265 378,258 Q420,252 462,258 Q508,264 545,258"
+    fill="none" stroke="#de7a3a" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.45"/>
+
+  <!-- ── COUCHE : patrimoine-culture (ambre) ── -->
+  <!-- Heritage site dots -->
+  <circle cx="278" cy="208" r="3.5" fill="#e8a838" opacity="0.72"/>
+  <circle cx="342" cy="188" r="3.0" fill="#e8a838" opacity="0.65"/>
+  <circle cx="420" cy="198" r="3.5" fill="#e8a838" opacity="0.72"/>
+  <circle cx="488" cy="222" r="3.0" fill="#e8a838" opacity="0.65"/>
+  <circle cx="455" cy="272" r="3.5" fill="#e8a838" opacity="0.68"/>
+  <circle cx="352" cy="298" r="3.0" fill="#e8a838" opacity="0.62"/>
+  <circle cx="502" cy="296" r="2.5" fill="#e8a838" opacity="0.58"/>
+
+  <!-- ── LÉGENDE (left side) ── -->
+  <g transform="translate(34, 173)">
+    <!-- nature-environnement -->
+    <circle cx="7" cy="0"  r="4.5" fill="#7aba7a" opacity="0.85"/>
+    <text x="18" y="4" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#6a9a6a">périmètre du parc</text>
+    <!-- hydrographie -->
+    <circle cx="7" cy="22" r="4.5" fill="#3a7aba" opacity="0.85"/>
+    <text x="18" y="26" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#6a9a6a">hydrographie</text>
+    <!-- patrimoine-culture -->
+    <circle cx="7" cy="44" r="4.5" fill="#e8a838" opacity="0.85"/>
+    <text x="18" y="48" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#6a9a6a">sites patrimoniaux</text>
+    <!-- paysages -->
+    <circle cx="7" cy="66" r="4.5" fill="#ba6ade" opacity="0.85"/>
+    <text x="18" y="70" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#6a9a6a">entités paysagères</text>
+    <!-- tourisme-économie -->
+    <circle cx="7" cy="88" r="4.5" fill="#de7a3a" opacity="0.85"/>
+    <text x="18" y="92" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#6a9a6a">grandes itinérances</text>
+  </g>
+
+  <!-- Stats box (right) -->
+  <g transform="translate(692, 310)" opacity="0.72">
+    <rect x="-55" y="-45" width="110" height="88" rx="5" fill="#0b1a0d" stroke="#3a6a3a" stroke-width="0.9"/>
+    <text x="0" y="-22" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="22" font-weight="700" fill="#7aba7a" text-anchor="middle">73</text>
+    <text x="0" y="-7"  font-family="'Inter', sans-serif" font-size="8" fill="#4a7a4a" text-anchor="middle" letter-spacing="1.5">COUCHES</text>
+    <line x1="-32" y1="4" x2="32" y2="4" stroke="#2a4a2a" stroke-width="0.8"/>
+    <text x="0" y="24" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="22" font-weight="700" fill="#7aba7a" text-anchor="middle">9</text>
+    <text x="0" y="38" font-family="'Inter', sans-serif" font-size="8" fill="#4a7a4a" text-anchor="middle" letter-spacing="1.5">CATÉGORIES</text>
+  </g>
+
+  <!-- EPSG badges (right) -->
+  <g transform="translate(688, 195)" opacity="0.52">
+    <rect x="-46" y="-13" width="92" height="18" rx="3" fill="none" stroke="#4a6a4a" stroke-width="0.8"/>
+    <text x="0" y="0" font-family="'SF Mono', 'Courier New', monospace" font-size="9" fill="#6a9a6a" text-anchor="middle">EPSG:2154</text>
+  </g>
+  <text x="688" y="222" font-family="'SF Mono', monospace" font-size="9" fill="#5a7a5a" text-anchor="middle" opacity="0.40">↓</text>
+  <g transform="translate(688, 238)" opacity="0.52">
+    <rect x="-46" y="-13" width="92" height="18" rx="3" fill="none" stroke="#4a6a4a" stroke-width="0.8"/>
+    <text x="0" y="0" font-family="'SF Mono', 'Courier New', monospace" font-size="9" fill="#6a9a6a" text-anchor="middle">EPSG:4326</text>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="72"  font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="50" font-weight="700" fill="#e8f4e0" text-anchor="middle" letter-spacing="6">MORVAN</text>
+  <text x="400" y="102" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12" fill="#5a8a5a" text-anchor="middle" letter-spacing="3">PARC NATUREL RÉGIONAL · DONNÉES GÉOSPATIALES</text>
+
+  <!-- Decorative bottom line -->
+  <line x1="200" y1="472" x2="600" y2="472" stroke="#2a4a2a" stroke-width="1"/>
+  <line x1="350" y1="472" x2="450" y2="472" stroke="#5a9a5a" stroke-width="2"/>
+</svg>

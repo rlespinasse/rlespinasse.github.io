@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <linearGradient id="pBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1a0d"/>
+      <stop offset="100%" stop-color="#162614"/>
+    </linearGradient>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#5a9a5a"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="300" fill="url(#pBg)"/>
+
+  <!-- Title -->
+  <text x="400" y="28" font-family="'Inter', sans-serif" font-size="11" fill="#4a7a4a" text-anchor="middle" letter-spacing="2.5">PIPELINE DE TRAITEMENT</text>
+
+  <!-- ── SOURCES (x=40–170, center=105) ── -->
+  <rect x="40" y="84" width="130" height="44" rx="6" fill="#162614" stroke="#3a6a3a" stroke-width="1.2"/>
+  <g transform="translate(63, 102)" opacity="0.8">
+    <circle cx="0" cy="0" r="7" fill="none" stroke="#6aa860" stroke-width="1.1"/>
+    <ellipse cx="0" cy="-2.5" rx="7" ry="2.8" fill="none" stroke="#6aa860" stroke-width="0.7"/>
+    <ellipse cx="0" cy="2.5"  rx="7" ry="2.8" fill="none" stroke="#6aa860" stroke-width="0.7"/>
+  </g>
+  <text x="118" y="103" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#8aba8a" text-anchor="middle">data.gouv.fr</text>
+  <text x="118" y="118" font-family="'Inter', sans-serif" font-size="8" fill="#4a7a4a" text-anchor="middle">portail national</text>
+
+  <rect x="40" y="146" width="130" height="44" rx="6" fill="#162614" stroke="#3a6a3a" stroke-width="1.2"/>
+  <g transform="translate(63, 164)" opacity="0.8">
+    <circle cx="0" cy="0" r="7" fill="none" stroke="#6aa860" stroke-width="1.1"/>
+    <ellipse cx="0" cy="-2.5" rx="7" ry="2.8" fill="none" stroke="#6aa860" stroke-width="0.7"/>
+    <ellipse cx="0" cy="2.5"  rx="7" ry="2.8" fill="none" stroke="#6aa860" stroke-width="0.7"/>
+  </g>
+  <text x="118" y="164" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#8aba8a" text-anchor="middle">TerNum BFC</text>
+  <text x="118" y="179" font-family="'Inter', sans-serif" font-size="8" fill="#4a7a4a" text-anchor="middle">portail régional</text>
+
+  <text x="105" y="226" font-family="'Inter', sans-serif" font-size="8" fill="#3a5a3a" text-anchor="middle" letter-spacing="1.5">SOURCES</text>
+
+  <!-- Merge lines + arrow 1 (gap x=170–246, center=208) -->
+  <line x1="170" y1="106" x2="204" y2="142" stroke="#5a9a5a" stroke-width="1.1"/>
+  <line x1="170" y1="168" x2="204" y2="142" stroke="#5a9a5a" stroke-width="1.1"/>
+  <line x1="204" y1="142" x2="240" y2="142" stroke="#5a9a5a" stroke-width="1.3" marker-end="url(#arr)"/>
+  <rect x="177" y="150" width="66" height="26" rx="3" fill="#0a140a" stroke="#2a4a2a" stroke-width="0.8"/>
+  <text x="210" y="162" font-family="'SF Mono', 'Courier New', monospace" font-size="9" fill="#c8eec8" text-anchor="middle">fetch.py</text>
+  <text x="210" y="172" font-family="'Inter', sans-serif" font-size="7.5" fill="#5a9a5a" text-anchor="middle">requests</text>
+
+  <!-- ── DONNÉES COLLECTÉES (x=246–370, center=308) ── -->
+  <rect x="246" y="95" width="124" height="94" rx="6" fill="#101e10" stroke="#4a8a4a" stroke-width="1.5"/>
+  <text x="308" y="117" font-family="'SF Mono', 'Courier New', monospace" font-size="9.5" fill="#8aba8a" text-anchor="middle">data/layers/</text>
+  <rect x="272" y="124" width="72" height="20" rx="3" fill="#0b160c" stroke="#2a5a2a" stroke-width="0.8"/>
+  <text x="308" y="138" font-family="'SF Mono', monospace" font-size="8" fill="#4aaa6a" text-anchor="middle">EPSG:2154</text>
+  <text x="308" y="158" font-family="'Inter', sans-serif" font-size="8" fill="#5a8a5a" text-anchor="middle">Lambert 93</text>
+  <text x="308" y="176" font-family="'Inter', sans-serif" font-size="7.5" fill="#3a5a3a" text-anchor="middle">source de vérité</text>
+
+  <text x="308" y="226" font-family="'Inter', sans-serif" font-size="8" fill="#3a5a3a" text-anchor="middle" letter-spacing="1.5">COLLECTE</text>
+
+  <!-- Arrow 2 (gap x=370–494, center=432) -->
+  <line x1="370" y1="142" x2="492" y2="142" stroke="#5a9a5a" stroke-width="1.3" marker-end="url(#arr)"/>
+  <rect x="388" y="150" width="88" height="26" rx="3" fill="#0a140a" stroke="#2a4a2a" stroke-width="0.8"/>
+  <text x="432" y="162" font-family="'SF Mono', 'Courier New', monospace" font-size="9" fill="#c8eec8" text-anchor="middle">reproject.py</text>
+  <text x="432" y="172" font-family="'Inter', sans-serif" font-size="7.5" fill="#5a9a5a" text-anchor="middle">pyproj</text>
+
+  <!-- ── DONNÉES PRÉPARÉES (x=494–618, center=556) ── -->
+  <rect x="494" y="95" width="124" height="94" rx="6" fill="#0e1810" stroke="#3a7a4a" stroke-width="1.5"/>
+  <text x="556" y="117" font-family="'SF Mono', monospace" font-size="9" fill="#6aaa8a" text-anchor="middle">site/public/data/</text>
+  <rect x="520" y="124" width="72" height="20" rx="3" fill="#081210" stroke="#2a5a3a" stroke-width="0.8"/>
+  <text x="556" y="138" font-family="'SF Mono', monospace" font-size="8" fill="#3aaa7a" text-anchor="middle">EPSG:4326</text>
+  <text x="556" y="158" font-family="'Inter', sans-serif" font-size="8" fill="#4a8a6a" text-anchor="middle">WGS84</text>
+  <text x="556" y="176" font-family="'Inter', sans-serif" font-size="7.5" fill="#2a5a3a" text-anchor="middle">régénéré au déploiement</text>
+
+  <text x="556" y="226" font-family="'Inter', sans-serif" font-size="8" fill="#3a5a3a" text-anchor="middle" letter-spacing="1.5">PRÉPARATION</text>
+
+  <!-- Arrow 3 (gap x=618–652) -->
+  <line x1="618" y1="142" x2="650" y2="142" stroke="#5a9a5a" stroke-width="1.3" marker-end="url(#arr)"/>
+
+  <!-- ── LEAFLET (x=652–770, center=711) ── -->
+  <rect x="652" y="110" width="118" height="64" rx="6" fill="#081408" stroke="#2dba5a" stroke-width="1.5"/>
+  <text x="711" y="137" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#2dba5a" text-anchor="middle">Leaflet</text>
+  <text x="711" y="156" font-family="'Inter', sans-serif" font-size="8.5" fill="#1a7a2a" text-anchor="middle">carte interactive</text>
+
+  <text x="711" y="226" font-family="'Inter', sans-serif" font-size="8" fill="#3a5a3a" text-anchor="middle" letter-spacing="1.5">EXPOSITION</text>
+
+  <!-- Bottom flow line -->
+  <line x1="50" y1="246" x2="750" y2="246" stroke="#1e3a1e" stroke-width="1"/>
+  <g opacity="0.38">
+    <circle cx="105" cy="246" r="3" fill="#5a9a5a"/>
+    <circle cx="308" cy="246" r="3" fill="#5a9a5a"/>
+    <circle cx="556" cy="246" r="3" fill="#5a9a5a"/>
+    <circle cx="711" cy="246" r="3" fill="#2dba5a"/>
+  </g>
+</svg>
