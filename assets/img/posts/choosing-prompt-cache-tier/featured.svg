@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="-apple-system, 'Helvetica Neue', sans-serif">
+  <rect width="800" height="500" fill="#0f172a" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" font-size="18" fill="#e2e8f0" font-weight="bold">Prompt Cache Write Tiers</text>
+  <text x="400" y="72" text-anchor="middle" font-size="12" fill="#64748b">Choose the right duration for your workload</text>
+
+  <!-- Layout: left box x=80 w=280 (right edge 360), right box x=420 w=280 (left edge 420)
+       Gap center: (360+420)/2 = 390. But 80+280=360, 800-80-280=440, so right box at 440.
+       Symmetric: left at 60, right at 460, both w=280 → edges 340 and 460, center 400.
+       Better: left at 70, right at 450, w=280 → edges 350 and 450, center 400. -->
+
+  <!-- 5-minute tier (left) -->
+  <g transform="translate(70, 95)">
+    <rect width="280" height="330" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+
+    <!-- Clock icon -->
+    <g transform="translate(120, 25)">
+      <circle cx="20" cy="20" r="18" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+      <line x1="20" y1="20" x2="20" y2="9" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="20" y1="20" x2="28" y2="20" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="20" cy="20" r="2.5" fill="#3b82f6"/>
+    </g>
+
+    <text x="140" y="85" text-anchor="middle" font-size="22" fill="#93c5fd" font-weight="bold">5 min</text>
+    <text x="140" y="105" text-anchor="middle" font-size="12" fill="#64748b">default</text>
+
+    <!-- Multiplier badge -->
+    <rect x="90" y="118" width="100" height="30" rx="15" fill="#3b82f6" opacity="0.2"/>
+    <text x="140" y="139" text-anchor="middle" font-size="16" fill="#93c5fd" font-weight="bold">1.25x</text>
+
+    <!-- API hint -->
+    <rect x="40" y="162" width="200" height="24" rx="4" fill="#0f172a"/>
+    <text x="140" y="179" text-anchor="middle" font-size="11" fill="#64748b" font-family="monospace">{ "type": "ephemeral" }</text>
+
+    <!-- Break-even -->
+    <text x="140" y="212" text-anchor="middle" font-size="11" fill="#94a3b8">Break-even:</text>
+    <text x="140" y="234" text-anchor="middle" font-size="18" fill="#22c55e" font-weight="bold">1 read</text>
+
+    <line x1="30" y1="252" x2="250" y2="252" stroke="#334155" stroke-width="1"/>
+
+    <!-- Use cases -->
+    <text x="140" y="274" text-anchor="middle" font-size="10" fill="#64748b">Best for</text>
+    <g transform="translate(30, 286)">
+      <circle cx="6" cy="6" r="3" fill="#3b82f6" opacity="0.6"/>
+      <text x="16" y="10" font-size="10" fill="#94a3b8">Conversational agents</text>
+    </g>
+    <g transform="translate(30, 306)">
+      <circle cx="6" cy="6" r="3" fill="#3b82f6" opacity="0.6"/>
+      <text x="16" y="10" font-size="10" fill="#94a3b8">Bursty, unpredictable traffic</text>
+    </g>
+  </g>
+
+  <!-- VS divider — centered between boxes: x = (70+280 + 450)/2 = (350+450)/2 = 400
+       y = 95 + 330/2 = 260 -->
+  <g transform="translate(400, 260)">
+    <circle cx="0" cy="0" r="20" fill="#334155" stroke="#475569" stroke-width="1.5"/>
+    <text x="0" y="5" text-anchor="middle" font-size="12" fill="#94a3b8" font-weight="bold">vs</text>
+  </g>
+
+  <!-- 1-hour tier (right) -->
+  <g transform="translate(450, 95)">
+    <rect width="280" height="330" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+
+    <!-- Clock icon (longer hand) -->
+    <g transform="translate(120, 25)">
+      <circle cx="20" cy="20" r="18" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+      <line x1="20" y1="20" x2="20" y2="9" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="20" y1="20" x2="10" y2="27" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="20" cy="20" r="2.5" fill="#f59e0b"/>
+      <path d="M38,20 A18,18 0 1,1 20,2" fill="none" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+    </g>
+
+    <text x="140" y="85" text-anchor="middle" font-size="22" fill="#fcd34d" font-weight="bold">1 hour</text>
+    <text x="140" y="105" text-anchor="middle" font-size="12" fill="#64748b">opt-in via ttl</text>
+
+    <!-- Multiplier badge -->
+    <rect x="100" y="118" width="80" height="30" rx="15" fill="#f59e0b" opacity="0.2"/>
+    <text x="140" y="139" text-anchor="middle" font-size="16" fill="#fcd34d" font-weight="bold">2x</text>
+
+    <!-- API hint -->
+    <rect x="18" y="162" width="244" height="24" rx="4" fill="#0f172a"/>
+    <text x="140" y="179" text-anchor="middle" font-size="10" fill="#64748b" font-family="monospace">{ "type": "ephemeral", "ttl": "1h" }</text>
+
+    <!-- Break-even -->
+    <text x="140" y="212" text-anchor="middle" font-size="11" fill="#94a3b8">Break-even:</text>
+    <text x="140" y="234" text-anchor="middle" font-size="18" fill="#22c55e" font-weight="bold">2 reads</text>
+
+    <line x1="30" y1="252" x2="250" y2="252" stroke="#334155" stroke-width="1"/>
+
+    <!-- Use cases -->
+    <text x="140" y="274" text-anchor="middle" font-size="10" fill="#64748b">Best for</text>
+    <g transform="translate(30, 286)">
+      <circle cx="6" cy="6" r="3" fill="#f59e0b" opacity="0.6"/>
+      <text x="16" y="10" font-size="10" fill="#94a3b8">Stable system prompts</text>
+    </g>
+    <g transform="translate(30, 306)">
+      <circle cx="6" cy="6" r="3" fill="#f59e0b" opacity="0.6"/>
+      <text x="16" y="10" font-size="10" fill="#94a3b8">Steady production traffic</text>
+    </g>
+  </g>
+
+  <!-- Cache read footer — centered at x=400 -->
+  <g transform="translate(200, 445)">
+    <rect width="400" height="40" rx="8" fill="#1e293b" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="200" y="18" text-anchor="middle" font-size="11" fill="#64748b">Cache reads (both tiers)</text>
+    <text x="200" y="34" text-anchor="middle" font-size="14" fill="#86efac" font-weight="bold">0.1x base input &#8212; 90% savings per read</text>
+  </g>
+</svg>

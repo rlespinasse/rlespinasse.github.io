@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="-apple-system, 'Helvetica Neue', sans-serif">
+  <rect width="800" height="400" fill="#0f172a" rx="8"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-size="15" fill="#e2e8f0" font-weight="600">Which Cache Tier Should You Use?</text>
+
+  <!-- Question 1: Reuse? -->
+  <g transform="translate(320, 60)">
+    <polygon points="80,0 160,45 80,90 0,45" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+    <text x="80" y="40" text-anchor="middle" font-size="10" fill="#c084fc">Will the context</text>
+    <text x="80" y="53" text-anchor="middle" font-size="10" fill="#c084fc">be reused?</text>
+  </g>
+
+  <!-- No reuse -> skip caching -->
+  <!-- Diamond left point at (320, 105). Arrow from there to box right edge at (200, 105). -->
+  <line x1="320" y1="105" x2="208" y2="105" stroke="#475569" stroke-width="1.5"/>
+  <polygon points="208,108 200,105 208,102" fill="#475569"/>
+  <text x="265" y="97" text-anchor="middle" font-size="9" fill="#64748b">No</text>
+
+  <g transform="translate(50, 80)">
+    <rect width="150" height="50" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+    <text x="75" y="22" text-anchor="middle" font-size="11" fill="#94a3b8">Skip caching</text>
+    <text x="75" y="38" text-anchor="middle" font-size="9" fill="#64748b">Pay base input each time</text>
+  </g>
+
+  <!-- Yes -> Question 2 -->
+  <!-- Diamond bottom point at (400, 150). Q2 top point at (400, 188). -->
+  <line x1="400" y1="150" x2="400" y2="188" stroke="#475569" stroke-width="1.5"/>
+  <polygon points="397,188 400,196 403,188" fill="#475569"/>
+  <text x="410" y="172" font-size="9" fill="#64748b">Yes</text>
+
+  <!-- Question 2: Frequency -->
+  <g transform="translate(320, 188)">
+    <polygon points="80,0 160,45 80,90 0,45" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+    <text x="80" y="38" text-anchor="middle" font-size="10" fill="#c084fc">More than 2 reads</text>
+    <text x="80" y="52" text-anchor="middle" font-size="10" fill="#c084fc">within 1 hour?</text>
+  </g>
+
+  <!-- No (<=2 reads) -> 5-minute -->
+  <!-- Diamond left point at (320, 233). Box right edge at (200, 233). -->
+  <line x1="320" y1="233" x2="208" y2="233" stroke="#475569" stroke-width="1.5"/>
+  <polygon points="208,236 200,233 208,230" fill="#475569"/>
+  <text x="265" y="225" text-anchor="middle" font-size="9" fill="#64748b">No</text>
+
+  <!-- 5-minute result box (center-y = 233) -->
+  <g transform="translate(30, 200)">
+    <rect width="170" height="66" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+    <text x="85" y="22" text-anchor="middle" font-size="13" fill="#93c5fd" font-weight="bold">5-minute cache</text>
+    <text x="85" y="38" text-anchor="middle" font-size="9" fill="#64748b">1.25x write, lower risk</text>
+    <text x="85" y="54" text-anchor="middle" font-size="8" fill="#3b82f6" font-family="monospace">{ "type": "ephemeral" }</text>
+  </g>
+
+  <!-- Yes (>2 reads) -> Question 3 -->
+  <!-- Diamond bottom point at (400, 278). Q3 top point at (400, 316). -->
+  <line x1="400" y1="278" x2="400" y2="316" stroke="#475569" stroke-width="1.5"/>
+  <polygon points="397,316 400,324 403,316" fill="#475569"/>
+  <text x="410" y="300" font-size="9" fill="#64748b">Yes</text>
+
+  <!-- Question 3: Stable context? -->
+  <g transform="translate(320, 316)">
+    <polygon points="80,0 160,35 80,70 0,35" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+    <text x="80" y="30" text-anchor="middle" font-size="10" fill="#c084fc">Stable context?</text>
+    <text x="80" y="44" text-anchor="middle" font-size="10" fill="#c084fc">(rarely changes)</text>
+  </g>
+
+  <!-- No (unstable) -> 5-minute -->
+  <!-- Diamond left point at (320, 351). Box right edge at (200, 351). -->
+  <line x1="320" y1="351" x2="208" y2="351" stroke="#475569" stroke-width="1.5"/>
+  <polygon points="208,354 200,351 208,348" fill="#475569"/>
+  <text x="265" y="343" text-anchor="middle" font-size="9" fill="#64748b">No</text>
+
+  <!-- Dashed 5-minute box (center-y = 351) -->
+  <g transform="translate(30, 326)">
+    <rect width="170" height="50" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <text x="85" y="22" text-anchor="middle" font-size="11" fill="#93c5fd">5-minute cache</text>
+    <text x="85" y="38" text-anchor="middle" font-size="9" fill="#64748b">Context changes invalidate anyway</text>
+  </g>
+
+  <!-- Yes (stable) -> 1-hour -->
+  <!-- Diamond right point at (480, 351). Box left edge at (570, 351). -->
+  <line x1="480" y1="351" x2="562" y2="351" stroke="#475569" stroke-width="1.5"/>
+  <polygon points="562,348 570,351 562,354" fill="#475569"/>
+  <text x="522" y="343" text-anchor="middle" font-size="9" fill="#64748b">Yes</text>
+
+  <!-- 1-hour result box (center-y = 351) -->
+  <g transform="translate(570, 326)">
+    <rect width="190" height="50" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="95" y="22" text-anchor="middle" font-size="13" fill="#fcd34d" font-weight="bold">1-hour cache</text>
+    <text x="95" y="38" text-anchor="middle" font-size="8" fill="#f59e0b" font-family="monospace">{ ..., "ttl": "1h" }</text>
+  </g>
+</svg>
