@@ -5,7 +5,10 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 9 * * *' # Daily at 09:00 UTC (after 09:00 Europe/Paris in any season) — publishes future-dated posts
+    # Daily at 07:05 UTC
+    # = 08:05 Europe/Paris (CET, winter UTC+1)
+    # = 09:05 Europe/Paris (CEST, summer UTC+2)
+    - cron: '5 7 * * *'
 
 permissions:
   contents: read
