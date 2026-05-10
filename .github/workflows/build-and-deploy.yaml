@@ -29,7 +29,7 @@ jobs:
           hugo-version: '0.160.1'
           extended: true
 
-      - uses: taiki-e/install-action@787505cde8a44ea468a00478fe52baf23b15bccd # v2.75.21
+      - uses: taiki-e/install-action@3fa6878dc4ae603f73960271565a082bf196ab96 # v2.77.2
         with:
           tool: just
 
