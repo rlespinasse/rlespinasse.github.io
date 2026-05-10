@@ -1,7 +1,7 @@
 ---
 title: "Skill french-language : les accents français sur tous les formats de fichiers"
 date: 2026-05-11T08:00:00
-draft: true
+draft: false
 featureimage: /img/posts/french-language-skill/featured.svg
 summary: "Le skill french-language impose les accents, la grammaire et la typographie française sur tous les fichiers générés : markdown, SVG, Mermaid, PlantUML, CSV, JSON, et plus."
 tags:
