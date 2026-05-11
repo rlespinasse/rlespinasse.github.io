@@ -5,10 +5,10 @@ on:
     branches:
       - main
   schedule:
-    # Daily at 07:05 UTC
-    # = 08:05 Europe/Paris (CET, winter UTC+1)
-    # = 09:05 Europe/Paris (CEST, summer UTC+2)
-    - cron: '5 7 * * *'
+    # Daily at 03:17 UTC (off-peak, off-the-hour to avoid GitHub Actions scheduler congestion)
+    # = 04:17 Europe/Paris (CET, winter UTC+1)
+    # = 05:17 Europe/Paris (CEST, summer UTC+2)
+    - cron: '17 3 * * *'
 
 permissions:
   contents: read
