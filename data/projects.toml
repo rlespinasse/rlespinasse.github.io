@@ -1,0 +1,226 @@
+# Project'folio data — manual source of truth for the /projects page.
+# Edit this file to add, remove or reorder projects. Fields per project:
+#   name        (required) display name
+#   repo        (required) "owner/name" — used for the GitHub link
+#   url         (required) primary link (Marketplace when available, else repo)
+#   description (required) one-line description
+#   language    (optional) shown as a small badge, e.g. "Rust", "Docker"
+#   tags        (optional) list of extra labels
+#   featured    (optional) true to highlight (reserved for future use)
+
+[[worlds]]
+name = "GitHub Actions"
+description = "Automation building blocks for GitHub workflows."
+
+  [[worlds.projects]]
+  name = "release-that"
+  repo = "rlespinasse/release-that"
+  url = "https://github.com/marketplace/actions/release-that"
+  description = "Ease the release of a repository."
+  tags = ["github-actions"]
+
+  [[worlds.projects]]
+  name = "github-slug-action"
+  repo = "rlespinasse/github-slug-action"
+  url = "https://github.com/marketplace/actions/github-slug-action"
+  description = "Slug some environment variables."
+  tags = ["github-actions"]
+
+  [[worlds.projects]]
+  name = "slugify-value"
+  repo = "rlespinasse/slugify-value"
+  url = "https://github.com/marketplace/actions/slugify-value"
+  description = "Slug any variable."
+  tags = ["github-actions"]
+
+  [[worlds.projects]]
+  name = "shortify-git-revision"
+  repo = "rlespinasse/shortify-git-revision"
+  url = "https://github.com/rlespinasse/shortify-git-revision"
+  description = "Short some Git references."
+  tags = ["github-actions"]
+
+  [[worlds.projects]]
+  name = "git-commit-data-action"
+  repo = "rlespinasse/git-commit-data-action"
+  url = "https://github.com/marketplace/actions/git-commit-data"
+  description = "Expose some Git commit data."
+  tags = ["github-actions"]
+
+  [[worlds.projects]]
+  name = "drawio-export-action"
+  repo = "rlespinasse/drawio-export-action"
+  url = "https://github.com/rlespinasse/drawio-export-action"
+  description = "Export Draw.io diagrams within a GitHub Actions workflow."
+  tags = ["github-actions", "drawio"]
+
+  [[worlds.projects]]
+  name = "github-actions-toolbox"
+  repo = "rlespinasse/github-actions-toolbox"
+  url = "https://github.com/rlespinasse/github-actions-toolbox"
+  description = "A collection of reusable workflows and actions."
+  tags = ["github-actions"]
+
+  [[worlds.projects]]
+  name = "envsubst-action"
+  repo = "actions-able/envsubst-action"
+  url = "https://github.com/actions-able/envsubst-action"
+  description = "Substitute environment variables in files."
+  tags = ["github-actions"]
+
+  [[worlds.projects]]
+  name = "awesome-actions"
+  repo = "actions-able/awesome-actions"
+  url = "https://github.com/actions-able/awesome-actions"
+  description = "A maintained fork of the curated list of awesome actions."
+  tags = ["github-actions", "awesome-list"]
+
+[[worlds]]
+name = "Draw.io Export"
+description = "A group of repositories dedicated to Draw.io diagram exports."
+
+  [[worlds.projects]]
+  name = "docker-drawio-desktop-headless"
+  repo = "rlespinasse/docker-drawio-desktop-headless"
+  url = "https://github.com/rlespinasse/docker-drawio-desktop-headless"
+  description = "Docker image to serve Draw.io Desktop in a headless version."
+  language = "Docker"
+  tags = ["drawio"]
+
+  [[worlds.projects]]
+  name = "drawio-exporter"
+  repo = "rlespinasse/drawio-exporter"
+  url = "https://github.com/rlespinasse/drawio-exporter"
+  description = "Export Draw.io diagrams using the command line."
+  language = "Rust"
+  tags = ["drawio", "cli"]
+
+  [[worlds.projects]]
+  name = "drawio-export"
+  repo = "rlespinasse/drawio-export"
+  url = "https://github.com/rlespinasse/drawio-export"
+  description = "Export Draw.io diagrams using Docker."
+  language = "Docker"
+  tags = ["drawio"]
+
+  [[worlds.projects]]
+  name = "drawio-export-action"
+  repo = "rlespinasse/drawio-export-action"
+  url = "https://github.com/rlespinasse/drawio-export-action"
+  description = "Export Draw.io diagrams within a GitHub Actions workflow."
+  tags = ["drawio", "github-actions"]
+
+[[worlds]]
+name = "Rust"
+description = "Tools crafted in Rust."
+
+  [[worlds.projects]]
+  name = "wints"
+  repo = "rlespinasse/wints"
+  url = "https://github.com/rlespinasse/wints"
+  description = "What I Need To See — a fuzzy term-based URLs opener."
+  language = "Rust"
+  tags = ["cli"]
+
+  [[worlds.projects]]
+  name = "drawio-exporter"
+  repo = "rlespinasse/drawio-exporter"
+  url = "https://github.com/rlespinasse/drawio-exporter"
+  description = "Export Draw.io diagrams using the command line."
+  language = "Rust"
+  tags = ["cli", "drawio"]
+
+[[worlds]]
+name = "Tools"
+description = "Utilities to make everyday work smoother."
+
+  [[worlds.projects]]
+  name = "agent-skills"
+  repo = "rlespinasse/agent-skills"
+  url = "https://github.com/rlespinasse/agent-skills"
+  description = "Skills for AI agents."
+  tags = ["ai"]
+
+  [[worlds.projects]]
+  name = "textlint-rule-link-title-case"
+  repo = "rlespinasse/textlint-rule-link-title-case"
+  url = "https://github.com/rlespinasse/textlint-rule-link-title-case"
+  description = "A textlint rule to check link title case."
+  tags = ["linting"]
+
+  [[worlds.projects]]
+  name = "homebrew-tap"
+  repo = "rlespinasse/homebrew-tap"
+  url = "https://github.com/rlespinasse/homebrew-tap"
+  description = "Homebrew tap for installing my tools and utilities."
+  tags = ["homebrew"]
+
+[[worlds]]
+name = "Geospatial"
+description = "Interactive maps and atlases."
+
+  [[worlds.projects]]
+  name = "bassin-minier-unesco"
+  repo = "rlespinasse/bassin-minier-unesco"
+  url = "https://github.com/rlespinasse/bassin-minier-unesco"
+  description = "Interactive map of the UNESCO Mining Basin."
+  tags = ["maps", "leaflet"]
+
+  [[worlds.projects]]
+  name = "leaflet-atlas"
+  repo = "rlespinasse/leaflet-atlas"
+  url = "https://github.com/rlespinasse/leaflet-atlas"
+  description = "Atlas powered by Leaflet.js."
+  tags = ["maps", "leaflet"]
+
+  [[worlds.projects]]
+  name = "morvan"
+  repo = "rlespinasse/morvan"
+  url = "https://github.com/rlespinasse/morvan"
+  description = "Interactive map of Parc du Morvan."
+  tags = ["maps", "leaflet"]
+
+[[worlds]]
+name = "Fun"
+description = "Side projects made seriously, for fun."
+
+  [[worlds.projects]]
+  name = "le-petit-coloriste"
+  repo = "rlespinasse/le-petit-coloriste"
+  url = "https://github.com/rlespinasse/le-petit-coloriste"
+  description = "Google Gemini gem to generate AI coloring pages for kids."
+  tags = ["ai"]
+
+  [[worlds.projects]]
+  name = "le-petit-aquarium-du-marais"
+  repo = "rlespinasse/le-petit-aquarium-du-marais"
+  url = "https://github.com/rlespinasse/le-petit-aquarium-du-marais"
+  description = "Collaborative aquarium filled with fish drawings by children."
+
+  [[worlds.projects]]
+  name = "wraas"
+  repo = "wraas/wraas.github.io"
+  url = "https://github.com/wraas/wraas.github.io"
+  description = "We Rickroll Absolutely Anyone, Seriously."
+
+  [[worlds.projects]]
+  name = "digital-twin-product"
+  repo = "wraas/digital-twin-product"
+  url = "https://github.com/wraas/digital-twin-product"
+  description = "Weighted Romain Algorithmic Approximation Software."
+
+[[worlds]]
+name = "BriqueParBrique"
+description = "The BriqueParBrique universe."
+
+  [[worlds.projects]]
+  name = "BriqueParBrique"
+  repo = "BriqueParBrique/BriqueParBrique.github.io"
+  url = "https://github.com/BriqueParBrique/BriqueParBrique.github.io"
+  description = "The BriqueParBrique site."
+
+  [[worlds.projects]]
+  name = "nouvelle-brique"
+  repo = "BriqueParBrique/nouvelle-brique"
+  url = "https://github.com/BriqueParBrique/nouvelle-brique"
+  description = "Template to start a new brique."
