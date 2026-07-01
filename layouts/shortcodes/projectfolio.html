@@ -6,7 +6,17 @@
       {{- with .description }}<p class="projectfolio-world-desc">{{ . }}</p>{{ end -}}
       <div class="projectfolio-grid">
         {{- range .projects -}}
+          {{- $project := . -}}
           <article class="projectfolio-card">
+            {{- with .image -}}
+              {{- $src := . -}}
+              {{- if eq . "github" -}}
+                {{- $src = printf "https://opengraph.githubassets.com/%s/%s" ($project.repo | crypto.MD5) $project.repo -}}
+              {{- end -}}
+              <a class="projectfolio-cover" href="{{ $project.url }}" rel="noopener">
+                <img src="{{ $src }}" alt="{{ $project.name }} cover" loading="lazy" decoding="async">
+              </a>
+            {{- end -}}
             <h3 class="projectfolio-card-title">
               <a href="{{ .url }}" rel="noopener">{{ .name }}</a>
             </h3>
