@@ -114,6 +114,25 @@
   background-color: var(--color-neutral-800);
 }
 
+.projectfolio-cover {
+  display: block;
+  margin: -1rem -1rem 0.25rem;
+  overflow: hidden;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.projectfolio-cover img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.projectfolio-card:hover .projectfolio-cover img {
+  transform: scale(1.03);
+}
+
 .projectfolio-card-title {
   margin: 0;
   font-size: 1.05rem;

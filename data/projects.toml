@@ -7,6 +7,10 @@
 #   language    (optional) shown as a small badge, e.g. "Rust", "Docker"
 #   tags        (optional) list of extra labels
 #   featured    (optional) true to highlight (reserved for future use)
+#   image       (optional) cover image for the card:
+#                 - omitted        -> no cover, text-only card (default)
+#                 - "github"       -> the repo's GitHub social preview card
+#                 - "/img/..." or a full URL -> used as-is
 
 [[worlds]]
 name = "GitHub Actions"
@@ -25,6 +29,7 @@ description = "Automation building blocks for GitHub workflows."
   url = "https://github.com/marketplace/actions/github-slug-action"
   description = "Slug some environment variables."
   tags = ["github-actions"]
+  image = "github"
 
   [[worlds.projects]]
   name = "slugify-value"
@@ -179,6 +184,7 @@ description = "Interactive maps and atlases."
   url = "https://github.com/rlespinasse/morvan"
   description = "Interactive map of Parc du Morvan."
   tags = ["maps", "leaflet"]
+  image = "github"
 
 [[worlds]]
 name = "Fun"
@@ -190,6 +196,7 @@ description = "Side projects made seriously, for fun."
   url = "https://github.com/rlespinasse/le-petit-coloriste"
   description = "Google Gemini gem to generate AI coloring pages for kids."
   tags = ["ai"]
+  image = "github"
 
   [[worlds.projects]]
   name = "le-petit-aquarium-du-marais"
