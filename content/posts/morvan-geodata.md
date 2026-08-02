@@ -14,7 +14,7 @@ series_order: 3
 ---
 
 Le [Parc naturel régional du Morvan](https://www.parcdumorvan.org/) est un espace protégé en Bourgogne.
-Il couvre un paysage montagneux et boisé avec des lacs, des rivières, des petites communes et un riche patrimoine culturel.
+Il couvre un paysage montagneux et boisé avec des lacs, des rivières, des petites communes et un patrimoine culturel.
 Contrairement à une carte urbaine où un seul jeu de données fournit rues et bâtiments, cartographier un parc naturel régional implique de puiser des données dans de nombreuses sources différentes : limites administratives, éléments naturels, démographie, infrastructures touristiques, réseaux énergétiques, et bien d'autres.
 
 [**Morvan**](https://github.com/rlespinasse/morvan) est un projet open source qui assemble ces données géospatiales dans un format structuré et réutilisable pour la cartographie interactive.

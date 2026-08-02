@@ -20,19 +20,19 @@ series_order: 1
 It started with a territory, not a library.
 
 I wanted to explore the open data available around the [Bassin Minier du Nord-Pas de Calais](https://github.com/rlespinasse/bassin-minier-unesco) ([see the Bassin Minier UNESCO post](/posts/bassin-minier-unesco/)), a UNESCO World Heritage site near where I live.
-The idea was simple: build an interactive map to discover the local heritage — mining sites, administrative boundaries, geological data — and learn about the territory through its open datasets.
+The idea was simple: build an interactive map to discover the local heritage (mining sites, administrative boundaries, geological data) and learn about the territory through its open datasets.
 
 As the map grew, something predictable happened.
 The code that initialized Leaflet, loaded GeoJSON layers, wired up popups, handled polygon overlaps, and managed the layer control started looking less like application code and more like a library.
 Patterns emerged: every layer needed the same loading logic, every popup needed the same sanitization, every set of overlapping polygons needed the same z-ordering trick.
 
-Rather than letting that code stay buried inside a single project, I extracted it into [**Leaflet Atlas**](https://github.com/rlespinasse/leaflet-atlas) — a reusable, config-driven framework that would let me (and others) start the next map without rewriting the same boilerplate.
+Rather than letting that code stay buried inside a single project, I extracted it into [**Leaflet Atlas**](https://github.com/rlespinasse/leaflet-atlas), a reusable, config-driven framework that would let me (and others) start the next map without rewriting the same boilerplate.
 
 ## The extraction
 
 The goal was clear: take everything that was generic in the Bassin Minier map and turn it into a standalone npm package.
-The application-specific parts — the actual heritage data, the BRGM integration, the legal overlay — stayed in the Bassin Minier project.
-Everything else — map initialization, layer management, UI components, security sanitization — moved into Leaflet Atlas.
+The application-specific parts (the actual heritage data, the BRGM integration, the legal overlay) stayed in the Bassin Minier project.
+Everything else (map initialization, layer management, UI components, security sanitization) moved into Leaflet Atlas.
 
 The Bassin Minier app then switched from its local copy of the code to the CDN-hosted Leaflet Atlas package.
 What had been tightly coupled application code became a clean dependency.
@@ -55,7 +55,7 @@ Define your GeoJSON layers in a configuration object. Each layer gets a name, a 
 
 ### Smart polygon click-through with auto z-ordering
 
-When polygons overlap — which happens constantly with administrative boundaries like EPCI and department limits — clicking on the map should reach the right feature.
+When polygons overlap, which happens constantly with administrative boundaries like EPCI and department limits, clicking on the map should reach the right feature.
 Leaflet Atlas implements automatic z-ordering so that smaller polygons sit above larger ones, and click events pass through to the most specific feature under the cursor.
 
 ### Auto-generated tile thumbnails
@@ -71,7 +71,7 @@ The layers drawer includes a searchable filter bar with keyboard shortcut suppor
 ### Security
 
 XSS prevention is built-in from the start.
-User-provided content in popups and external URLs is sanitized before rendering — a lesson learned firsthand when reviewing BRGM data URLs in the Bassin Minier project.
+User-provided content in popups and external URLs is sanitized before rendering, a lesson learned firsthand when reviewing BRGM data URLs in the Bassin Minier project.
 
 ## Getting started
 
@@ -118,19 +118,19 @@ The interesting part of this approach is the feedback loop between Leaflet Atlas
 
 ![Leaflet Atlas architecture and virtuous cycle](/img/posts/leaflet-atlas/architecture.svg)
 
-The [Bassin Minier UNESCO](/posts/bassin-minier-unesco/) map was where the library was born — its needs shaped the initial feature set.
+The [Bassin Minier UNESCO](/posts/bassin-minier-unesco/) map was where the library was born: its needs shaped the initial feature set.
 Now I am building [a second map for the Parc naturel régional du Morvan](/posts/morvan-geodata/), an entirely different territory in Burgundy with its own layers: forests, lakes, hiking trails, administrative boundaries, demographic data.
 
 Each new map surfaces new requirements.
 The Morvan project is already revealing features that the Bassin Minier map did not need, and exposing edge cases that only appear with different data shapes.
 Those discoveries flow back into Leaflet Atlas as new features and bugfixes, which in turn benefit every map that depends on the library.
 
-At the same time, the industrialization of the npm package — proper versioning, CI/CD, documentation, CDN distribution — makes each subsequent map project faster to bootstrap.
+At the same time, the industrialization of the npm package (proper versioning, CI/CD, documentation, CDN distribution) makes each subsequent map project faster to bootstrap.
 What took days of custom code for the first map takes minutes of configuration for the next one.
 
 ## What comes next
 
-The framework is still young — v0.2.0 is the latest release — and there is plenty of room to grow.
+The framework is still young (v0.2.0 is the latest release), and there is plenty of room to grow.
 Every new mapping project I start is an opportunity to discover what Leaflet Atlas is missing and push the library further.
 
 If you work with GeoJSON data and want to spend less time on map boilerplate, give Leaflet Atlas a try.

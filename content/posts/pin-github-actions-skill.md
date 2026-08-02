@@ -32,11 +32,11 @@ For an organisation with dozens of repositories, it does not scale without autom
 The [**pin-github-actions**](https://github.com/rlespinasse/agent-skills) skill is part of the [agent-skills](https://github.com/rlespinasse/agent-skills) collection.
 It guides AI coding assistants through the full migration, step by step:
 
-1. **Discover** — scan `.github/workflows/` for all `uses:` references and report which are already pinned
-2. **Resolve** — look up the latest release for each action, resolve the commit SHA via the GitHub API, and dereference annotated tags
-3. **Pin** — replace tag references with `SHA # vX.Y.Z` format using exact release versions
-4. **Configure Dependabot** — set up or update `.github/dependabot.yml` with grouped updates for all discovered ecosystems
-5. **Confirm** — present every change for review before applying
+1. **Discover**: scan `.github/workflows/` for all `uses:` references and report which are already pinned
+2. **Resolve**: look up the latest release for each action, resolve the commit SHA via the GitHub API, and dereference annotated tags
+3. **Pin**: replace tag references with `SHA # vX.Y.Z` format using exact release versions
+4. **Configure Dependabot**: set up or update `.github/dependabot.yml` with grouped updates for all discovered ecosystems
+5. **Confirm**: present every change for review before applying
 
 The assistant handles the API calls, the tag-versus-commit disambiguation, and the file edits.
 You review the result.
@@ -53,7 +53,7 @@ This matters because a migration tool that blindly pins to the latest version ca
 
 ## Dependabot with grouped updates
 
-Pinning to SHAs without Dependabot creates a maintenance burden — you lose the automatic update notifications that tag-based references provide.
+Pinning to SHAs without Dependabot creates a maintenance burden: you lose the automatic update notifications that tag-based references provide.
 The skill addresses this by configuring Dependabot as part of the migration.
 
 Two design choices are built into the skill:
@@ -78,7 +78,7 @@ updates:
 
 **Multi-ecosystem discovery.**
 The skill does not stop at `github-actions`.
-It scans the repository for other dependency sources — `.gitmodules`, `package.json`, `go.mod`, `Gemfile`, `Cargo.toml`, `Dockerfile`, Terraform files — and adds each discovered ecosystem to the Dependabot configuration with the same grouped update pattern.
+It scans the repository for other dependency sources (`.gitmodules`, `package.json`, `go.mod`, `Gemfile`, `Cargo.toml`, `Dockerfile`, Terraform files) and adds each discovered ecosystem to the Dependabot configuration with the same grouped update pattern.
 
 If a `dependabot.yml` already exists, the skill merges with it rather than overwriting it, preserving any existing labels, reviewers, or ignore rules.
 
@@ -105,15 +105,15 @@ npx skills add https://github.com/rlespinasse/agent-skills --skill pin-github-ac
 Once installed, ask the assistant to pin your GitHub Actions or migrate your workflows to SHA-pinned versions.
 The skill activates on keywords like "pin actions", "SHA pinning", "pinned versions", or "supply-chain security".
 
-If you have already installed other skills from the collection — like [conventional-commit](/posts/conventional-commit-skill/) or [diataxis](/posts/diataxis-documentation-skill/) — the process is the same.
+If you have already installed other skills from the collection, like [conventional-commit](/posts/conventional-commit-skill/) or [diataxis](/posts/diataxis-documentation-skill/), the process is the same.
 
 ## From blog post to automation
 
 The [earlier post on SHA pinning](/posts/github-actions-commit-sha-pinning/) explained why pinning matters and how to do it manually.
 This skill turns that knowledge into something an AI assistant can execute on your behalf.
 
-The tedious parts — API lookups, tag dereferencing, file editing, Dependabot configuration — are handled by the assistant.
-The important parts — reviewing changes, deciding on major version upgrades, approving the final result — stay with you.
+The tedious parts (API lookups, tag dereferencing, file editing, Dependabot configuration) are handled by the assistant.
+The important parts (reviewing changes, deciding on major version upgrades, approving the final result) stay with you.
 
 ```bash
 npx skills add https://github.com/rlespinasse/agent-skills --skill pin-github-actions

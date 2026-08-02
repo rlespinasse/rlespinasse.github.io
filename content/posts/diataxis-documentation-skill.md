@@ -18,11 +18,11 @@ series_order: 1
 ---
 
 Good documentation does not happen by accident.
-When the focus is on shipping features, docs tend to drift —
+When the focus is on shipping features, docs tend to drift:
 a readme grows a few paragraphs here, a guide appears there,
 and before long nobody is quite sure where things belong.
 
-I have been applying the [Diataxis](https://diataxis.fr/) methodology and [documentation-as-code](/posts/sfeirdev-documentation-as-code-definition/) for a while now, and it works — when I do it myself. But doing it manually is error-prone, and for other contributors — human or AI — the methodology does not resonate the same way. Without a shared framework baked into the tooling, every contributor adds pages in whatever spot feels right at the moment.
+I have been applying the [Diataxis](https://diataxis.fr/) methodology and [documentation-as-code](/posts/sfeirdev-documentation-as-code-definition/) for a while now, and it works when I do it myself. But doing it manually is error-prone, and for other contributors, human or AI, the methodology does not resonate the same way. Without a shared framework baked into the tooling, every contributor adds pages in whatever spot feels right at the moment.
 
 That is why I built the **diataxis** skill inside [agent-skills](https://github.com/rlespinasse/agent-skills):
 a way to bring a proven documentation methodology directly into a coding session, so the structure is enforced regardless of who writes the docs.
@@ -32,10 +32,10 @@ a way to bring a proven documentation methodology directly into a coding session
 [Diataxis](https://diataxis.fr/) is a documentation framework created by Daniele Procida.
 Its core idea is simple: documentation serves four distinct needs, and each one calls for a different style of writing.
 
-- **Tutorials** — learning-oriented. They walk a newcomer through a complete experience step by step, building confidence along the way.
-- **How-to guides** — task-oriented. They give a practitioner the sequence of actions needed to solve a specific problem.
-- **Explanations** — understanding-oriented. They provide context, background, and the reasoning behind design decisions.
-- **Reference** — information-oriented. They offer precise, complete, and trustworthy technical descriptions.
+- **Tutorials**: learning-oriented. They walk a newcomer through a complete experience step by step, building confidence along the way.
+- **How-to guides**: task-oriented. They give a practitioner the sequence of actions needed to solve a specific problem.
+- **Explanations**: understanding-oriented. They provide context, background, and the reasoning behind design decisions.
+- **Reference**: information-oriented. They offer precise, complete, and trustworthy technical descriptions.
 
 The insight that makes Diataxis powerful is that mixing these categories in a single page makes documentation harder to use.
 A tutorial that detours into exhaustive API reference loses the learner.
@@ -50,7 +50,7 @@ Once installed, skills activate contextually and give the AI assistant specializ
 If you are interested in documentation tooling beyond AI skills, you might also enjoy [how Antora handles multi-repo documentation](/posts/antora-en/).
 
 The **diataxis** skill teaches the assistant to apply the Diataxis framework whenever it touches project documentation.
-It works with Claude Code, GitHub Copilot, Cursor, and any tool that supports the agentskills.io spec —
+It works with Claude Code, GitHub Copilot, Cursor, and any tool that supports the agentskills.io spec,
 which means the same documentation discipline is available regardless of which AI assistant a contributor prefers.
 
 ## How the diataxis skill works
@@ -59,15 +59,15 @@ The skill follows a four-step process designed to be thorough without being disr
 
 ![The four-step diataxis skill workflow](/img/posts/diataxis-documentation-skill/workflow.svg)
 
-1. **Discover** — The skill scans the project for existing documentation files: Markdown pages, readmes, wiki entries, and anything else that looks like prose meant for humans.
-2. **Classify** — Each document is assigned to one of the four Diataxis categories. Pages that blend multiple categories are flagged so they can be split or refocused.
-3. **Propose** — Based on the classification, the skill suggests a restructured documentation layout. It identifies gaps — maybe there are plenty of how-to guides but no tutorials — and recommends new pages to fill them.
-4. **Execute** — With the contributor's explicit approval, the skill carries out the restructuring: creating, moving, or rewriting pages as needed.
+1. **Discover**: the skill scans the project for existing documentation files: Markdown pages, readmes, wiki entries, and anything else that looks like prose meant for humans.
+2. **Classify**: each document is assigned to one of the four Diataxis categories. Pages that blend multiple categories are flagged so they can be split or refocused.
+3. **Propose**: based on the classification, the skill suggests a restructured documentation layout. It identifies gaps (maybe there are plenty of how-to guides but no tutorials) and recommends new pages to fill them.
+4. **Execute**: with the contributor's explicit approval, the skill carries out the restructuring, creating, moving, or rewriting pages as needed.
 
 The approval step is intentional.
 Documentation restructuring touches the entire project, and no automated process should reorganize your docs without you signing off.
 The skill respects your existing structure and proposes incremental improvements rather than forcing a complete overhaul.
-All content is preserved — nothing gets deleted, only reorganized or expanded.
+All content is preserved: nothing gets deleted, only reorganized or expanded.
 
 ## Getting started
 
@@ -78,7 +78,7 @@ npx skills add https://github.com/rlespinasse/agent-skills --skill diataxis
 ```
 
 Once installed, the diataxis skill is available in your next coding session.
-You can ask the AI assistant explicitly — for example, _"review this project's documentation using the diataxis framework"_ —
+You can ask the AI assistant explicitly, for example _"review this project's documentation using the diataxis framework"_,
 or it will activate on its own when it detects documentation-related work in the session.
 
 The skill becomes part of the assistant's toolbox and is ready to use immediately.
@@ -90,7 +90,7 @@ the diataxis skill provides the same guardrails.
 
 During a typical session, documentation changes happen alongside code changes.
 A new feature needs a how-to guide, a refactor invalidates part of the reference, a bugfix reveals a gap in the tutorials.
-Without a framework, these changes are ad hoc — the contributor writes something, hopes it lands in the right place, and moves on.
+Without a framework, these changes are ad hoc: the contributor writes something, hopes it lands in the right place, and moves on.
 With the diataxis skill active, the assistant knows where each piece of documentation belongs and can suggest the right location and format before the change is even committed.
 
 This reduces the review burden on maintainers.
@@ -104,7 +104,7 @@ The agent-skills project is actively growing.
 The [conventional-commit](https://github.com/rlespinasse/agent-skills) skill was recently added to help with well-structured commit messages,
 and more skills are in the pipeline.
 
-If you maintain a project where documentation quality matters — and it always does —
+If you maintain a project where documentation quality matters,
 give the diataxis skill a try.
 Explore the repository, open an issue if something does not fit your workflow,
 or contribute a skill of your own.

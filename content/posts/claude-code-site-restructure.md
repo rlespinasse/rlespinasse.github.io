@@ -21,7 +21,7 @@ I did the entire thing with [Claude Code](https://docs.anthropic.com/en/docs/cla
 
 ## Planning before touching a file
 
-The first thing I did was enter plan mode. Before any code changes, I asked Claude Code to research theme options — Blowfish, Congo, and even non-Hugo alternatives like Astro. It read each theme's documentation, compared shortcode support (galleries, GitHub cards, badges), and presented a structured comparison.
+The first thing I did was enter plan mode. Before any code changes, I asked Claude Code to research theme options: Blowfish, Congo, and even non-Hugo alternatives like Astro. It read each theme's documentation, compared shortcode support (galleries, GitHub cards, badges), and presented a structured comparison.
 
 I chose [Blowfish](https://blowfish.page/) for its built-in gallery shortcode, GitHub repository cards, and flexible taxonomy support. Claude Code then designed a migration plan:
 
@@ -32,7 +32,7 @@ I chose [Blowfish](https://blowfish.page/) for its built-in gallery shortcode, G
 5. About page restructure
 6. Release notes cleanup
 
-Having the full plan upfront meant I could review the scope, reorder phases, and flag decisions that needed my input — all before a single file was modified.
+Having the full plan upfront meant I could review the scope, reorder phases, and flag decisions that needed my input, all before a single file was modified.
 
 ## What Claude Code actually did
 
@@ -61,7 +61,7 @@ Into this:
 
 No more `load-photoswipe` dependency, and the old photoswipe shortcodes and CSS were deleted entirely.
 
-**About page restructure.** Rather than creating dedicated Projects and Certifications sections, I kept the about page as the single place for that information — but restructured it to cover all active projects. Claude Code read the release notes script to identify the full project list and added five projects that were missing from the original about page: `github-actions-toolbox`, `agent-skills`, `textlint-rule-link-title-case`, `bassin-minier-unesco`, and `leaflet-atlas`, organized into new "tools" and "geospatial" sections alongside the existing GitHub Actions, Draw.io ecosystem, and Rust sections. Certifications tables were preserved in full.
+**About page restructure.** Rather than creating dedicated Projects and Certifications sections, I kept the about page as the single place for that information, but restructured it to cover all active projects. Claude Code read the release notes script to identify the full project list and added five projects that were missing from the original about page: `github-actions-toolbox`, `agent-skills`, `textlint-rule-link-title-case`, `bassin-minier-unesco`, and `leaflet-atlas`, organized into new "tools" and "geospatial" sections alongside the existing GitHub Actions, Draw.io ecosystem, and Rust sections. Certifications tables were preserved in full.
 
 **Release notes cleanup.** The site had 54 auto-generated changelog posts (`release-*.md`) produced by a shell script that pulled GitHub release data. These posts added noise to the feed without adding much value. Claude Code removed all 54 files, deleted the generation script, and removed the corresponding `just` recipe.
 
@@ -71,9 +71,9 @@ No more `load-photoswipe` dependency, and the old photoswipe shortcodes and CSS 
 
 **Bulk operations.** 84 front matter renames, 19 image param renames, 18 gallery conversions, 54 file deletions. These are the tasks where an AI assistant shines: repetitive, pattern-based, but with enough variation per file that a simple `sed` script would miss edge cases.
 
-**Build error diagnosis.** After the migration, Claude Code identified two build errors on its own — a missing `series` taxonomy declaration and broken partial references in a leftover custom layout — and fixed both before the first successful build.
+**Build error diagnosis.** After the migration, Claude Code identified two build errors on its own (a missing `series` taxonomy declaration and broken partial references in a leftover custom layout) and fixed both before the first successful build.
 
-**Theme migration knowledge.** Claude Code read Blowfish's example configs and documentation to understand partial override patterns, shortcode syntax, and taxonomy configuration. This is the kind of framework-specific knowledge that normally requires reading docs, trying things, and debugging — compressed into the planning phase.
+**Theme migration knowledge.** Claude Code read Blowfish's example configs and documentation to understand partial override patterns, shortcode syntax, and taxonomy configuration. This is the kind of framework-specific knowledge that normally requires reading docs, trying things, and debugging, compressed into the planning phase.
 
 ## What needed human judgment
 
@@ -82,7 +82,7 @@ Claude Code presented comparisons and options. I made the decisions:
 - **Theme choice.** Claude Code compared Blowfish, Congo, and Astro. I chose Blowfish based on the feature comparison and my preference for staying with Hugo.
 - **Content structure.** Dedicated sections vs. a restructured about page. I chose to keep everything in about rather than add navigation complexity.
 - **What to cut.** Deciding that 54 release notes posts weren't worth keeping required knowing how I actually use the site.
-- **Domain knowledge.** Certification dates, issuer details, project descriptions — information that lives in my head, not in the codebase.
+- **Domain knowledge.** Certification dates, issuer details, project descriptions: information that lives in my head, not in the codebase.
 
 ## The result
 

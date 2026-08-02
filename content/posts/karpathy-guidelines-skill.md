@@ -19,7 +19,7 @@ AI coding assistants are fast and capable.
 But they have a persistent set of bad habits: adding abstractions nobody asked for, refactoring adjacent code that was working fine, hiding assumptions instead of stating them, and building in "flexibility" for scenarios that will never happen.
 
 These are not capability problems.
-The model can write correct, minimal code — it just defaults to doing too much.
+The model can write correct, minimal code: it just defaults to doing too much.
 Left unchecked, you end up reviewing diffs that are three times larger than they need to be.
 
 Andrej Karpathy catalogued these patterns in a [post on X](https://x.com/karpathy/status/2015883857489522876), and they resonated because every developer who has used an LLM assistant has seen them.
@@ -51,7 +51,7 @@ The [pin-github-actions](/posts/pin-github-actions-skill/) skill migrates workfl
 The [diataxis](/posts/diataxis-documentation-skill/) skill organizes documentation.
 The [verify-readme-features](/posts/verify-readme-features-skill/) skill audits documentation accuracy, and [local-branches-status](/posts/local-branches-status-skill/) reports on git branch hygiene.
 
-The karpathy-guidelines skill is different — it is a meta-skill.
+The karpathy-guidelines skill is different: it is a meta-skill.
 It does not perform a specific task. It constrains *how* the assistant approaches any task.
 This means it complements task-specific skills without conflict.
 
@@ -61,23 +61,23 @@ For trivial tasks, you may want the assistant to just act. For anything non-triv
 ## What I have observed in practice
 
 I invoke the skill explicitly with `/karpathy-guidelines`.
-I do not autoload it — I activate it deliberately when the work is non-trivial: debugging production issues, refactoring shared modules, or implementing features across multiple files.
+I do not autoload it. I activate it deliberately when the work is non-trivial: debugging production issues, refactoring shared modules, or implementing features across multiple files.
 For quick one-off edits, I skip it and let the assistant move fast.
 
 I also use the skill after a session is done, as a review lens.
-I invoke `/karpathy-guidelines` and ask the assistant to look back at the work — the code that was written, the changes that were made — and identify any surface for improvement against the four guidelines.
+I invoke `/karpathy-guidelines` and ask the assistant to look back at the work (the code that was written, the changes that were made) and identify any surface for improvement against the four guidelines.
 Did an implementation introduce unnecessary abstractions? Did a fix skip stating its assumptions? Could a multi-file change have been more surgical?
 This turns the skill into a lightweight retrospective tool, catching patterns that slipped through during the session itself.
 
 The most visible change is in how the assistant handles ambiguity.
 In one session, I asked it to fix a 404 error on a cached agent reference.
 Without the skill, this kind of request typically gets a single proposed fix.
-With it, the assistant surfaced the root cause first — the cached reference pointed to a deleted resource — then presented three distinct approaches: checking agent state after lookup, catching the error and recreating, or deleting the stale reference and retrying.
+With it, the assistant surfaced the root cause first (the cached reference pointed to a deleted resource), then presented three distinct approaches: checking agent state after lookup, catching the error and recreating, or deleting the stale reference and retrying.
 It asked which approach I preferred before writing any code.
 
 That pattern repeats across sessions.
 The assistant stops to clarify assumptions before implementing rather than picking a path silently.
-When I ask for a fix, it frames success as a verifiable goal — "write a test that reproduces the issue, then make it pass" — rather than just changing code until it looks right.
+When I ask for a fix, it frames success as a verifiable goal ("write a test that reproduces the issue, then make it pass") rather than just changing code until it looks right.
 
 The effect is not absolute.
 The assistant will still occasionally over-engineer or make assumptions.
@@ -86,7 +86,7 @@ Diffs stay closer to what the request actually required.
 
 The skill coexists well with other installed skills.
 I regularly run it alongside [conventional-commit](/posts/conventional-commit-skill/) and [diataxis](/posts/diataxis-documentation-skill/) in the same session.
-There is no interference — the behavioral guidelines shape how the assistant works, while the task skills shape what it works on.
+There is no interference: the behavioral guidelines shape how the assistant works, while the task skills shape what it works on.
 Having both karpathy-guidelines and conventional-commit active means I get surgical code changes followed by well-structured commit messages.
 
 ## Installing the skill
@@ -96,12 +96,12 @@ npx skills add https://github.com/forrestchang/andrej-karpathy-skills --skill ka
 ```
 
 Once installed, invoke it at the start of a session with `/karpathy-guidelines`.
-The guidelines then apply for the rest of the session — during coding, reviewing, or refactoring.
+The guidelines then apply for the rest of the session: during coding, reviewing, or refactoring.
 
 ## A useful default
 
 If you use an AI coding assistant regularly, the karpathy-guidelines skill is a sensible default for non-trivial work.
-It addresses the most common friction points — overengineering, unsolicited refactoring, hidden assumptions — without limiting what the assistant can do.
+It addresses the most common friction points (overengineering, unsolicited refactoring, hidden assumptions) without limiting what the assistant can do.
 
 Credit to [forrestchang](https://github.com/forrestchang) for packaging Karpathy's observations into an installable skill, and to [Andrej Karpathy](https://x.com/karpathy/status/2015883857489522876) for articulating the patterns in the first place.
 

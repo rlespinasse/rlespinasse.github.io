@@ -20,7 +20,7 @@ While apps like Photoshop or Lightroom are powerful, they are overkill for a sim
 Forget installing heavy dependencies like ImageMagick.
 macOS comes with a built-in "secret weapon" called **Sips** (Scriptable Image Processing System).
 
-### The Scenario
+### The scenario
 
 You have a project structure like this:
 
@@ -29,7 +29,7 @@ You have a project structure like this:
 
 You want to resize these to **200px (max side)** and save them as `_200px.png` in the same folders, keeping the originals intact.
 
-## The One-Liner Solution
+## The one-liner solution
 
 Open your terminal, navigate to your root folder, and run:
 
@@ -37,9 +37,9 @@ Open your terminal, navigate to your root folder, and run:
 find . -name "*.png" -exec sh -c 'sips -Z 200 "$1" --out "${1%.png}_200px.png"' _ {} \;
 ```
 
-### Breaking Down the Command
+### Breaking down the command
 
-To understand what's happening under the hood, let's look at the components:
+Here is what each part of the command does:
 
 | Command Part          | Purpose                                                                        |
 | --------------------- | ------------------------------------------------------------------------------ |
@@ -68,5 +68,4 @@ Unlike other tools, it:
 
 ## Summary
 
-Next time you're preparing thumbnails for a gallery or optimizing assets for a website, don't reach for a GUI.
-The power of the macOS CLI is right at your fingertips.
+Next time you're preparing thumbnails for a gallery or optimizing assets for a website, don't reach for a GUI. The macOS CLI already handles it.

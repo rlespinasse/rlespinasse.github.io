@@ -19,14 +19,14 @@ READMEs lie.
 
 Not intentionally. But I caught mine in the act.
 I was auditing the README of [Leaflet Atlas](/posts/leaflet-atlas/), a mapping library I maintain, when I realized the feature list had drifted.
-The README listed fourteen features. Two were overstated — the "plugin system" was internal-only with no public API.
-One was not found at all — dark mode had been planned but never implemented.
+The README listed fourteen features. Two were overstated: the "plugin system" was internal-only with no public API.
+One was not found at all: dark mode had been planned but never implemented.
 These were not things I would have caught in a normal code review.
-The README had been accurate when written — features drifted over time as code changed and the docs did not follow.
+The README had been accurate when written; features drifted over time as code changed and the docs did not follow.
 
-I asked my AI coding assistant to verify the README against the codebase. The analysis was thorough — it found the gaps, classified each claim, and gave me evidence for every verdict. But that analysis lived in a single conversation, lost the moment I closed the session. I wanted to make it repeatable.
+I asked my AI coding assistant to verify the README against the codebase. The analysis was thorough: it found the gaps, classified each claim, and gave me evidence for every verdict. But that analysis lived in a single conversation, lost the moment I closed the session. I wanted to make it repeatable.
 
-So I turned that one-off verification into the [**verify-readme-features**](https://github.com/rlespinasse/agent-skills) skill — a reusable skill that turns any AI coding assistant into a documentation auditor. It reads your feature claims, searches the codebase for evidence, and reports what matches, what is missing, and what is overstated.
+So I turned that one-off verification into the [**verify-readme-features**](https://github.com/rlespinasse/agent-skills) skill, a reusable skill that turns any AI coding assistant into a documentation auditor. It reads your feature claims, searches the codebase for evidence, and reports what matches, what is missing, and what is overstated.
 
 ## How the audit works
 
@@ -34,11 +34,11 @@ The skill follows a five-step process that mirrors how a careful reviewer would 
 
 ![The five-step verify-readme-features workflow](/img/posts/verify-readme-features-skill/workflow.svg)
 
-**Step 1 — Extract claims.** Read the documentation file and extract every feature claim. Not just top-level bullets — sub-claims too. If the README says "full-text search with fuzzy matching and highlighting", that is three separate claims to verify: full-text search, fuzzy matching, and highlighting.
+**Step 1: Extract claims.** Read the documentation file and extract every feature claim. Not just top-level bullets, sub-claims too. If the README says "full-text search with fuzzy matching and highlighting", that is three separate claims to verify: full-text search, fuzzy matching, and highlighting.
 
-**Step 2 — Search the codebase.** For each claim, identify the keywords that would appear in an implementation (function names, config keys, CSS classes, module names), then search source files for matching code. The skill instructs the assistant to read the code, not just trust filenames — a file named `search.js` does not prove full-text search is implemented.
+**Step 2: Search the codebase.** For each claim, identify the keywords that would appear in an implementation (function names, config keys, CSS classes, module names), then search source files for matching code. The skill instructs the assistant to read the code, not just trust filenames: a file named `search.js` does not prove full-text search is implemented.
 
-**Step 3 — Classify each claim.** Every claim gets one of four statuses:
+**Step 3: Classify each claim.** Every claim gets one of four statuses:
 
 | Status         | Meaning                                                          |
 | :------------- | :--------------------------------------------------------------- |
@@ -47,9 +47,9 @@ The skill follows a five-step process that mirrors how a careful reviewer would 
 | **Not found**  | No implementation found                                          |
 | **Overstated** | Implementation exists but the claim exaggerates its capabilities |
 
-**Step 4 — Report results.** Present a summary table with the feature, its status, and the evidence — specific file paths and line numbers, not vague references.
+**Step 4: Report results.** Present a summary table with the feature, its status, and the evidence: specific file paths and line numbers, not vague references.
 
-**Step 5 — Suggest fixes.** For anything that is not confirmed, propose documentation edits that match reality. The user decides whether to fix the docs or implement the missing feature.
+**Step 5: Suggest fixes.** For anything that is not confirmed, propose documentation edits that match reality. The user decides whether to fix the docs or implement the missing feature.
 
 ## What counts as evidence
 
@@ -57,11 +57,11 @@ The skill is explicit about what qualifies as evidence and what does not:
 
 **Valid evidence** (ordered by reliability):
 
-1. Source code — actual implementation
-2. Test files — tests exercising the feature
-3. Configuration schemas — config keys referenced in claims
-4. CSS/style files — for UI-related claims
-5. Type definitions — for API surface claims
+1. Source code: actual implementation
+2. Test files: tests exercising the feature
+3. Configuration schemas: config keys referenced in claims
+4. CSS/style files: for UI-related claims
+5. Type definitions: for API surface claims
 
 **Not evidence:**
 Documentation files. The README is the claim, not the proof. Other docs saying the same thing is circular, not confirming.
@@ -79,12 +79,12 @@ Most manual reviews check claim 1 and move on. The skill forces verification of 
 
 ## What I have observed in practice
 
-After building the skill, I ran it on Leaflet Atlas again — this time automatically.
-Without the skill, asking an AI assistant to verify a README produces inconsistent results — different sessions focus on different claims, skip sub-features, or forget to check certain file types.
+After building the skill, I ran it on Leaflet Atlas again, this time automatically.
+Without the skill, asking an AI assistant to verify a README produces inconsistent results: different sessions focus on different claims, skip sub-features, or forget to check certain file types.
 With the skill, the process is the same every time.
 On this run, it matched my earlier findings but also caught a sub-claim I had overlooked: the README mentioned "keyboard shortcut support" for the filter bar, which existed but was undocumented in the API reference.
 
-I have since run it on other projects in the [agent-skills](https://github.com/rlespinasse/agent-skills) collection itself. The pattern is consistent — documentation written at the time of implementation tends to be accurate, but it accumulates small lies with every refactor that does not touch the docs.
+I have since run it on other projects in the [agent-skills](https://github.com/rlespinasse/agent-skills) collection itself. The pattern is consistent: documentation written at the time of implementation tends to be accurate, but it accumulates small lies with every refactor that does not touch the docs.
 
 The skill is most valuable in two scenarios:
 
@@ -92,7 +92,7 @@ The skill is most valuable in two scenarios:
 
 **After a refactor.** Large refactors often remove or change features without anyone updating the docs. Running the audit after a refactor surfaces claims that no longer hold.
 
-The structured output — a table with status and evidence — also serves as a checklist for PRs that touch the README. If you change the feature list, run the audit to verify.
+The structured output (a table with status and evidence) also serves as a checklist for PRs that touch the README. If you change the feature list, run the audit to verify.
 
 ## Antipatterns the skill prevents
 
@@ -113,9 +113,9 @@ Once installed, ask the assistant to verify your README features, audit your fea
 
 ## Trust but verify
 
-Since the Leaflet Atlas audit, I have been running the skill regularly on my other open source projects and on professional ones. It catches minor drifts every time — a renamed flag still listed under its old name, a feature that was split into two but still described as one. Nothing dramatic, but the kind of inaccuracies — and the occasional typo — that erode trust over time.
+Since the Leaflet Atlas audit, I have been running the skill regularly on my other open source projects and on professional ones. It catches minor drifts every time: a renamed flag still listed under its old name, a feature that was split into two but still described as one. Nothing dramatic, but the kind of inaccuracies (and the occasional typo) that erode trust over time.
 
-Good documentation is an asset. Inaccurate documentation is a liability — users lose trust, contributors waste time, and bugs get filed for features that were never implemented. I would rather have a tool catch it than a user.
+Good documentation is an asset. Inaccurate documentation is a liability: users lose trust, contributors waste time, and bugs get filed for features that were never implemented. I would rather have a tool catch it than a user.
 
 The verify-readme-features skill does not make your docs accurate. It tells you where they are not, with evidence. What you do with that information is up to you.
 

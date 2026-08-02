@@ -15,15 +15,15 @@ series: ["GitHub Actions Ecosystem"]
 series_order: 3
 ---
 
-Over the past few years I have built and maintained several GitHub Actions under my personal account —
+Over the past few years I have built and maintained several GitHub Actions under my personal account:
 [github-slug-action](https://github.com/rlespinasse/github-slug-action),
 [drawio-export-action](https://github.com/rlespinasse/drawio-export-action),
-and others — alongside CLI tools like [ghat](/posts/github-actions-toolbox/).
-Those actions remain under my personal namespace to avoid breaking existing user workflows — changing the repository path would force every consumer to update their workflow files. They are, however, still actively maintained and listed in the organisation's readme.
+and others, alongside CLI tools like [ghat](/posts/github-actions-toolbox/).
+Those actions remain under my personal namespace to avoid breaking existing user workflows: changing the repository path would force every consumer to update their workflow files. They are, however, still actively maintained and listed in the organisation's readme.
 
 With that in mind, [**actions-able**](https://github.com/actions-able) was created as a GitHub organisation for *new* GitHub Actions tooling and community resources that can live under a shared, organisation-level namespace from the start.
 
-The name is a small play on words — actions that are *able*, ready to use. The organisation is maintained together with [@fhgbaguidi](https://github.com/fhgbaguidi) and is open to contributions from anyone.
+The name is a small play on words: actions that are *able*, ready to use. The organisation is maintained together with [@fhgbaguidi](https://github.com/fhgbaguidi) and is open to contributions from anyone.
 
 ## envsubst-action
 
@@ -48,23 +48,23 @@ The current release is **v1.2.0**. You can find full documentation and examples 
 ## awesome-actions
 
 The second project is [**awesome-actions**](https://github.com/actions-able/awesome-actions), a maintained fork of the well-known [sdras/awesome-actions](https://github.com/sdras/awesome-actions) list.
-The original repository was a go-to resource for discovering GitHub Actions across every category imaginable — from CI/CD and testing to deployment and security scanning.
+The original repository was a go-to resource for discovering GitHub Actions across categories like CI/CD, testing, deployment, and security scanning.
 Over time, maintenance slowed down and many entries became outdated or pointed to archived repositories.
 
-The fork under actions-able picks up where the original left off, with automated quality checks including [textlint-rule-link-title-case](/posts/textlint-rule-link-title-case/) for consistent link capitalization. It keeps the same comprehensive structure — official actions, community actions organised by language and purpose, deployment targets, and more — while actively reviewing and updating entries. Archived and deleted repositories are tracked transparently so you know exactly what is still alive.
+The fork under actions-able picks up where the original left off, with automated quality checks including [textlint-rule-link-title-case](/posts/textlint-rule-link-title-case/) for consistent link capitalization. It keeps the same comprehensive structure (official actions, community actions organised by language and purpose, deployment targets, and more) while actively reviewing and updating entries. Archived and deleted repositories are tracked transparently so you know exactly what is still alive.
 
 If you maintain a GitHub Action and want it listed, or if you spot a broken link, pull requests are welcome. The list is licensed under CC0, so you can use and share it freely.
 
 ## Outside-organisation repositories
 
 Not every action maintained by the team lives under the actions-able namespace.
-Some repositories — like [github-slug-action](https://github.com/rlespinasse/github-slug-action) and [drawio-export-action](https://github.com/rlespinasse/drawio-export-action) — stay under their original owner's account.
+Some repositories (like [github-slug-action](https://github.com/rlespinasse/github-slug-action) and [drawio-export-action](https://github.com/rlespinasse/drawio-export-action)) stay under their original owner's account.
 Moving them would change the action path and break every workflow that references them.
 Rather than force that migration on users, these actions are maintained as part of the actions-able effort while keeping their existing namespace intact.
 They are listed in the [organisation readme](https://github.com/actions-able) so you can discover them alongside the rest of the collection.
 
 ## Getting involved
 
-The organisation participates in [Hacktoberfest](https://hacktoberfest.com/) each year, so October is a particularly good time to send your first contribution. But contributions are welcome year-round — whether that is a bug report, a documentation improvement, or a brand-new action idea.
+The organisation participates in [Hacktoberfest](https://hacktoberfest.com/) each year, so October is a particularly good time to send your first contribution. But contributions are welcome year-round, whether that is a bug report, a documentation improvement, or a brand-new action idea.
 
 You can find everything at [github.com/actions-able](https://github.com/actions-able).

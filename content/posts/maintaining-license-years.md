@@ -13,7 +13,7 @@ categories:
 - Tips & Tricks
 ---
 
-If you’ve been maintaining a project since 2019 and have reached a milestone like **v5.x**, you might wonder if that "2019" in your `LICENSE` file makes your project look abandoned.
+If you've been maintaining a project since 2019 and have reached a milestone like **v5.x**, you might wonder if that "2019" in your `LICENSE` file makes your project look abandoned.
 
 Here is a quick guide on how to handle license dates effectively without overthinking it.
 
@@ -22,7 +22,7 @@ Here is a quick guide on how to handle license dates effectively without overthi
 In an MIT or Apache license, the year (e.g., `Copyright (c) 2019`) marks the **year of first publication**.
 It isn't an expiration date. However, as your project evolves through major versions, your code changes significantly.
 
-### Using the Copyright Range
+### Using the copyright range
 
 Instead of choosing between the start year and the current year, the professional standard is to use a **range**.
 
@@ -30,7 +30,7 @@ Instead of choosing between the start year and the current year, the professiona
 * **Better:** `Copyright (c) 2026` (Wipes out the history of the original work)
 * **Best:** `Copyright (c) 2019-2026` (Protects the original v1.0 and the current v5.x)
 
-## When to Update (The SemVer Strategy)
+## When to update (the SemVer strategy)
 
 If you follow **Semantic Versioning**, you don't need to touch the license for every patch.
 
@@ -40,7 +40,7 @@ If you follow **Semantic Versioning**, you don't need to touch the license for e
 | **Minor (v5.1.0)** | **Recommended** | New features should be covered under the latest year. |
 | **Patch (v5.1.1)** | **Optional** | Bug fixes rarely require a copyright update. |
 
-## Automation: The "Set and Forget" Method
+## Automation: the "set and forget" method
 
 If you find manual updates tedious, you can use a GitHub Action to check your license at the start of every year.
 
@@ -76,4 +76,4 @@ For a project spanning several years, simply update your license header to:
 Copyright (c) 2019-2026 [Your Name]
 ```
 
-This tells the world your project is established, battle-tested since 2019, and actively maintained in 2026.
+It tells the world your project has been around since 2019 and is still actively maintained.

@@ -16,16 +16,16 @@ series: ["GitHub Actions Ecosystem"]
 series_order: 2
 ---
 
-Over the years I have published and maintained a handful of GitHub Actions —
+Over the years I have published and maintained a handful of GitHub Actions:
 [github-slug-action](https://github.com/rlespinasse/github-slug-action),
 [drawio-export-action](https://github.com/rlespinasse/drawio-export-action),
-[release-that](https://github.com/rlespinasse/release-that), and a few others — many of which are now part of the [actions-able organisation](/posts/actions-able-github-organisation/).
+[release-that](https://github.com/rlespinasse/release-that), and a few others, many of which are now part of the [actions-able organisation](/posts/actions-able-github-organisation/).
 Once an action gets some traction, a recurring question pops up:
 **how many repositories actually depend on it?**
 GitHub surfaces that number on each repository page,
 but clicking through every project one by one gets old fast when you have half a dozen actions to keep an eye on.
 
-That itch led me to build [**github-actions-toolbox**](https://github.com/rlespinasse/github-actions-toolbox) — a small Go CLI called **`ghat`** designed to gather the kind of information an action maintainer regularly needs, without leaving the terminal.
+That itch led me to build [**github-actions-toolbox**](https://github.com/rlespinasse/github-actions-toolbox), a small Go CLI called **`ghat`** designed to gather the kind of information an action maintainer regularly needs, without leaving the terminal.
 
 ## The problem ghat solves
 
@@ -35,7 +35,7 @@ GitHub's dependency graph is a fantastic feature. It tells you which repositorie
 
 ## Using the dependents command
 
-The first — and currently the main — subcommand is `dependents`. At its simplest, you point it at one repository and it returns the dependent count:
+The first (and currently the main) subcommand is `dependents`. At its simplest, you point it at one repository and it returns the dependent count:
 
 ```bash
 ghat dependents rlespinasse/github-slug-action
@@ -47,7 +47,7 @@ When you maintain more than one action, you can pass several repositories in a s
 ghat dependents rlespinasse/github-slug-action rlespinasse/drawio-export-action
 ```
 
-For larger inventories, piping from a file or another command keeps things clean. Imagine a `repos.txt` that lists every action you own — one `owner/repo` per line — and you get a full report in seconds:
+For larger inventories, piping from a file or another command keeps things clean. Imagine a `repos.txt` that lists every action you own, one `owner/repo` per line, and you get a full report in seconds:
 
 ```bash
 cat repos.txt | ghat dependents
@@ -65,17 +65,17 @@ brew install rlespinasse/tap/ghat
 
 You can browse everything the tap offers with `brew search rlespinasse/tap`.
 
-If you already have a Go toolchain, installing from source works just as well — and it is handy when you want to pin a specific version or hack on the code yourself:
+If you already have a Go toolchain, installing from source works just as well, and it is handy when you want to pin a specific version or hack on the code yourself:
 
 ```bash
 go install github.com/rlespinasse/github-actions-toolbox@latest
 ```
 
-For environments where neither Homebrew nor Go are available — CI runners, Docker images, Windows workstations — pre-built archives are published for **Linux**, **macOS**, and **Windows** across **amd64** and **arm64**. Grab the one that matches your platform from the [releases page](https://github.com/rlespinasse/github-actions-toolbox/releases) and drop the binary somewhere on your `PATH`.
+For environments where neither Homebrew nor Go are available (CI runners, Docker images, Windows workstations), pre-built archives are published for **Linux**, **macOS**, and **Windows** across **amd64** and **arm64**. Grab the one that matches your platform from the [releases page](https://github.com/rlespinasse/github-actions-toolbox/releases) and drop the binary somewhere on your `PATH`.
 
 ## The Homebrew tap behind the scenes
 
-The [**homebrew-tap**](https://github.com/rlespinasse/homebrew-tap) repository deserves a quick mention of its own. It is a standard custom Homebrew tap — a Git repository that Homebrew clones locally so it can discover cask and formula definitions beyond the core taps.
+The [**homebrew-tap**](https://github.com/rlespinasse/homebrew-tap) repository deserves a quick mention of its own. It is a standard custom Homebrew tap: a Git repository that Homebrew clones locally so it can discover cask and formula definitions beyond the core taps.
 
 Right now it hosts the cask for `ghat`, but the structure is ready to accommodate any future command-line tools I release.
 The whole release pipeline leans on [goreleaser](https://goreleaser.com/):
@@ -87,7 +87,7 @@ If you maintain your own Go-based CLI and want a frictionless distribution story
 
 ## What comes next
 
-The `dependents` command addresses the most immediate pain point I had, but a toolbox with a single tool is not much of a toolbox yet. There are other pieces of information that are tedious to gather as a GitHub Actions maintainer — marketplace listing details, workflow usage patterns, version adoption curves — and some of those may find their way into `ghat` over time.
+The `dependents` command addresses the most immediate pain point I had, but a toolbox with a single tool is not much of a toolbox yet. There are other pieces of information that are tedious to gather as a GitHub Actions maintainer (marketplace listing details, workflow usage patterns, version adoption curves), and some of those may find their way into `ghat` over time.
 
 The architecture is intentionally subcommand-based, so adding new capabilities does not break existing workflows. If you have ideas for commands that would make your life easier as an action maintainer, issues and pull requests are very welcome on the [GitHub repository](https://github.com/rlespinasse/github-actions-toolbox).
 

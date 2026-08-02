@@ -22,7 +22,7 @@ Generic messages like "update files" or "fix bug" tell you nothing about what ch
 
 Commit messages are documentation.
 They are the first thing a reviewer reads in a pull request, the first thing you check when bisecting a bug, and the primary record of why a change was made.
-When an AI assistant writes a vague commit message, it creates the same maintenance burden as a vague message from a human — except the AI does it at much higher volume.
+When an AI assistant writes a vague commit message, it creates the same maintenance burden as a vague message from a human, except the AI does it at much higher volume.
 
 ## The Conventional Commits specification
 
@@ -42,7 +42,7 @@ The optional scope narrows the context.
 The description explains what happened.
 The body provides additional detail when needed.
 
-This structure is not just for humans — it enables tooling.
+This structure is not just for humans: it enables tooling.
 Semantic-release can automatically determine version bumps from commit types.
 Changelog generators can group changes by category.
 CI pipelines can trigger different workflows based on the type of change.
@@ -88,7 +88,7 @@ npx skills add https://github.com/rlespinasse/agent-skills --skill conventional-
 ```
 
 Once installed, the skill activates when the assistant is about to create a commit.
-You can also invoke it explicitly during a session — for example, by asking the assistant to commit the current changes using the Conventional Commits format.
+You can also invoke it explicitly during a session, for example by asking the assistant to commit the current changes using the Conventional Commits format.
 
 If you are already using the [diataxis skill](/posts/diataxis-documentation-skill/) from the same collection, the installation process is identical.
 Both skills coexist and activate independently based on the task at hand.
@@ -98,7 +98,7 @@ Both skills coexist and activate independently based on the task at hand.
 The agent-skills collection is growing, and the conventional-commit skill continues to be refined based on real-world usage.
 The evaluation scenarios provide a foundation for catching regressions as the skill evolves.
 
-If commit message quality matters to your project — and it should — give the skill a try.
+If commit message quality matters to your project, give the skill a try.
 It brings the same discipline to AI-assisted commits that Conventional Commits brings to human ones.
 
 ```bash

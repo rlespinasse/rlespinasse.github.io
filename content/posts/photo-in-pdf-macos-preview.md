@@ -23,7 +23,7 @@ Preview doesn't have a standard "Insert Image" button. However, there is a hidde
 
 ![The paste-into-itself trick step by step](/img/posts/photo-in-pdf-macos-preview/paste-trick.svg)
 
-### The "Paste-Into-Itself" Method
+### The "paste-into-itself" method
 
 1. **Open the image:** Double-click your photo to open it in the Preview app.
 
@@ -33,7 +33,7 @@ Preview doesn't have a standard "Insert Image" button. However, there is a hidde
 
    > **How to know it worked:** This creates a duplicate "object" layer directly on top of your original image. The new layer will have a bounding box with little blue dots on the corners.
 
-4. **Select and copy the new object:** This is the most crucial step! Make sure you explicitly click on that newly pasted image layer so that those blue corner dots are actively selected.
+4. **Select and copy the new object:** Make sure you explicitly click on that newly pasted image layer so that those blue corner dots are actively selected.
 
    > Once it is selected, press **Command + C** (⌘C) to copy this specific *object*.
 

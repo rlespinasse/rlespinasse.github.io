@@ -17,9 +17,9 @@ A default 5-minute tier, and a longer 1-hour tier.
 Both read back at the same discounted price.
 
 The decision is not whether to cache.
-It is how long to keep the cache alive — and that decision is paid for upfront, on the write side.
+It is how long to keep the cache alive, and that decision is paid for upfront, on the write side.
 
-"Longer is better" is the easy assumption — but it is not, and the break-even math is worth knowing before committing to either tier.
+"Longer is better" is the easy assumption, but it is not, and the break-even math is worth knowing before committing to either tier.
 
 The official numbers from the [pricing page](https://platform.claude.com/docs/en/docs/about-claude/pricing) and the [prompt caching docs](https://platform.claude.com/docs/en/build-with-claude/prompt-caching):
 
@@ -43,7 +43,7 @@ Prices per million tokens for the latest models:
 | 1h cache write | $10.00 | $6.00 | $2.00 |
 | Cache read | $0.50 | $0.30 | $0.10 |
 
-Multipliers are identical across models — only the absolute numbers shift.
+Multipliers are identical across models: only the absolute numbers shift.
 
 The 5-minute write costs 25% more than base input.
 The 1-hour write costs 100% more.
@@ -58,12 +58,12 @@ The only question is how many reads you get inside the window.
 Every cache read saves you 90% of the base input price.
 The write premium is what you pay upfront for those savings.
 
-**5-minute tier.** A 25% write premium. One read saves 90% — already past break-even. **Break-even: 1 read.**
+**5-minute tier.** A 25% write premium. One read saves 90%, already past break-even. **Break-even: 1 read.**
 
 **1-hour tier.** A 100% write premium. Two reads recover the extra cost. **Break-even: 2 reads.**
 
 After break-even, every additional read saves the same 90% on both tiers.
-The 0.75x gap between them is fixed by the write premium and never closes — but it also stops growing.
+The 0.75x gap between them is fixed by the write premium and never closes, but it also stops growing.
 The real question is how long you have to accumulate those reads.
 
 | Reads within window | 5m total cost | 1h total cost | No caching |
@@ -81,9 +81,9 @@ Costs expressed as multiples of the base input price for the cached token block.
 
 **Use the 5-minute tier when:**
 
-- Requests come in quick bursts — multiple calls within seconds or minutes
+- Requests come in quick bursts: multiple calls within seconds or minutes
 - You are building conversational agents where each turn reuses the system prompt
-- Your traffic is unpredictable — short windows mean less wasted cache if traffic stops
+- Your traffic is unpredictable: short windows mean less wasted cache if traffic stops
 
 **Use the 1-hour tier when:**
 
@@ -117,9 +117,9 @@ Any batch job with two or more reads on the same context comes out ahead.
 ## How to enable each tier
 
 Caching is controlled by `cache_control` on content blocks.
-The type is always `"ephemeral"` — the tier is set by the `ttl` field.
+The type is always `"ephemeral"`: the tier is set by the `ttl` field.
 
-**5-minute cache** (default — omit `ttl`, or set it to `"5m"`):
+**5-minute cache** (default, omit `ttl`, or set it to `"5m"`):
 
 ```json
 {
@@ -129,7 +129,7 @@ The type is always `"ephemeral"` — the tier is set by the `ttl` field.
 }
 ```
 
-**1-hour cache** — add `"ttl": "1h"`:
+**1-hour cache**: add `"ttl": "1h"`:
 
 ```json
 {
@@ -174,8 +174,8 @@ Cache the stable system prompt at 1 hour, the growing conversation history at 5 
 A few practical limits worth knowing:
 
 - Up to **4 explicit cache breakpoints** per request
-- Minimum cacheable length of **1024–4096 tokens**, depending on model
-- Cache hits require **100% identical** prompt prefixes — any drift, even whitespace, invalidates the entry
+- Minimum cacheable length of **1024 to 4096 tokens**, depending on model
+- Cache hits require **100% identical** prompt prefixes: any drift, even whitespace, invalidates the entry
 
 The response `usage` object breaks cache activity down per tier via `ephemeral_5m_input_tokens` and `ephemeral_1h_input_tokens` inside `cache_creation`.
 Useful for confirming the cache is being hit, not just written.
@@ -192,14 +192,14 @@ Three questions, in order:
 
 2. **How stable is the context?**
    A system prompt that never changes is a 1-hour candidate.
-   A conversation history that grows each turn works better at 5 minutes — new content invalidates the cache anyway.
+   A conversation history that grows each turn works better at 5 minutes: new content invalidates the cache anyway.
 
 3. **What happens if the cache expires unused?**
    A 5-minute write that expires wastes 25% of the base price.
    A 1-hour write that expires wastes 100%.
    Bursty or unpredictable traffic favors the smaller downside.
 
-For most interactive use cases — chatbots, coding assistants, agent loops — the 5-minute tier is the right default.
+For most interactive use cases (chatbots, coding assistants, agent loops), the 5-minute tier is the right default.
 The 1-hour tier earns its keep in production pipelines where the same context serves many requests over a sustained period, or in agentic workflows where individual steps run long.
 
 The two tiers solve different problems.

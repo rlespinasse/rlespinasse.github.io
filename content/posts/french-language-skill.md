@@ -70,7 +70,7 @@ Chaque format de fichier nécessite un traitement différent. Le skill fournit d
 
 Le skill applique aussi les conventions typographiques françaises, et l'une d'elles est souvent ignorée : **le tiret cadratin (`—`) n'est pas une ponctuation française standard**.
 
-En anglais, le tiret cadratin est courant et légitime — il marque une digression, une emphase, une interruption. En français, il n'a pas d'équivalent direct dans les textes courants. Les substituts selon le contexte :
+En anglais, le tiret cadratin est courant et légitime : il marque une digression, une emphase, une interruption. En français, il n'a pas d'équivalent direct dans les textes courants. Les substituts selon le contexte :
 
 | Usage | Remplacement français |
 | :--- | :--- |
