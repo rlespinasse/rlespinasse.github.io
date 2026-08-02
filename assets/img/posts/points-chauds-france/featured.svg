@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="pcBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d0906"/>
+      <stop offset="100%" stop-color="#241408"/>
+    </linearGradient>
+    <radialGradient id="glowFaible" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#fde047" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#fde047" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowModeree" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowForte" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#b91c1c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#pcBg)"/>
+
+  <!-- Coordinate grid (satellite/GIS feel) -->
+  <g opacity="0.05" stroke="#e8a838" fill="none" stroke-width="0.6">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="100" y1="0" x2="100" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="300" y1="0" x2="300" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="500" y1="0" x2="500" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+    <line x1="700" y1="0" x2="700" y2="500"/>
+  </g>
+
+  <!-- Simplified France hexagon outline -->
+  <path d="M330,155 Q370,135 420,140 Q470,132 505,155 Q540,168 555,200 Q575,220 570,255 Q580,290 555,320 Q560,350 530,370 Q505,398 465,395 Q430,415 390,398 Q350,405 325,378 Q290,368 280,335 Q255,315 265,280 Q255,245 280,215 Q285,180 330,155 Z"
+    fill="#e8a838" fill-opacity="0.04" stroke="#e8a838" stroke-width="1.6" opacity="0.35"/>
+
+  <!-- Faint departmental grid dots -->
+  <g opacity="0.18" fill="#a08050">
+    <circle cx="360" cy="200" r="1.4"/>
+    <circle cx="410" cy="185" r="1.4"/>
+    <circle cx="460" cy="205" r="1.4"/>
+    <circle cx="500" cy="235" r="1.4"/>
+    <circle cx="520" cy="280" r="1.4"/>
+    <circle cx="490" cy="320" r="1.4"/>
+    <circle cx="440" cy="350" r="1.4"/>
+    <circle cx="390" cy="360" r="1.4"/>
+    <circle cx="340" cy="330" r="1.4"/>
+    <circle cx="310" cy="290" r="1.4"/>
+    <circle cx="320" cy="240" r="1.4"/>
+  </g>
+
+  <!-- Hotspot cluster (Gironde, south-west) — faible -->
+  <circle cx="322" cy="318" r="22" fill="url(#glowFaible)"/>
+  <circle cx="322" cy="318" r="3.5" fill="#fde047"/>
+  <circle cx="336" cy="330" r="16" fill="url(#glowFaible)"/>
+  <circle cx="336" cy="330" r="2.5" fill="#fde047"/>
+
+  <!-- Hotspot cluster — moderee -->
+  <circle cx="308" cy="336" r="26" fill="url(#glowModeree)"/>
+  <circle cx="308" cy="336" r="4" fill="#f97316"/>
+  <circle cx="330" cy="350" r="20" fill="url(#glowModeree)"/>
+  <circle cx="330" cy="350" r="3" fill="#f97316"/>
+
+  <!-- Hotspot cluster — forte (main fire) -->
+  <circle cx="316" cy="352" r="42" fill="url(#glowForte)"/>
+  <circle cx="316" cy="352" r="5" fill="#ef4444"/>
+  <circle cx="300" cy="360" r="30" fill="url(#glowForte)"/>
+  <circle cx="300" cy="360" r="4" fill="#ef4444"/>
+
+  <!-- Scattered secondary detections elsewhere in France -->
+  <circle cx="470" cy="230" r="12" fill="url(#glowFaible)"/>
+  <circle cx="470" cy="230" r="2" fill="#fde047"/>
+  <circle cx="410" cy="290" r="10" fill="url(#glowModeree)"/>
+  <circle cx="410" cy="290" r="2" fill="#f97316"/>
+  <circle cx="440" cy="180" r="10" fill="url(#glowFaible)"/>
+  <circle cx="440" cy="180" r="1.8" fill="#fde047"/>
+
+  <!-- Satellite pass line -->
+  <path d="M120,150 Q400,118 700,175" fill="none" stroke="#e8a838" stroke-width="1" stroke-dasharray="3,5" opacity="0.35"/>
+  <circle cx="700" cy="175" r="3" fill="#e8a838" opacity="0.7"/>
+  <circle cx="700" cy="175" r="7" fill="none" stroke="#e8a838" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- FRP legend (bottom left) -->
+  <g transform="translate(48, 400)">
+    <circle cx="6" cy="0" r="5" fill="#fde047" opacity="0.9"/>
+    <text x="18" y="4" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#a08050">&lt; 5 MW</text>
+    <circle cx="6" cy="22" r="5" fill="#f97316" opacity="0.9"/>
+    <text x="18" y="26" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#a08050">5–20 MW</text>
+    <circle cx="6" cy="44" r="5" fill="#ef4444" opacity="0.9"/>
+    <text x="18" y="48" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="9" fill="#a08050">&#8805; 20 MW</text>
+  </g>
+
+  <!-- Stats box (right) -->
+  <g transform="translate(700, 400)" opacity="0.75">
+    <rect x="-58" y="-45" width="112" height="88" rx="5" fill="#1a0f06" stroke="#6a4a20" stroke-width="0.9"/>
+    <text x="0" y="-22" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="20" font-weight="700" fill="#e8a838" text-anchor="middle">5 j</text>
+    <text x="0" y="-7" font-family="'Inter', sans-serif" font-size="7.5" fill="#8a6030" text-anchor="middle" letter-spacing="1.2">FENÊTRE LIVE</text>
+    <line x1="-32" y1="4" x2="32" y2="4" stroke="#4a3218" stroke-width="0.8"/>
+    <text x="0" y="24" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="20" font-weight="700" fill="#e8a838" text-anchor="middle">3h</text>
+    <text x="0" y="38" font-family="'Inter', sans-serif" font-size="7.5" fill="#8a6030" text-anchor="middle" letter-spacing="1.2">RAFRAÎCHIT.</text>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="72" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="42" font-weight="700" fill="#f4e4c8" text-anchor="middle" letter-spacing="3">POINTS CHAUDS FRANCE</text>
+  <text x="400" y="100" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="12" fill="#b0803c" text-anchor="middle" letter-spacing="2.5">DÉTECTION SATELLITE NASA FIRMS · TEMPS QUASI RÉEL</text>
+
+  <!-- Decorative bottom line -->
+  <line x1="200" y1="465" x2="600" y2="465" stroke="#4a3218" stroke-width="1"/>
+  <line x1="350" y1="465" x2="450" y2="465" stroke="#e8a838" stroke-width="2"/>
+</svg>
