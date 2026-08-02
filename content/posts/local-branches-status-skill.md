@@ -82,7 +82,7 @@ The skill is available at [github.com/rlespinasse/agent-skills](https://github.c
 Once installed, the skill activates on phrases like "branch status", "branch overview", "local branches", or "branch report".
 You can also trigger it explicitly with `/local-branches-status`.
 
-If you already have skills from the collection installed: [conventional-commit](/posts/conventional-commit-skill/), [diataxis](/posts/diataxis-documentation-skill/), or [pin-github-actions](/posts/pin-github-actions-skill/), the installation process is the same.
+If you already have skills from the collection installed: [conventional-commit](/posts/conventional-commit-skill/), [diataxis](/posts/diataxis-documentation-skill/), [pin-github-actions](/posts/pin-github-actions-skill/), [karpathy-guidelines](/posts/karpathy-guidelines-skill/), or [verify-readme-features](/posts/verify-readme-features-skill/), the installation process is the same.
 
 ## From ad-hoc commands to a reliable overview
 

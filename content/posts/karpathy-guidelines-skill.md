@@ -49,6 +49,7 @@ Most skills are task-oriented.
 The [conventional-commit](/posts/conventional-commit-skill/) skill structures commit messages.
 The [pin-github-actions](/posts/pin-github-actions-skill/) skill migrates workflows to SHA-pinned versions.
 The [diataxis](/posts/diataxis-documentation-skill/) skill organizes documentation.
+The [verify-readme-features](/posts/verify-readme-features-skill/) skill audits documentation accuracy, and [local-branches-status](/posts/local-branches-status-skill/) reports on git branch hygiene.
 
 The karpathy-guidelines skill is different — it is a meta-skill.
 It does not perform a specific task. It constrains *how* the assistant approaches any task.

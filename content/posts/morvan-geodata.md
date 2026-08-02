@@ -9,6 +9,8 @@ tags:
   - geospatial
 categories:
   - Technical posts
+series: ["Geospatial Open Data"]
+series_order: 3
 ---
 
 Le [Parc naturel régional du Morvan](https://www.parcdumorvan.org/) est un espace protégé en Bourgogne.
@@ -72,7 +74,7 @@ Deuxièmement, elle correspond directement à la configuration des couches utili
 ## Pipeline de traitement
 
 Les données institutionnelles françaises sont distribuées en projection [Lambert 93](https://epsg.io/2154) (EPSG:2154), mais [Leaflet](https://leafletjs.com/) et la spécification [RFC 7946](https://www.rfc-editor.org/rfc/rfc7946) exigent du [WGS84](https://epsg.io/4326) (EPSG:4326).
-Le pipeline résout ce décalage en deux étapes distinctes.
+Le pipeline résout ce décalage en deux étapes distinctes, produisant le format attendu par [Leaflet Atlas](/posts/leaflet-atlas/), le framework piloté par la configuration qui alimente aussi la carte du [Bassin Minier UNESCO](/posts/bassin-minier-unesco/).
 
 `data/layers/` conserve les fichiers bruts en Lambert 93 comme source de vérité : traçabilité garantie, coordonnées d'origine préservées.
 `site/public/data/layers/` contient les versions reprojetées en WGS84, régénérées à chaque déploiement.

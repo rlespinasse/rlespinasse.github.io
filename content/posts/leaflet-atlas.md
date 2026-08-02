@@ -118,8 +118,8 @@ The interesting part of this approach is the feedback loop between Leaflet Atlas
 
 ![Leaflet Atlas architecture and virtuous cycle](/img/posts/leaflet-atlas/architecture.svg)
 
-The [Bassin Minier UNESCO](https://github.com/rlespinasse/bassin-minier-unesco) map was where the library was born — its needs shaped the initial feature set.
-Now I am building a second map for the [Parc naturel régional du Morvan](https://github.com/rlespinasse/morvan), an entirely different territory in Burgundy with its own layers: forests, lakes, hiking trails, administrative boundaries, demographic data.
+The [Bassin Minier UNESCO](/posts/bassin-minier-unesco/) map was where the library was born — its needs shaped the initial feature set.
+Now I am building [a second map for the Parc naturel régional du Morvan](/posts/morvan-geodata/), an entirely different territory in Burgundy with its own layers: forests, lakes, hiking trails, administrative boundaries, demographic data.
 
 Each new map surfaces new requirements.
 The Morvan project is already revealing features that the Bassin Minier map did not need, and exposing edge cases that only appear with different data shapes.

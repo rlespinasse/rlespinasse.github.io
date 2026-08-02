@@ -98,7 +98,7 @@ The rule works out of the box with sensible defaults, but it exposes a few optio
 The [awesome-actions](https://github.com/actions-able/awesome-actions) repository uses a `justfile` to orchestrate its quality checks.
 Three dedicated linting tasks run in parallel, each targeting a different concern:
 
-- `just textlint` — checks terminology and language.
+- `just textlint` — checks terminology and language, the same rule that needs [a custom override to keep README capitalized correctly](/posts/textlint-readme-terminology/).
 - `just textlint-titlecase` — validates heading title case.
 - `just textlint-linktitlecase` — validates link title case using this rule.
 

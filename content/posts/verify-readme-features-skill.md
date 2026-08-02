@@ -119,7 +119,7 @@ Good documentation is an asset. Inaccurate documentation is a liability — user
 
 The verify-readme-features skill does not make your docs accurate. It tells you where they are not, with evidence. What you do with that information is up to you.
 
-Together with the [diataxis skill](/posts/diataxis-documentation-skill/), it forms my two-step check on the documentation side of every project: diataxis ensures the structure is right, verify-readme-features ensures the content is honest.
+Together with the [diataxis skill](/posts/diataxis-documentation-skill/), it forms my two-step check on the documentation side of every project: diataxis ensures the structure is right, verify-readme-features ensures the content is honest. Like [karpathy-guidelines](/posts/karpathy-guidelines-skill/), it is a lens I run after the fact rather than a task I ask for upfront.
 
 ```bash
 npx skills add https://github.com/rlespinasse/agent-skills --skill verify-readme-features

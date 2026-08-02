@@ -80,3 +80,5 @@ npx textlint --rule terminology docs/your-file.md
 
 The textlint terminology rule is useful, but its built-in term list reflects general English conventions that do not always match software conventions.
 When a built-in term is wrong for a project, `exclude` the pattern and `terms` the correct replacement — do not fight the linter by disabling the whole rule.
+
+If you are already tuning textlint's built-in rules, [textlint-rule-link-title-case](/posts/textlint-rule-link-title-case/) covers a related gap: enforcing consistent title case on Markdown link text, which the built-in rule set does not check at all.
