@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="'SF Mono', 'Fira Code', monospace">
+  <rect width="800" height="500" fill="#0d1117"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.06" stroke="#58a6ff" stroke-width="0.5">
+    <line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="240" x2="800" y2="240"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" fill="#f0f6fc" font-family="'Segoe UI', Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="0.5">Testing a Bash GitHub Action</text>
+  <text x="400" y="72" text-anchor="middle" fill="#8b949e" font-family="'Segoe UI', Arial, sans-serif" font-size="15">Split logic from orchestration, unit-test with bats — no Docker</text>
+
+  <!-- lib.sh card -->
+  <g transform="translate(60, 105)">
+    <rect width="330" height="230" rx="10" fill="#161b22" stroke="#3fb950" stroke-width="1.5"/>
+    <rect width="330" height="34" rx="10" fill="#21262d"/>
+    <rect y="20" width="330" height="14" fill="#21262d"/>
+    <text x="16" y="23" font-size="13" fill="#3fb950" font-weight="600">lib.sh</text>
+    <text x="314" y="23" font-size="12" fill="#3fb950" text-anchor="end">pure</text>
+
+    <text x="18" y="60" font-size="12.5" fill="#c9d1d9">resolve_action_mode()</text>
+    <text x="18" y="82" font-size="12.5" fill="#c9d1d9">resolve_reference()</text>
+    <text x="18" y="104" font-size="12.5" fill="#c9d1d9">build_args_array()</text>
+    <text x="18" y="126" font-size="12.5" fill="#c9d1d9">is_shallow_repository()</text>
+    <text x="18" y="148" font-size="12.5" fill="#c9d1d9">report_error()</text>
+
+    <line x1="18" y1="164" x2="312" y2="164" stroke="#30363d" stroke-width="1"/>
+
+    <g transform="translate(18, 182)">
+      <circle r="8" fill="#3fb95020" stroke="#3fb950" stroke-width="1.5"/>
+      <polyline points="-3,0 -1,2.5 3.5,-2.5" fill="none" stroke="#3fb950" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text x="34" y="187" font-size="12" fill="#8b949e">safe to source — no exit</text>
+
+    <g transform="translate(18, 205)">
+      <circle r="8" fill="#3fb95020" stroke="#3fb950" stroke-width="1.5"/>
+      <polyline points="-3,0 -1,2.5 3.5,-2.5" fill="none" stroke="#3fb950" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text x="34" y="210" font-size="12" fill="#8b949e">no side effects, no I/O</text>
+  </g>
+
+  <!-- Arrow between cards -->
+  <g transform="translate(400, 220)" opacity="0.7">
+    <line x1="-15" y1="0" x2="15" y2="0" stroke="#58a6ff" stroke-width="2"/>
+    <polygon points="15,-6 27,0 15,6" fill="#58a6ff"/>
+  </g>
+
+  <!-- runner.sh card -->
+  <g transform="translate(410, 105)">
+    <rect width="330" height="230" rx="10" fill="#161b22" stroke="#f85149" stroke-width="1.5"/>
+    <rect width="330" height="34" rx="10" fill="#21262d"/>
+    <rect y="20" width="330" height="14" fill="#21262d"/>
+    <text x="16" y="23" font-size="13" fill="#f85149" font-weight="600">runner.sh</text>
+    <text x="314" y="23" font-size="12" fill="#f85149" text-anchor="end">side effects</text>
+
+    <text x="18" y="60" font-size="12.5" fill="#c9d1d9">source lib.sh</text>
+    <text x="18" y="82" font-size="12.5" fill="#c9d1d9">git config --system ...</text>
+    <text x="18" y="104" font-size="12.5" fill="#c9d1d9">shallow-clone check</text>
+    <text x="18" y="126" font-size="12.5" fill="#c9d1d9">exit 1 / exit 0</text>
+    <text x="18" y="148" font-size="12.5" fill="#c9d1d9">drawio-exporter "$&#123;args_array[@]&#125;"</text>
+
+    <line x1="18" y1="164" x2="312" y2="164" stroke="#30363d" stroke-width="1"/>
+
+    <text x="18" y="187" font-size="12" fill="#8b949e">real I/O, git mutation, process exit</text>
+    <text x="18" y="210" font-size="12" fill="#8b949e">tested end-to-end, inside Docker</text>
+  </g>
+
+  <!-- Bottom: bats run without Docker -->
+  <g transform="translate(400, 400)">
+    <rect x="-340" y="-32" width="680" height="64" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="-320" y="-6" fill="#58a6ff" font-family="'SF Mono', 'Fira Code', monospace" font-size="13">$</text>
+    <text x="-305" y="-6" fill="#79c0ff" font-family="'SF Mono', 'Fira Code', monospace" font-size="13">npx bats -r tests/unit</text>
+    <text x="-320" y="18" fill="#3fb950" font-family="'SF Mono', 'Fira Code', monospace" font-size="12">✓ all decision-table branches covered — no Docker build required</text>
+  </g>
+
+</svg>
