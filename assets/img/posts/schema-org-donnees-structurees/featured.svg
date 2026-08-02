@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="'SF Mono', 'Fira Code', monospace">
+  <rect width="800" height="500" fill="#0d1117"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.06" stroke="#58a6ff" stroke-width="0.5">
+    <line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="240" x2="800" y2="240"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" fill="#f0f6fc" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="0.5">Schema.org</text>
+  <text x="400" y="72" text-anchor="middle" fill="#8b949e" font-family="'Segoe UI', Arial, sans-serif" font-size="15">Un vocabulaire commun pour décrire vos pages en JSON-LD</text>
+
+  <!-- HTML page card -->
+  <g transform="translate(50, 105)">
+    <rect width="290" height="230" rx="10" fill="#161b22" stroke="#8b949e" stroke-width="1.5"/>
+    <rect width="290" height="34" rx="10" fill="#21262d"/>
+    <rect y="20" width="290" height="14" fill="#21262d"/>
+    <text x="16" y="23" font-size="13" fill="#c9d1d9" font-weight="600">page.html</text>
+
+    <text x="18" y="60" font-size="12" fill="#79c0ff">&lt;h1&gt;</text><text x="70" y="60" font-size="12" fill="#c9d1d9">Article&lt;/h1&gt;</text>
+    <text x="18" y="82" font-size="12" fill="#79c0ff">&lt;time&gt;</text><text x="80" y="82" font-size="12" fill="#c9d1d9">2026-08-02&lt;/time&gt;</text>
+    <text x="18" y="104" font-size="12" fill="#79c0ff">&lt;p&gt;</text><text x="55" y="104" font-size="12" fill="#c9d1d9">Lorem ipsum…&lt;/p&gt;</text>
+
+    <line x1="18" y1="130" x2="272" y2="130" stroke="#30363d" stroke-width="1"/>
+    <text x="18" y="155" font-size="12" fill="#8b949e">Une machine ne sait pas</text>
+    <text x="18" y="175" font-size="12" fill="#8b949e">si c'est un article, une</text>
+    <text x="18" y="195" font-size="12" fill="#8b949e">recette ou un événement.</text>
+  </g>
+
+  <!-- Arrow between cards -->
+  <g transform="translate(400, 220)" opacity="0.7">
+    <line x1="-15" y1="0" x2="15" y2="0" stroke="#f0883e" stroke-width="2"/>
+    <polygon points="15,-6 27,0 15,6" fill="#f0883e"/>
+  </g>
+  <text x="400" y="255" text-anchor="middle" font-size="11" fill="#f0883e">+ JSON-LD</text>
+
+  <!-- JSON-LD card -->
+  <g transform="translate(460, 105)">
+    <rect width="290" height="230" rx="10" fill="#161b22" stroke="#3fb950" stroke-width="1.5"/>
+    <rect width="290" height="34" rx="10" fill="#21262d"/>
+    <rect y="20" width="290" height="14" fill="#21262d"/>
+    <text x="16" y="23" font-size="13" fill="#3fb950" font-weight="600">ld+json</text>
+
+    <text x="18" y="58" font-size="11.5" fill="#c9d1d9">&#123;</text>
+    <text x="30" y="76" font-size="11.5" fill="#79c0ff">"@type"</text><text x="95" y="76" font-size="11.5" fill="#c9d1d9">: "BlogPosting",</text>
+    <text x="30" y="94" font-size="11.5" fill="#79c0ff">"headline"</text><text x="105" y="94" font-size="11.5" fill="#c9d1d9">: "…",</text>
+    <text x="30" y="112" font-size="11.5" fill="#79c0ff">"datePublished"</text><text x="145" y="112" font-size="11.5" fill="#c9d1d9">: "…"</text>
+    <text x="18" y="130" font-size="11.5" fill="#c9d1d9">&#125;</text>
+
+    <line x1="18" y1="150" x2="272" y2="150" stroke="#30363d" stroke-width="1"/>
+    <text x="18" y="175" font-size="12" fill="#8b949e">Un vocabulaire documenté,</text>
+    <text x="18" y="195" font-size="12" fill="#8b949e">lisible par toute machine.</text>
+  </g>
+
+  <!-- Bottom: rich result -->
+  <g transform="translate(400, 400)">
+    <rect x="-340" y="-38" width="680" height="76" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <circle cx="-300" cy="0" r="16" fill="#3fb95020" stroke="#3fb950" stroke-width="1.5"/>
+    <text x="-300" y="5" text-anchor="middle" font-size="14" fill="#3fb950">★</text>
+    <text x="-265" y="-10" fill="#f0f6fc" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600">Résultat enrichi</text>
+    <text x="-265" y="12" fill="#8b949e" font-family="'Segoe UI', Arial, sans-serif" font-size="12">Titre, date, note — affichés directement dans les résultats de recherche</text>
+  </g>
+
+</svg>
