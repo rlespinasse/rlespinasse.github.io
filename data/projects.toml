@@ -252,3 +252,24 @@ description = "The BriqueParBrique universe."
   repo = "BriqueParBrique/nouvelle-brique"
   url = "https://github.com/BriqueParBrique/nouvelle-brique"
   description = "Template to start a new brique."
+
+  [[worlds.projects]]
+  name = "sql-fondamentaux-brique-1"
+  repo = "BriqueParBrique/sql-fondamentaux-brique-1"
+  url = "https://github.com/BriqueParBrique/sql-fondamentaux-brique-1"
+  description = "Discover the fundamentals of SQL (Brique 1)."
+  tags = ["sql", "learning"]
+
+  [[worlds.projects]]
+  name = "sql-fondamentaux-brique-2"
+  repo = "BriqueParBrique/sql-fondamentaux-brique-2"
+  url = "https://github.com/BriqueParBrique/sql-fondamentaux-brique-2"
+  description = "Discover the fundamentals of SQL (Brique 2)."
+  tags = ["sql", "learning"]
+
+  [[worlds.projects]]
+  name = "sql-fondamentaux-brique-3"
+  repo = "BriqueParBrique/sql-fondamentaux-brique-3"
+  url = "https://github.com/BriqueParBrique/sql-fondamentaux-brique-3"
+  description = "Discover the fundamentals of SQL (Brique 3)."
+  tags = ["sql", "learning"]
