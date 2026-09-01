@@ -11,56 +11,11 @@ showTableOfContents: false
 
 This blog is itself [a project based on Hugo](https://github.com/rlespinasse/rlespinasse.github.io) with some GitHub Actions to automate it.
 
-In terms of automation, I play with **GitHub Actions**
+I build and maintain a range of open-source projects — **GitHub Actions**, Draw.io
+tooling, Rust utilities, interactive maps, and a few fun side projects. They're all
+showcased, grouped by world, in my [Project'folio](/projects).
 
-* to ease the release of a repository: [release-that](https://github.com/marketplace/actions/release-that),
-* to `slug` some environment variables: [github-slug-action](https://github.com/marketplace/actions/github-slug-action),
-* to `slug` any variable: [slugify-value](https://github.com/marketplace/actions/slugify-value),
-* to `short` some Git references: [shortify-git-revision](https://github.com/rlespinasse/shortify-git-revision),
-* to expose some Git commit data: [git-commit-data-action](https://github.com/marketplace/actions/git-commit-data),
-* to export Draw.io diagrams: [drawio-export-action](https://github.com/rlespinasse/drawio-export-action),
-* and a collection of reusable workflows and actions: [github-actions-toolbox](https://github.com/rlespinasse/github-actions-toolbox),
-* to substitute environment variables in files: [envsubst-action](https://github.com/actions-able/envsubst-action).
-
-And a maintained fork of the curated list of awesome actions: [awesome-actions](https://github.com/actions-able/awesome-actions).
-
-And a group of repositories dedicated to Draw.io diagrams exports
-
-* [docker-drawio-desktop-headless](https://github.com/rlespinasse/docker-drawio-desktop-headless): Docker image to serve Draw.io Desktop in a headless version,
-* [drawio-exporter](https://github.com/rlespinasse/drawio-exporter): Export Draw.io diagrams using the command line,
-* [drawio-export](https://github.com/rlespinasse/drawio-export): Export Draw.io diagrams using Docker,
-* [drawio-export-action](https://github.com/rlespinasse/drawio-export-action): Export Draw.io diagrams within GitHub Actions Workflow.
-
-In the `rust` world,
-
-* **W**hat **I** **N**eed **T**o **S**ee ([wints](https://github.com/rlespinasse/wints)), a fuzzy term-based URLs opener,
-* [drawio-exporter](https://github.com/rlespinasse/drawio-exporter) to export Draw.io diagrams using the command line.
-
-In the **tools** world,
-
-* [agent-skills](https://github.com/rlespinasse/agent-skills): Skills for AI agents,
-* [textlint-rule-link-title-case](https://github.com/rlespinasse/textlint-rule-link-title-case): A textlint rule to check link title case,
-* [homebrew-tap](https://github.com/rlespinasse/homebrew-tap): Homebrew tap for installing my tools and utilities.
-
-In the **geospatial** world,
-
-* [bassin-minier-unesco](https://github.com/rlespinasse/bassin-minier-unesco): Interactive map of the UNESCO Mining Basin,
-* [leaflet-atlas](https://github.com/rlespinasse/leaflet-atlas): Atlas powered by Leaflet.js,
-* [morvan](https://github.com/rlespinasse/morvan): Interactive map of Parc du Morvan.
-
-In the **fun** world,
-
-* [le-petit-coloriste](https://github.com/rlespinasse/le-petit-coloriste): Google Gemini gem to generate AI coloring pages for kids,
-* [le-petit-aquarium-du-marais](https://github.com/rlespinasse/le-petit-aquarium-du-marais): Collaborative aquarium filled with fish drawings by children,
-* [wraas](https://github.com/wraas/wraas.github.io): We Rickroll Absolutely Anyone, Seriously,
-* [digital-twin-product](https://github.com/wraas/digital-twin-product): Weighted Romain Algorithmic Approximation Software.
-
-In the **BriqueParBrique** world,
-
-* [BriqueParBrique](https://github.com/BriqueParBrique/BriqueParBrique.github.io): The BriqueParBrique site,
-* [nouvelle-brique](https://github.com/BriqueParBrique/nouvelle-brique): Template to start a new brique.
-
-And all my current and past projects are available on [https://github.com/rlespinasse](https://github.com/rlespinasse).
+And all my current and past projects are available on [my GitHub profile](https://github.com/rlespinasse).
 
 > You can also `sponsor me` on GitHub if you want.
 >
