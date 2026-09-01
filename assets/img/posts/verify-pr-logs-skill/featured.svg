@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="-apple-system, 'Helvetica Neue', sans-serif">
+  <rect width="800" height="500" fill="#0d1117" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" font-size="28" fill="#e2e8f0" font-weight="700">verify-pr-logs</text>
+  <text x="400" y="77" text-anchor="middle" font-size="13" fill="#8b949e">Diagnose CI failures without leaving the terminal</text>
+
+  <!-- 7-step workflow -->
+  <g transform="translate(30, 100)">
+    <!-- Step 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="95" height="80" rx="8" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/>
+      <text x="48" y="30" text-anchor="middle" font-size="20" fill="#58a6ff">#</text>
+      <text x="48" y="52" text-anchor="middle" font-size="10" fill="#93c5fd" font-weight="bold">Identify</text>
+      <text x="48" y="66" text-anchor="middle" font-size="9" fill="#64748b">Find the PR</text>
+      <circle cx="48" cy="98" r="9" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/>
+      <text x="48" y="102" text-anchor="middle" font-size="9" fill="#58a6ff" font-weight="bold">1</text>
+    </g>
+
+    <line x1="100" y1="40" x2="112" y2="40" stroke="#30363d" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Step 2 -->
+    <g transform="translate(117, 0)">
+      <rect width="95" height="80" rx="8" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/>
+      <g transform="translate(33, 12)">
+        <rect width="30" height="22" rx="3" fill="none" stroke="#58a6ff" stroke-width="1.5"/>
+        <line x1="6" y1="8" x2="24" y2="8" stroke="#58a6ff" stroke-width="1.2"/>
+        <line x1="6" y1="14" x2="18" y2="14" stroke="#58a6ff" stroke-width="1.2"/>
+      </g>
+      <text x="48" y="52" text-anchor="middle" font-size="10" fill="#93c5fd" font-weight="bold">List checks</text>
+      <text x="48" y="66" text-anchor="middle" font-size="9" fill="#64748b">gh pr checks</text>
+      <circle cx="48" cy="98" r="9" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/>
+      <text x="48" y="102" text-anchor="middle" font-size="9" fill="#58a6ff" font-weight="bold">2</text>
+    </g>
+
+    <line x1="217" y1="40" x2="229" y2="40" stroke="#30363d" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Step 3 -->
+    <g transform="translate(234, 0)">
+      <rect width="95" height="80" rx="8" fill="#161b22" stroke="#f85149" stroke-width="1.5"/>
+      <g transform="translate(33, 12)">
+        <rect width="30" height="22" rx="3" fill="none" stroke="#f85149" stroke-width="1.5"/>
+        <line x1="6" y1="8" x2="24" y2="8" stroke="#f85149" stroke-width="1.2"/>
+        <line x1="6" y1="15" x2="18" y2="15" stroke="#f85149" stroke-width="1.2"/>
+      </g>
+      <text x="48" y="52" text-anchor="middle" font-size="10" fill="#ffa198" font-weight="bold">Fetch failed</text>
+      <text x="48" y="66" text-anchor="middle" font-size="9" fill="#64748b">--log-failed</text>
+      <circle cx="48" cy="98" r="9" fill="#161b22" stroke="#f85149" stroke-width="1.5"/>
+      <text x="48" y="102" text-anchor="middle" font-size="9" fill="#f85149" font-weight="bold">3</text>
+    </g>
+
+    <line x1="334" y1="40" x2="346" y2="40" stroke="#30363d" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Step 4 -->
+    <g transform="translate(351, 0)">
+      <rect width="95" height="80" rx="8" fill="#161b22" stroke="#f59e0b" stroke-width="1.5"/>
+      <g transform="translate(35, 14)">
+        <path d="M0,0 L13,-8 L26,0 L13,8 Z" fill="none" stroke="#f59e0b" stroke-width="1.8"/>
+        <text x="13" y="4" text-anchor="middle" font-size="12" fill="#f59e0b">?</text>
+      </g>
+      <text x="48" y="52" text-anchor="middle" font-size="10" fill="#fcd34d" font-weight="bold">Triage</text>
+      <text x="48" y="66" text-anchor="middle" font-size="9" fill="#64748b">Categorise type</text>
+      <circle cx="48" cy="98" r="9" fill="#161b22" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="48" y="102" text-anchor="middle" font-size="9" fill="#f59e0b" font-weight="bold">4</text>
+    </g>
+
+    <line x1="451" y1="40" x2="463" y2="40" stroke="#30363d" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Step 5 -->
+    <g transform="translate(468, 0)">
+      <rect width="95" height="80" rx="8" fill="#161b22" stroke="#a855f7" stroke-width="1.5"/>
+      <g transform="translate(36, 14)">
+        <circle cx="12" cy="8" r="10" fill="none" stroke="#a855f7" stroke-width="1.8"/>
+        <line x1="12" y1="4" x2="12" y2="12" stroke="#a855f7" stroke-width="1.8"/>
+        <circle cx="12" cy="15" r="1" fill="#a855f7"/>
+      </g>
+      <text x="48" y="52" text-anchor="middle" font-size="10" fill="#c084fc" font-weight="bold">Diagnose</text>
+      <text x="48" y="66" text-anchor="middle" font-size="9" fill="#64748b">Root cause</text>
+      <circle cx="48" cy="98" r="9" fill="#161b22" stroke="#a855f7" stroke-width="1.5"/>
+      <text x="48" y="102" text-anchor="middle" font-size="9" fill="#a855f7" font-weight="bold">5</text>
+    </g>
+
+    <line x1="568" y1="40" x2="580" y2="40" stroke="#30363d" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Step 6 -->
+    <g transform="translate(585, 0)">
+      <rect width="95" height="80" rx="8" fill="#161b22" stroke="#3fb950" stroke-width="1.5"/>
+      <g transform="translate(36, 14)">
+        <rect x="0" y="0" width="24" height="18" rx="3" fill="none" stroke="#3fb950" stroke-width="1.8"/>
+        <line x1="5" y1="6" x2="19" y2="6" stroke="#3fb950" stroke-width="1.2"/>
+        <line x1="5" y1="12" x2="14" y2="12" stroke="#3fb950" stroke-width="1.2"/>
+      </g>
+      <text x="48" y="52" text-anchor="middle" font-size="10" fill="#86efac" font-weight="bold">Fix</text>
+      <text x="48" y="66" text-anchor="middle" font-size="9" fill="#64748b">Right location</text>
+      <circle cx="48" cy="98" r="9" fill="#161b22" stroke="#3fb950" stroke-width="1.5"/>
+      <text x="48" y="102" text-anchor="middle" font-size="9" fill="#3fb950" font-weight="bold">6</text>
+    </g>
+
+    <line x1="685" y1="40" x2="697" y2="40" stroke="#30363d" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Step 7 -->
+    <g transform="translate(702, 0)">
+      <rect width="68" height="80" rx="8" fill="#161b22" stroke="#3fb950" stroke-width="1.5"/>
+      <g transform="translate(22, 14)">
+        <circle cx="12" cy="10" r="10" fill="none" stroke="#3fb950" stroke-width="1.8"/>
+        <path d="M6,10 L10,14 L18,6" fill="none" stroke="#3fb950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <text x="34" y="52" text-anchor="middle" font-size="10" fill="#86efac" font-weight="bold">Verify</text>
+      <text x="34" y="66" text-anchor="middle" font-size="9" fill="#64748b">Re-run</text>
+      <circle cx="34" cy="98" r="9" fill="#161b22" stroke="#3fb950" stroke-width="1.5"/>
+      <text x="34" y="102" text-anchor="middle" font-size="9" fill="#3fb950" font-weight="bold">7</text>
+    </g>
+  </g>
+
+  <!-- Triage table -->
+  <g transform="translate(40, 240)">
+    <rect width="720" height="28" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="15" y="19" font-size="10" fill="#58a6ff" font-weight="bold">Failure type</text>
+    <text x="200" y="19" font-size="10" fill="#58a6ff" font-weight="bold">Log signals</text>
+    <text x="480" y="19" font-size="10" fill="#58a6ff" font-weight="bold">Fix location</text>
+
+    <g transform="translate(0, 34)">
+      <rect width="720" height="26" rx="3" fill="#0d1117"/>
+      <text x="15" y="18" font-size="10" fill="#fcd34d">Lint / format</text>
+      <text x="200" y="18" font-size="9" fill="#8b949e" font-family="'SF Mono', monospace">eslint, prettier, flake8</text>
+      <text x="480" y="18" font-size="10" fill="#c9d1d9">Source files flagged</text>
+    </g>
+
+    <g transform="translate(0, 64)">
+      <rect width="720" height="26" rx="3" fill="#161b22"/>
+      <text x="15" y="18" font-size="10" fill="#f85149">Test failure</text>
+      <text x="200" y="18" font-size="9" fill="#8b949e" font-family="'SF Mono', monospace">FAIL, AssertionError</text>
+      <text x="480" y="18" font-size="10" fill="#c9d1d9">Test or implementation</text>
+    </g>
+
+    <g transform="translate(0, 94)">
+      <rect width="720" height="26" rx="3" fill="#0d1117"/>
+      <text x="15" y="18" font-size="10" fill="#ffa198">Build / compile</text>
+      <text x="200" y="18" font-size="9" fill="#8b949e" font-family="'SF Mono', monospace">error TS, cannot find module</text>
+      <text x="480" y="18" font-size="10" fill="#c9d1d9">Source files referenced</text>
+    </g>
+
+    <g transform="translate(0, 124)">
+      <rect width="720" height="26" rx="3" fill="#161b22"/>
+      <text x="15" y="18" font-size="10" fill="#c084fc">Permission / auth</text>
+      <text x="200" y="18" font-size="9" fill="#8b949e" font-family="'SF Mono', monospace">403, 401, permission denied</text>
+      <text x="480" y="18" font-size="10" fill="#c9d1d9">Workflow config or secrets</text>
+    </g>
+  </g>
+
+  <!-- Bottom: key insight -->
+  <g transform="translate(40, 420)">
+    <rect width="340" height="55" rx="8" fill="#161b22" stroke="#f85149" stroke-width="1.5"/>
+    <text x="170" y="22" text-anchor="middle" font-size="10" fill="#f85149" font-weight="bold">Full logs: 2,000+ lines</text>
+    <text x="170" y="42" text-anchor="middle" font-size="9" fill="#64748b">Setup, deps, banners, noise</text>
+
+    <g transform="translate(360, 15)">
+      <line x1="0" y1="12" x2="28" y2="12" stroke="#58a6ff" stroke-width="2.5"/>
+      <polygon points="28,7 38,12 28,17" fill="#58a6ff"/>
+    </g>
+
+    <g transform="translate(420, 0)">
+      <rect width="300" height="55" rx="8" fill="#161b22" stroke="#3fb950" stroke-width="1.5"/>
+      <text x="150" y="22" text-anchor="middle" font-size="10" fill="#3fb950" font-weight="bold">--log-failed: 10-30 lines</text>
+      <text x="150" y="42" text-anchor="middle" font-size="9" fill="#64748b">Actual errors only</text>
+    </g>
+  </g>
+
+  <!-- AI Skill badge -->
+  <g transform="translate(755, 40)">
+    <path d="M0,-16 L3.5,-5.5 L16,0 L3.5,5.5 L0,16 L-3.5,5.5 L-16,0 L-3.5,-5.5 Z" fill="#fbbf24" opacity="0.8"/>
+    <circle r="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+    <text y="28" text-anchor="middle" font-size="8" fill="#f59e0b" font-weight="bold">AI Skill</text>
+  </g>
+
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="5" refX="5" refY="2.5" orient="auto">
+      <polygon points="0 0, 6 2.5, 0 5" fill="#30363d"/>
+    </marker>
+  </defs>
+</svg>
