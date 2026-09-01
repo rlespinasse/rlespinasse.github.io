@@ -17,13 +17,6 @@ name = "GitHub Actions"
 description = "Automation building blocks for GitHub workflows."
 
   [[worlds.projects]]
-  name = "release-that"
-  repo = "rlespinasse/release-that"
-  url = "https://github.com/marketplace/actions/release-that"
-  description = "Ease the release of a repository."
-  tags = ["github-actions"]
-
-  [[worlds.projects]]
   name = "github-slug-action"
   repo = "rlespinasse/github-slug-action"
   url = "https://github.com/marketplace/actions/github-slug-action"
@@ -186,15 +179,37 @@ description = "Interactive maps and atlases."
   tags = ["maps", "leaflet"]
   image = "github"
 
+  [[worlds.projects]]
+  name = "chronomel"
+  repo = "rlespinasse/chronomel"
+  url = "https://github.com/rlespinasse/chronomel"
+  description = "Time-travel viewer of the Métropole Européenne de Lille aerial photographs (1930-2025)."
+  tags = ["maps"]
+
+  [[worlds.projects]]
+  name = "points-chauds-france"
+  repo = "rlespinasse/points-chauds-france"
+  url = "https://github.com/rlespinasse/points-chauds-france"
+  description = "Interactive map of NASA FIRMS satellite heat/fire hotspots across France."
+  tags = ["maps"]
+
+  [[worlds.projects]]
+  name = "geopages-template"
+  repo = "rlespinasse/geopages-template"
+  url = "https://github.com/rlespinasse/geopages-template"
+  description = "Template for creating interactive geodata atlases with Vite, TypeScript, and Leaflet."
+  language = "TypeScript"
+  tags = ["maps", "leaflet", "template"]
+
 [[worlds]]
 name = "Fun"
 description = "Side projects made seriously, for fun."
 
   [[worlds.projects]]
-  name = "le-petit-coloriste"
-  repo = "rlespinasse/le-petit-coloriste"
-  url = "https://github.com/rlespinasse/le-petit-coloriste"
-  description = "Google Gemini gem to generate AI coloring pages for kids."
+  name = "gem-amuse"
+  repo = "rlespinasse/gem-amuse"
+  url = "https://github.com/rlespinasse/gem-amuse"
+  description = "Google Gemini gems to have fun and learn: coloring pages, science experiments, riddles and treasure hunts."
   tags = ["ai"]
   image = "github"
 
@@ -215,6 +230,12 @@ description = "Side projects made seriously, for fun."
   repo = "wraas/digital-twin-product"
   url = "https://github.com/wraas/digital-twin-product"
   description = "Weighted Romain Algorithmic Approximation Software."
+
+  [[worlds.projects]]
+  name = "0ta"
+  repo = "wraas/0ta"
+  url = "https://github.com/wraas/0ta"
+  description = "Zero Token Architecture: zero tokens, infinite thoughts. Stop prompting, start thinking."
 
 [[worlds]]
 name = "BriqueParBrique"
