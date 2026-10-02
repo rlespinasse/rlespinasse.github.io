@@ -72,7 +72,7 @@ And all my current and past projects are available on [https://github.com/rlespi
 
 | Certified | Since | Certifications |
 | - | - | - |
-| Anthropic Claude Certified | 2026 | [Architect - Professional](https://www.credly.com/badges/fc94a0de-9bba-4f48-bd38-abc576a03344)) |
+| Anthropic Claude Certified | 2026 | [Architect - Professional](https://www.credly.com/badges/fc94a0de-9bba-4f48-bd38-abc576a03344) |
 | | | [Developer - Foundations](https://www.credly.com/badges/11a5788e-32a7-4946-a7f9-ba34d636ea0d) |
 | GitLab Certified | 2022 | [DevOps Professional](https://www.credly.com/badges/584848a8-bca8-4549-b1b5-982bb5123105) |
 | Google Cloud Certified | 2019 | [Professional Cloud Developer](https://www.credly.com/badges/16df9b45-1899-4fa5-8fe1-45dd6646df53) |
