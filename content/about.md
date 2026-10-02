@@ -72,9 +72,10 @@ And all my current and past projects are available on [https://github.com/rlespi
 
 | Certified | Since | Certifications |
 | - | - | - |
+| Anthropic Claude Certified | 2026 | [Architect - Professional](https://www.credly.com/badges/fc94a0de-9bba-4f48-bd38-abc576a03344)) |
+| | | [Developer - Foundations](https://www.credly.com/badges/11a5788e-32a7-4946-a7f9-ba34d636ea0d) |
 | GitLab Certified | 2022 | [DevOps Professional](https://www.credly.com/badges/584848a8-bca8-4549-b1b5-982bb5123105) |
 | Google Cloud Certified | 2019 | [Professional Cloud Developer](https://www.credly.com/badges/16df9b45-1899-4fa5-8fe1-45dd6646df53) |
-| | 2020 | [Professional Cloud DevOps Engineer](https://www.credly.com/badges/630d230b-7ef7-4276-8909-cd63695c4d66) |
 | | 2022 | [Professional Cloud Architect](https://www.credly.com/badges/70ccf969-3c6b-44e5-baef-fdd9393d8820) |
 | | | [Cloud Digital Leader](https://www.credly.com/badges/ad8a49cd-f599-4694-8fbf-a3d81e1687a5) |
 | PoolParty | 2025 | [Semantic Web Training](https://www.credential.net/ef74e627-0c3e-4290-b8de-33d2166b6f22#acc.gvsQa9HL) |
@@ -86,12 +87,15 @@ And all my current and past projects are available on [https://github.com/rlespi
 | Certified | Period | Certifications |
 | - | - | - |
 | GitLab Certified | 2022-2024 | [Solutions Architect Core Verified Associate](https://www.credly.com/badges/4bf0c570-7c9f-4d2f-b0a0-676e0eb8043d) |
-| Google Cloud Certified | 2022-2024 | [Professional Data Engineer](https://www.credly.com/badges/e7d6fa27-fef1-4531-8210-4acde2fe3ebc) |
+| Google Cloud Certified | 2020-2026 | [Professional Cloud DevOps Engineer](https://www.credly.com/badges/630d230b-7ef7-4276-8909-cd63695c4d66) |
+| | 2022-2024 | [Professional Data Engineer](https://www.credly.com/badges/e7d6fa27-fef1-4531-8210-4acde2fe3ebc) |
 
 ### Certifications list
 
 | Certifications                                                                                                                  | Since | Until |
 | ------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
+| [Anthropic Claude Certified Architect - Professional](https://www.credly.com/badges/fc94a0de-9bba-4f48-bd38-abc576a03344)) | 2026-09-24 | 2027-09-24 |
+| [Anthropic Claude Certified Developer - Foundations](https://www.credly.com/badges/11a5788e-32a7-4946-a7f9-ba34d636ea0d) | 2026-09-24 | 2027-09-24 |
 | [GitLab Solutions Architect Core Verified Associate](https://www.credly.com/badges/4bf0c570-7c9f-4d2f-b0a0-676e0eb8043d)        | 2022-12-18 | 2024-12-18      |
 | [GitLab Certified CI/CD Associate](https://www.credly.com/badges/2213767c-2dbe-4d4d-97c1-9f074e72f113)                          | 2022-12-11 | _Does not expire_ |
 | [GitLab Certified DevOps Professional](https://www.credly.com/badges/584848a8-bca8-4549-b1b5-982bb5123105)                      | 2022-12-21 | _Does not expire_ |
