@@ -27,12 +27,12 @@ jobs:
         with:
           submodules: true
 
-      - uses: peaceiris/actions-hugo@2752ce1d29631191ea3f27c23495fa06139a5b78 # v3.2.1
+      - uses: peaceiris/actions-hugo@d1c81a15d4e6dca7086a17b9c2565cb70fd576bf # v3.3.0
         with:
           hugo-version: '0.160.1'
           extended: true
 
-      - uses: taiki-e/install-action@ab49d3c64680143e184118bed66a46419fc15519 # v2.90.5
+      - uses: taiki-e/install-action@fe3acb53a98b62c772db35de75ce0e4595e7ca8c # v2.90.8
         with:
           tool: just
 
